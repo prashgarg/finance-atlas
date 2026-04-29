@@ -294,6 +294,50 @@ main {
   padding: 11px 36px 11px 14px;
 }
 
+.chart-toolbar .compact-select {
+  min-width: 120px;
+}
+
+.chart-toolbar .compact-select[hidden] {
+  display: none;
+}
+
+.diagnostic-copy {
+  color: var(--muted);
+  font-size: 15px;
+  margin: -2px 0 14px;
+}
+
+.diagnostic-list {
+  display: grid;
+  gap: 10px;
+}
+
+.diagnostic-row {
+  align-items: center;
+  background: rgba(244, 239, 226, 0.76);
+  border: 1px solid rgba(16, 35, 31, 0.08);
+  border-radius: 18px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(260px, 0.42fr) 1fr;
+  padding: 13px 14px;
+}
+
+.diagnostic-row strong {
+  display: block;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.diagnostic-row span {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 3px;
+}
+
 .time-chart {
   background:
     linear-gradient(180deg, rgba(255, 250, 240, 0.65), rgba(244, 239, 226, 0.5)),
@@ -572,6 +616,10 @@ main {
   height: 100%;
 }
 
+.blue-fill {
+  background: linear-gradient(90deg, var(--blue), var(--green));
+}
+
 .bar-list {
   background: rgba(255, 250, 240, 0.72);
   border: 1px solid rgba(16, 35, 31, 0.12);
@@ -734,7 +782,8 @@ main {
 
   .metric-grid,
   .detail-stats,
-  .rising-row {
+  .rising-row,
+  .diagnostic-row {
     grid-template-columns: 1fr;
   }
 

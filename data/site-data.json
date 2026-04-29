@@ -8468,5 +8468,2958 @@
         "macro/state"
       ]
     }
-  ]
+  ],
+  "graph_diagnostics": {
+    "available": true,
+    "summary": {
+      "scope": "within_materialized_finance_workspace",
+      "graph_nodes": 13213,
+      "graph_edges_non_self": 66740,
+      "betweenness_sample_size": 500
+    },
+    "top_central": [
+      {
+        "id": "https://openalex.org/keywords/stock-market-volatility",
+        "label": "Stock market volatility",
+        "field": "finance",
+        "pagerank": 0.021761539252387115,
+        "degree_weighted": 3296.0,
+        "in_degree_weighted": 2346.0,
+        "out_degree_weighted": 950.0,
+        "betweenness_approx": 0.15098181307506764,
+        "bridge_score": 2.2647271961260147
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility",
+        "label": "Volatility (finance)",
+        "field": "finance",
+        "pagerank": 0.020212851661314934,
+        "degree_weighted": 3187.0,
+        "in_degree_weighted": 2193.0,
+        "out_degree_weighted": 994.0,
+        "betweenness_approx": 0.1476434719806478,
+        "bridge_score": 2.214652079709717
+      },
+      {
+        "id": "https://openalex.org/keywords/liquidity-risk",
+        "label": "Liquidity risk",
+        "field": "finance",
+        "pagerank": 0.01248607083841475,
+        "degree_weighted": 2526.0,
+        "in_degree_weighted": 1332.0,
+        "out_degree_weighted": 1194.0,
+        "betweenness_approx": 0.09905942900507994,
+        "bridge_score": 1.4858914350761991
+      },
+      {
+        "id": "jel:E31:Inflation",
+        "label": "Inflation",
+        "field": "macro",
+        "pagerank": 0.01191933020972625,
+        "degree_weighted": 2058.0,
+        "in_degree_weighted": 1196.0,
+        "out_degree_weighted": 862.0,
+        "betweenness_approx": 0.059174085978864976,
+        "bridge_score": 0.8876112896829746
+      },
+      {
+        "id": "jel:G12:Trading Volume",
+        "label": "Trading Volume",
+        "field": "finance",
+        "pagerank": 0.00866594104312308,
+        "degree_weighted": 1489.0,
+        "in_degree_weighted": 911.0,
+        "out_degree_weighted": 578.0,
+        "betweenness_approx": 0.04715775559238301,
+        "bridge_score": 0.7073663338857452
+      },
+      {
+        "id": "https://openalex.org/keywords/bank-credit",
+        "label": "Bank credit",
+        "field": "finance",
+        "pagerank": 0.00854901812974391,
+        "degree_weighted": 1278.0,
+        "in_degree_weighted": 805.0,
+        "out_degree_weighted": 473.0,
+        "betweenness_approx": 0.050000650038304624,
+        "bridge_score": 0.7500097505745693
+      },
+      {
+        "id": "jel:G12:Stock Returns",
+        "label": "Stock Returns",
+        "field": "finance",
+        "pagerank": 0.008479019210682807,
+        "degree_weighted": 1041.0,
+        "in_degree_weighted": 872.0,
+        "out_degree_weighted": 169.0,
+        "betweenness_approx": 0.02240144424845686,
+        "bridge_score": 0.3360216637268529
+      },
+      {
+        "id": "https://openalex.org/keywords/market-liquidity",
+        "label": "Market liquidity",
+        "field": "finance",
+        "pagerank": 0.006759882090083689,
+        "degree_weighted": 1269.0,
+        "in_degree_weighted": 748.0,
+        "out_degree_weighted": 521.0,
+        "betweenness_approx": 0.0472781708289988,
+        "bridge_score": 0.7091725624349821
+      },
+      {
+        "id": "jel:G21:Borrowing",
+        "label": "Borrowing",
+        "field": "finance",
+        "pagerank": 0.006278952922146281,
+        "degree_weighted": 947.0,
+        "in_degree_weighted": 593.0,
+        "out_degree_weighted": 354.0,
+        "betweenness_approx": 0.053659432141049325,
+        "bridge_score": 0.8048914821157399
+      },
+      {
+        "id": "https://openalex.org/keywords/market-sentiment",
+        "label": "Market sentiment",
+        "field": "finance",
+        "pagerank": 0.004758944218912285,
+        "degree_weighted": 1338.0,
+        "in_degree_weighted": 455.0,
+        "out_degree_weighted": 883.0,
+        "betweenness_approx": 0.04654912770247087,
+        "bridge_score": 0.6516877878345921
+      },
+      {
+        "id": "wp:37671470",
+        "label": "Policy uncertainty",
+        "field": "macro",
+        "pagerank": 0.004589063423627441,
+        "degree_weighted": 2159.0,
+        "in_degree_weighted": 474.0,
+        "out_degree_weighted": 1685.0,
+        "betweenness_approx": 0.09203976567920455,
+        "bridge_score": 1.3805964851880683
+      },
+      {
+        "id": "jel:F62:Economic Growth",
+        "label": "Economic Growth",
+        "field": "macro",
+        "pagerank": 0.004539218634217784,
+        "degree_weighted": 452.0,
+        "in_degree_weighted": 368.0,
+        "out_degree_weighted": 84.0,
+        "betweenness_approx": 0.005573160556501378,
+        "bridge_score": 0.08359740834752066
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility-risk",
+        "label": "Volatility risk",
+        "field": "finance",
+        "pagerank": 0.0036586808479705238,
+        "degree_weighted": 595.0,
+        "in_degree_weighted": 350.0,
+        "out_degree_weighted": 245.0,
+        "betweenness_approx": 0.014931295440506682,
+        "bridge_score": 0.20903813616709355
+      },
+      {
+        "id": "jel:O33:Spillovers",
+        "label": "Spillovers",
+        "field": "micro",
+        "pagerank": 0.003645859095716233,
+        "degree_weighted": 469.0,
+        "in_degree_weighted": 344.0,
+        "out_degree_weighted": 125.0,
+        "betweenness_approx": 0.01156088037926369,
+        "bridge_score": 0.17341320568895535
+      },
+      {
+        "id": "jel:E32:Recession",
+        "label": "Recession",
+        "field": "macro",
+        "pagerank": 0.003456462812127406,
+        "degree_weighted": 599.0,
+        "in_degree_weighted": 326.0,
+        "out_degree_weighted": 273.0,
+        "betweenness_approx": 0.021183731812573398,
+        "bridge_score": 0.317755977188601
+      },
+      {
+        "id": "jel:E32:Business Cycle",
+        "label": "Business Cycle",
+        "field": "macro",
+        "pagerank": 0.003371517804205603,
+        "degree_weighted": 540.0,
+        "in_degree_weighted": 284.0,
+        "out_degree_weighted": 256.0,
+        "betweenness_approx": 0.010735535291081583,
+        "bridge_score": 0.16103302936622374
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-spread",
+        "label": "Credit spread (options)",
+        "field": "finance",
+        "pagerank": 0.003359075041501178,
+        "degree_weighted": 421.0,
+        "in_degree_weighted": 314.0,
+        "out_degree_weighted": 107.0,
+        "betweenness_approx": 0.010222041629544008,
+        "bridge_score": 0.1226644995545281
+      },
+      {
+        "id": "https://openalex.org/keywords/bid–ask-spread",
+        "label": "Bid–ask spread",
+        "field": "finance",
+        "pagerank": 0.0028564713700957776,
+        "degree_weighted": 444.0,
+        "in_degree_weighted": 327.0,
+        "out_degree_weighted": 117.0,
+        "betweenness_approx": 0.005997692351656214,
+        "bridge_score": 0.083967692923187
+      },
+      {
+        "id": "jel:I:Welfare",
+        "label": "Welfare",
+        "field": "public",
+        "pagerank": 0.002643626289224252,
+        "degree_weighted": 269.0,
+        "in_degree_weighted": 264.0,
+        "out_degree_weighted": 5.0,
+        "betweenness_approx": 0.005152749884476917,
+        "bridge_score": 0.06698574849819992
+      },
+      {
+        "id": "https://openalex.org/keywords/systemic-risk",
+        "label": "Systemic risk",
+        "field": "finance",
+        "pagerank": 0.0025293033943718413,
+        "degree_weighted": 278.0,
+        "in_degree_weighted": 234.0,
+        "out_degree_weighted": 44.0,
+        "betweenness_approx": 0.006218532539225806,
+        "bridge_score": 0.08084092300993548
+      },
+      {
+        "id": "https://openalex.org/keywords/forward-volatility",
+        "label": "Forward volatility",
+        "field": "finance",
+        "pagerank": 0.0024917276286970714,
+        "degree_weighted": 513.0,
+        "in_degree_weighted": 293.0,
+        "out_degree_weighted": 220.0,
+        "betweenness_approx": 0.009731766643660504,
+        "bridge_score": 0.13624473301124707
+      },
+      {
+        "id": "jel:E23:Output",
+        "label": "Output",
+        "field": "unknown",
+        "pagerank": 0.0024124841310742325,
+        "degree_weighted": 338.0,
+        "in_degree_weighted": 302.0,
+        "out_degree_weighted": 36.0,
+        "betweenness_approx": 0.005356237466868389,
+        "bridge_score": 0.06963108706928905
+      },
+      {
+        "id": "jel:C54:Monetary Policy",
+        "label": "Monetary Policy",
+        "field": "macro",
+        "pagerank": 0.0022843037665929784,
+        "degree_weighted": 763.0,
+        "in_degree_weighted": 218.0,
+        "out_degree_weighted": 545.0,
+        "betweenness_approx": 0.022879541377858446,
+        "bridge_score": 0.2974340379121598
+      },
+      {
+        "id": "https://openalex.org/keywords/excess-return",
+        "label": "Excess return",
+        "field": "finance",
+        "pagerank": 0.0022670529001338636,
+        "degree_weighted": 269.0,
+        "in_degree_weighted": 213.0,
+        "out_degree_weighted": 56.0,
+        "betweenness_approx": 0.00820703573224799,
+        "bridge_score": 0.10669146451922386
+      },
+      {
+        "id": "https://openalex.org/keywords/funding-liquidity",
+        "label": "Funding liquidity",
+        "field": "finance",
+        "pagerank": 0.0022483786327968667,
+        "degree_weighted": 558.0,
+        "in_degree_weighted": 248.0,
+        "out_degree_weighted": 310.0,
+        "betweenness_approx": 0.018391594654503705,
+        "bridge_score": 0.25748232516305186
+      },
+      {
+        "id": "https://openalex.org/keywords/abnormal-return",
+        "label": "Abnormal return",
+        "field": "finance",
+        "pagerank": 0.0022472272156909513,
+        "degree_weighted": 264.0,
+        "in_degree_weighted": 232.0,
+        "out_degree_weighted": 32.0,
+        "betweenness_approx": 0.00621547874284001,
+        "bridge_score": 0.08080122365692013
+      },
+      {
+        "id": "wp:11871466",
+        "label": "Net interest spread",
+        "field": "finance",
+        "pagerank": 0.002215842320729427,
+        "degree_weighted": 364.0,
+        "in_degree_weighted": 231.0,
+        "out_degree_weighted": 133.0,
+        "betweenness_approx": 0.01116430985634881,
+        "bridge_score": 0.16746464784523216
+      },
+      {
+        "id": "https://openalex.org/keywords/investor-behavior",
+        "label": "Investor behavior",
+        "field": "finance",
+        "pagerank": 0.0021706943587161353,
+        "degree_weighted": 462.0,
+        "in_degree_weighted": 224.0,
+        "out_degree_weighted": 238.0,
+        "betweenness_approx": 0.007960655219000776,
+        "bridge_score": 0.11144917306601088
+      },
+      {
+        "id": "jel:D25:Investment",
+        "label": "Investment",
+        "field": "finance",
+        "pagerank": 0.002087185078830552,
+        "degree_weighted": 226.0,
+        "in_degree_weighted": 187.0,
+        "out_degree_weighted": 39.0,
+        "betweenness_approx": 0.00388458392502254,
+        "bridge_score": 0.05049959102529302
+      },
+      {
+        "id": "jel:C53:Predictability",
+        "label": "Predictability",
+        "field": "unknown",
+        "pagerank": 0.0019901011290770283,
+        "degree_weighted": 206.0,
+        "in_degree_weighted": 169.0,
+        "out_degree_weighted": 37.0,
+        "betweenness_approx": 0.0027471101937368916,
+        "bridge_score": 0.0329653223248427
+      },
+      {
+        "id": "jel:G21:Bank Lending",
+        "label": "Bank Lending",
+        "field": "finance",
+        "pagerank": 0.0017601691394522933,
+        "degree_weighted": 252.0,
+        "in_degree_weighted": 194.0,
+        "out_degree_weighted": 58.0,
+        "betweenness_approx": 0.002553758030724032,
+        "bridge_score": 0.03319885439941241
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-risk",
+        "label": "Credit risk",
+        "field": "finance",
+        "pagerank": 0.0017527284917903975,
+        "degree_weighted": 247.0,
+        "in_degree_weighted": 156.0,
+        "out_degree_weighted": 91.0,
+        "betweenness_approx": 0.003024767860401557,
+        "bridge_score": 0.0423467500456218
+      },
+      {
+        "id": "jel:E44:Asset Price",
+        "label": "Asset Price",
+        "field": "finance",
+        "pagerank": 0.0017015676656780036,
+        "degree_weighted": 239.0,
+        "in_degree_weighted": 189.0,
+        "out_degree_weighted": 50.0,
+        "betweenness_approx": 0.00541374986828287,
+        "bridge_score": 0.0703787482876773
+      },
+      {
+        "id": "jel:G12:Stock Price",
+        "label": "Stock Price",
+        "field": "finance",
+        "pagerank": 0.0016650449459104564,
+        "degree_weighted": 212.0,
+        "in_degree_weighted": 160.0,
+        "out_degree_weighted": 52.0,
+        "betweenness_approx": 0.0028096974660170725,
+        "bridge_score": 0.039335764524239016
+      },
+      {
+        "id": "jel:Q42:Renewable Energy",
+        "label": "Renewable Energy",
+        "field": "environment",
+        "pagerank": 0.001656364655545114,
+        "degree_weighted": 173.0,
+        "in_degree_weighted": 136.0,
+        "out_degree_weighted": 37.0,
+        "betweenness_approx": 0.0030157761575117206,
+        "bridge_score": 0.039205090047652366
+      },
+      {
+        "id": "https://openalex.org/keywords/expected-return",
+        "label": "Expected return",
+        "field": "finance",
+        "pagerank": 0.0016491957649285775,
+        "degree_weighted": 157.0,
+        "in_degree_weighted": 136.0,
+        "out_degree_weighted": 21.0,
+        "betweenness_approx": 0.00326873968465118,
+        "bridge_score": 0.03595613653116298
+      },
+      {
+        "id": "jel:C92:Herding",
+        "label": "Herding",
+        "field": "finance",
+        "pagerank": 0.0016275179933606678,
+        "degree_weighted": 190.0,
+        "in_degree_weighted": 134.0,
+        "out_degree_weighted": 56.0,
+        "betweenness_approx": 0.004077409786947917,
+        "bridge_score": 0.05708373701727084
+      },
+      {
+        "id": "jel:O11:GDP",
+        "label": "GDP",
+        "field": "macro",
+        "pagerank": 0.0016120967022605671,
+        "degree_weighted": 212.0,
+        "in_degree_weighted": 143.0,
+        "out_degree_weighted": 69.0,
+        "betweenness_approx": 0.002470412967552431,
+        "bridge_score": 0.03458578154573403
+      },
+      {
+        "id": "jel:C58:Volatility Forecasting",
+        "label": "Volatility Forecasting",
+        "field": "finance",
+        "pagerank": 0.001597605268936144,
+        "degree_weighted": 233.0,
+        "in_degree_weighted": 184.0,
+        "out_degree_weighted": 49.0,
+        "betweenness_approx": 0.002281000289895096,
+        "bridge_score": 0.02737200347874115
+      },
+      {
+        "id": "jel:R12:Spillover Effect",
+        "label": "Spillover Effect",
+        "field": "unknown",
+        "pagerank": 0.0015921131363414401,
+        "degree_weighted": 242.0,
+        "in_degree_weighted": 173.0,
+        "out_degree_weighted": 69.0,
+        "betweenness_approx": 0.005881320357858386,
+        "bridge_score": 0.07645716465215902
+      }
+    ],
+    "bridge_concepts": [
+      {
+        "id": "https://openalex.org/keywords/stock-market-volatility",
+        "label": "Stock market volatility",
+        "field": "finance",
+        "pagerank": 0.021761539252387115,
+        "degree_weighted": 3296.0,
+        "in_degree_weighted": 2346.0,
+        "out_degree_weighted": 950.0,
+        "betweenness_approx": 0.15098181307506764,
+        "bridge_score": 2.2647271961260147
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility",
+        "label": "Volatility (finance)",
+        "field": "finance",
+        "pagerank": 0.020212851661314934,
+        "degree_weighted": 3187.0,
+        "in_degree_weighted": 2193.0,
+        "out_degree_weighted": 994.0,
+        "betweenness_approx": 0.1476434719806478,
+        "bridge_score": 2.214652079709717
+      },
+      {
+        "id": "https://openalex.org/keywords/liquidity-risk",
+        "label": "Liquidity risk",
+        "field": "finance",
+        "pagerank": 0.01248607083841475,
+        "degree_weighted": 2526.0,
+        "in_degree_weighted": 1332.0,
+        "out_degree_weighted": 1194.0,
+        "betweenness_approx": 0.09905942900507994,
+        "bridge_score": 1.4858914350761991
+      },
+      {
+        "id": "wp:37671470",
+        "label": "Policy uncertainty",
+        "field": "macro",
+        "pagerank": 0.004589063423627441,
+        "degree_weighted": 2159.0,
+        "in_degree_weighted": 474.0,
+        "out_degree_weighted": 1685.0,
+        "betweenness_approx": 0.09203976567920455,
+        "bridge_score": 1.3805964851880683
+      },
+      {
+        "id": "jel:E31:Inflation",
+        "label": "Inflation",
+        "field": "macro",
+        "pagerank": 0.01191933020972625,
+        "degree_weighted": 2058.0,
+        "in_degree_weighted": 1196.0,
+        "out_degree_weighted": 862.0,
+        "betweenness_approx": 0.059174085978864976,
+        "bridge_score": 0.8876112896829746
+      },
+      {
+        "id": "jel:G21:Borrowing",
+        "label": "Borrowing",
+        "field": "finance",
+        "pagerank": 0.006278952922146281,
+        "degree_weighted": 947.0,
+        "in_degree_weighted": 593.0,
+        "out_degree_weighted": 354.0,
+        "betweenness_approx": 0.053659432141049325,
+        "bridge_score": 0.8048914821157399
+      },
+      {
+        "id": "https://openalex.org/keywords/bank-credit",
+        "label": "Bank credit",
+        "field": "finance",
+        "pagerank": 0.00854901812974391,
+        "degree_weighted": 1278.0,
+        "in_degree_weighted": 805.0,
+        "out_degree_weighted": 473.0,
+        "betweenness_approx": 0.050000650038304624,
+        "bridge_score": 0.7500097505745693
+      },
+      {
+        "id": "https://openalex.org/keywords/market-liquidity",
+        "label": "Market liquidity",
+        "field": "finance",
+        "pagerank": 0.006759882090083689,
+        "degree_weighted": 1269.0,
+        "in_degree_weighted": 748.0,
+        "out_degree_weighted": 521.0,
+        "betweenness_approx": 0.0472781708289988,
+        "bridge_score": 0.7091725624349821
+      },
+      {
+        "id": "jel:G12:Trading Volume",
+        "label": "Trading Volume",
+        "field": "finance",
+        "pagerank": 0.00866594104312308,
+        "degree_weighted": 1489.0,
+        "in_degree_weighted": 911.0,
+        "out_degree_weighted": 578.0,
+        "betweenness_approx": 0.04715775559238301,
+        "bridge_score": 0.7073663338857452
+      },
+      {
+        "id": "https://openalex.org/keywords/market-sentiment",
+        "label": "Market sentiment",
+        "field": "finance",
+        "pagerank": 0.004758944218912285,
+        "degree_weighted": 1338.0,
+        "in_degree_weighted": 455.0,
+        "out_degree_weighted": 883.0,
+        "betweenness_approx": 0.04654912770247087,
+        "bridge_score": 0.6516877878345921
+      },
+      {
+        "id": "jel:G12:Stock Returns",
+        "label": "Stock Returns",
+        "field": "finance",
+        "pagerank": 0.008479019210682807,
+        "degree_weighted": 1041.0,
+        "in_degree_weighted": 872.0,
+        "out_degree_weighted": 169.0,
+        "betweenness_approx": 0.02240144424845686,
+        "bridge_score": 0.3360216637268529
+      },
+      {
+        "id": "jel:E32:Recession",
+        "label": "Recession",
+        "field": "macro",
+        "pagerank": 0.003456462812127406,
+        "degree_weighted": 599.0,
+        "in_degree_weighted": 326.0,
+        "out_degree_weighted": 273.0,
+        "betweenness_approx": 0.021183731812573398,
+        "bridge_score": 0.317755977188601
+      },
+      {
+        "id": "jel:C54:Monetary Policy",
+        "label": "Monetary Policy",
+        "field": "macro",
+        "pagerank": 0.0022843037665929784,
+        "degree_weighted": 763.0,
+        "in_degree_weighted": 218.0,
+        "out_degree_weighted": 545.0,
+        "betweenness_approx": 0.022879541377858446,
+        "bridge_score": 0.2974340379121598
+      },
+      {
+        "id": "https://openalex.org/keywords/funding-liquidity",
+        "label": "Funding liquidity",
+        "field": "finance",
+        "pagerank": 0.0022483786327968667,
+        "degree_weighted": 558.0,
+        "in_degree_weighted": 248.0,
+        "out_degree_weighted": 310.0,
+        "betweenness_approx": 0.018391594654503705,
+        "bridge_score": 0.25748232516305186
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility-risk",
+        "label": "Volatility risk",
+        "field": "finance",
+        "pagerank": 0.0036586808479705238,
+        "degree_weighted": 595.0,
+        "in_degree_weighted": 350.0,
+        "out_degree_weighted": 245.0,
+        "betweenness_approx": 0.014931295440506682,
+        "bridge_score": 0.20903813616709355
+      },
+      {
+        "id": "jel:O33:Spillovers",
+        "label": "Spillovers",
+        "field": "micro",
+        "pagerank": 0.003645859095716233,
+        "degree_weighted": 469.0,
+        "in_degree_weighted": 344.0,
+        "out_degree_weighted": 125.0,
+        "betweenness_approx": 0.01156088037926369,
+        "bridge_score": 0.17341320568895535
+      },
+      {
+        "id": "wp:11871466",
+        "label": "Net interest spread",
+        "field": "finance",
+        "pagerank": 0.002215842320729427,
+        "degree_weighted": 364.0,
+        "in_degree_weighted": 231.0,
+        "out_degree_weighted": 133.0,
+        "betweenness_approx": 0.01116430985634881,
+        "bridge_score": 0.16746464784523216
+      },
+      {
+        "id": "jel:E32:Business Cycle",
+        "label": "Business Cycle",
+        "field": "macro",
+        "pagerank": 0.003371517804205603,
+        "degree_weighted": 540.0,
+        "in_degree_weighted": 284.0,
+        "out_degree_weighted": 256.0,
+        "betweenness_approx": 0.010735535291081583,
+        "bridge_score": 0.16103302936622374
+      },
+      {
+        "id": "https://openalex.org/keywords/forward-volatility",
+        "label": "Forward volatility",
+        "field": "finance",
+        "pagerank": 0.0024917276286970714,
+        "degree_weighted": 513.0,
+        "in_degree_weighted": 293.0,
+        "out_degree_weighted": 220.0,
+        "betweenness_approx": 0.009731766643660504,
+        "bridge_score": 0.13624473301124707
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-spread",
+        "label": "Credit spread (options)",
+        "field": "finance",
+        "pagerank": 0.003359075041501178,
+        "degree_weighted": 421.0,
+        "in_degree_weighted": 314.0,
+        "out_degree_weighted": 107.0,
+        "betweenness_approx": 0.010222041629544008,
+        "bridge_score": 0.1226644995545281
+      },
+      {
+        "id": "https://openalex.org/keywords/investor-behavior",
+        "label": "Investor behavior",
+        "field": "finance",
+        "pagerank": 0.0021706943587161353,
+        "degree_weighted": 462.0,
+        "in_degree_weighted": 224.0,
+        "out_degree_weighted": 238.0,
+        "betweenness_approx": 0.007960655219000776,
+        "bridge_score": 0.11144917306601088
+      },
+      {
+        "id": "https://openalex.org/keywords/excess-return",
+        "label": "Excess return",
+        "field": "finance",
+        "pagerank": 0.0022670529001338636,
+        "degree_weighted": 269.0,
+        "in_degree_weighted": 213.0,
+        "out_degree_weighted": 56.0,
+        "betweenness_approx": 0.00820703573224799,
+        "bridge_score": 0.10669146451922386
+      },
+      {
+        "id": "https://openalex.org/keywords/bid–ask-spread",
+        "label": "Bid–ask spread",
+        "field": "finance",
+        "pagerank": 0.0028564713700957776,
+        "degree_weighted": 444.0,
+        "in_degree_weighted": 327.0,
+        "out_degree_weighted": 117.0,
+        "betweenness_approx": 0.005997692351656214,
+        "bridge_score": 0.083967692923187
+      },
+      {
+        "id": "jel:F62:Economic Growth",
+        "label": "Economic Growth",
+        "field": "macro",
+        "pagerank": 0.004539218634217784,
+        "degree_weighted": 452.0,
+        "in_degree_weighted": 368.0,
+        "out_degree_weighted": 84.0,
+        "betweenness_approx": 0.005573160556501378,
+        "bridge_score": 0.08359740834752066
+      },
+      {
+        "id": "https://openalex.org/keywords/systemic-risk",
+        "label": "Systemic risk",
+        "field": "finance",
+        "pagerank": 0.0025293033943718413,
+        "degree_weighted": 278.0,
+        "in_degree_weighted": 234.0,
+        "out_degree_weighted": 44.0,
+        "betweenness_approx": 0.006218532539225806,
+        "bridge_score": 0.08084092300993548
+      },
+      {
+        "id": "https://openalex.org/keywords/abnormal-return",
+        "label": "Abnormal return",
+        "field": "finance",
+        "pagerank": 0.0022472272156909513,
+        "degree_weighted": 264.0,
+        "in_degree_weighted": 232.0,
+        "out_degree_weighted": 32.0,
+        "betweenness_approx": 0.00621547874284001,
+        "bridge_score": 0.08080122365692013
+      },
+      {
+        "id": "jel:R12:Spillover Effect",
+        "label": "Spillover Effect",
+        "field": "unknown",
+        "pagerank": 0.0015921131363414401,
+        "degree_weighted": 242.0,
+        "in_degree_weighted": 173.0,
+        "out_degree_weighted": 69.0,
+        "betweenness_approx": 0.005881320357858386,
+        "bridge_score": 0.07645716465215902
+      },
+      {
+        "id": "jel:E44:Asset Price",
+        "label": "Asset Price",
+        "field": "finance",
+        "pagerank": 0.0017015676656780036,
+        "degree_weighted": 239.0,
+        "in_degree_weighted": 189.0,
+        "out_degree_weighted": 50.0,
+        "betweenness_approx": 0.00541374986828287,
+        "bridge_score": 0.0703787482876773
+      },
+      {
+        "id": "jel:E23:Output",
+        "label": "Output",
+        "field": "unknown",
+        "pagerank": 0.0024124841310742325,
+        "degree_weighted": 338.0,
+        "in_degree_weighted": 302.0,
+        "out_degree_weighted": 36.0,
+        "betweenness_approx": 0.005356237466868389,
+        "bridge_score": 0.06963108706928905
+      },
+      {
+        "id": "jel:I:Welfare",
+        "label": "Welfare",
+        "field": "public",
+        "pagerank": 0.002643626289224252,
+        "degree_weighted": 269.0,
+        "in_degree_weighted": 264.0,
+        "out_degree_weighted": 5.0,
+        "betweenness_approx": 0.005152749884476917,
+        "bridge_score": 0.06698574849819992
+      }
+    ],
+    "centrality_by_decade": {
+      "1970": [
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.018262290975611568,
+          "degree_weighted": 44.0
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "pagerank": 0.015283275354589647,
+          "degree_weighted": 21.0
+        },
+        {
+          "id": "jel:E24:Full Employment",
+          "label": "Full Employment",
+          "field": "macro",
+          "pagerank": 0.009244383326606964,
+          "degree_weighted": 3.0
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.008278903222199232,
+          "degree_weighted": 11.0
+        },
+        {
+          "id": "wp:18110199",
+          "label": "Retention ratio",
+          "field": "finance",
+          "pagerank": 0.007919317555766312,
+          "degree_weighted": 8.0
+        },
+        {
+          "id": "jel:G21:Bank Lending",
+          "label": "Bank Lending",
+          "field": "finance",
+          "pagerank": 0.007582301348305606,
+          "degree_weighted": 4.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "pagerank": 0.0074864794787783805,
+          "degree_weighted": 13.0
+        },
+        {
+          "id": "https://openalex.org/keywords/employment-contract",
+          "label": "Employment contract",
+          "field": "labor",
+          "pagerank": 0.007071994992444881,
+          "degree_weighted": 5.0
+        },
+        {
+          "id": "https://openalex.org/keywords/medical-costs",
+          "label": "Medical costs",
+          "field": "health",
+          "pagerank": 0.0066856920489311465,
+          "degree_weighted": 9.0
+        },
+        {
+          "id": "jel:E32:Recession",
+          "label": "Recession",
+          "field": "macro",
+          "pagerank": 0.0066744697270341245,
+          "degree_weighted": 8.0
+        }
+      ],
+      "1980": [
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.026003612866513447,
+          "degree_weighted": 242.0
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "pagerank": 0.012210533781559292,
+          "degree_weighted": 67.0
+        },
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "pagerank": 0.010241789477010512,
+          "degree_weighted": 74.0
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.010136801372703216,
+          "degree_weighted": 82.0
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "pagerank": 0.00883636510682769,
+          "degree_weighted": 65.0
+        },
+        {
+          "id": "jel:F62:Economic Growth",
+          "label": "Economic Growth",
+          "field": "macro",
+          "pagerank": 0.005901488023858946,
+          "degree_weighted": 26.0
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "pagerank": 0.005688372366759912,
+          "degree_weighted": 49.0
+        },
+        {
+          "id": "jel:E43:Real Interest Rates",
+          "label": "Real Interest Rates",
+          "field": "macro",
+          "pagerank": 0.005290764115365962,
+          "degree_weighted": 23.0
+        },
+        {
+          "id": "https://openalex.org/keywords/demand-for-money",
+          "label": "Demand for money",
+          "field": "macro",
+          "pagerank": 0.003890148896147881,
+          "degree_weighted": 14.0
+        },
+        {
+          "id": "jel:G12:Stock Price",
+          "label": "Stock Price",
+          "field": "finance",
+          "pagerank": 0.003513150588469653,
+          "degree_weighted": 21.0
+        }
+      ],
+      "1990": [
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "pagerank": 0.01727158233806287,
+          "degree_weighted": 239.0
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.016993894660015843,
+          "degree_weighted": 248.0
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.016895530730437633,
+          "degree_weighted": 245.0
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "pagerank": 0.009875599700049352,
+          "degree_weighted": 192.0
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "pagerank": 0.008704674946151137,
+          "degree_weighted": 82.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bid–ask-spread",
+          "label": "Bid–ask spread",
+          "field": "finance",
+          "pagerank": 0.006401261565087187,
+          "degree_weighted": 85.0
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "pagerank": 0.006315517001523156,
+          "degree_weighted": 169.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "pagerank": 0.00581635118488841,
+          "degree_weighted": 89.0
+        },
+        {
+          "id": "wp:11871466",
+          "label": "Net interest spread",
+          "field": "finance",
+          "pagerank": 0.005461098432882584,
+          "degree_weighted": 53.0
+        },
+        {
+          "id": "jel:E32:Business Cycle",
+          "label": "Business Cycle",
+          "field": "macro",
+          "pagerank": 0.004211759845361856,
+          "degree_weighted": 51.0
+        }
+      ],
+      "2000": [
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.02320504122525387,
+          "degree_weighted": 650.0
+        },
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "pagerank": 0.018679520213993706,
+          "degree_weighted": 500.0
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.012088284679645362,
+          "degree_weighted": 367.0
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "pagerank": 0.010483066244130647,
+          "degree_weighted": 402.0
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "pagerank": 0.009892790969504229,
+          "degree_weighted": 351.0
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "pagerank": 0.007795834067589624,
+          "degree_weighted": 157.0
+        },
+        {
+          "id": "https://openalex.org/keywords/market-liquidity",
+          "label": "Market liquidity",
+          "field": "finance",
+          "pagerank": 0.005844915384031257,
+          "degree_weighted": 191.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "pagerank": 0.00430954530360324,
+          "degree_weighted": 121.0
+        },
+        {
+          "id": "https://openalex.org/keywords/credit-spread",
+          "label": "Credit spread (options)",
+          "field": "finance",
+          "pagerank": 0.004224524000003907,
+          "degree_weighted": 69.0
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "pagerank": 0.0038817973767668007,
+          "degree_weighted": 104.0
+        }
+      ],
+      "2010": [
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "pagerank": 0.020847456312687224,
+          "degree_weighted": 1249.0
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.01830172480844841,
+          "degree_weighted": 1282.0
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "pagerank": 0.013442306996225211,
+          "degree_weighted": 1143.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "pagerank": 0.009503804075095525,
+          "degree_weighted": 515.0
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "pagerank": 0.008930810420595722,
+          "degree_weighted": 418.0
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.008093231197669817,
+          "degree_weighted": 584.0
+        },
+        {
+          "id": "https://openalex.org/keywords/market-liquidity",
+          "label": "Market liquidity",
+          "field": "finance",
+          "pagerank": 0.007950111895118768,
+          "degree_weighted": 600.0
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "pagerank": 0.006943721871280229,
+          "degree_weighted": 504.0
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "pagerank": 0.005975232925100316,
+          "degree_weighted": 355.0
+        },
+        {
+          "id": "jel:F62:Economic Growth",
+          "label": "Economic Growth",
+          "field": "macro",
+          "pagerank": 0.004430659511659754,
+          "degree_weighted": 151.0
+        }
+      ],
+      "2020": [
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "pagerank": 0.020771059725598007,
+          "degree_weighted": 1230.0
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "pagerank": 0.01584595880544465,
+          "degree_weighted": 914.0
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "pagerank": 0.012046786091246271,
+          "degree_weighted": 745.0
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "pagerank": 0.009675235514597999,
+          "degree_weighted": 505.0
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "pagerank": 0.00863889327307263,
+          "degree_weighted": 576.0
+        },
+        {
+          "id": "https://openalex.org/keywords/market-sentiment",
+          "label": "Market sentiment",
+          "field": "finance",
+          "pagerank": 0.007493489670009255,
+          "degree_weighted": 713.0
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "pagerank": 0.007481337844210498,
+          "degree_weighted": 374.0
+        },
+        {
+          "id": "jel:O33:Spillovers",
+          "label": "Spillovers",
+          "field": "micro",
+          "pagerank": 0.007133468425634466,
+          "degree_weighted": 308.0
+        },
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "pagerank": 0.007084854654658803,
+          "degree_weighted": 1370.0
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "pagerank": 0.0067333524945125765,
+          "degree_weighted": 340.0
+        }
+      ]
+    },
+    "theme_buckets": {
+      "rising": [
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "value": 0.130109674649716,
+          "paper_count": 746,
+          "share_2000s": 0.040326697294538,
+          "share_2010s": 0.0691234645013533,
+          "share_2020s": 0.170436371944254,
+          "max_decade": "2020",
+          "max_decade_paper_count": 746
+        },
+        {
+          "id": "https://openalex.org/keywords/market-sentiment",
+          "label": "Market sentiment",
+          "field": "finance",
+          "value": 0.0627472507864268,
+          "paper_count": 402,
+          "share_2000s": 0.0290964777947932,
+          "share_2010s": 0.06017072662919,
+          "share_2020s": 0.09184372858122,
+          "max_decade": "2020",
+          "max_decade_paper_count": 402
+        },
+        {
+          "id": "wp:63030231",
+          "label": "COVID-19",
+          "field": "health",
+          "value": 0.0312999771533013,
+          "paper_count": 137,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0312999771533013,
+          "max_decade": "2020",
+          "max_decade_paper_count": 137
+        },
+        {
+          "id": "https://openalex.org/keywords/quantitative-easing",
+          "label": "Quantitative easing",
+          "field": "macro",
+          "value": 0.027162730421901198,
+          "paper_count": 139,
+          "share_2000s": 0.004594180704441,
+          "share_2010s": 0.027066416822819,
+          "share_2020s": 0.0317569111263422,
+          "max_decade": "2020",
+          "max_decade_paper_count": 139
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "value": 0.0227158461972842,
+          "paper_count": 267,
+          "share_2000s": 0.0382848392036753,
+          "share_2010s": 0.0549656464709556,
+          "share_2020s": 0.0610006854009595,
+          "max_decade": "1970",
+          "max_decade_paper_count": 267
+        },
+        {
+          "id": "wp:298608",
+          "label": "State of emergency",
+          "field": "public",
+          "value": 0.0219328307059629,
+          "paper_count": 96,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0219328307059629,
+          "max_decade": "2020",
+          "max_decade_paper_count": 96
+        },
+        {
+          "id": "jel:O33:Spillovers",
+          "label": "Spillovers",
+          "field": "micro",
+          "value": 0.0215724616460609,
+          "paper_count": 119,
+          "share_2000s": 0.0056151097498723,
+          "share_2010s": 0.0131168019987507,
+          "share_2020s": 0.0271875713959332,
+          "max_decade": "2020",
+          "max_decade_paper_count": 119
+        },
+        {
+          "id": "jel:D80:Uncertainty.",
+          "label": "Uncertainty",
+          "field": "micro",
+          "value": 0.0183921172242066,
+          "paper_count": 152,
+          "share_2000s": 0.0163348647269014,
+          "share_2010s": 0.0222777430772433,
+          "share_2020s": 0.034726981951108,
+          "max_decade": "2020",
+          "max_decade_paper_count": 152
+        },
+        {
+          "id": "jel:G01:Global Financial Crisis",
+          "label": "Global Financial Crisis",
+          "field": "macro",
+          "value": 0.0170566524653267,
+          "paper_count": 97,
+          "share_2000s": 0.0051046452271567,
+          "share_2010s": 0.0199875078076202,
+          "share_2020s": 0.0221612976924834,
+          "max_decade": "2020",
+          "max_decade_paper_count": 97
+        },
+        {
+          "id": "jel:L71:Crude Oil",
+          "label": "Crude Oil",
+          "field": "environment",
+          "value": 0.0153751634343661,
+          "paper_count": 74,
+          "share_2000s": 0.001531393568147,
+          "share_2010s": 0.0070789090151988,
+          "share_2020s": 0.0169065570025131,
+          "max_decade": "2020",
+          "max_decade_paper_count": 74
+        },
+        {
+          "id": "https://openalex.org/keywords/sentiment-analysis",
+          "label": "Sentiment analysis",
+          "field": "methods",
+          "value": 0.0130369630194869,
+          "paper_count": 66,
+          "share_2000s": 0.0020418580908626,
+          "share_2010s": 0.0099937539038101,
+          "share_2020s": 0.0150788211103495,
+          "max_decade": "2020",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "wp:27179299",
+          "label": "Green bond",
+          "field": "finance",
+          "value": 0.0125656842586246,
+          "paper_count": 55,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0125656842586246,
+          "max_decade": "2020",
+          "max_decade_paper_count": 55
+        },
+        {
+          "id": "https://openalex.org/keywords/oil-price",
+          "label": "Oil price",
+          "field": "macro",
+          "value": 0.011612630550689399,
+          "paper_count": 62,
+          "share_2000s": 0.0025523226135783,
+          "share_2010s": 0.0064542993962107,
+          "share_2020s": 0.0141649531642677,
+          "max_decade": "2020",
+          "max_decade_paper_count": 62
+        },
+        {
+          "id": "jel:D21:Firms",
+          "label": "Firms",
+          "field": "micro",
+          "value": 0.0115877895766574,
+          "paper_count": 82,
+          "share_2000s": 0.0071465033180193,
+          "share_2010s": 0.0112429731417863,
+          "share_2020s": 0.0187342928946767,
+          "max_decade": "2020",
+          "max_decade_paper_count": 82
+        },
+        {
+          "id": "https://openalex.org/keywords/funding-liquidity",
+          "label": "Funding liquidity",
+          "field": "finance",
+          "value": 0.011216924330544501,
+          "paper_count": 134,
+          "share_2000s": 0.0193976518631955,
+          "share_2010s": 0.0389339995835935,
+          "share_2020s": 0.03061457619374,
+          "max_decade": "2010",
+          "max_decade_paper_count": 187
+        },
+        {
+          "id": "jel:Q42:Renewable Energy",
+          "label": "Renewable Energy",
+          "field": "environment",
+          "value": 0.0111413517898272,
+          "paper_count": 51,
+          "share_2000s": 0.0005104645227156,
+          "share_2010s": 0.0022902352696231,
+          "share_2020s": 0.0116518163125428,
+          "max_decade": "2020",
+          "max_decade_paper_count": 51
+        },
+        {
+          "id": "wp:3477191",
+          "label": "VIX",
+          "field": "finance",
+          "value": 0.0111413517898272,
+          "paper_count": 51,
+          "share_2000s": 0.0005104645227156,
+          "share_2010s": 0.0085363314595044,
+          "share_2020s": 0.0116518163125428,
+          "max_decade": "2020",
+          "max_decade_paper_count": 51
+        },
+        {
+          "id": "https://openalex.org/keywords/systemic-risk",
+          "label": "Systemic risk",
+          "field": "finance",
+          "value": 0.0104702956180872,
+          "paper_count": 57,
+          "share_2000s": 0.0025523226135783,
+          "share_2010s": 0.0122839891734332,
+          "share_2020s": 0.0130226182316655,
+          "max_decade": "2020",
+          "max_decade_paper_count": 59
+        },
+        {
+          "id": "jel:E42:Gold",
+          "label": "Gold",
+          "field": "environment",
+          "value": 0.0102810143934201,
+          "paper_count": 45,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0027066416822819,
+          "share_2020s": 0.0102810143934201,
+          "max_decade": "2020",
+          "max_decade_paper_count": 45
+        },
+        {
+          "id": "jel:G21:Bank Lending",
+          "label": "Bank Lending",
+          "field": "finance",
+          "value": 0.009974175883192798,
+          "paper_count": 66,
+          "share_2000s": 0.0051046452271567,
+          "share_2010s": 0.0118675827607745,
+          "share_2020s": 0.0150788211103495,
+          "max_decade": "1970",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "https://openalex.org/keywords/investor-behavior",
+          "label": "Investor behavior",
+          "field": "finance",
+          "value": 0.009870963385453898,
+          "paper_count": 108,
+          "share_2000s": 0.0148034711587544,
+          "share_2010s": 0.0208203206329377,
+          "share_2020s": 0.0246744345442083,
+          "max_decade": "2020",
+          "max_decade_paper_count": 108
+        },
+        {
+          "id": "https://openalex.org/keywords/green-innovation",
+          "label": "Green innovation",
+          "field": "environment",
+          "value": 0.0098240804203792,
+          "paper_count": 43,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0098240804203792,
+          "max_decade": "2020",
+          "max_decade_paper_count": 43
+        },
+        {
+          "id": "https://openalex.org/keywords/macroprudential-regulation",
+          "label": "Macroprudential regulation",
+          "field": "finance",
+          "value": 0.0095956134338588,
+          "paper_count": 42,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0070789090151988,
+          "share_2020s": 0.0095956134338588,
+          "max_decade": "2020",
+          "max_decade_paper_count": 42
+        },
+        {
+          "id": "jel:D25:Investment",
+          "label": "Investment",
+          "field": "finance",
+          "value": 0.0091960586121033,
+          "paper_count": 76,
+          "share_2000s": 0.0081674323634507,
+          "share_2010s": 0.0106183635227982,
+          "share_2020s": 0.017363490975554,
+          "max_decade": "2020",
+          "max_decade_paper_count": 76
+        },
+        {
+          "id": "jel:E32:Recession",
+          "label": "Recession",
+          "field": "macro",
+          "value": 0.009125384291617702,
+          "paper_count": 174,
+          "share_2000s": 0.0306278713629402,
+          "share_2010s": 0.0399750156152404,
+          "share_2020s": 0.0397532556545579,
+          "max_decade": "1970",
+          "max_decade_paper_count": 192
+        },
+        {
+          "id": "wp:9740166",
+          "label": "GPR index",
+          "field": "finance",
+          "value": 0.0089102124742974,
+          "paper_count": 39,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0006246096189881,
+          "share_2020s": 0.0089102124742974,
+          "max_decade": "2020",
+          "max_decade_paper_count": 39
+        },
+        {
+          "id": "wp:48208956",
+          "label": "ESG Quant",
+          "field": "finance",
+          "value": 0.008681745487777,
+          "paper_count": 38,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.008681745487777,
+          "max_decade": "2020",
+          "max_decade_paper_count": 38
+        },
+        {
+          "id": "jel:D21:Diversification",
+          "label": "Diversification",
+          "field": "finance",
+          "value": 0.0081607847788507,
+          "paper_count": 67,
+          "share_2000s": 0.0071465033180193,
+          "share_2010s": 0.0116593795544451,
+          "share_2020s": 0.01530728809687,
+          "max_decade": "2020",
+          "max_decade_paper_count": 67
+        },
+        {
+          "id": "jel:O11:GDP",
+          "label": "GDP",
+          "field": "macro",
+          "value": 0.008107254229175801,
+          "paper_count": 69,
+          "share_2000s": 0.007656967840735,
+          "share_2010s": 0.0093691442848219,
+          "share_2020s": 0.0157642220699108,
+          "max_decade": "2020",
+          "max_decade_paper_count": 69
+        },
+        {
+          "id": "https://openalex.org/keywords/predictive-power",
+          "label": "Predictive power",
+          "field": "methods",
+          "value": 0.0079428139785409,
+          "paper_count": 37,
+          "share_2000s": 0.0005104645227156,
+          "share_2010s": 0.004996876951905,
+          "share_2020s": 0.0084532785012565,
+          "max_decade": "1970",
+          "max_decade_paper_count": 37
+        }
+      ],
+      "falling": [
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "value": 0.0894628436757505,
+          "paper_count": 558,
+          "share_2000s": 0.2169474221541603,
+          "share_2010s": 0.1796793670622527,
+          "share_2020s": 0.1274845784784098,
+          "max_decade": "2000",
+          "max_decade_paper_count": 863
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "value": 0.0533328715011401,
+          "paper_count": 238,
+          "share_2000s": 0.1077080142930066,
+          "share_2010s": 0.0714136997709764,
+          "share_2020s": 0.0543751427918665,
+          "max_decade": "1990",
+          "max_decade_paper_count": 343
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "value": 0.046617411563508404,
+          "paper_count": 359,
+          "share_2000s": 0.1286370597243491,
+          "share_2010s": 0.0807828440557984,
+          "share_2020s": 0.0820196481608407,
+          "max_decade": "1980",
+          "max_decade_paper_count": 388
+        },
+        {
+          "id": "https://openalex.org/keywords/bid–ask-spread",
+          "label": "Bid–ask spread",
+          "field": "finance",
+          "value": 0.024377042601570698,
+          "paper_count": 43,
+          "share_2000s": 0.0342011230219499,
+          "share_2010s": 0.0214449302519258,
+          "share_2020s": 0.0098240804203792,
+          "max_decade": "1990",
+          "max_decade_paper_count": 103
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "value": 0.023042277588438298,
+          "paper_count": 489,
+          "share_2000s": 0.1347626339969372,
+          "share_2010s": 0.1524047470331043,
+          "share_2020s": 0.1117203564084989,
+          "max_decade": "2010",
+          "max_decade_paper_count": 732
+        },
+        {
+          "id": "wp:11871466",
+          "label": "Net interest spread",
+          "field": "finance",
+          "value": 0.012796950228134601,
+          "paper_count": 49,
+          "share_2000s": 0.0239918325676365,
+          "share_2010s": 0.0185300853633145,
+          "share_2020s": 0.0111948823395019,
+          "max_decade": "1990",
+          "max_decade_paper_count": 89
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility-clustering",
+          "label": "Volatility clustering",
+          "field": "finance",
+          "value": 0.0109587181497603,
+          "paper_count": 28,
+          "share_2000s": 0.0173557937723328,
+          "share_2010s": 0.0089527378721632,
+          "share_2020s": 0.0063970756225725,
+          "max_decade": "2000",
+          "max_decade_paper_count": 43
+        },
+        {
+          "id": "jel:D23:Transaction Costs",
+          "label": "Transaction Costs",
+          "field": "micro",
+          "value": 0.010769436925093202,
+          "paper_count": 40,
+          "share_2000s": 0.0199081163859111,
+          "share_2010s": 0.0137414116177389,
+          "share_2020s": 0.0091386794608179,
+          "max_decade": "1990",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "wp:14704282",
+          "label": "Fit model",
+          "field": "methods",
+          "value": 0.0101375665152067,
+          "paper_count": 45,
+          "share_2000s": 0.0204185809086268,
+          "share_2010s": 0.0195711013949614,
+          "share_2020s": 0.0102810143934201,
+          "max_decade": "2000",
+          "max_decade_paper_count": 94
+        },
+        {
+          "id": "https://openalex.org/keywords/pairs-trade",
+          "label": "Pairs trade",
+          "field": "finance",
+          "value": 0.008474270873678,
+          "paper_count": 21,
+          "share_2000s": 0.0132720775906074,
+          "share_2010s": 0.0116593795544451,
+          "share_2020s": 0.0047978067169294,
+          "max_decade": "1990",
+          "max_decade_paper_count": 56
+        },
+        {
+          "id": "jel:E32:Business Cycle",
+          "label": "Business Cycle",
+          "field": "macro",
+          "value": 0.0084665736704568,
+          "paper_count": 97,
+          "share_2000s": 0.0306278713629402,
+          "share_2010s": 0.0368519675202998,
+          "share_2020s": 0.0221612976924834,
+          "max_decade": "1990",
+          "max_decade_paper_count": 177
+        },
+        {
+          "id": "jel:D82:Moral Hazard",
+          "label": "Moral Hazard",
+          "field": "public",
+          "value": 0.007856745251612798,
+          "paper_count": 17,
+          "share_2000s": 0.0117406840224604,
+          "share_2010s": 0.0039558609202581,
+          "share_2020s": 0.0038839387708476,
+          "max_decade": "2000",
+          "max_decade_paper_count": 23
+        },
+        {
+          "id": "https://openalex.org/keywords/long-memory",
+          "label": "Long memory",
+          "field": "methods",
+          "value": 0.007521217165742801,
+          "paper_count": 14,
+          "share_2000s": 0.010719754977029,
+          "share_2010s": 0.0062460961898813,
+          "share_2020s": 0.0031985378112862,
+          "max_decade": "2000",
+          "max_decade_paper_count": 30
+        },
+        {
+          "id": "wp:17484884",
+          "label": "Market impact cost",
+          "field": "finance",
+          "value": 0.007292750179222301,
+          "paper_count": 15,
+          "share_2000s": 0.010719754977029,
+          "share_2010s": 0.0031230480949406,
+          "share_2020s": 0.0034270047978067,
+          "max_decade": "2000",
+          "max_decade_paper_count": 21
+        },
+        {
+          "id": "jel:D82:Asymmetric Information",
+          "label": "Asymmetric Information",
+          "field": "micro",
+          "value": 0.007064283192701901,
+          "paper_count": 16,
+          "share_2000s": 0.010719754977029,
+          "share_2010s": 0.0068707058088694,
+          "share_2020s": 0.0036554717843271,
+          "max_decade": "2000",
+          "max_decade_paper_count": 33
+        },
+        {
+          "id": "jel:C22:Garch Models",
+          "label": "Garch Models",
+          "field": "finance",
+          "value": 0.007017400227627299,
+          "paper_count": 81,
+          "share_2000s": 0.0255232261357835,
+          "share_2010s": 0.0199875078076202,
+          "share_2020s": 0.0185058259081562,
+          "max_decade": "2000",
+          "max_decade_paper_count": 96
+        },
+        {
+          "id": "jel:E52:Inflation Targeting",
+          "label": "Inflation Targeting",
+          "field": "macro",
+          "value": 0.006928532517709699,
+          "paper_count": 30,
+          "share_2000s": 0.0137825421133231,
+          "share_2010s": 0.0077035186341869,
+          "share_2020s": 0.0068540095956134,
+          "max_decade": "2000",
+          "max_decade_paper_count": 37
+        },
+        {
+          "id": "wp:69535838",
+          "label": "Order flow trading",
+          "field": "finance",
+          "value": 0.0066608797693358,
+          "paper_count": 20,
+          "share_2000s": 0.0112302194997447,
+          "share_2010s": 0.0077035186341869,
+          "share_2020s": 0.0045693397304089,
+          "max_decade": "2000",
+          "max_decade_paper_count": 37
+        },
+        {
+          "id": "https://openalex.org/keywords/model-risk",
+          "label": "Model risk",
+          "field": "finance",
+          "value": 0.0060968846969454,
+          "paper_count": 18,
+          "share_2000s": 0.0102092904543134,
+          "share_2010s": 0.0047886737455756,
+          "share_2020s": 0.004112405757368,
+          "max_decade": "1980",
+          "max_decade_paper_count": 23
+        },
+        {
+          "id": "jel:D82:Adverse Selection",
+          "label": "Adverse Selection",
+          "field": "micro",
+          "value": 0.0058005423729287995,
+          "paper_count": 26,
+          "share_2000s": 0.0117406840224604,
+          "share_2010s": 0.0074953154278575,
+          "share_2020s": 0.0059401416495316,
+          "max_decade": "2000",
+          "max_decade_paper_count": 36
+        },
+        {
+          "id": "https://openalex.org/keywords/stochastic-volatility",
+          "label": "Stochastic volatility",
+          "field": "finance",
+          "value": 0.0056256059360832,
+          "paper_count": 29,
+          "share_2000s": 0.0122511485451761,
+          "share_2010s": 0.0108265667291276,
+          "share_2020s": 0.0066255426090929,
+          "max_decade": "1990",
+          "max_decade_paper_count": 52
+        },
+        {
+          "id": "jel:C58:Volatility Models.",
+          "label": "Volatility Models",
+          "field": "finance",
+          "value": 0.0055042000489122,
+          "paper_count": 34,
+          "share_2000s": 0.0132720775906074,
+          "share_2010s": 0.0131168019987507,
+          "share_2020s": 0.0077678775416952,
+          "max_decade": "2000",
+          "max_decade_paper_count": 63
+        },
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "value": 0.005113741921872722,
+          "paper_count": 706,
+          "share_2000s": 0.1664114344053088,
+          "share_2010s": 0.1636477201748906,
+          "share_2020s": 0.1612976924834361,
+          "max_decade": "2000",
+          "max_decade_paper_count": 786
+        },
+        {
+          "id": "https://openalex.org/keywords/price-discovery",
+          "label": "Price discovery",
+          "field": "micro",
+          "value": 0.0050616108636927,
+          "paper_count": 27,
+          "share_2000s": 0.0112302194997447,
+          "share_2010s": 0.0095773474911513,
+          "share_2020s": 0.006168608636052,
+          "max_decade": "2000",
+          "max_decade_paper_count": 46
+        },
+        {
+          "id": "jel:E31:Inflationary Expectations",
+          "label": "Inflationary Expectations",
+          "field": "macro",
+          "value": 0.0050472660758713005,
+          "paper_count": 36,
+          "share_2000s": 0.0132720775906074,
+          "share_2010s": 0.0091609410784926,
+          "share_2020s": 0.0082248115147361,
+          "max_decade": "2000",
+          "max_decade_paper_count": 44
+        },
+        {
+          "id": "https://openalex.org/keywords/excess-return",
+          "label": "Excess return",
+          "field": "finance",
+          "value": 0.0044832710034809,
+          "paper_count": 34,
+          "share_2000s": 0.0122511485451761,
+          "share_2010s": 0.0131168019987507,
+          "share_2020s": 0.0077678775416952,
+          "max_decade": "2010",
+          "max_decade_paper_count": 63
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility-risk",
+          "label": "Volatility risk",
+          "field": "finance",
+          "value": 0.004475573800259699,
+          "paper_count": 110,
+          "share_2000s": 0.0296069423175089,
+          "share_2010s": 0.0318550905683947,
+          "share_2020s": 0.0251313685172492,
+          "max_decade": "2010",
+          "max_decade_paper_count": 153
+        },
+        {
+          "id": "jel:E44:Asset Price",
+          "label": "Asset Price",
+          "field": "finance",
+          "value": 0.003972806480765199,
+          "paper_count": 34,
+          "share_2000s": 0.0117406840224604,
+          "share_2010s": 0.0135332084114095,
+          "share_2020s": 0.0077678775416952,
+          "max_decade": "2010",
+          "max_decade_paper_count": 65
+        },
+        {
+          "id": "jel:F33:Exchange Rate",
+          "label": "Exchange Rate",
+          "field": "macro",
+          "value": 0.0036908089445699998,
+          "paper_count": 33,
+          "share_2000s": 0.0112302194997447,
+          "share_2010s": 0.0116593795544451,
+          "share_2020s": 0.0075394105551747,
+          "max_decade": "1990",
+          "max_decade_paper_count": 56
+        },
+        {
+          "id": "jel:G12:Risk Premium",
+          "label": "Risk Premium",
+          "field": "finance",
+          "value": 0.0029375326475125,
+          "paper_count": 43,
+          "share_2000s": 0.0127616130678917,
+          "share_2010s": 0.0116593795544451,
+          "share_2020s": 0.0098240804203792,
+          "max_decade": "2000",
+          "max_decade_paper_count": 56
+        }
+      ],
+      "new_arrivals": [
+        {
+          "id": "https://openalex.org/keywords/quantitative-easing",
+          "label": "Quantitative easing",
+          "field": "macro",
+          "value": 0.0317569111263422,
+          "paper_count": 139,
+          "share_2000s": 0.004594180704441,
+          "share_2010s": 0.027066416822819,
+          "share_2020s": 0.0317569111263422,
+          "max_decade": "2020",
+          "max_decade_paper_count": 139
+        },
+        {
+          "id": "wp:298608",
+          "label": "State of emergency",
+          "field": "public",
+          "value": 0.0219328307059629,
+          "paper_count": 96,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0219328307059629,
+          "max_decade": "2020",
+          "max_decade_paper_count": 96
+        },
+        {
+          "id": "jel:L71:Crude Oil",
+          "label": "Crude Oil",
+          "field": "environment",
+          "value": 0.0169065570025131,
+          "paper_count": 74,
+          "share_2000s": 0.001531393568147,
+          "share_2010s": 0.0070789090151988,
+          "share_2020s": 0.0169065570025131,
+          "max_decade": "2020",
+          "max_decade_paper_count": 74
+        },
+        {
+          "id": "https://openalex.org/keywords/sentiment-analysis",
+          "label": "Sentiment analysis",
+          "field": "methods",
+          "value": 0.0150788211103495,
+          "paper_count": 66,
+          "share_2000s": 0.0020418580908626,
+          "share_2010s": 0.0099937539038101,
+          "share_2020s": 0.0150788211103495,
+          "max_decade": "2020",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "https://openalex.org/keywords/systemic-risk",
+          "label": "Systemic risk",
+          "field": "finance",
+          "value": 0.0130226182316655,
+          "paper_count": 57,
+          "share_2000s": 0.0025523226135783,
+          "share_2010s": 0.0122839891734332,
+          "share_2020s": 0.0130226182316655,
+          "max_decade": "2020",
+          "max_decade_paper_count": 59
+        },
+        {
+          "id": "wp:27179299",
+          "label": "Green bond",
+          "field": "finance",
+          "value": 0.0125656842586246,
+          "paper_count": 55,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0125656842586246,
+          "max_decade": "2020",
+          "max_decade_paper_count": 55
+        },
+        {
+          "id": "jel:Q42:Renewable Energy",
+          "label": "Renewable Energy",
+          "field": "environment",
+          "value": 0.0116518163125428,
+          "paper_count": 51,
+          "share_2000s": 0.0005104645227156,
+          "share_2010s": 0.0022902352696231,
+          "share_2020s": 0.0116518163125428,
+          "max_decade": "2020",
+          "max_decade_paper_count": 51
+        },
+        {
+          "id": "wp:3477191",
+          "label": "VIX",
+          "field": "finance",
+          "value": 0.0116518163125428,
+          "paper_count": 51,
+          "share_2000s": 0.0005104645227156,
+          "share_2010s": 0.0085363314595044,
+          "share_2020s": 0.0116518163125428,
+          "max_decade": "2020",
+          "max_decade_paper_count": 51
+        },
+        {
+          "id": "jel:E42:Gold",
+          "label": "Gold",
+          "field": "environment",
+          "value": 0.0102810143934201,
+          "paper_count": 45,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0027066416822819,
+          "share_2020s": 0.0102810143934201,
+          "max_decade": "2020",
+          "max_decade_paper_count": 45
+        },
+        {
+          "id": "https://openalex.org/keywords/zero-lower-bound",
+          "label": "Zero lower bound",
+          "field": "macro",
+          "value": 0.0100525474068997,
+          "paper_count": 44,
+          "share_2000s": 0.003062787136294,
+          "share_2010s": 0.00666250260254,
+          "share_2020s": 0.0100525474068997,
+          "max_decade": "2020",
+          "max_decade_paper_count": 44
+        },
+        {
+          "id": "jel:D91:Limited Attention",
+          "label": "Limited Attention",
+          "field": "micro",
+          "value": 0.0100525474068997,
+          "paper_count": 44,
+          "share_2000s": 0.004594180704441,
+          "share_2010s": 0.00666250260254,
+          "share_2020s": 0.0100525474068997,
+          "max_decade": "2020",
+          "max_decade_paper_count": 44
+        }
+      ],
+      "persistent": [
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "value": 0.17967641664861675,
+          "paper_count": 359,
+          "share_2000s": 0.1286370597243491,
+          "share_2010s": 0.0807828440557984,
+          "share_2020s": 0.0820196481608407,
+          "max_decade": "1980",
+          "max_decade_paper_count": 388
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "value": 0.14164411965410817,
+          "paper_count": 558,
+          "share_2000s": 0.2169474221541603,
+          "share_2010s": 0.1796793670622527,
+          "share_2020s": 0.1274845784784098,
+          "max_decade": "2000",
+          "max_decade_paper_count": 863
+        },
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "value": 0.13186478852696473,
+          "paper_count": 706,
+          "share_2000s": 0.1664114344053088,
+          "share_2010s": 0.1636477201748906,
+          "share_2020s": 0.1612976924834361,
+          "max_decade": "2000",
+          "max_decade_paper_count": 786
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "value": 0.11973053934547397,
+          "paper_count": 489,
+          "share_2000s": 0.1347626339969372,
+          "share_2010s": 0.1524047470331043,
+          "share_2020s": 0.1117203564084989,
+          "max_decade": "2010",
+          "max_decade_paper_count": 732
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "value": 0.09344498917701738,
+          "paper_count": 238,
+          "share_2000s": 0.1077080142930066,
+          "share_2010s": 0.0714136997709764,
+          "share_2020s": 0.0543751427918665,
+          "max_decade": "1990",
+          "max_decade_paper_count": 343
+        },
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "value": 0.07059474442851925,
+          "paper_count": 746,
+          "share_2000s": 0.040326697294538,
+          "share_2010s": 0.0691234645013533,
+          "share_2020s": 0.170436371944254,
+          "max_decade": "2020",
+          "max_decade_paper_count": 746
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "value": 0.06284349760839548,
+          "paper_count": 267,
+          "share_2000s": 0.0382848392036753,
+          "share_2010s": 0.0549656464709556,
+          "share_2020s": 0.0610006854009595,
+          "max_decade": "1970",
+          "max_decade_paper_count": 267
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "value": 0.06070818109832494,
+          "paper_count": 200,
+          "share_2000s": 0.043389484430832,
+          "share_2010s": 0.045804705392463,
+          "share_2020s": 0.0456933973040895,
+          "max_decade": "1980",
+          "max_decade_paper_count": 220
+        },
+        {
+          "id": "https://openalex.org/keywords/market-liquidity",
+          "label": "Market liquidity",
+          "field": "finance",
+          "value": 0.04579969090146647,
+          "paper_count": 258,
+          "share_2000s": 0.0617662072485962,
+          "share_2010s": 0.0764105767228815,
+          "share_2020s": 0.0589444825222755,
+          "max_decade": "2010",
+          "max_decade_paper_count": 367
+        },
+        {
+          "id": "jel:E32:Recession",
+          "label": "Recession",
+          "field": "macro",
+          "value": 0.0389414306189802,
+          "paper_count": 174,
+          "share_2000s": 0.0306278713629402,
+          "share_2010s": 0.0399750156152404,
+          "share_2020s": 0.0397532556545579,
+          "max_decade": "1970",
+          "max_decade_paper_count": 192
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "value": 0.035986773710879216,
+          "paper_count": 207,
+          "share_2000s": 0.0495150587034201,
+          "share_2010s": 0.0466375182177805,
+          "share_2020s": 0.0472926662097326,
+          "max_decade": "2000",
+          "max_decade_paper_count": 224
+        },
+        {
+          "id": "jel:C54:Monetary Policy",
+          "label": "Monetary Policy",
+          "field": "macro",
+          "value": 0.03281914096527305,
+          "paper_count": 173,
+          "share_2000s": 0.0316488004083716,
+          "share_2010s": 0.0372683739329585,
+          "share_2020s": 0.0395247886680374,
+          "max_decade": "2020",
+          "max_decade_paper_count": 179
+        },
+        {
+          "id": "jel:E32:Business Cycle",
+          "label": "Business Cycle",
+          "field": "macro",
+          "value": 0.031741027578627665,
+          "paper_count": 97,
+          "share_2000s": 0.0306278713629402,
+          "share_2010s": 0.0368519675202998,
+          "share_2020s": 0.0221612976924834,
+          "max_decade": "1990",
+          "max_decade_paper_count": 177
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility-risk",
+          "label": "Volatility risk",
+          "field": "finance",
+          "value": 0.020471850161720633,
+          "paper_count": 110,
+          "share_2000s": 0.0296069423175089,
+          "share_2010s": 0.0318550905683947,
+          "share_2020s": 0.0251313685172492,
+          "max_decade": "2010",
+          "max_decade_paper_count": 153
+        },
+        {
+          "id": "https://openalex.org/keywords/forward-volatility",
+          "label": "Forward volatility",
+          "field": "finance",
+          "value": 0.019351373777154384,
+          "paper_count": 104,
+          "share_2000s": 0.0229709035222052,
+          "share_2010s": 0.0243597751405371,
+          "share_2020s": 0.0237605665981265,
+          "max_decade": "1990",
+          "max_decade_paper_count": 117
+        }
+      ],
+      "spiky": [
+        {
+          "id": "wp:298608",
+          "label": "State of emergency",
+          "field": "public",
+          "value": 6.0,
+          "paper_count": 96,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0219328307059629,
+          "max_decade": "2020",
+          "max_decade_paper_count": 96
+        },
+        {
+          "id": "wp:63030231",
+          "label": "COVID-19",
+          "field": "health",
+          "value": 4.620403446102127,
+          "paper_count": 137,
+          "share_2000s": 0.0,
+          "share_2010s": 0.0,
+          "share_2020s": 0.0312999771533013,
+          "max_decade": "2020",
+          "max_decade_paper_count": 137
+        },
+        {
+          "id": "wp:57720434",
+          "label": "Posted oil price",
+          "field": "environment",
+          "value": 4.136637574353459,
+          "paper_count": 25,
+          "share_2000s": 0.001531393568147,
+          "share_2010s": 0.0043722673329169,
+          "share_2020s": 0.0057116746630111,
+          "max_decade": "1970",
+          "max_decade_paper_count": 25
+        },
+        {
+          "id": "jel:L71:Crude Oil",
+          "label": "Crude Oil",
+          "field": "environment",
+          "value": 3.823418598870961,
+          "paper_count": 74,
+          "share_2000s": 0.001531393568147,
+          "share_2010s": 0.0070789090151988,
+          "share_2020s": 0.0169065570025131,
+          "max_decade": "2020",
+          "max_decade_paper_count": 74
+        },
+        {
+          "id": "https://openalex.org/keywords/banking-industry",
+          "label": "Banking industry",
+          "field": "finance",
+          "value": 3.6527266956768183,
+          "paper_count": 22,
+          "share_2000s": 0.0020418580908626,
+          "share_2010s": 0.0029148448886112,
+          "share_2020s": 0.0050262737034498,
+          "max_decade": "1970",
+          "max_decade_paper_count": 22
+        },
+        {
+          "id": "wp:32005855",
+          "label": "2008 financial crisis",
+          "field": "finance",
+          "value": 3.5283688641882516,
+          "paper_count": 27,
+          "share_2000s": 0.0025523226135783,
+          "share_2010s": 0.0187382885696439,
+          "share_2020s": 0.006168608636052,
+          "max_decade": "2010",
+          "max_decade_paper_count": 90
+        },
+        {
+          "id": "jel:O33:Spillovers",
+          "label": "Spillovers",
+          "field": "micro",
+          "value": 3.4756580280132985,
+          "paper_count": 119,
+          "share_2000s": 0.0056151097498723,
+          "share_2010s": 0.0131168019987507,
+          "share_2020s": 0.0271875713959332,
+          "max_decade": "2020",
+          "max_decade_paper_count": 119
+        },
+        {
+          "id": "jel:B26:Financial Economics",
+          "label": "Financial Economics",
+          "field": "finance",
+          "value": 3.3882770465826333,
+          "paper_count": 26,
+          "share_2000s": 0.0035732516590096,
+          "share_2010s": 0.0045804705392463,
+          "share_2020s": 0.0059401416495316,
+          "max_decade": "1970",
+          "max_decade_paper_count": 26
+        },
+        {
+          "id": "https://openalex.org/keywords/sentiment-analysis",
+          "label": "Sentiment analysis",
+          "field": "methods",
+          "value": 3.336707292078306,
+          "paper_count": 66,
+          "share_2000s": 0.0020418580908626,
+          "share_2010s": 0.0099937539038101,
+          "share_2020s": 0.0150788211103495,
+          "max_decade": "2020",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "https://openalex.org/keywords/quantitative-easing",
+          "label": "Quantitative easing",
+          "field": "macro",
+          "value": 2.867005201856428,
+          "paper_count": 139,
+          "share_2000s": 0.004594180704441,
+          "share_2010s": 0.027066416822819,
+          "share_2020s": 0.0317569111263422,
+          "max_decade": "2020",
+          "max_decade_paper_count": 139
+        },
+        {
+          "id": "https://openalex.org/keywords/default-risk",
+          "label": "Default risk",
+          "field": "finance",
+          "value": 2.7820794809042506,
+          "paper_count": 34,
+          "share_2000s": 0.0081674323634507,
+          "share_2010s": 0.0058296897772225,
+          "share_2020s": 0.0077678775416952,
+          "max_decade": "1970",
+          "max_decade_paper_count": 34
+        },
+        {
+          "id": "jel:E43:Real Interest Rates",
+          "label": "Real Interest Rates",
+          "field": "macro",
+          "value": 2.707609642448375,
+          "paper_count": 17,
+          "share_2000s": 0.007656967840735,
+          "share_2010s": 0.0043722673329169,
+          "share_2020s": 0.0038839387708476,
+          "max_decade": "1980",
+          "max_decade_paper_count": 21
+        },
+        {
+          "id": "jel:E24:Unemployment",
+          "label": "Unemployment",
+          "field": "labor",
+          "value": 2.642884371077747,
+          "paper_count": 34,
+          "share_2000s": 0.0071465033180193,
+          "share_2010s": 0.00666250260254,
+          "share_2020s": 0.0077678775416952,
+          "max_decade": "1970",
+          "max_decade_paper_count": 34
+        },
+        {
+          "id": "jel:G14:Market Efficiency",
+          "label": "Market Efficiency",
+          "field": "finance",
+          "value": 2.5838607307389827,
+          "paper_count": 20,
+          "share_2000s": 0.0056151097498723,
+          "share_2010s": 0.0097855506974807,
+          "share_2020s": 0.0045693397304089,
+          "max_decade": "1970",
+          "max_decade_paper_count": 47
+        },
+        {
+          "id": "https://openalex.org/keywords/financial-capital",
+          "label": "Financial capital",
+          "field": "finance",
+          "value": 2.5291692022791765,
+          "paper_count": 16,
+          "share_2000s": 0.006125574272588,
+          "share_2010s": 0.0052050801582344,
+          "share_2020s": 0.0036554717843271,
+          "max_decade": "1970",
+          "max_decade_paper_count": 25
+        },
+        {
+          "id": "Q137486133",
+          "label": "economic behavior",
+          "field": "micro",
+          "value": 2.5063567966159077,
+          "paper_count": 26,
+          "share_2000s": 0.0020418580908626,
+          "share_2010s": 0.0052050801582344,
+          "share_2020s": 0.0059401416495316,
+          "max_decade": "1970",
+          "max_decade_paper_count": 26
+        },
+        {
+          "id": "jel:G21:Bank Lending",
+          "label": "Bank Lending",
+          "field": "finance",
+          "value": 2.4973148933449916,
+          "paper_count": 66,
+          "share_2000s": 0.0051046452271567,
+          "share_2010s": 0.0118675827607745,
+          "share_2020s": 0.0150788211103495,
+          "max_decade": "1970",
+          "max_decade_paper_count": 66
+        },
+        {
+          "id": "https://openalex.org/keywords/bid–ask-spread",
+          "label": "Bid–ask spread",
+          "field": "finance",
+          "value": 2.4487377422816854,
+          "paper_count": 43,
+          "share_2000s": 0.0342011230219499,
+          "share_2010s": 0.0214449302519258,
+          "share_2020s": 0.0098240804203792,
+          "max_decade": "1990",
+          "max_decade_paper_count": 103
+        },
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "value": 2.4142926406770897,
+          "paper_count": 746,
+          "share_2000s": 0.040326697294538,
+          "share_2010s": 0.0691234645013533,
+          "share_2020s": 0.170436371944254,
+          "max_decade": "2020",
+          "max_decade_paper_count": 746
+        },
+        {
+          "id": "jel:O47:Output Growth",
+          "label": "Output Growth",
+          "field": "macro",
+          "value": 2.4022026698795624,
+          "paper_count": 21,
+          "share_2000s": 0.0066360387953037,
+          "share_2010s": 0.0058296897772225,
+          "share_2020s": 0.0047978067169294,
+          "max_decade": "1980",
+          "max_decade_paper_count": 28
+        },
+        {
+          "id": "https://openalex.org/keywords/market-sentiment",
+          "label": "Market sentiment",
+          "field": "finance",
+          "value": 2.3736556588462867,
+          "paper_count": 402,
+          "share_2000s": 0.0290964777947932,
+          "share_2010s": 0.06017072662919,
+          "share_2020s": 0.09184372858122,
+          "max_decade": "2020",
+          "max_decade_paper_count": 402
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility-clustering",
+          "label": "Volatility clustering",
+          "field": "finance",
+          "value": 2.3205004826727675,
+          "paper_count": 28,
+          "share_2000s": 0.0173557937723328,
+          "share_2010s": 0.0089527378721632,
+          "share_2020s": 0.0063970756225725,
+          "max_decade": "2000",
+          "max_decade_paper_count": 43
+        },
+        {
+          "id": "jel:F31:Exchange Rates",
+          "label": "Exchange Rates",
+          "field": "macro",
+          "value": 2.272377931893077,
+          "paper_count": 20,
+          "share_2000s": 0.0081674323634507,
+          "share_2010s": 0.0062460961898813,
+          "share_2020s": 0.0045693397304089,
+          "max_decade": "1970",
+          "max_decade_paper_count": 30
+        },
+        {
+          "id": "jel:G01:Global Financial Crisis",
+          "label": "Global Financial Crisis",
+          "field": "macro",
+          "value": 2.229437973083936,
+          "paper_count": 97,
+          "share_2000s": 0.0051046452271567,
+          "share_2010s": 0.0199875078076202,
+          "share_2020s": 0.0221612976924834,
+          "max_decade": "2020",
+          "max_decade_paper_count": 97
+        }
+      ]
+    },
+    "field_bridge_edges": [
+      {
+        "label": "Policy uncertainty -> Stock market volatility",
+        "field_pair": "macro -> finance",
+        "paper_count": 37,
+        "role": "main_effect",
+        "example_claim_text": "EPU -> stock market volatility (increase)"
+      },
+      {
+        "label": "Policy uncertainty -> Stock Returns",
+        "field_pair": "macro -> finance",
+        "paper_count": 27,
+        "role": "main_effect",
+        "example_claim_text": "information uncertainty risk -> explains cross-section of stock returns in January (dominates other risk factors)"
+      },
+      {
+        "label": "COVID-19 -> Stock market volatility",
+        "field_pair": "health -> finance",
+        "paper_count": 20,
+        "role": "main_effect",
+        "example_claim_text": "COVID-19 -> increased stock market volatility"
+      },
+      {
+        "label": "Stock market volatility -> Spillovers",
+        "field_pair": "finance -> micro",
+        "paper_count": 19,
+        "role": "main_effect",
+        "example_claim_text": "short-term US share price fluctuations -> spillovers to German share prices (short-term contagion)"
+      },
+      {
+        "label": "Uncertainty -> Stock market volatility",
+        "field_pair": "micro -> finance",
+        "paper_count": 17,
+        "role": "main_effect",
+        "example_claim_text": "uncertainty shocks -> increased price-dividend ratio volatility"
+      },
+      {
+        "label": "Monetary Policy -> Stock market volatility",
+        "field_pair": "macro -> finance",
+        "paper_count": 17,
+        "role": "main_effect",
+        "example_claim_text": "Monetary policy changes -> increase stock market volatility"
+      },
+      {
+        "label": "Financial Development -> Economic Growth",
+        "field_pair": "finance -> macro",
+        "paper_count": 16,
+        "role": "main_effect",
+        "example_claim_text": "financial development -> reduce economic growth (when initial inflation high)"
+      },
+      {
+        "label": "State of emergency -> Stock market volatility",
+        "field_pair": "public -> finance",
+        "paper_count": 16,
+        "role": "main_effect",
+        "example_claim_text": "COVID-19 -> increased US stock market volatility (more than GFC)"
+      },
+      {
+        "label": "Policy uncertainty -> Spillovers",
+        "field_pair": "macro -> micro",
+        "paper_count": 15,
+        "role": "main_effect",
+        "example_claim_text": "economic policy uncertainty -> credit market risk spillovers"
+      },
+      {
+        "label": "Policy uncertainty -> Renewable Energy",
+        "field_pair": "macro -> environment",
+        "paper_count": 14,
+        "role": "main_effect",
+        "example_claim_text": "Higher policy change arrival rate -> lower investment"
+      },
+      {
+        "label": "Policy uncertainty -> Forward volatility",
+        "field_pair": "macro -> finance",
+        "paper_count": 14,
+        "role": "main_effect",
+        "example_claim_text": "EPU -> future volatility (positive)"
+      },
+      {
+        "label": "Monetary Policy -> Liquidity risk",
+        "field_pair": "macro -> finance",
+        "paper_count": 14,
+        "role": "main_effect",
+        "example_claim_text": "monetary loosening -> reduced cost of liquidity shortfalls"
+      },
+      {
+        "label": "Policy uncertainty -> Green innovation",
+        "field_pair": "macro -> environment",
+        "paper_count": 13,
+        "role": "heterogeneity",
+        "example_claim_text": "Increased economic policy uncertainty -> weakened G-innovation willingness"
+      },
+      {
+        "label": "Oil Shocks -> Stock market volatility",
+        "field_pair": "macro -> finance",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "Crude oil shocks -> reduce moderate/expansion stock market phases (temporarily)"
+      },
+      {
+        "label": "Bank credit -> Economic Growth",
+        "field_pair": "finance -> macro",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "bank finance -> economic growth (effect depends on banking sector development)"
+      },
+      {
+        "label": "Volatility (finance) -> Economic Growth",
+        "field_pair": "finance -> macro",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "volatility -> reduces growth"
+      },
+      {
+        "label": "Policy uncertainty -> Volatility (finance)",
+        "field_pair": "macro -> finance",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "environmental policy uncertainty / carbon credits fluctuations -> increases electricity price volatility"
+      },
+      {
+        "label": "Oil price -> Stock market volatility",
+        "field_pair": "macro -> finance",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "Oil price -> Firm return variance"
+      },
+      {
+        "label": "Policy uncertainty -> Investment",
+        "field_pair": "macro -> finance",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "Regulatory uncertainty -> Investment"
+      },
+      {
+        "label": "Policy uncertainty -> Uncertainty",
+        "field_pair": "macro -> micro",
+        "paper_count": 13,
+        "role": "descriptive_pattern",
+        "example_claim_text": "product price uncertainty -- total price uncertainty"
+      },
+      {
+        "label": "GARCH -> Stock market volatility",
+        "field_pair": "methods -> finance",
+        "paper_count": 13,
+        "role": "main_effect",
+        "example_claim_text": "DCC-ECM-MVGARCH model -> more sensitive to market fluctuations and better describes volatility changes"
+      },
+      {
+        "label": "Inflation -> Welfare",
+        "field_pair": "macro -> public",
+        "paper_count": 12,
+        "role": "main_effect",
+        "example_claim_text": "inflation -> welfare"
+      },
+      {
+        "label": "Policy uncertainty -> Investment Decisions",
+        "field_pair": "macro -> finance",
+        "paper_count": 12,
+        "role": "main_effect",
+        "example_claim_text": "price uncertainty -> production and financing decisions"
+      },
+      {
+        "label": "Sentiment analysis -> Market sentiment",
+        "field_pair": "methods -> finance",
+        "paper_count": 12,
+        "role": "main_effect",
+        "example_claim_text": "Choice of sentiment proxy -> measured investor sentiment effect"
+      },
+      {
+        "label": "Global Financial Crisis -> Volatility (finance)",
+        "field_pair": "macro -> finance",
+        "paper_count": 12,
+        "role": "descriptive_pattern",
+        "example_claim_text": "global financial crisis -> change in term structure volatility"
+      },
+      {
+        "label": "Fit model -> Stock market volatility",
+        "field_pair": "methods -> finance",
+        "paper_count": 12,
+        "role": "main_effect",
+        "example_claim_text": "model -> accounts for discontinuous impacts from deal cancellation"
+      },
+      {
+        "label": "Emerging markets -> Volatility (finance)",
+        "field_pair": "development -> finance",
+        "paper_count": 11,
+        "role": "main_effect",
+        "example_claim_text": "Misfortunes in Zimbabwe and other emerging-market countries -- Volatility of the South African Rand"
+      },
+      {
+        "label": "Supply shock -> Volatility (finance)",
+        "field_pair": "macro -> finance",
+        "paper_count": 11,
+        "role": "main_effect",
+        "example_claim_text": "negative shocks -> higher volatility"
+      },
+      {
+        "label": "Macroeconomic Data -> Volatility (finance)",
+        "field_pair": "macro -> finance",
+        "paper_count": 11,
+        "role": "main_effect",
+        "example_claim_text": "US macroeconomic news announcements -> increase realized volatility of metal futures"
+      },
+      {
+        "label": "Inflation -> Stock Returns",
+        "field_pair": "macro -> finance",
+        "paper_count": 11,
+        "role": "main_effect",
+        "example_claim_text": "inflation -- common stock returns (no positive relation)"
+      },
+      {
+        "label": "Policy uncertainty -> Risk Premium",
+        "field_pair": "macro -> finance",
+        "paper_count": 11,
+        "role": "mechanism",
+        "example_claim_text": "policy uncertainty -> risk premium for power generation investments"
+      },
+      {
+        "label": "Uncertainty -> Volatility (finance)",
+        "field_pair": "micro -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "higher uncertainty about news value (first half) -> higher return volatility"
+      },
+      {
+        "label": "Sentiment analysis -> Stock Returns",
+        "field_pair": "methods -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "daily sentiment -> contemporaneous stock returns (positive)"
+      },
+      {
+        "label": "Crude Oil -> Stock market volatility",
+        "field_pair": "environment -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "crude oil price -> volatility of gold price (linear Granger causality)"
+      },
+      {
+        "label": "Spillovers -> Stock market volatility",
+        "field_pair": "micro -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "Russia experiences volatility spillovers from other markets"
+      },
+      {
+        "label": "Oil price -> Volatility (finance)",
+        "field_pair": "macro -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "World oil prices -> price volatility (question)"
+      },
+      {
+        "label": "Sentiment analysis -> Volatility (finance)",
+        "field_pair": "methods -> finance",
+        "paper_count": 10,
+        "role": "main_effect",
+        "example_claim_text": "positive news sentiment -> increases volatility of returns in the gold futures market (smaller impact than negative news)"
+      },
+      {
+        "label": "Climate policy uncertainty -> Stock market volatility",
+        "field_pair": "environment -> finance",
+        "paper_count": 9,
+        "role": "main_effect",
+        "example_claim_text": "CPU -> stock market volatility"
+      },
+      {
+        "label": "Policy uncertainty -> Volatility risk",
+        "field_pair": "macro -> finance",
+        "paper_count": 9,
+        "role": "main_effect",
+        "example_claim_text": "EPU in Europe -> volatility risk in individual stock markets in Asian countries (influences most)"
+      },
+      {
+        "label": "Policy uncertainty -> Risk Premia",
+        "field_pair": "macro -> finance",
+        "paper_count": 9,
+        "role": "main_effect",
+        "example_claim_text": "business and economic-related uncertainty -> important for sovereign bond risk premia"
+      }
+    ],
+    "field_bridge_summary": [
+      {
+        "field_pair": "macro -> finance",
+        "paper_count": 5770,
+        "edge_pair_count": 4514,
+        "top_edge_pair": "Policy uncertainty -> Stock market volatility"
+      },
+      {
+        "field_pair": "finance -> macro",
+        "paper_count": 3764,
+        "edge_pair_count": 3328,
+        "top_edge_pair": "Financial Development -> Economic Growth"
+      },
+      {
+        "field_pair": "micro -> finance",
+        "paper_count": 2779,
+        "edge_pair_count": 2420,
+        "top_edge_pair": "Uncertainty -> Stock market volatility"
+      },
+      {
+        "field_pair": "finance -> micro",
+        "paper_count": 2335,
+        "edge_pair_count": 2112,
+        "top_edge_pair": "Stock market volatility -> Spillovers"
+      },
+      {
+        "field_pair": "methods -> finance",
+        "paper_count": 2262,
+        "edge_pair_count": 1952,
+        "top_edge_pair": "GARCH -> Stock market volatility"
+      },
+      {
+        "field_pair": "public -> finance",
+        "paper_count": 1300,
+        "edge_pair_count": 1188,
+        "top_edge_pair": "State of emergency -> Stock market volatility"
+      },
+      {
+        "field_pair": "finance -> methods",
+        "paper_count": 1150,
+        "edge_pair_count": 1059,
+        "top_edge_pair": "Market sentiment -> Sentiment analysis"
+      },
+      {
+        "field_pair": "environment -> finance",
+        "paper_count": 1010,
+        "edge_pair_count": 904,
+        "top_edge_pair": "Crude Oil -> Stock market volatility"
+      },
+      {
+        "field_pair": "io -> finance",
+        "paper_count": 899,
+        "edge_pair_count": 837,
+        "top_edge_pair": "Turnover -> Liquidity risk"
+      },
+      {
+        "field_pair": "macro -> micro",
+        "paper_count": 870,
+        "edge_pair_count": 766,
+        "top_edge_pair": "Policy uncertainty -> Spillovers"
+      },
+      {
+        "field_pair": "finance -> public",
+        "paper_count": 750,
+        "edge_pair_count": 718,
+        "top_edge_pair": "Volatility (finance) -> Welfare"
+      },
+      {
+        "field_pair": "methods -> macro",
+        "paper_count": 735,
+        "edge_pair_count": 700,
+        "top_edge_pair": "Fit model -> Inflation"
+      },
+      {
+        "field_pair": "finance -> environment",
+        "paper_count": 715,
+        "edge_pair_count": 673,
+        "top_edge_pair": "Financial Development -> Renewable Energy"
+      },
+      {
+        "field_pair": "micro -> macro",
+        "paper_count": 675,
+        "edge_pair_count": 632,
+        "top_edge_pair": "Marginal cost -> Inflation"
+      },
+      {
+        "field_pair": "finance -> io",
+        "paper_count": 594,
+        "edge_pair_count": 573,
+        "top_edge_pair": "Bank credit -> Technological Innovation"
+      },
+      {
+        "field_pair": "political_economy -> finance",
+        "paper_count": 523,
+        "edge_pair_count": 488,
+        "top_edge_pair": "Political risk -> Stock market volatility"
+      },
+      {
+        "field_pair": "macro -> environment",
+        "paper_count": 477,
+        "edge_pair_count": 377,
+        "top_edge_pair": "Policy uncertainty -> Renewable Energy"
+      },
+      {
+        "field_pair": "public -> macro",
+        "paper_count": 470,
+        "edge_pair_count": 451,
+        "top_edge_pair": "Income Distribution -> Economic Growth"
+      },
+      {
+        "field_pair": "macro -> public",
+        "paper_count": 440,
+        "edge_pair_count": 393,
+        "top_edge_pair": "Inflation -> Welfare"
+      },
+      {
+        "field_pair": "macro -> methods",
+        "paper_count": 435,
+        "edge_pair_count": 407,
+        "top_edge_pair": "Policy uncertainty -> Cross-correlation"
+      }
+    ]
+  }
 }

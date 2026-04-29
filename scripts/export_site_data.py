@@ -8,6 +8,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_descriptive_v0"
 OUT = ROOT / "data/site-data.json"
+GRAPH_DIAGNOSTICS = ROOT / "data/analysis/graph_diagnostics_v0"
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -220,6 +221,123 @@ def build_sample_papers() -> list[dict[str, Any]]:
     return selected[:36]
 
 
+def read_optional_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
+def compact_metric_row(row: dict[str, str], metric: str, count_col: str = "paper_count_2020s") -> dict[str, Any]:
+    return {
+        "id": row.get("onto_id", ""),
+        "label": row.get("concept_display_label") or row.get("concept_label") or "",
+        "field": row.get("field_primary", "") or "unknown",
+        "value": as_float(row.get(metric, "0")),
+        "paper_count": as_int(row.get(count_col, row.get("paper_count", "0"))),
+        "share_2000s": as_float(row.get("share_2000s", "0")),
+        "share_2010s": as_float(row.get("share_2010s", "0")),
+        "share_2020s": as_float(row.get("share_2020s", "0")),
+        "max_decade": row.get("max_decade", ""),
+        "max_decade_paper_count": as_int(row.get("max_decade_paper_count", "0")),
+    }
+
+
+def build_graph_diagnostics() -> dict[str, Any]:
+    summary_path = GRAPH_DIAGNOSTICS / "package_summary.json"
+    if not summary_path.exists():
+        return {"available": False}
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    central = read_optional_csv(GRAPH_DIAGNOSTICS / "concept_centrality_overall.csv")
+    decade = read_optional_csv(GRAPH_DIAGNOSTICS / "concept_centrality_by_decade.csv")
+    field_bridges = read_optional_csv(GRAPH_DIAGNOSTICS / "field_bridge_edges.csv")
+    field_bridge_summary = read_optional_csv(GRAPH_DIAGNOSTICS / "field_bridge_summary.csv")
+
+    top_central = [
+        {
+            "id": row["onto_id"],
+            "label": row["concept_label"],
+            "field": row["field_primary"] or "unknown",
+            "pagerank": as_float(row["pagerank"]),
+            "degree_weighted": as_float(row["degree_weighted"]),
+            "in_degree_weighted": as_float(row["in_degree_weighted"]),
+            "out_degree_weighted": as_float(row["out_degree_weighted"]),
+            "betweenness_approx": as_float(row["betweenness_approx"]),
+            "bridge_score": as_float(row["bridge_score"]),
+        }
+        for row in central[:40]
+    ]
+
+    bridge_concepts = sorted(
+        top_central,
+        key=lambda row: (row["bridge_score"], row["betweenness_approx"], row["pagerank"]),
+        reverse=True,
+    )[:30]
+
+    top_by_decade: dict[str, list[dict[str, Any]]] = {}
+    for row in decade:
+        decade_key = str(as_int(row["decade"]))
+        top_by_decade.setdefault(decade_key, [])
+        if len(top_by_decade[decade_key]) < 10:
+            top_by_decade[decade_key].append(
+                {
+                    "id": row["onto_id"],
+                    "label": row["concept_label"],
+                    "field": row["field_primary"] or "unknown",
+                    "pagerank": as_float(row["pagerank"]),
+                    "degree_weighted": as_float(row["degree_weighted"]),
+                }
+            )
+
+    buckets = {}
+    bucket_specs = {
+        "rising": ("theme_rising.csv", "rise_2020s_vs_2000s"),
+        "falling": ("theme_falling.csv", "fall_2020s_vs_2000s"),
+        "new_arrivals": ("theme_new_arrivals.csv", "share_2020s"),
+        "persistent": ("theme_persistent.csv", "mean_share"),
+        "spiky": ("theme_spiky.csv", "spike_score"),
+    }
+    for name, (filename, metric) in bucket_specs.items():
+        buckets[name] = [
+            compact_metric_row(row, metric)
+            for row in read_optional_csv(GRAPH_DIAGNOSTICS / filename)[:30]
+        ]
+
+    return {
+        "available": True,
+        "summary": {
+            "scope": summary["scope"],
+            "graph_nodes": summary["graph_nodes"],
+            "graph_edges_non_self": summary["graph_edges_non_self"],
+            "betweenness_sample_size": summary["betweenness_sample_size"],
+        },
+        "top_central": top_central,
+        "bridge_concepts": bridge_concepts,
+        "centrality_by_decade": top_by_decade,
+        "theme_buckets": buckets,
+        "field_bridge_edges": [
+            {
+                "label": row["edge_pair_label"],
+                "field_pair": row["field_pair"],
+                "paper_count": as_int(row["paper_count"]),
+                "role": row["most_common_role"],
+                "example_claim_text": row["example_claim_text"],
+            }
+            for row in field_bridges[:40]
+        ],
+        "field_bridge_summary": [
+            {
+                "field_pair": row["field_pair"],
+                "paper_count": as_int(row["paper_count"]),
+                "edge_pair_count": as_int(row["edge_pair_count"]),
+                "top_edge_pair": row["top_edge_pair"],
+            }
+            for row in field_bridge_summary[:20]
+        ],
+    }
+
+
 def main() -> None:
     with (SOURCE / "package_summary.json").open(encoding="utf-8") as handle:
         summary_raw = json.load(handle)
@@ -233,6 +351,7 @@ def main() -> None:
         "slice_year_counts": build_slice_year_counts(),
         "field_decades": build_field_decades(),
         "sample_papers": build_sample_papers(),
+        "graph_diagnostics": build_graph_diagnostics(),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

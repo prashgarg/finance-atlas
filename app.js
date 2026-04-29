@@ -2,6 +2,9 @@ const state = {
   data: null,
   concepts: [],
   activeField: "all",
+  activeChangeView: "rising",
+  activeNetworkView: "central",
+  activeNetworkDecade: "2020",
   activeTimeView: "volume",
   edgeRole: "all",
   includeSelfLinks: false,
@@ -259,6 +262,134 @@ function renderTimeChart() {
   legend.innerHTML = series.map((line, index) => `<span><i style="--i:${index}"></i>${line.name}</span>`).join("");
 }
 
+const changeCopy = {
+  rising: "Themes gaining paper share in the 2020s relative to the 2000s.",
+  falling: "Themes with lower paper share in the 2020s than in the 2000s.",
+  new_arrivals: "Themes mostly absent before 2010 but visible in the recent map.",
+  persistent: "Themes that remain visible across multiple decades.",
+  spiky: "Themes with concentrated attention in one decade rather than steady presence.",
+};
+
+function diagnosticValue(row, view) {
+  if (view === "rising") return row.value;
+  if (view === "falling") return row.value;
+  if (view === "new_arrivals") return row.share_2020s;
+  if (view === "persistent") return row.value;
+  if (view === "spiky") return row.value / 6;
+  return row.value;
+}
+
+function diagnosticMeta(row, view) {
+  if (view === "rising") return `+${asPercent(row.value)} vs 2000s · ${formatNumber.format(row.paper_count)} papers in 2020s`;
+  if (view === "falling") return `-${asPercent(row.value)} vs 2000s · ${formatNumber.format(row.paper_count)} papers in 2020s`;
+  if (view === "new_arrivals") return `${asPercent(row.share_2020s)} of 2020s papers · ${formatNumber.format(row.paper_count)} papers`;
+  if (view === "persistent") return `${asPercent(row.value)} average share · ${formatNumber.format(row.paper_count)} papers in 2020s`;
+  if (view === "spiky") return `peaks in ${row.max_decade}s · ${formatNumber.format(row.max_decade_paper_count)} papers`;
+  return `${formatNumber.format(row.paper_count)} papers`;
+}
+
+function renderChangeDiagnostics() {
+  const diagnostics = state.data.graph_diagnostics;
+  const copy = document.querySelector("#change-copy");
+  const list = document.querySelector("#change-list");
+  if (!diagnostics?.available) {
+    copy.textContent = "Graph diagnostics are not available in this export.";
+    list.innerHTML = "";
+    return;
+  }
+  const rows = diagnostics.theme_buckets[state.activeChangeView] || [];
+  const maxValue = Math.max(...rows.map((row) => diagnosticValue(row, state.activeChangeView)), 0.01);
+  copy.textContent = changeCopy[state.activeChangeView];
+  list.innerHTML = rows
+    .slice(0, 14)
+    .map((row) => {
+      const width = Math.max(2, (diagnosticValue(row, state.activeChangeView) / maxValue) * 100);
+      return `
+        <article class="diagnostic-row">
+          <div>
+            <strong>${escapeHtml(row.label)}</strong>
+            <span>${escapeHtml(row.field)} · ${diagnosticMeta(row, state.activeChangeView)}</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill" style="width: ${width}%"></div></div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+const networkCopy = {
+  central: "PageRank highlights concepts connected to other important concepts within the finance graph.",
+  bridges: "Bridge concepts have high approximate betweenness: they sit on paths between otherwise separate parts of the map.",
+  field_bridges: "Cross-field links show where finance concepts connect to macro, public, methods, environment, and other fields.",
+  decade: "This view shows which concepts are central within a selected decade, not just overall.",
+};
+
+function renderNetworkDiagnostics() {
+  const diagnostics = state.data.graph_diagnostics;
+  const copy = document.querySelector("#network-copy");
+  const list = document.querySelector("#network-list");
+  const decadeSelect = document.querySelector("#network-decade-select");
+  if (!diagnostics?.available) {
+    copy.textContent = "Graph diagnostics are not available in this export.";
+    list.innerHTML = "";
+    return;
+  }
+
+  decadeSelect.hidden = state.activeNetworkView !== "decade";
+  copy.textContent = networkCopy[state.activeNetworkView];
+
+  if (state.activeNetworkView === "field_bridges") {
+    const rows = diagnostics.field_bridge_edges.slice(0, 14);
+    const maxValue = Math.max(...rows.map((row) => row.paper_count), 1);
+    list.innerHTML = rows
+      .map((row) => {
+        const width = Math.max(2, (row.paper_count / maxValue) * 100);
+        return `
+          <article class="diagnostic-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${escapeHtml(row.field_pair)} · ${formatNumber.format(row.paper_count)} papers</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
+
+  let rows = diagnostics.top_central;
+  let metric = "pagerank";
+  let meta = (row) => `PageRank ${row.pagerank.toFixed(4)} · weighted degree ${formatNumber.format(row.degree_weighted)}`;
+  if (state.activeNetworkView === "bridges") {
+    rows = diagnostics.bridge_concepts;
+    metric = "bridge_score";
+    meta = (row) => `bridge score ${row.bridge_score.toFixed(3)} · betweenness ${row.betweenness_approx.toFixed(3)}`;
+  }
+  if (state.activeNetworkView === "decade") {
+    rows = diagnostics.centrality_by_decade[state.activeNetworkDecade] || [];
+    metric = "pagerank";
+    meta = (row) => `PageRank ${row.pagerank.toFixed(4)} · weighted degree ${formatNumber.format(row.degree_weighted)}`;
+  }
+
+  const maxValue = Math.max(...rows.map((row) => row[metric]), 0.01);
+  list.innerHTML = rows
+    .slice(0, 14)
+    .map((row) => {
+      const width = Math.max(2, (row[metric] / maxValue) * 100);
+      return `
+        <article class="diagnostic-row">
+          <div>
+            <strong>${escapeHtml(row.label)}</strong>
+            <span>${escapeHtml(row.field)} · ${meta(row)}</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
 function renderEdges() {
   const edges = state.data.edge_pairs
     .filter((edge) => state.includeSelfLinks || !edge.is_self_loop)
@@ -325,6 +456,21 @@ function wireControls() {
     renderTimeChart();
   });
 
+  document.querySelector("#change-view-select").addEventListener("change", (event) => {
+    state.activeChangeView = event.target.value;
+    renderChangeDiagnostics();
+  });
+
+  document.querySelector("#network-view-select").addEventListener("change", (event) => {
+    state.activeNetworkView = event.target.value;
+    renderNetworkDiagnostics();
+  });
+
+  document.querySelector("#network-decade-select").addEventListener("change", (event) => {
+    state.activeNetworkDecade = event.target.value;
+    renderNetworkDiagnostics();
+  });
+
   document.querySelector("#edge-role-select").addEventListener("change", (event) => {
     state.edgeRole = event.target.value;
     renderEdges();
@@ -345,6 +491,8 @@ async function init() {
   state.concepts = state.data.concepts;
 
   renderMetrics();
+  renderChangeDiagnostics();
+  renderNetworkDiagnostics();
   renderTimeChart();
   renderConceptList();
   renderConceptDetail();

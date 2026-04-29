@@ -18,7 +18,8 @@
         <span>Finance Atlas</span>
       </a>
       <nav class="top-nav" aria-label="Primary navigation">
-        <a href="#time">Time</a>
+        <a href="#change">Change</a>
+        <a href="#network">Network</a>
         <a href="#concepts">Concepts</a>
         <a href="#relationships">Relationships</a>
         <a href="#papers">Papers</a>
@@ -80,14 +81,63 @@
         </div>
       </section>
 
-      <section class="section" id="time" aria-labelledby="time-title">
+      <section class="section" id="change" aria-labelledby="change-title">
         <div class="section-heading">
-          <h2 id="time-title">Time view</h2>
-          <p>Switch between paper volume, field coverage, and theme-slice shares.</p>
+          <h2 id="change-title">What changed?</h2>
+          <p>Diagnostics that separate rising, fading, new, persistent, and spike-like themes.</p>
         </div>
         <div class="chart-card">
           <div class="chart-toolbar">
-            <label for="time-view-select">View</label>
+            <label for="change-view-select">Diagnostic</label>
+            <select id="change-view-select">
+              <option value="rising">Rising themes</option>
+              <option value="falling">Fading themes</option>
+              <option value="new_arrivals">New arrivals</option>
+              <option value="persistent">Persistent themes</option>
+              <option value="spiky">Spike-like attention</option>
+            </select>
+          </div>
+          <div id="change-copy" class="diagnostic-copy"></div>
+          <div id="change-list" class="diagnostic-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="network" aria-labelledby="network-title">
+        <div class="section-heading">
+          <h2 id="network-title">What connects the field?</h2>
+          <p>Within-finance graph diagnostics: central concepts, bridge concepts, and cross-field links.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="network-view-select">Network view</label>
+            <select id="network-view-select">
+              <option value="central">Central concepts</option>
+              <option value="bridges">Bridge concepts</option>
+              <option value="field_bridges">Cross-field links</option>
+              <option value="decade">Central concepts by decade</option>
+            </select>
+            <select id="network-decade-select" class="compact-select" aria-label="Choose decade">
+              <option value="2020">2020s</option>
+              <option value="2010">2010s</option>
+              <option value="2000">2000s</option>
+              <option value="1990">1990s</option>
+              <option value="1980">1980s</option>
+              <option value="1970">1970s</option>
+            </select>
+          </div>
+          <div id="network-copy" class="diagnostic-copy"></div>
+          <div id="network-list" class="diagnostic-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="time" aria-labelledby="time-title">
+        <div class="section-heading">
+          <h2 id="time-title">Trend check</h2>
+          <p>A compact chart for paper volume, field coverage, and broad theme-slice shares.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="time-view-select">Series</label>
             <select id="time-view-select">
               <option value="volume">Papers per year</option>
               <option value="fields">Field coverage by decade</option>

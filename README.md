@@ -9,6 +9,7 @@ The first version is static and runs on GitHub Pages. It uses small JSON exports
 - rising concepts by decade
 - common concept-to-concept relationships
 - sample papers from selected slices
+- within-finance graph diagnostics, including central concepts, bridge concepts, and theme-change buckets
 
 The site is intentionally simple. It is a public-facing inspection layer for the research map, not the full research database.
 
@@ -36,3 +37,14 @@ The exported data currently comes from:
 ```
 
 Large raw data should not be committed to this repository. Only compact website exports should live in `data/`.
+
+## Graph Diagnostics
+
+The local graph-diagnostics package can be rebuilt with:
+
+```bash
+python3 scripts/build_graph_diagnostics.py
+python3 scripts/export_site_data.py
+```
+
+The diagnostics are computed within the materialized finance workspace. They are useful for the current site, but they are not yet global FrontierGraph centrality measures.
