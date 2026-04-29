@@ -1,0 +1,7018 @@
+{
+  "summary": {
+    "paper_count": 12686,
+    "unique_concepts": 13768,
+    "unique_canonical_edge_pairs": 67547,
+    "asset_pricing_broad_count": 2821,
+    "factor_investing_count": 1417,
+    "market_microstructure_count": 4680,
+    "macro_finance_states_count": 9661,
+    "paper_count_figure_year_cutoff": 2023
+  },
+  "concepts": [
+    {
+      "id": "https://openalex.org/keywords/volatility",
+      "label": "Volatility (finance)",
+      "paper_count": 2064,
+      "node_rows": 2107,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 6,
+          "share": 0.056074766355140186
+        },
+        {
+          "decade": 1980,
+          "paper_count": 46,
+          "share": 0.1013215859030837
+        },
+        {
+          "decade": 1990,
+          "paper_count": 166,
+          "share": 0.16835699797160245
+        },
+        {
+          "decade": 2000,
+          "paper_count": 425,
+          "share": 0.2169474221541603
+        },
+        {
+          "decade": 2010,
+          "paper_count": 863,
+          "share": 0.17967936706225276
+        },
+        {
+          "decade": 2020,
+          "paper_count": 558,
+          "share": 0.12748457847840988
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/stock-market-volatility",
+      "label": "Stock market volatility",
+      "paper_count": 2021,
+      "node_rows": 2262,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 5,
+          "share": 0.04672897196261682
+        },
+        {
+          "decade": 1980,
+          "paper_count": 44,
+          "share": 0.09691629955947137
+        },
+        {
+          "decade": 1990,
+          "paper_count": 154,
+          "share": 0.15618661257606492
+        },
+        {
+          "decade": 2000,
+          "paper_count": 326,
+          "share": 0.16641143440530884
+        },
+        {
+          "decade": 2010,
+          "paper_count": 786,
+          "share": 0.16364772017489068
+        },
+        {
+          "decade": 2020,
+          "paper_count": 706,
+          "share": 0.16129769248343614
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-risk",
+      "label": "Liquidity risk",
+      "paper_count": 1644,
+      "node_rows": 1767,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 14,
+          "share": 0.1308411214953271
+        },
+        {
+          "decade": 1980,
+          "paper_count": 35,
+          "share": 0.07709251101321586
+        },
+        {
+          "decade": 1990,
+          "paper_count": 110,
+          "share": 0.11156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 264,
+          "share": 0.13476263399693722
+        },
+        {
+          "decade": 2010,
+          "paper_count": 732,
+          "share": 0.1524047470331043
+        },
+        {
+          "decade": 2020,
+          "paper_count": 489,
+          "share": 0.11172035640849898
+        }
+      ]
+    },
+    {
+      "id": "jel:E31:Inflation",
+      "label": "Inflation",
+      "paper_count": 1343,
+      "node_rows": 1356,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 31,
+          "share": 0.2897196261682243
+        },
+        {
+          "decade": 1980,
+          "paper_count": 151,
+          "share": 0.33259911894273125
+        },
+        {
+          "decade": 1990,
+          "paper_count": 162,
+          "share": 0.1643002028397566
+        },
+        {
+          "decade": 2000,
+          "paper_count": 252,
+          "share": 0.12863705972434916
+        },
+        {
+          "decade": 2010,
+          "paper_count": 388,
+          "share": 0.08078284405579846
+        },
+        {
+          "decade": 2020,
+          "paper_count": 359,
+          "share": 0.08201964816084076
+        }
+      ]
+    },
+    {
+      "id": "wp:37671470",
+      "label": "Policy uncertainty",
+      "paper_count": 1233,
+      "node_rows": 1336,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 4,
+          "share": 0.037383177570093455
+        },
+        {
+          "decade": 1980,
+          "paper_count": 28,
+          "share": 0.06167400881057269
+        },
+        {
+          "decade": 1990,
+          "paper_count": 44,
+          "share": 0.04462474645030426
+        },
+        {
+          "decade": 2000,
+          "paper_count": 79,
+          "share": 0.04032669729453803
+        },
+        {
+          "decade": 2010,
+          "paper_count": 332,
+          "share": 0.06912346450135332
+        },
+        {
+          "decade": 2020,
+          "paper_count": 746,
+          "share": 0.17043637194425407
+        }
+      ]
+    },
+    {
+      "id": "jel:G12:Trading Volume",
+      "label": "Trading Volume",
+      "paper_count": 975,
+      "node_rows": 1059,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 12,
+          "share": 0.11214953271028037
+        },
+        {
+          "decade": 1980,
+          "paper_count": 35,
+          "share": 0.07709251101321586
+        },
+        {
+          "decade": 1990,
+          "paper_count": 136,
+          "share": 0.13793103448275862
+        },
+        {
+          "decade": 2000,
+          "paper_count": 211,
+          "share": 0.10770801429300664
+        },
+        {
+          "decade": 2010,
+          "paper_count": 343,
+          "share": 0.07141369977097647
+        },
+        {
+          "decade": 2020,
+          "paper_count": 238,
+          "share": 0.054375142791866574
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/market-liquidity",
+      "label": "Market liquidity",
+      "paper_count": 805,
+      "node_rows": 877,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 8,
+          "share": 0.01762114537444934
+        },
+        {
+          "decade": 1990,
+          "paper_count": 50,
+          "share": 0.05070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 121,
+          "share": 0.061766207248596224
+        },
+        {
+          "decade": 2010,
+          "paper_count": 367,
+          "share": 0.07641057672288153
+        },
+        {
+          "decade": 2020,
+          "paper_count": 258,
+          "share": 0.05894448252227553
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/market-sentiment",
+      "label": "Market sentiment",
+      "paper_count": 769,
+      "node_rows": 843,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 4,
+          "share": 0.00881057268722467
+        },
+        {
+          "decade": 1990,
+          "paper_count": 14,
+          "share": 0.014198782961460446
+        },
+        {
+          "decade": 2000,
+          "paper_count": 57,
+          "share": 0.02909647779479326
+        },
+        {
+          "decade": 2010,
+          "paper_count": 289,
+          "share": 0.06017072662919009
+        },
+        {
+          "decade": 2020,
+          "paper_count": 402,
+          "share": 0.09184372858122002
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/bank-credit",
+      "label": "Bank credit",
+      "paper_count": 699,
+      "node_rows": 723,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 11,
+          "share": 0.102803738317757
+        },
+        {
+          "decade": 1980,
+          "paper_count": 31,
+          "share": 0.06828193832599119
+        },
+        {
+          "decade": 1990,
+          "paper_count": 51,
+          "share": 0.05172413793103448
+        },
+        {
+          "decade": 2000,
+          "paper_count": 75,
+          "share": 0.03828483920367534
+        },
+        {
+          "decade": 2010,
+          "paper_count": 264,
+          "share": 0.05496564647095565
+        },
+        {
+          "decade": 2020,
+          "paper_count": 267,
+          "share": 0.06100068540095956
+        }
+      ]
+    },
+    {
+      "id": "jel:G21:Borrowing",
+      "label": "Borrowing",
+      "paper_count": 608,
+      "node_rows": 655,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 9,
+          "share": 0.08411214953271028
+        },
+        {
+          "decade": 1980,
+          "paper_count": 42,
+          "share": 0.09251101321585903
+        },
+        {
+          "decade": 1990,
+          "paper_count": 52,
+          "share": 0.05273833671399594
+        },
+        {
+          "decade": 2000,
+          "paper_count": 85,
+          "share": 0.043389484430832057
+        },
+        {
+          "decade": 2010,
+          "paper_count": 220,
+          "share": 0.04580470539246304
+        },
+        {
+          "decade": 2020,
+          "paper_count": 200,
+          "share": 0.045693397304089556
+        }
+      ]
+    },
+    {
+      "id": "jel:G12:Stock Returns",
+      "label": "Stock Returns",
+      "paper_count": 576,
+      "node_rows": 609,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 40,
+          "share": 0.04056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 97,
+          "share": 0.049515058703420115
+        },
+        {
+          "decade": 2010,
+          "paper_count": 224,
+          "share": 0.04663751821778055
+        },
+        {
+          "decade": 2020,
+          "paper_count": 207,
+          "share": 0.047292666209732694
+        }
+      ]
+    },
+    {
+      "id": "jel:E32:Recession",
+      "label": "Recession",
+      "paper_count": 476,
+      "node_rows": 489,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 7,
+          "share": 0.06542056074766354
+        },
+        {
+          "decade": 1980,
+          "paper_count": 12,
+          "share": 0.02643171806167401
+        },
+        {
+          "decade": 1990,
+          "paper_count": 31,
+          "share": 0.03144016227180527
+        },
+        {
+          "decade": 2000,
+          "paper_count": 60,
+          "share": 0.030627871362940276
+        },
+        {
+          "decade": 2010,
+          "paper_count": 192,
+          "share": 0.03997501561524047
+        },
+        {
+          "decade": 2020,
+          "paper_count": 174,
+          "share": 0.039753255654557916
+        }
+      ]
+    },
+    {
+      "id": "jel:C54:Monetary Policy",
+      "label": "Monetary Policy",
+      "paper_count": 459,
+      "node_rows": 501,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 4,
+          "share": 0.037383177570093455
+        },
+        {
+          "decade": 1980,
+          "paper_count": 8,
+          "share": 0.01762114537444934
+        },
+        {
+          "decade": 1990,
+          "paper_count": 33,
+          "share": 0.033468559837728194
+        },
+        {
+          "decade": 2000,
+          "paper_count": 62,
+          "share": 0.03164880040837162
+        },
+        {
+          "decade": 2010,
+          "paper_count": 179,
+          "share": 0.037268373932958565
+        },
+        {
+          "decade": 2020,
+          "paper_count": 173,
+          "share": 0.03952478866803747
+        }
+      ]
+    },
+    {
+      "id": "jel:E32:Business Cycle",
+      "label": "Business Cycle",
+      "paper_count": 390,
+      "node_rows": 393,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 16,
+          "share": 0.03524229074889868
+        },
+        {
+          "decade": 1990,
+          "paper_count": 37,
+          "share": 0.037525354969574036
+        },
+        {
+          "decade": 2000,
+          "paper_count": 60,
+          "share": 0.030627871362940276
+        },
+        {
+          "decade": 2010,
+          "paper_count": 177,
+          "share": 0.03685196752029981
+        },
+        {
+          "decade": 2020,
+          "paper_count": 97,
+          "share": 0.022161297692483435
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/funding-liquidity",
+      "label": "Funding liquidity",
+      "paper_count": 382,
+      "node_rows": 415,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 16,
+          "share": 0.016227180527383367
+        },
+        {
+          "decade": 2000,
+          "paper_count": 38,
+          "share": 0.019397651863195507
+        },
+        {
+          "decade": 2010,
+          "paper_count": 187,
+          "share": 0.03893399958359359
+        },
+        {
+          "decade": 2020,
+          "paper_count": 134,
+          "share": 0.030614576193740004
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/volatility-risk",
+      "label": "Volatility risk",
+      "paper_count": 345,
+      "node_rows": 387,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 20,
+          "share": 0.02028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 58,
+          "share": 0.029606942317508933
+        },
+        {
+          "decade": 2010,
+          "paper_count": 153,
+          "share": 0.03185509056839475
+        },
+        {
+          "decade": 2020,
+          "paper_count": 110,
+          "share": 0.02513136851724926
+        }
+      ]
+    },
+    {
+      "id": "jel:D80:Uncertainty.",
+      "label": "Uncertainty",
+      "paper_count": 315,
+      "node_rows": 345,
+      "field_primary": "micro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 9,
+          "share": 0.019823788546255508
+        },
+        {
+          "decade": 1990,
+          "paper_count": 12,
+          "share": 0.012170385395537525
+        },
+        {
+          "decade": 2000,
+          "paper_count": 32,
+          "share": 0.01633486472690148
+        },
+        {
+          "decade": 2010,
+          "paper_count": 107,
+          "share": 0.022277743077243388
+        },
+        {
+          "decade": 2020,
+          "paper_count": 152,
+          "share": 0.034726981951108064
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/forward-volatility",
+      "label": "Forward volatility",
+      "paper_count": 301,
+      "node_rows": 324,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 33,
+          "share": 0.033468559837728194
+        },
+        {
+          "decade": 2000,
+          "paper_count": 45,
+          "share": 0.022970903522205207
+        },
+        {
+          "decade": 2010,
+          "paper_count": 117,
+          "share": 0.024359775140537165
+        },
+        {
+          "decade": 2020,
+          "paper_count": 104,
+          "share": 0.02376056659812657
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/quantitative-easing",
+      "label": "Quantitative easing",
+      "paper_count": 281,
+      "node_rows": 315,
+      "field_primary": "macro",
+      "score_band": "rescue",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 9,
+          "share": 0.004594180704441042
+        },
+        {
+          "decade": 2010,
+          "paper_count": 130,
+          "share": 0.027066416822819073
+        },
+        {
+          "decade": 2020,
+          "paper_count": 139,
+          "share": 0.03175691112634224
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/bid–ask-spread",
+      "label": "Bid–ask spread",
+      "paper_count": 270,
+      "node_rows": 296,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 52,
+          "share": 0.05273833671399594
+        },
+        {
+          "decade": 2000,
+          "paper_count": 67,
+          "share": 0.034201123021949976
+        },
+        {
+          "decade": 2010,
+          "paper_count": 103,
+          "share": 0.02144493025192588
+        },
+        {
+          "decade": 2020,
+          "paper_count": 43,
+          "share": 0.009824080420379255
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/investor-behavior",
+      "label": "Investor behavior",
+      "paper_count": 254,
+      "node_rows": 273,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 8,
+          "share": 0.01762114537444934
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 29,
+          "share": 0.014803471158754467
+        },
+        {
+          "decade": 2010,
+          "paper_count": 100,
+          "share": 0.020820320632937747
+        },
+        {
+          "decade": 2020,
+          "paper_count": 108,
+          "share": 0.02467443454420836
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/credit-spread",
+      "label": "Credit spread (options)",
+      "paper_count": 252,
+      "node_rows": 272,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 46,
+          "share": 0.02348136804492088
+        },
+        {
+          "decade": 2010,
+          "paper_count": 113,
+          "share": 0.023526962315219654
+        },
+        {
+          "decade": 2020,
+          "paper_count": 91,
+          "share": 0.02079049577336075
+        }
+      ]
+    },
+    {
+      "id": "jel:C22:Garch Models",
+      "label": "Garch Models",
+      "paper_count": 246,
+      "node_rows": 273,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 17,
+          "share": 0.017241379310344827
+        },
+        {
+          "decade": 2000,
+          "paper_count": 50,
+          "share": 0.025523226135783564
+        },
+        {
+          "decade": 2010,
+          "paper_count": 96,
+          "share": 0.019987507807620236
+        },
+        {
+          "decade": 2020,
+          "paper_count": 81,
+          "share": 0.018505825908156272
+        }
+      ]
+    },
+    {
+      "id": "wp:11871466",
+      "label": "Net interest spread",
+      "paper_count": 232,
+      "node_rows": 238,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 14,
+          "share": 0.030837004405286344
+        },
+        {
+          "decade": 1990,
+          "paper_count": 31,
+          "share": 0.03144016227180527
+        },
+        {
+          "decade": 2000,
+          "paper_count": 47,
+          "share": 0.02399183256763655
+        },
+        {
+          "decade": 2010,
+          "paper_count": 89,
+          "share": 0.018530085363314595
+        },
+        {
+          "decade": 2020,
+          "paper_count": 49,
+          "share": 0.011194882339501942
+        }
+      ]
+    },
+    {
+      "id": "jel:E23:Output",
+      "label": "Output",
+      "paper_count": 232,
+      "node_rows": 232,
+      "field_primary": "unknown",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 7,
+          "share": 0.015418502202643172
+        },
+        {
+          "decade": 1990,
+          "paper_count": 20,
+          "share": 0.02028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 36,
+          "share": 0.018376722817764167
+        },
+        {
+          "decade": 2010,
+          "paper_count": 94,
+          "share": 0.019571101394961484
+        },
+        {
+          "decade": 2020,
+          "paper_count": 73,
+          "share": 0.01667809001599269
+        }
+      ]
+    },
+    {
+      "id": "jel:F62:Economic Growth",
+      "label": "Economic Growth",
+      "paper_count": 214,
+      "node_rows": 215,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 9,
+          "share": 0.019823788546255508
+        },
+        {
+          "decade": 1990,
+          "paper_count": 14,
+          "share": 0.014198782961460446
+        },
+        {
+          "decade": 2000,
+          "paper_count": 31,
+          "share": 0.01582440020418581
+        },
+        {
+          "decade": 2010,
+          "paper_count": 75,
+          "share": 0.01561524047470331
+        },
+        {
+          "decade": 2020,
+          "paper_count": 84,
+          "share": 0.019191226867717615
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/emerging-markets",
+      "label": "Emerging markets",
+      "paper_count": 208,
+      "node_rows": 242,
+      "field_primary": "development",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 32,
+          "share": 0.01633486472690148
+        },
+        {
+          "decade": 2010,
+          "paper_count": 99,
+          "share": 0.02061211742660837
+        },
+        {
+          "decade": 2020,
+          "paper_count": 67,
+          "share": 0.015307288096870002
+        }
+      ]
+    },
+    {
+      "id": "jel:G01:Global Financial Crisis",
+      "label": "Global Financial Crisis",
+      "paper_count": 207,
+      "node_rows": 211,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 10,
+          "share": 0.005104645227156712
+        },
+        {
+          "decade": 2010,
+          "paper_count": 96,
+          "share": 0.019987507807620236
+        },
+        {
+          "decade": 2020,
+          "paper_count": 97,
+          "share": 0.022161297692483435
+        }
+      ]
+    },
+    {
+      "id": "wp:14704282",
+      "label": "Fit model",
+      "paper_count": 203,
+      "node_rows": 205,
+      "field_primary": "methods",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 7,
+          "share": 0.015418502202643172
+        },
+        {
+          "decade": 1990,
+          "paper_count": 16,
+          "share": 0.016227180527383367
+        },
+        {
+          "decade": 2000,
+          "paper_count": 40,
+          "share": 0.02041858090862685
+        },
+        {
+          "decade": 2010,
+          "paper_count": 94,
+          "share": 0.019571101394961484
+        },
+        {
+          "decade": 2020,
+          "paper_count": 45,
+          "share": 0.01028101439342015
+        }
+      ]
+    },
+    {
+      "id": "jel:O33:Spillovers",
+      "label": "Spillovers",
+      "paper_count": 194,
+      "node_rows": 246,
+      "field_primary": "micro",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 63,
+          "share": 0.01311680199875078
+        },
+        {
+          "decade": 2020,
+          "paper_count": 119,
+          "share": 0.027187571395933287
+        }
+      ]
+    },
+    {
+      "id": "jel:D23:Transaction Costs",
+      "label": "Transaction Costs",
+      "paper_count": 176,
+      "node_rows": 184,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 24,
+          "share": 0.02434077079107505
+        },
+        {
+          "decade": 2000,
+          "paper_count": 39,
+          "share": 0.019908116385911178
+        },
+        {
+          "decade": 2010,
+          "paper_count": 66,
+          "share": 0.013741411617738912
+        },
+        {
+          "decade": 2020,
+          "paper_count": 40,
+          "share": 0.009138679460817912
+        }
+      ]
+    },
+    {
+      "id": "jel:E43:Interest Rates",
+      "label": "Interest Rates",
+      "paper_count": 170,
+      "node_rows": 173,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 12,
+          "share": 0.02643171806167401
+        },
+        {
+          "decade": 1990,
+          "paper_count": 22,
+          "share": 0.02231237322515213
+        },
+        {
+          "decade": 2000,
+          "paper_count": 25,
+          "share": 0.012761613067891782
+        },
+        {
+          "decade": 2010,
+          "paper_count": 61,
+          "share": 0.012700395586092025
+        },
+        {
+          "decade": 2020,
+          "paper_count": 47,
+          "share": 0.010737948366461046
+        }
+      ]
+    },
+    {
+      "id": "jel:D25:Investment",
+      "label": "Investment",
+      "paper_count": 166,
+      "node_rows": 166,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 7,
+          "share": 0.015418502202643172
+        },
+        {
+          "decade": 1990,
+          "paper_count": 15,
+          "share": 0.015212981744421906
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 51,
+          "share": 0.010618363522798251
+        },
+        {
+          "decade": 2020,
+          "paper_count": 76,
+          "share": 0.017363490975554032
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/implied-volatility",
+      "label": "Implied volatility",
+      "paper_count": 164,
+      "node_rows": 195,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 12,
+          "share": 0.012170385395537525
+        },
+        {
+          "decade": 2000,
+          "paper_count": 23,
+          "share": 0.01174068402246044
+        },
+        {
+          "decade": 2010,
+          "paper_count": 65,
+          "share": 0.013533208411409536
+        },
+        {
+          "decade": 2020,
+          "paper_count": 62,
+          "share": 0.014164953164267764
+        }
+      ]
+    },
+    {
+      "id": "Q9324486",
+      "label": "credit market",
+      "paper_count": 164,
+      "node_rows": 170,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 9,
+          "share": 0.019823788546255508
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 79,
+          "share": 0.01644805330002082
+        },
+        {
+          "decade": 2020,
+          "paper_count": 53,
+          "share": 0.012108750285583733
+        }
+      ]
+    },
+    {
+      "id": "jel:D21:Firms",
+      "label": "Firms",
+      "paper_count": 163,
+      "node_rows": 180,
+      "field_primary": "micro",
+      "score_band": "rescue",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 8,
+          "share": 0.008113590263691683
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 54,
+          "share": 0.011242973141786383
+        },
+        {
+          "decade": 2020,
+          "paper_count": 82,
+          "share": 0.018734292894676718
+        }
+      ]
+    },
+    {
+      "id": "jel:I:Welfare",
+      "label": "Welfare",
+      "paper_count": 162,
+      "node_rows": 162,
+      "field_primary": "public",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 12,
+          "share": 0.012170385395537525
+        },
+        {
+          "decade": 2000,
+          "paper_count": 28,
+          "share": 0.014293006636038795
+        },
+        {
+          "decade": 2010,
+          "paper_count": 65,
+          "share": 0.013533208411409536
+        },
+        {
+          "decade": 2020,
+          "paper_count": 54,
+          "share": 0.01233721727210418
+        }
+      ]
+    },
+    {
+      "id": "jel:C58:Volatility Forecasting",
+      "label": "Volatility Forecasting",
+      "paper_count": 154,
+      "node_rows": 166,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 8,
+          "share": 0.008113590263691683
+        },
+        {
+          "decade": 2000,
+          "paper_count": 24,
+          "share": 0.01225114854517611
+        },
+        {
+          "decade": 2010,
+          "paper_count": 64,
+          "share": 0.013325005205080159
+        },
+        {
+          "decade": 2020,
+          "paper_count": 57,
+          "share": 0.013022618231665525
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/credit-risk",
+      "label": "Credit risk",
+      "paper_count": 151,
+      "node_rows": 162,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 21,
+          "share": 0.010719754977029096
+        },
+        {
+          "decade": 2010,
+          "paper_count": 76,
+          "share": 0.015823443681032688
+        },
+        {
+          "decade": 2020,
+          "paper_count": 47,
+          "share": 0.010737948366461046
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/supply-shock",
+      "label": "Supply shock",
+      "paper_count": 149,
+      "node_rows": 153,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 13,
+          "share": 0.013184584178498986
+        },
+        {
+          "decade": 2000,
+          "paper_count": 18,
+          "share": 0.009188361408882083
+        },
+        {
+          "decade": 2010,
+          "paper_count": 59,
+          "share": 0.012283989173433272
+        },
+        {
+          "decade": 2020,
+          "paper_count": 58,
+          "share": 0.013251085218185972
+        }
+      ]
+    },
+    {
+      "id": "jel:D21:Diversification",
+      "label": "Diversification",
+      "paper_count": 147,
+      "node_rows": 159,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 56,
+          "share": 0.011659379554445138
+        },
+        {
+          "decade": 2020,
+          "paper_count": 67,
+          "share": 0.015307288096870002
+        }
+      ]
+    },
+    {
+      "id": "jel:G21:Bank Lending",
+      "label": "Bank Lending",
+      "paper_count": 142,
+      "node_rows": 161,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 10,
+          "share": 0.005104645227156712
+        },
+        {
+          "decade": 2010,
+          "paper_count": 57,
+          "share": 0.011867582760774516
+        },
+        {
+          "decade": 2020,
+          "paper_count": 66,
+          "share": 0.015078821110349555
+        }
+      ]
+    },
+    {
+      "id": "wp:24419375",
+      "label": "Idiosyncratic risk",
+      "paper_count": 142,
+      "node_rows": 156,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 23,
+          "share": 0.01174068402246044
+        },
+        {
+          "decade": 2010,
+          "paper_count": 69,
+          "share": 0.014366021236727046
+        },
+        {
+          "decade": 2020,
+          "paper_count": 47,
+          "share": 0.010737948366461046
+        }
+      ]
+    },
+    {
+      "id": "jel:O11:GDP",
+      "label": "GDP",
+      "paper_count": 140,
+      "node_rows": 145,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 15,
+          "share": 0.007656967840735069
+        },
+        {
+          "decade": 2010,
+          "paper_count": 45,
+          "share": 0.009369144284821987
+        },
+        {
+          "decade": 2020,
+          "paper_count": 69,
+          "share": 0.015764222069910898
+        }
+      ]
+    },
+    {
+      "id": "jel:E44:Asset Price",
+      "label": "Asset Price",
+      "paper_count": 139,
+      "node_rows": 139,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 23,
+          "share": 0.01174068402246044
+        },
+        {
+          "decade": 2010,
+          "paper_count": 65,
+          "share": 0.013533208411409536
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "jel:C58:Volatility Models.",
+      "label": "Volatility Models",
+      "paper_count": 138,
+      "node_rows": 153,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 4,
+          "share": 0.00881057268722467
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 26,
+          "share": 0.013272077590607452
+        },
+        {
+          "decade": 2010,
+          "paper_count": 63,
+          "share": 0.01311680199875078
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "wp:63030231",
+      "label": "COVID-19",
+      "paper_count": 138,
+      "node_rows": 140,
+      "field_primary": "health",
+      "score_band": "rescue",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 2020,
+          "paper_count": 137,
+          "share": 0.03129997715330135
+        }
+      ]
+    },
+    {
+      "id": "jel:G12:Risk Premium",
+      "label": "Risk Premium",
+      "paper_count": 136,
+      "node_rows": 143,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 25,
+          "share": 0.012761613067891782
+        },
+        {
+          "decade": 2010,
+          "paper_count": 56,
+          "share": 0.011659379554445138
+        },
+        {
+          "decade": 2020,
+          "paper_count": 43,
+          "share": 0.009824080420379255
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/information-asymmetry",
+      "label": "Information asymmetry",
+      "paper_count": 136,
+      "node_rows": 137,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 15,
+          "share": 0.015212981744421906
+        },
+        {
+          "decade": 2000,
+          "paper_count": 25,
+          "share": 0.012761613067891782
+        },
+        {
+          "decade": 2010,
+          "paper_count": 42,
+          "share": 0.008744534665833853
+        },
+        {
+          "decade": 2020,
+          "paper_count": 52,
+          "share": 0.011880283299063285
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/excess-return",
+      "label": "Excess return",
+      "paper_count": 135,
+      "node_rows": 139,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 24,
+          "share": 0.01225114854517611
+        },
+        {
+          "decade": 2010,
+          "paper_count": 63,
+          "share": 0.01311680199875078
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "jel:F33:Exchange Rate",
+      "label": "Exchange Rate",
+      "paper_count": 135,
+      "node_rows": 139,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 18,
+          "share": 0.018255578093306288
+        },
+        {
+          "decade": 2000,
+          "paper_count": 22,
+          "share": 0.011230219499744768
+        },
+        {
+          "decade": 2010,
+          "paper_count": 56,
+          "share": 0.011659379554445138
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "wp:13493012",
+      "label": "Relative volatility",
+      "paper_count": 129,
+      "node_rows": 136,
+      "field_primary": "unknown",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 15,
+          "share": 0.015212981744421906
+        },
+        {
+          "decade": 2000,
+          "paper_count": 32,
+          "share": 0.01633486472690148
+        },
+        {
+          "decade": 2010,
+          "paper_count": 48,
+          "share": 0.009993753903810118
+        },
+        {
+          "decade": 2020,
+          "paper_count": 32,
+          "share": 0.00731094356865433
+        }
+      ]
+    },
+    {
+      "id": "jel:G32:Leverage",
+      "label": "Leverage",
+      "paper_count": 129,
+      "node_rows": 134,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 61,
+          "share": 0.012700395586092025
+        },
+        {
+          "decade": 2020,
+          "paper_count": 48,
+          "share": 0.010966415352981495
+        }
+      ]
+    },
+    {
+      "id": "Q137452942",
+      "label": "macroeconomic analysis",
+      "paper_count": 129,
+      "node_rows": 132,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 12,
+          "share": 0.006125574272588055
+        },
+        {
+          "decade": 2010,
+          "paper_count": 62,
+          "share": 0.012908598792421403
+        },
+        {
+          "decade": 2020,
+          "paper_count": 50,
+          "share": 0.011423349326022389
+        }
+      ]
+    },
+    {
+      "id": "jel:G23:Institutional Investors",
+      "label": "Institutional Investors",
+      "paper_count": 128,
+      "node_rows": 141,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 19,
+          "share": 0.009698825931597753
+        },
+        {
+          "decade": 2010,
+          "paper_count": 50,
+          "share": 0.010410160316468874
+        },
+        {
+          "decade": 2020,
+          "paper_count": 53,
+          "share": 0.012108750285583733
+        }
+      ]
+    },
+    {
+      "id": "wp:32005855",
+      "label": "2008 financial crisis",
+      "paper_count": 124,
+      "node_rows": 127,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 2000,
+          "paper_count": 5,
+          "share": 0.002552322613578356
+        },
+        {
+          "decade": 2010,
+          "paper_count": 90,
+          "share": 0.018738288569643973
+        },
+        {
+          "decade": 2020,
+          "paper_count": 27,
+          "share": 0.00616860863605209
+        }
+      ]
+    },
+    {
+      "id": "jel:G12:Stock Price",
+      "label": "Stock Price",
+      "paper_count": 124,
+      "node_rows": 125,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 21,
+          "share": 0.02129817444219067
+        },
+        {
+          "decade": 2000,
+          "paper_count": 20,
+          "share": 0.010209290454313425
+        },
+        {
+          "decade": 2010,
+          "paper_count": 42,
+          "share": 0.008744534665833853
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/stochastic-volatility",
+      "label": "Stochastic volatility",
+      "paper_count": 123,
+      "node_rows": 138,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 15,
+          "share": 0.015212981744421906
+        },
+        {
+          "decade": 2000,
+          "paper_count": 24,
+          "share": 0.01225114854517611
+        },
+        {
+          "decade": 2010,
+          "paper_count": 52,
+          "share": 0.010826566729127629
+        },
+        {
+          "decade": 2020,
+          "paper_count": 29,
+          "share": 0.006625542609092986
+        }
+      ]
+    },
+    {
+      "id": "jel:B26:Financial Crisis",
+      "label": "Financial Crisis",
+      "paper_count": 122,
+      "node_rows": 124,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 9,
+          "share": 0.004594180704441042
+        },
+        {
+          "decade": 2010,
+          "paper_count": 70,
+          "share": 0.014574224443056423
+        },
+        {
+          "decade": 2020,
+          "paper_count": 37,
+          "share": 0.008453278501256569
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/systemic-risk",
+      "label": "Systemic risk",
+      "paper_count": 121,
+      "node_rows": 138,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 2000,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2000,
+          "paper_count": 5,
+          "share": 0.002552322613578356
+        },
+        {
+          "decade": 2010,
+          "paper_count": 59,
+          "share": 0.012283989173433272
+        },
+        {
+          "decade": 2020,
+          "paper_count": 57,
+          "share": 0.013022618231665525
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/pairs-trade",
+      "label": "Pairs trade",
+      "paper_count": 121,
+      "node_rows": 129,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 15,
+          "share": 0.015212981744421906
+        },
+        {
+          "decade": 2000,
+          "paper_count": 26,
+          "share": 0.013272077590607452
+        },
+        {
+          "decade": 2010,
+          "paper_count": 56,
+          "share": 0.011659379554445138
+        },
+        {
+          "decade": 2020,
+          "paper_count": 21,
+          "share": 0.004797806716929404
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-crisis",
+      "label": "Liquidity crisis",
+      "paper_count": 121,
+      "node_rows": 127,
+      "field_primary": "finance",
+      "score_band": "rescue",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 68,
+          "share": 0.014157818030397668
+        },
+        {
+          "decade": 2020,
+          "paper_count": 30,
+          "share": 0.006854009595613434
+        }
+      ]
+    },
+    {
+      "id": "jel:E31:Inflationary Expectations",
+      "label": "Inflationary Expectations",
+      "paper_count": 120,
+      "node_rows": 137,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 8,
+          "share": 0.008113590263691683
+        },
+        {
+          "decade": 2000,
+          "paper_count": 26,
+          "share": 0.013272077590607452
+        },
+        {
+          "decade": 2010,
+          "paper_count": 44,
+          "share": 0.009160941078492609
+        },
+        {
+          "decade": 2020,
+          "paper_count": 36,
+          "share": 0.00822481151473612
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/sentiment-analysis",
+      "label": "Sentiment analysis",
+      "paper_count": 118,
+      "node_rows": 139,
+      "field_primary": "methods",
+      "score_band": "candidate",
+      "first_decade": 2000,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2000,
+          "paper_count": 4,
+          "share": 0.002041858090862685
+        },
+        {
+          "decade": 2010,
+          "paper_count": 48,
+          "share": 0.009993753903810118
+        },
+        {
+          "decade": 2020,
+          "paper_count": 66,
+          "share": 0.015078821110349555
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/price-fluctuation",
+      "label": "Price fluctuation",
+      "paper_count": 117,
+      "node_rows": 127,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 6,
+          "share": 0.013215859030837005
+        },
+        {
+          "decade": 1990,
+          "paper_count": 20,
+          "share": 0.02028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 18,
+          "share": 0.009188361408882083
+        },
+        {
+          "decade": 2010,
+          "paper_count": 40,
+          "share": 0.0083281282531751
+        },
+        {
+          "decade": 2020,
+          "paper_count": 30,
+          "share": 0.006854009595613434
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/volatility-clustering",
+      "label": "Volatility clustering",
+      "paper_count": 117,
+      "node_rows": 121,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 12,
+          "share": 0.012170385395537525
+        },
+        {
+          "decade": 2000,
+          "paper_count": 34,
+          "share": 0.017355793772332824
+        },
+        {
+          "decade": 2010,
+          "paper_count": 43,
+          "share": 0.008952737872163231
+        },
+        {
+          "decade": 2020,
+          "paper_count": 28,
+          "share": 0.006397075622572538
+        }
+      ]
+    },
+    {
+      "id": "Q540626",
+      "label": "bond market",
+      "paper_count": 117,
+      "node_rows": 120,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 21,
+          "share": 0.010719754977029096
+        },
+        {
+          "decade": 2010,
+          "paper_count": 44,
+          "share": 0.009160941078492609
+        },
+        {
+          "decade": 2020,
+          "paper_count": 44,
+          "share": 0.010052547406899703
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-premium",
+      "label": "Liquidity premium",
+      "paper_count": 116,
+      "node_rows": 130,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 56,
+          "share": 0.011659379554445138
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "jel:C53:Predictability",
+      "label": "Predictability",
+      "paper_count": 113,
+      "node_rows": 119,
+      "field_primary": "unknown",
+      "score_band": "rescue",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 13,
+          "share": 0.006636038795303726
+        },
+        {
+          "decade": 2010,
+          "paper_count": 50,
+          "share": 0.010410160316468874
+        },
+        {
+          "decade": 2020,
+          "paper_count": 45,
+          "share": 0.01028101439342015
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/abnormal-return",
+      "label": "Abnormal return",
+      "paper_count": 113,
+      "node_rows": 118,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 47,
+          "share": 0.009785550697480742
+        },
+        {
+          "decade": 2020,
+          "paper_count": 43,
+          "share": 0.009824080420379255
+        }
+      ]
+    },
+    {
+      "id": "jel:E32:Crisis",
+      "label": "Crisis",
+      "paper_count": 113,
+      "node_rows": 116,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 6,
+          "share": 0.0030627871362940277
+        },
+        {
+          "decade": 2010,
+          "paper_count": 63,
+          "share": 0.01311680199875078
+        },
+        {
+          "decade": 2020,
+          "paper_count": 37,
+          "share": 0.008453278501256569
+        }
+      ]
+    },
+    {
+      "id": "jel:R12:Spillover Effect",
+      "label": "Spillover Effect",
+      "paper_count": 112,
+      "node_rows": 121,
+      "field_primary": "unknown",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 5,
+          "share": 0.002552322613578356
+        },
+        {
+          "decade": 2010,
+          "paper_count": 36,
+          "share": 0.007495315427857589
+        },
+        {
+          "decade": 2020,
+          "paper_count": 69,
+          "share": 0.015764222069910898
+        }
+      ]
+    },
+    {
+      "id": "jel:C22:GARCH",
+      "label": "GARCH",
+      "paper_count": 112,
+      "node_rows": 120,
+      "field_primary": "methods",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 8,
+          "share": 0.008113590263691683
+        },
+        {
+          "decade": 2000,
+          "paper_count": 17,
+          "share": 0.008677896886166412
+        },
+        {
+          "decade": 2010,
+          "paper_count": 50,
+          "share": 0.010410160316468874
+        },
+        {
+          "decade": 2020,
+          "paper_count": 37,
+          "share": 0.008453278501256569
+        }
+      ]
+    },
+    {
+      "id": "jel:L71:Crude Oil",
+      "label": "Crude Oil",
+      "paper_count": 112,
+      "node_rows": 116,
+      "field_primary": "environment",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 3,
+          "share": 0.0015313935681470138
+        },
+        {
+          "decade": 2010,
+          "paper_count": 34,
+          "share": 0.007078909015198834
+        },
+        {
+          "decade": 2020,
+          "paper_count": 74,
+          "share": 0.016906557002513138
+        }
+      ]
+    },
+    {
+      "id": "wp:49076898",
+      "label": "Liquidity at risk",
+      "paper_count": 110,
+      "node_rows": 114,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 21,
+          "share": 0.010719754977029096
+        },
+        {
+          "decade": 2010,
+          "paper_count": 51,
+          "share": 0.010618363522798251
+        },
+        {
+          "decade": 2020,
+          "paper_count": 35,
+          "share": 0.007996344528215673
+        }
+      ]
+    },
+    {
+      "id": "jel:F31:Risk Premia",
+      "label": "Risk Premia",
+      "paper_count": 109,
+      "node_rows": 124,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 7,
+          "share": 0.015418502202643172
+        },
+        {
+          "decade": 1990,
+          "paper_count": 8,
+          "share": 0.008113590263691683
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 44,
+          "share": 0.009160941078492609
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/interest-rate",
+      "label": "Interest rate",
+      "paper_count": 107,
+      "node_rows": 109,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 8,
+          "share": 0.01762114537444934
+        },
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 18,
+          "share": 0.009188361408882083
+        },
+        {
+          "decade": 2010,
+          "paper_count": 41,
+          "share": 0.008536331459504476
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/price-discovery",
+      "label": "Price discovery",
+      "paper_count": 103,
+      "node_rows": 114,
+      "field_primary": "micro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 22,
+          "share": 0.011230219499744768
+        },
+        {
+          "decade": 2010,
+          "paper_count": 46,
+          "share": 0.009577347491151364
+        },
+        {
+          "decade": 2020,
+          "paper_count": 27,
+          "share": 0.00616860863605209
+        }
+      ]
+    },
+    {
+      "id": "jel:E62:Fiscal Policy",
+      "label": "Fiscal Policy",
+      "paper_count": 103,
+      "node_rows": 108,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 10,
+          "share": 0.005104645227156712
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 43,
+          "share": 0.009824080420379255
+        }
+      ]
+    },
+    {
+      "id": "wp:170992",
+      "label": "S&P 500",
+      "paper_count": 102,
+      "node_rows": 109,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 45,
+          "share": 0.009369144284821987
+        },
+        {
+          "decade": 2020,
+          "paper_count": 40,
+          "share": 0.009138679460817912
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/oil-price",
+      "label": "Oil price",
+      "paper_count": 102,
+      "node_rows": 108,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 5,
+          "share": 0.002552322613578356
+        },
+        {
+          "decade": 2010,
+          "paper_count": 31,
+          "share": 0.0064542993962107015
+        },
+        {
+          "decade": 2020,
+          "paper_count": 62,
+          "share": 0.014164953164267764
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/monetary-transmission-mechanism",
+      "label": "Monetary transmission mechanism",
+      "paper_count": 102,
+      "node_rows": 104,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 20,
+          "share": 0.010209290454313425
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 40,
+          "share": 0.009138679460817912
+        }
+      ]
+    },
+    {
+      "id": "jel:L25:Firm Size",
+      "label": "Firm Size",
+      "paper_count": 102,
+      "node_rows": 103,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 18,
+          "share": 0.009188361408882083
+        },
+        {
+          "decade": 2010,
+          "paper_count": 40,
+          "share": 0.0083281282531751
+        },
+        {
+          "decade": 2020,
+          "paper_count": 31,
+          "share": 0.007082476582133882
+        }
+      ]
+    },
+    {
+      "id": "jel:D81:Hedging",
+      "label": "Hedging",
+      "paper_count": 101,
+      "node_rows": 104,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 4,
+          "share": 0.00881057268722467
+        },
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 15,
+          "share": 0.007656967840735069
+        },
+        {
+          "decade": 2010,
+          "paper_count": 31,
+          "share": 0.0064542993962107015
+        },
+        {
+          "decade": 2020,
+          "paper_count": 47,
+          "share": 0.010737948366461046
+        }
+      ]
+    },
+    {
+      "id": "jel:E52:Inflation Targeting",
+      "label": "Inflation Targeting",
+      "paper_count": 100,
+      "node_rows": 111,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 27,
+          "share": 0.013782542113323124
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 30,
+          "share": 0.006854009595613434
+        }
+      ]
+    },
+    {
+      "id": "jel:E32:Countercyclical",
+      "label": "Countercyclical",
+      "paper_count": 100,
+      "node_rows": 106,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 5,
+          "share": 0.005070993914807302
+        },
+        {
+          "decade": 2000,
+          "paper_count": 13,
+          "share": 0.006636038795303726
+        },
+        {
+          "decade": 2010,
+          "paper_count": 41,
+          "share": 0.008536331459504476
+        },
+        {
+          "decade": 2020,
+          "paper_count": 40,
+          "share": 0.009138679460817912
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/demand-shock",
+      "label": "Demand shock",
+      "paper_count": 100,
+      "node_rows": 101,
+      "field_primary": "macro",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 40,
+          "share": 0.0083281282531751
+        },
+        {
+          "decade": 2020,
+          "paper_count": 43,
+          "share": 0.009824080420379255
+        }
+      ]
+    },
+    {
+      "id": "jel:E24:Unemployment",
+      "label": "Unemployment",
+      "paper_count": 99,
+      "node_rows": 100,
+      "field_primary": "labor",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 4,
+          "share": 0.037383177570093455
+        },
+        {
+          "decade": 1980,
+          "paper_count": 9,
+          "share": 0.019823788546255508
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 32,
+          "share": 0.006662502602540079
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "jel:G21:Lending",
+      "label": "Lending",
+      "paper_count": 98,
+      "node_rows": 104,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 38,
+          "share": 0.007911721840516344
+        },
+        {
+          "decade": 2020,
+          "paper_count": 41,
+          "share": 0.009367146447338359
+        }
+      ]
+    },
+    {
+      "id": "jel:D10:Consumption",
+      "label": "Consumption",
+      "paper_count": 98,
+      "node_rows": 102,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 42,
+          "share": 0.008744534665833853
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/stock-market-bubble",
+      "label": "Stock market bubble",
+      "paper_count": 97,
+      "node_rows": 99,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 15,
+          "share": 0.007656967840735069
+        },
+        {
+          "decade": 2010,
+          "paper_count": 39,
+          "share": 0.008119925046845722
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "wp:298608",
+      "label": "State of emergency",
+      "paper_count": 96,
+      "node_rows": 96,
+      "field_primary": "public",
+      "score_band": "linked",
+      "first_decade": 2020,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2020,
+          "paper_count": 96,
+          "share": 0.02193283070596299
+        }
+      ]
+    },
+    {
+      "id": "jel:E63:Regime Switching",
+      "label": "Regime Switching",
+      "paper_count": 95,
+      "node_rows": 101,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 46,
+          "share": 0.009577347491151364
+        },
+        {
+          "decade": 2020,
+          "paper_count": 32,
+          "share": 0.00731094356865433
+        }
+      ]
+    },
+    {
+      "id": "jel:D82:Adverse Selection",
+      "label": "Adverse Selection",
+      "paper_count": 95,
+      "node_rows": 99,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 23,
+          "share": 0.01174068402246044
+        },
+        {
+          "decade": 2010,
+          "paper_count": 36,
+          "share": 0.007495315427857589
+        },
+        {
+          "decade": 2020,
+          "paper_count": 26,
+          "share": 0.005940141649531642
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/expected-return",
+      "label": "Expected return",
+      "paper_count": 94,
+      "node_rows": 96,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 19,
+          "share": 0.009698825931597753
+        },
+        {
+          "decade": 2010,
+          "paper_count": 46,
+          "share": 0.009577347491151364
+        },
+        {
+          "decade": 2020,
+          "paper_count": 19,
+          "share": 0.004340872743888508
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/capital-asset-pricing-model",
+      "label": "Capital asset pricing model",
+      "paper_count": 93,
+      "node_rows": 100,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 2,
+          "share": 0.018691588785046728
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 38,
+          "share": 0.007911721840516344
+        },
+        {
+          "decade": 2020,
+          "paper_count": 27,
+          "share": 0.00616860863605209
+        }
+      ]
+    },
+    {
+      "id": "wp:3477191",
+      "label": "VIX",
+      "paper_count": 93,
+      "node_rows": 99,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 2000,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2000,
+          "paper_count": 1,
+          "share": 0.0005104645227156713
+        },
+        {
+          "decade": 2010,
+          "paper_count": 41,
+          "share": 0.008536331459504476
+        },
+        {
+          "decade": 2020,
+          "paper_count": 51,
+          "share": 0.011651816312542838
+        }
+      ]
+    },
+    {
+      "id": "jel:P43:Stock Market",
+      "label": "Stock Market",
+      "paper_count": 93,
+      "node_rows": 93,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 13,
+          "share": 0.006636038795303726
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 37,
+          "share": 0.008453278501256569
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/equity-capital-markets",
+      "label": "Equity capital markets",
+      "paper_count": 92,
+      "node_rows": 95,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 7,
+          "share": 0.007099391480730223
+        },
+        {
+          "decade": 2000,
+          "paper_count": 7,
+          "share": 0.0035732516590096988
+        },
+        {
+          "decade": 2010,
+          "paper_count": 39,
+          "share": 0.008119925046845722
+        },
+        {
+          "decade": 2020,
+          "paper_count": 37,
+          "share": 0.008453278501256569
+        }
+      ]
+    },
+    {
+      "id": "jel:G14:Market Efficiency",
+      "label": "Market Efficiency",
+      "paper_count": 92,
+      "node_rows": 92,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 47,
+          "share": 0.009785550697480742
+        },
+        {
+          "decade": 2020,
+          "paper_count": 20,
+          "share": 0.004569339730408956
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/accounting-liquidity",
+      "label": "Accounting liquidity",
+      "paper_count": 91,
+      "node_rows": 100,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 39,
+          "share": 0.008119925046845722
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "wp:69535838",
+      "label": "Order flow trading",
+      "paper_count": 89,
+      "node_rows": 101,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1990,
+          "paper_count": 9,
+          "share": 0.009127789046653144
+        },
+        {
+          "decade": 2000,
+          "paper_count": 22,
+          "share": 0.011230219499744768
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 20,
+          "share": 0.004569339730408956
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/probability-of-default",
+      "label": "Probability of default",
+      "paper_count": 89,
+      "node_rows": 100,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 1,
+          "share": 0.009345794392523364
+        },
+        {
+          "decade": 1990,
+          "paper_count": 2,
+          "share": 0.002028397565922921
+        },
+        {
+          "decade": 2000,
+          "paper_count": 17,
+          "share": 0.008677896886166412
+        },
+        {
+          "decade": 2010,
+          "paper_count": 47,
+          "share": 0.009785550697480742
+        },
+        {
+          "decade": 2020,
+          "paper_count": 22,
+          "share": 0.005026273703449852
+        }
+      ]
+    },
+    {
+      "id": "jel:C15:Forecasting",
+      "label": "Forecasting",
+      "paper_count": 89,
+      "node_rows": 100,
+      "field_primary": "methods",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 2,
+          "share": 0.004405286343612335
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 13,
+          "share": 0.006636038795303726
+        },
+        {
+          "decade": 2010,
+          "paper_count": 40,
+          "share": 0.0083281282531751
+        },
+        {
+          "decade": 2020,
+          "paper_count": 31,
+          "share": 0.007082476582133882
+        }
+      ]
+    },
+    {
+      "id": "wp:55222112",
+      "label": "High frequency data",
+      "paper_count": 89,
+      "node_rows": 93,
+      "field_primary": "methods",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 14,
+          "share": 0.0071465033180193975
+        },
+        {
+          "decade": 2010,
+          "paper_count": 39,
+          "share": 0.008119925046845722
+        },
+        {
+          "decade": 2020,
+          "paper_count": 33,
+          "share": 0.0075394105551747775
+        }
+      ]
+    },
+    {
+      "id": "jel:O16:Financial Stability",
+      "label": "Financial Stability",
+      "paper_count": 89,
+      "node_rows": 90,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 40,
+          "share": 0.009138679460817912
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/default-risk",
+      "label": "Default risk",
+      "paper_count": 88,
+      "node_rows": 89,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1970,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1970,
+          "paper_count": 3,
+          "share": 0.028037383177570093
+        },
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 28,
+          "share": 0.005829689777222569
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/high-frequency-trading",
+      "label": "High-frequency trading",
+      "paper_count": 87,
+      "node_rows": 104,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 3,
+          "share": 0.0030425963488843813
+        },
+        {
+          "decade": 2000,
+          "paper_count": 8,
+          "share": 0.00408371618172537
+        },
+        {
+          "decade": 2010,
+          "paper_count": 40,
+          "share": 0.0083281282531751
+        },
+        {
+          "decade": 2020,
+          "paper_count": 35,
+          "share": 0.007996344528215673
+        }
+      ]
+    },
+    {
+      "id": "jel:D91:Limited Attention",
+      "label": "Limited Attention",
+      "paper_count": 86,
+      "node_rows": 91,
+      "field_primary": "micro",
+      "score_band": "rescue",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 9,
+          "share": 0.004594180704441042
+        },
+        {
+          "decade": 2010,
+          "paper_count": 32,
+          "share": 0.006662502602540079
+        },
+        {
+          "decade": 2020,
+          "paper_count": 44,
+          "share": 0.010052547406899703
+        }
+      ]
+    },
+    {
+      "id": "jel:G12:Equity Premium",
+      "label": "Equity Premium",
+      "paper_count": 85,
+      "node_rows": 89,
+      "field_primary": "finance",
+      "score_band": "soft",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 19,
+          "share": 0.009698825931597753
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 25,
+          "share": 0.0057116746630111945
+        }
+      ]
+    },
+    {
+      "id": "wp:67916703",
+      "label": "Macroeconomic indicators",
+      "paper_count": 85,
+      "node_rows": 86,
+      "field_primary": "macro",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 39,
+          "share": 0.008119925046845722
+        },
+        {
+          "decade": 2020,
+          "paper_count": 28,
+          "share": 0.006397075622572538
+        }
+      ]
+    },
+    {
+      "id": "jel:D82:Asymmetric Information",
+      "label": "Asymmetric Information",
+      "paper_count": 84,
+      "node_rows": 88,
+      "field_primary": "micro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 4,
+          "share": 0.00881057268722467
+        },
+        {
+          "decade": 1990,
+          "paper_count": 10,
+          "share": 0.010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 21,
+          "share": 0.010719754977029096
+        },
+        {
+          "decade": 2010,
+          "paper_count": 33,
+          "share": 0.006870705808869456
+        },
+        {
+          "decade": 2020,
+          "paper_count": 16,
+          "share": 0.003655471784327165
+        }
+      ]
+    },
+    {
+      "id": "jel:G11:Investment Decisions",
+      "label": "Investment Decisions",
+      "paper_count": 84,
+      "node_rows": 86,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 3,
+          "share": 0.006607929515418502
+        },
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 13,
+          "share": 0.006636038795303726
+        },
+        {
+          "decade": 2010,
+          "paper_count": 28,
+          "share": 0.005829689777222569
+        },
+        {
+          "decade": 2020,
+          "paper_count": 34,
+          "share": 0.007767877541695225
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/collateral",
+      "label": "Collateral",
+      "paper_count": 83,
+      "node_rows": 91,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 6,
+          "share": 0.006085192697768763
+        },
+        {
+          "decade": 2000,
+          "paper_count": 8,
+          "share": 0.00408371618172537
+        },
+        {
+          "decade": 2010,
+          "paper_count": 38,
+          "share": 0.007911721840516344
+        },
+        {
+          "decade": 2020,
+          "paper_count": 31,
+          "share": 0.007082476582133882
+        }
+      ]
+    },
+    {
+      "id": "jel:O43:Financial Development",
+      "label": "Financial Development",
+      "paper_count": 83,
+      "node_rows": 83,
+      "field_primary": "finance",
+      "score_band": "linked",
+      "first_decade": 1990,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1990,
+          "paper_count": 1,
+          "share": 0.0010141987829614604
+        },
+        {
+          "decade": 2000,
+          "paper_count": 12,
+          "share": 0.006125574272588055
+        },
+        {
+          "decade": 2010,
+          "paper_count": 19,
+          "share": 0.003955860920258172
+        },
+        {
+          "decade": 2020,
+          "paper_count": 51,
+          "share": 0.011651816312542838
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/zero-lower-bound",
+      "label": "Zero lower bound",
+      "paper_count": 82,
+      "node_rows": 89,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 2000,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2000,
+          "paper_count": 6,
+          "share": 0.0030627871362940277
+        },
+        {
+          "decade": 2010,
+          "paper_count": 32,
+          "share": 0.006662502602540079
+        },
+        {
+          "decade": 2020,
+          "paper_count": 44,
+          "share": 0.010052547406899703
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/short-rate",
+      "label": "Short rate",
+      "paper_count": 82,
+      "node_rows": 84,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 5,
+          "share": 0.011013215859030838
+        },
+        {
+          "decade": 1990,
+          "paper_count": 11,
+          "share": 0.011156186612576065
+        },
+        {
+          "decade": 2000,
+          "paper_count": 16,
+          "share": 0.00816743236345074
+        },
+        {
+          "decade": 2010,
+          "paper_count": 27,
+          "share": 0.005621486570893191
+        },
+        {
+          "decade": 2020,
+          "paper_count": 23,
+          "share": 0.0052547406899703
+        }
+      ]
+    },
+    {
+      "id": "jel:E43:Real Interest Rates",
+      "label": "Real Interest Rates",
+      "paper_count": 81,
+      "node_rows": 83,
+      "field_primary": "macro",
+      "score_band": "linked",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 12,
+          "share": 0.02643171806167401
+        },
+        {
+          "decade": 1990,
+          "paper_count": 16,
+          "share": 0.016227180527383367
+        },
+        {
+          "decade": 2000,
+          "paper_count": 15,
+          "share": 0.007656967840735069
+        },
+        {
+          "decade": 2010,
+          "paper_count": 21,
+          "share": 0.004372267332916927
+        },
+        {
+          "decade": 2020,
+          "paper_count": 17,
+          "share": 0.0038839387708476127
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/house-price",
+      "label": "House price",
+      "paper_count": 81,
+      "node_rows": 82,
+      "field_primary": "urban",
+      "score_band": "soft",
+      "first_decade": 1980,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 1980,
+          "paper_count": 1,
+          "share": 0.0022026431718061676
+        },
+        {
+          "decade": 1990,
+          "paper_count": 4,
+          "share": 0.004056795131845842
+        },
+        {
+          "decade": 2000,
+          "paper_count": 9,
+          "share": 0.004594180704441042
+        },
+        {
+          "decade": 2010,
+          "paper_count": 37,
+          "share": 0.007703518634186966
+        },
+        {
+          "decade": 2020,
+          "paper_count": 30,
+          "share": 0.006854009595613434
+        }
+      ]
+    },
+    {
+      "id": "https://openalex.org/keywords/realized-variance",
+      "label": "Realized variance",
+      "paper_count": 80,
+      "node_rows": 90,
+      "field_primary": "finance",
+      "score_band": "candidate",
+      "first_decade": 2000,
+      "last_decade": 2020,
+      "decades": [
+        {
+          "decade": 2000,
+          "paper_count": 11,
+          "share": 0.005615109749872384
+        },
+        {
+          "decade": 2010,
+          "paper_count": 38,
+          "share": 0.007911721840516344
+        },
+        {
+          "decade": 2020,
+          "paper_count": 31,
+          "share": 0.007082476582133882
+        }
+      ]
+    }
+  ],
+  "rising_concepts": [
+    {
+      "id": "wp:37671470",
+      "label": "Policy uncertainty",
+      "field_primary": "macro",
+      "paper_count_2020s": 746,
+      "rise_2020s_vs_2000s": 0.13010967464971604,
+      "rise_2020s_vs_2010s": 0.10131290744290075
+    },
+    {
+      "id": "https://openalex.org/keywords/market-sentiment",
+      "label": "Market sentiment",
+      "field_primary": "finance",
+      "paper_count_2020s": 402,
+      "rise_2020s_vs_2000s": 0.06274725078642676,
+      "rise_2020s_vs_2010s": 0.031673001952029926
+    },
+    {
+      "id": "https://openalex.org/keywords/bank-credit",
+      "label": "Bank credit",
+      "field_primary": "finance",
+      "paper_count_2020s": 267,
+      "rise_2020s_vs_2000s": 0.06100068540095956,
+      "rise_2020s_vs_2010s": 0.006035038930003914
+    },
+    {
+      "id": "https://openalex.org/keywords/quantitative-easing",
+      "label": "Quantitative easing",
+      "field_primary": "macro",
+      "paper_count_2020s": 139,
+      "rise_2020s_vs_2000s": 0.03175691112634224,
+      "rise_2020s_vs_2010s": 0.03175691112634224
+    },
+    {
+      "id": "wp:63030231",
+      "label": "COVID-19",
+      "field_primary": "health",
+      "paper_count_2020s": 137,
+      "rise_2020s_vs_2000s": 0.03129997715330135,
+      "rise_2020s_vs_2010s": 0.03129997715330135
+    },
+    {
+      "id": "https://openalex.org/keywords/investor-behavior",
+      "label": "Investor behavior",
+      "field_primary": "finance",
+      "paper_count_2020s": 108,
+      "rise_2020s_vs_2000s": 0.02467443454420836,
+      "rise_2020s_vs_2010s": 0.003854113911270614
+    },
+    {
+      "id": "wp:298608",
+      "label": "State of emergency",
+      "field_primary": "public",
+      "paper_count_2020s": 96,
+      "rise_2020s_vs_2000s": 0.02193283070596299,
+      "rise_2020s_vs_2010s": 0.02193283070596299
+    },
+    {
+      "id": "jel:O33:Spillovers",
+      "label": "Spillovers",
+      "field_primary": "micro",
+      "paper_count_2020s": 119,
+      "rise_2020s_vs_2000s": 0.021572461646060904,
+      "rise_2020s_vs_2010s": 0.014070769397182506
+    },
+    {
+      "id": "jel:C22:Garch Models",
+      "label": "Garch Models",
+      "field_primary": "finance",
+      "paper_count_2020s": 81,
+      "rise_2020s_vs_2000s": 0.018505825908156272,
+      "rise_2020s_vs_2010s": 0.018505825908156272
+    },
+    {
+      "id": "jel:D80:Uncertainty.",
+      "label": "Uncertainty",
+      "field_primary": "micro",
+      "paper_count_2020s": 152,
+      "rise_2020s_vs_2000s": 0.018392117224206583,
+      "rise_2020s_vs_2010s": 0.012449238873864676
+    },
+    {
+      "id": "jel:G01:Global Financial Crisis",
+      "label": "Global Financial Crisis",
+      "field_primary": "macro",
+      "paper_count_2020s": 97,
+      "rise_2020s_vs_2000s": 0.017056652465326724,
+      "rise_2020s_vs_2010s": 0.002173789884863199
+    },
+    {
+      "id": "jel:O11:GDP",
+      "label": "GDP",
+      "field_primary": "macro",
+      "paper_count_2020s": 69,
+      "rise_2020s_vs_2000s": 0.015764222069910898,
+      "rise_2020s_vs_2010s": 0.015764222069910898
+    },
+    {
+      "id": "jel:R12:Spillover Effect",
+      "label": "Spillover Effect",
+      "field_primary": "unknown",
+      "paper_count_2020s": 69,
+      "rise_2020s_vs_2000s": 0.015764222069910898,
+      "rise_2020s_vs_2010s": 0.015764222069910898
+    },
+    {
+      "id": "jel:L71:Crude Oil",
+      "label": "Crude Oil",
+      "field_primary": "environment",
+      "paper_count_2020s": 74,
+      "rise_2020s_vs_2000s": 0.015375163434366124,
+      "rise_2020s_vs_2010s": 0.016906557002513138
+    },
+    {
+      "id": "jel:G21:Bank Lending",
+      "label": "Bank Lending",
+      "field_primary": "finance",
+      "paper_count_2020s": 66,
+      "rise_2020s_vs_2000s": 0.015078821110349555,
+      "rise_2020s_vs_2010s": 0.003211238349575039
+    },
+    {
+      "id": "FGV21FAM:geopolitical-risk:a7feee953c",
+      "label": "geopolitical risk",
+      "field_primary": "unknown",
+      "paper_count_2020s": 65,
+      "rise_2020s_vs_2000s": 0.014850354123829106,
+      "rise_2020s_vs_2010s": 0.01380933809218222
+    },
+    {
+      "id": "https://openalex.org/keywords/sentiment-analysis",
+      "label": "Sentiment analysis",
+      "field_primary": "methods",
+      "paper_count_2020s": 66,
+      "rise_2020s_vs_2000s": 0.013036963019486869,
+      "rise_2020s_vs_2010s": 0.005085067206539437
+    },
+    {
+      "id": "jel:C58:Volatility Forecasting",
+      "label": "Volatility Forecasting",
+      "field_primary": "finance",
+      "paper_count_2020s": 57,
+      "rise_2020s_vs_2000s": 0.013022618231665525,
+      "rise_2020s_vs_2010s": -0.0003023869734146336
+    },
+    {
+      "id": "wp:27179299",
+      "label": "Green bond",
+      "field_primary": "finance",
+      "paper_count_2020s": 55,
+      "rise_2020s_vs_2000s": 0.01256568425862463,
+      "rise_2020s_vs_2010s": 0.01256568425862463
+    },
+    {
+      "id": "jel:Q42:Renewable Energy",
+      "label": "Renewable Energy",
+      "field_primary": "environment",
+      "paper_count_2020s": 51,
+      "rise_2020s_vs_2000s": 0.011651816312542838,
+      "rise_2020s_vs_2010s": 0.011651816312542838
+    },
+    {
+      "id": "https://openalex.org/keywords/oil-price",
+      "label": "Oil price",
+      "field_primary": "macro",
+      "paper_count_2020s": 62,
+      "rise_2020s_vs_2000s": 0.011612630550689408,
+      "rise_2020s_vs_2010s": 0.007710653768057062
+    },
+    {
+      "id": "jel:D21:Firms",
+      "label": "Firms",
+      "field_primary": "micro",
+      "paper_count_2020s": 82,
+      "rise_2020s_vs_2000s": 0.01158778957665732,
+      "rise_2020s_vs_2010s": 0.007491319752890335
+    },
+    {
+      "id": "https://openalex.org/keywords/interconnectivity",
+      "label": "Interconnectivity",
+      "field_primary": "unknown",
+      "paper_count_2020s": 52,
+      "rise_2020s_vs_2000s": 0.011369818776347613,
+      "rise_2020s_vs_2010s": 0.011880283299063285
+    },
+    {
+      "id": "https://openalex.org/keywords/funding-liquidity",
+      "label": "Funding liquidity",
+      "field_primary": "finance",
+      "paper_count_2020s": 134,
+      "rise_2020s_vs_2000s": 0.011216924330544498,
+      "rise_2020s_vs_2010s": -0.008319423389853583
+    },
+    {
+      "id": "wp:3477191",
+      "label": "VIX",
+      "field_primary": "finance",
+      "paper_count_2020s": 51,
+      "rise_2020s_vs_2000s": 0.011141351789827166,
+      "rise_2020s_vs_2010s": 0.011651816312542838
+    },
+    {
+      "id": "https://openalex.org/keywords/credit-risk",
+      "label": "Credit risk",
+      "field_primary": "finance",
+      "paper_count_2020s": 47,
+      "rise_2020s_vs_2000s": 0.010737948366461046,
+      "rise_2020s_vs_2010s": -0.005085495314571642
+    },
+    {
+      "id": "jel:D81:Hedging",
+      "label": "Hedging",
+      "field_primary": "finance",
+      "paper_count_2020s": 47,
+      "rise_2020s_vs_2000s": 0.010737948366461046,
+      "rise_2020s_vs_2010s": 0.004283648970250345
+    },
+    {
+      "id": "https://openalex.org/keywords/systemic-risk",
+      "label": "Systemic risk",
+      "field_primary": "finance",
+      "paper_count_2020s": 57,
+      "rise_2020s_vs_2000s": 0.01047029561808717,
+      "rise_2020s_vs_2010s": 0.013022618231665525
+    },
+    {
+      "id": "jel:C53:Predictability",
+      "label": "Predictability",
+      "field_primary": "unknown",
+      "paper_count_2020s": 45,
+      "rise_2020s_vs_2000s": 0.01028101439342015,
+      "rise_2020s_vs_2010s": 0.01028101439342015
+    },
+    {
+      "id": "jel:E42:Gold",
+      "label": "Gold",
+      "field_primary": "environment",
+      "paper_count_2020s": 45,
+      "rise_2020s_vs_2000s": 0.01028101439342015,
+      "rise_2020s_vs_2010s": 0.007574372711138243
+    },
+    {
+      "id": "https://openalex.org/keywords/zero-lower-bound",
+      "label": "Zero lower bound",
+      "field_primary": "macro",
+      "paper_count_2020s": 44,
+      "rise_2020s_vs_2000s": 0.010052547406899703,
+      "rise_2020s_vs_2010s": 0.003390044804359624
+    },
+    {
+      "id": "jel:D91:Limited Attention",
+      "label": "Limited Attention",
+      "field_primary": "micro",
+      "paper_count_2020s": 44,
+      "rise_2020s_vs_2000s": 0.010052547406899703,
+      "rise_2020s_vs_2010s": 0.003390044804359624
+    },
+    {
+      "id": "https://openalex.org/keywords/abnormal-return",
+      "label": "Abnormal return",
+      "field_primary": "finance",
+      "paper_count_2020s": 43,
+      "rise_2020s_vs_2000s": 0.009824080420379255,
+      "rise_2020s_vs_2010s": 0.009824080420379255
+    },
+    {
+      "id": "https://openalex.org/keywords/green-innovation",
+      "label": "Green innovation",
+      "field_primary": "environment",
+      "paper_count_2020s": 43,
+      "rise_2020s_vs_2000s": 0.009824080420379255,
+      "rise_2020s_vs_2010s": 0.009824080420379255
+    },
+    {
+      "id": "jel:E62:Fiscal Policy",
+      "label": "Fiscal Policy",
+      "field_primary": "macro",
+      "paper_count_2020s": 43,
+      "rise_2020s_vs_2000s": 0.009824080420379255,
+      "rise_2020s_vs_2010s": 0.0021205617861922883
+    },
+    {
+      "id": "jel:G12:Risk Premium",
+      "label": "Risk Premium",
+      "field_primary": "finance",
+      "paper_count_2020s": 43,
+      "rise_2020s_vs_2000s": 0.009824080420379255,
+      "rise_2020s_vs_2010s": -0.0018352991340658837
+    },
+    {
+      "id": "https://openalex.org/keywords/macroprudential-regulation",
+      "label": "Macroprudential regulation",
+      "field_primary": "finance",
+      "paper_count_2020s": 42,
+      "rise_2020s_vs_2000s": 0.009595613433858808,
+      "rise_2020s_vs_2010s": 0.0025167044186599737
+    },
+    {
+      "id": "jel:D25:Investment",
+      "label": "Investment",
+      "field_primary": "finance",
+      "paper_count_2020s": 76,
+      "rise_2020s_vs_2000s": 0.009196058612103292,
+      "rise_2020s_vs_2010s": 0.006745127452755781
+    },
+    {
+      "id": "jel:D23:Transaction Costs",
+      "label": "Transaction Costs",
+      "field_primary": "micro",
+      "paper_count_2020s": 40,
+      "rise_2020s_vs_2000s": 0.009138679460817912,
+      "rise_2020s_vs_2010s": -0.0046027321569210005
+    },
+    {
+      "id": "jel:E32:Countercyclical",
+      "label": "Countercyclical",
+      "field_primary": "macro",
+      "paper_count_2020s": 40,
+      "rise_2020s_vs_2000s": 0.009138679460817912,
+      "rise_2020s_vs_2010s": 0.009138679460817912
+    },
+    {
+      "id": "wp:170992",
+      "label": "S&P 500",
+      "field_primary": "finance",
+      "paper_count_2020s": 40,
+      "rise_2020s_vs_2000s": 0.009138679460817912,
+      "rise_2020s_vs_2010s": 0.009138679460817912
+    },
+    {
+      "id": "jel:E32:Recession",
+      "label": "Recession",
+      "field_primary": "macro",
+      "paper_count_2020s": 174,
+      "rise_2020s_vs_2000s": 0.00912538429161764,
+      "rise_2020s_vs_2010s": -0.00022175996068255627
+    },
+    {
+      "id": "wp:9740166",
+      "label": "GPR index",
+      "field_primary": "finance",
+      "paper_count_2020s": 39,
+      "rise_2020s_vs_2000s": 0.008910212474297465,
+      "rise_2020s_vs_2010s": 0.008285602855309333
+    },
+    {
+      "id": "wp:48208956",
+      "label": "ESG Quant",
+      "field_primary": "finance",
+      "paper_count_2020s": 38,
+      "rise_2020s_vs_2000s": 0.008681745487777016,
+      "rise_2020s_vs_2010s": 0.008681745487777016
+    },
+    {
+      "id": "https://openalex.org/keywords/predictive-power",
+      "label": "Predictive power",
+      "field_primary": "methods",
+      "paper_count_2020s": 37,
+      "rise_2020s_vs_2000s": 0.008453278501256569,
+      "rise_2020s_vs_2010s": 0.00345640154935151
+    },
+    {
+      "id": "jel:B26:Financial Crisis",
+      "label": "Financial Crisis",
+      "field_primary": "macro",
+      "paper_count_2020s": 37,
+      "rise_2020s_vs_2000s": 0.008453278501256569,
+      "rise_2020s_vs_2010s": -0.006120945941799854
+    },
+    {
+      "id": "jel:E31:Inflationary Expectations",
+      "label": "Inflationary Expectations",
+      "field_primary": "macro",
+      "paper_count_2020s": 36,
+      "rise_2020s_vs_2000s": 0.00822481151473612,
+      "rise_2020s_vs_2010s": 0.00822481151473612
+    },
+    {
+      "id": "jel:G23:Mutual Fund",
+      "label": "Mutual Fund",
+      "field_primary": "finance",
+      "paper_count_2020s": 36,
+      "rise_2020s_vs_2000s": 0.00822481151473612,
+      "rise_2020s_vs_2010s": 0.003644340975489816
+    },
+    {
+      "id": "jel:D21:Diversification",
+      "label": "Diversification",
+      "field_primary": "finance",
+      "paper_count_2020s": 67,
+      "rise_2020s_vs_2000s": 0.008160784778850605,
+      "rise_2020s_vs_2010s": 0.0036479085424248638
+    },
+    {
+      "id": "wp:332730",
+      "label": "Investor",
+      "field_primary": "finance",
+      "paper_count_2020s": 35,
+      "rise_2020s_vs_2000s": 0.007996344528215673,
+      "rise_2020s_vs_2010s": 0.0025830611636518588
+    },
+    {
+      "id": "jel:C54:Monetary Policy",
+      "label": "Monetary Policy",
+      "field_primary": "macro",
+      "paper_count_2020s": 173,
+      "rise_2020s_vs_2000s": 0.007875988259665852,
+      "rise_2020s_vs_2010s": 0.03952478866803747
+    },
+    {
+      "id": "https://openalex.org/keywords/excess-return",
+      "label": "Excess return",
+      "field_primary": "finance",
+      "paper_count_2020s": 34,
+      "rise_2020s_vs_2000s": 0.007767877541695225,
+      "rise_2020s_vs_2010s": 0.007767877541695225
+    },
+    {
+      "id": "https://openalex.org/keywords/interest-rate",
+      "label": "Interest rate",
+      "field_primary": "finance",
+      "paper_count_2020s": 34,
+      "rise_2020s_vs_2000s": 0.007767877541695225,
+      "rise_2020s_vs_2010s": -0.0007684539178092501
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-premium",
+      "label": "Liquidity premium",
+      "field_primary": "finance",
+      "paper_count_2020s": 34,
+      "rise_2020s_vs_2000s": 0.007767877541695225,
+      "rise_2020s_vs_2010s": -0.003891502012749913
+    },
+    {
+      "id": "jel:G11:Investment Decisions",
+      "label": "Investment Decisions",
+      "field_primary": "finance",
+      "paper_count_2020s": 34,
+      "rise_2020s_vs_2000s": 0.007767877541695225,
+      "rise_2020s_vs_2010s": 0.0019381877644726563
+    },
+    {
+      "id": "https://openalex.org/keywords/accounting-liquidity",
+      "label": "Accounting liquidity",
+      "field_primary": "finance",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": 0.0075394105551747775
+    },
+    {
+      "id": "https://openalex.org/keywords/carbon-price",
+      "label": "Carbon price",
+      "field_primary": "environment",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": 0.0075394105551747775
+    },
+    {
+      "id": "https://openalex.org/keywords/climate-risk",
+      "label": "Climate risk",
+      "field_primary": "environment",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": 0.0073312073488454
+    },
+    {
+      "id": "jel:D10:Consumption",
+      "label": "Consumption",
+      "field_primary": "micro",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": -0.0012051241106590758
+    },
+    {
+      "id": "jel:F33:Exchange Rate",
+      "label": "Exchange Rate",
+      "field_primary": "macro",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": 0.0075394105551747775
+    },
+    {
+      "id": "wp:55222112",
+      "label": "High frequency data",
+      "field_primary": "methods",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0075394105551747775,
+      "rise_2020s_vs_2010s": 0.0075394105551747775
+    },
+    {
+      "id": "FGV21FAM:climate-policy-uncertainty:d74a38ca9d",
+      "label": "Climate policy uncertainty",
+      "field_primary": "environment",
+      "paper_count_2020s": 32,
+      "rise_2020s_vs_2000s": 0.00731094356865433,
+      "rise_2020s_vs_2010s": 0.007102740362324952
+    },
+    {
+      "id": "jel:E63:Regime Switching",
+      "label": "Regime Switching",
+      "field_primary": "macro",
+      "paper_count_2020s": 32,
+      "rise_2020s_vs_2000s": 0.00731094356865433,
+      "rise_2020s_vs_2010s": 0.00731094356865433
+    },
+    {
+      "id": "jel:R31:Housing Prices",
+      "label": "Housing Prices",
+      "field_primary": "urban",
+      "paper_count_2020s": 32,
+      "rise_2020s_vs_2000s": 0.00731094356865433,
+      "rise_2020s_vs_2010s": 0.00731094356865433
+    },
+    {
+      "id": "https://openalex.org/keywords/collateral",
+      "label": "Collateral",
+      "field_primary": "finance",
+      "paper_count_2020s": 31,
+      "rise_2020s_vs_2000s": 0.007082476582133882,
+      "rise_2020s_vs_2010s": -0.0008292452583824623
+    },
+    {
+      "id": "https://openalex.org/keywords/clean-energy",
+      "label": "Clean energy",
+      "field_primary": "environment",
+      "paper_count_2020s": 30,
+      "rise_2020s_vs_2000s": 0.006854009595613434,
+      "rise_2020s_vs_2010s": 0.006854009595613434
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-crisis",
+      "label": "Liquidity crisis",
+      "field_primary": "finance",
+      "paper_count_2020s": 30,
+      "rise_2020s_vs_2000s": 0.006854009595613434,
+      "rise_2020s_vs_2010s": 0.006854009595613434
+    },
+    {
+      "id": "jel:E52:Inflation Targeting",
+      "label": "Inflation Targeting",
+      "field_primary": "macro",
+      "paper_count_2020s": 30,
+      "rise_2020s_vs_2000s": 0.006854009595613434,
+      "rise_2020s_vs_2010s": -0.0008495090385735324
+    },
+    {
+      "id": "jel:G13:Cryptocurrencies",
+      "label": "Cryptocurrencies",
+      "field_primary": "finance",
+      "paper_count_2020s": 30,
+      "rise_2020s_vs_2000s": 0.006854009595613434,
+      "rise_2020s_vs_2010s": 0.006854009595613434
+    },
+    {
+      "id": "wp:27303774",
+      "label": "Environmental, social, and governance",
+      "field_primary": "environment",
+      "paper_count_2020s": 30,
+      "rise_2020s_vs_2000s": 0.006854009595613434,
+      "rise_2020s_vs_2010s": 0.006854009595613434
+    },
+    {
+      "id": "FGV21FAM:financial-constraints:dd6eb3839c",
+      "label": "Financial Constraints",
+      "field_primary": "finance",
+      "paper_count_2020s": 29,
+      "rise_2020s_vs_2000s": 0.006625542609092986,
+      "rise_2020s_vs_2010s": 0.004959916958457966
+    },
+    {
+      "id": "jel:L16:Financialization",
+      "label": "Financialization",
+      "field_primary": "finance",
+      "paper_count_2020s": 29,
+      "rise_2020s_vs_2000s": 0.006625542609092986,
+      "rise_2020s_vs_2010s": 0.006625542609092986
+    },
+    {
+      "id": "jel:Q31:Oil Prices",
+      "label": "Oil Prices",
+      "field_primary": "macro",
+      "paper_count_2020s": 33,
+      "rise_2020s_vs_2000s": 0.0065184815097434345,
+      "rise_2020s_vs_2010s": 0.0025425336032697185
+    },
+    {
+      "id": "jel:Q43:Oil Shocks.",
+      "label": "Oil Shocks",
+      "field_primary": "macro",
+      "paper_count_2020s": 28,
+      "rise_2020s_vs_2000s": 0.006397075622572538,
+      "rise_2020s_vs_2010s": 0.0034822307339612535
+    },
+    {
+      "id": "https://openalex.org/keywords/financial-distress",
+      "label": "Financial distress",
+      "field_primary": "finance",
+      "paper_count_2020s": 41,
+      "rise_2020s_vs_2000s": 0.006304359311044332,
+      "rise_2020s_vs_2010s": 0.003329253463786412
+    },
+    {
+      "id": "https://openalex.org/keywords/liquidity-trap",
+      "label": "Liquidity trap",
+      "field_primary": "macro",
+      "paper_count_2020s": 27,
+      "rise_2020s_vs_2000s": 0.00616860863605209,
+      "rise_2020s_vs_2010s": -7.748755382923356e-05
+    },
+    {
+      "id": "https://openalex.org/keywords/price-discovery",
+      "label": "Price discovery",
+      "field_primary": "micro",
+      "paper_count_2020s": 27,
+      "rise_2020s_vs_2000s": 0.00616860863605209,
+      "rise_2020s_vs_2010s": 0.00616860863605209
+    },
+    {
+      "id": "wp:32005855",
+      "label": "2008 financial crisis",
+      "field_primary": "finance",
+      "paper_count_2020s": 27,
+      "rise_2020s_vs_2000s": 0.00616860863605209,
+      "rise_2020s_vs_2010s": -0.012569679933591883
+    },
+    {
+      "id": "wp:5101133",
+      "label": "Google Trends",
+      "field_primary": "methods",
+      "paper_count_2020s": 29,
+      "rise_2020s_vs_2000s": 0.0061150780863773145,
+      "rise_2020s_vs_2010s": 0.003918900926811079
+    },
+    {
+      "id": "https://openalex.org/keywords/tail-risk",
+      "label": "Tail risk",
+      "field_primary": "finance",
+      "paper_count_2020s": 26,
+      "rise_2020s_vs_2000s": 0.005940141649531642,
+      "rise_2020s_vs_2010s": 0.0015678743166147157
+    }
+  ],
+  "edge_pairs": [
+    {
+      "label": "Stock market volatility -> Stock market volatility",
+      "paper_count": 82,
+      "edge_rows": 122,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "determinants of common stock returns volatility -> common stock returns volatility",
+      "example_paper_id": "W4242274318__gpt5mini_low"
+    },
+    {
+      "label": "Market sentiment -> Stock Returns",
+      "paper_count": 64,
+      "edge_rows": 93,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "firm-level investor sentiment -> higher short-term risk-adjusted returns",
+      "example_paper_id": "W1559236343__gpt5mini_low"
+    },
+    {
+      "label": "Monetary Policy -> Inflation",
+      "paper_count": 48,
+      "edge_rows": 51,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Domestic monetary policy -- Inflation (interplay)",
+      "example_paper_id": "W2033364419__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Stock market volatility",
+      "paper_count": 37,
+      "edge_rows": 53,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "political uncertainty -> stock volatility (increases)",
+      "example_paper_id": "W2021001809__gpt5mini_low"
+    },
+    {
+      "label": "Trading Volume -> Volatility (finance)",
+      "paper_count": 33,
+      "edge_rows": 40,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "Total trading volume -- Price volatility (association incomplete)",
+      "example_paper_id": "W2086729180__gpt5mini_low"
+    },
+    {
+      "label": "Garch Models -> Volatility (finance)",
+      "paper_count": 33,
+      "edge_rows": 36,
+      "role": "main_effect",
+      "relationship_type": "other",
+      "example_claim_text": "GARCH type model -> quantifies spot exchange rate uncertainty",
+      "example_paper_id": "W1498286110__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Economic Growth",
+      "paper_count": 31,
+      "edge_rows": 35,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Inflation -> real growth (structuralist position: positive effect)",
+      "example_paper_id": "W1992124979__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Stock Returns",
+      "paper_count": 27,
+      "edge_rows": 42,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "information uncertainty risk -> explains cross-section of stock returns in January (dominates other risk factors)",
+      "example_paper_id": "W1980730642__gpt5mini_low"
+    },
+    {
+      "label": "Forward volatility -> Stock market volatility",
+      "paper_count": 27,
+      "edge_rows": 31,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "determinants of volatility -> common stock returns volatility",
+      "example_paper_id": "W1963713454__gpt5mini_low"
+    },
+    {
+      "label": "Trading Volume -> Stock Returns",
+      "paper_count": 25,
+      "edge_rows": 33,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "trading volume -> stock returns (CK-adjusted, negative)",
+      "example_paper_id": "W1560849420__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Volatility (finance)",
+      "paper_count": 25,
+      "edge_rows": 29,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "Spot price volatility -- Futures price volatility (comparison)",
+      "example_paper_id": "W2027332626__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Stock Returns",
+      "paper_count": 24,
+      "edge_rows": 27,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Liquidity -> Stock returns",
+      "example_paper_id": "W1997564944__gpt5mini_low"
+    },
+    {
+      "label": "Market sentiment -> Stock market volatility",
+      "paper_count": 23,
+      "edge_rows": 33,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "low market-confidence -> market high volatility",
+      "example_paper_id": "W2039677128__gpt5mini_low"
+    },
+    {
+      "label": "Trading Volume -> Trading Volume",
+      "paper_count": 23,
+      "edge_rows": 28,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "stock trading volume -> option trading volume (stock market lead may be longer)",
+      "example_paper_id": "W2003268269__gpt5mini_low"
+    },
+    {
+      "label": "Garch Models -> Stock market volatility",
+      "paper_count": 23,
+      "edge_rows": 24,
+      "role": "background",
+      "relationship_type": "other",
+      "example_claim_text": "multivariate GARCH model does not support U.S. results",
+      "example_paper_id": "W2040343460__gpt5mini_low"
+    },
+    {
+      "label": "Implied volatility -> Stock market volatility",
+      "paper_count": 22,
+      "edge_rows": 29,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "volatility implicit in option prices -- volatility of underlying stock indexes",
+      "example_paper_id": "W2156685740__gpt5mini_low"
+    },
+    {
+      "label": "Investor behavior -> Stock market volatility",
+      "paper_count": 22,
+      "edge_rows": 24,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Investors' anticipations -> anticipate increased stock price variability at disclosure",
+      "example_paper_id": "W2313770960__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Liquidity risk",
+      "paper_count": 21,
+      "edge_rows": 24,
+      "role": "descriptive_pattern",
+      "relationship_type": "other",
+      "example_claim_text": "liquidity effects -> highly non-linear liquidity effects",
+      "example_paper_id": "W3123577596__gpt5mini_low"
+    },
+    {
+      "label": "COVID-19 -> Stock market volatility",
+      "paper_count": 20,
+      "edge_rows": 25,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "COVID-19 -> increased stock market volatility",
+      "example_paper_id": "W3022416583__gpt5mini_low"
+    },
+    {
+      "label": "Funding liquidity -> Market liquidity",
+      "paper_count": 20,
+      "edge_rows": 24,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "funding liquidity -> market liquidity",
+      "example_paper_id": "W3121630491__gpt5mini_low"
+    },
+    {
+      "label": "Volatility risk -> Stock market volatility",
+      "paper_count": 20,
+      "edge_rows": 24,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "volatility changes -> asymmetry in market reaction (increases vs decreases)",
+      "example_paper_id": "W4255411983__gpt5mini_low"
+    },
+    {
+      "label": "Stock market volatility -> Spillovers",
+      "paper_count": 19,
+      "edge_rows": 22,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "short-term US share price fluctuations -> spillovers to German share prices (short-term contagion)",
+      "example_paper_id": "W1977009334__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Stock market volatility",
+      "paper_count": 19,
+      "edge_rows": 21,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "changes in volatility -> marketwide volatility effect",
+      "example_paper_id": "W2070153718__gpt5mini_low"
+    },
+    {
+      "label": "Market liquidity -> Liquidity risk",
+      "paper_count": 19,
+      "edge_rows": 20,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "ways to increase liquidity at reasonable cost -> increase liquidity (policy challenge)",
+      "example_paper_id": "W1554485019__gpt5mini_low"
+    },
+    {
+      "label": "Market sentiment -> Market sentiment",
+      "paper_count": 18,
+      "edge_rows": 19,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "sovereign credit downgrades -- stronger market reaction than upgrades",
+      "example_paper_id": "W2081986658__gpt5mini_low"
+    },
+    {
+      "label": "Uncertainty -> Stock market volatility",
+      "paper_count": 17,
+      "edge_rows": 23,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Uncertainty about average future profitability -> increases Nasdaq stock price volatility",
+      "example_paper_id": "W3123076868__gpt5mini_low"
+    },
+    {
+      "label": "Stock market volatility -> Volatility risk",
+      "paper_count": 17,
+      "edge_rows": 21,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "changes in volatility behavior are present but may have been overstated",
+      "example_paper_id": "W2024861634__gpt5mini_low"
+    },
+    {
+      "label": "Monetary Policy -> Stock market volatility",
+      "paper_count": 17,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Monetary policy (accounting for asset price misalignments) -> lower macroeconomic volatility",
+      "example_paper_id": "W2048616566__gpt5mini_low"
+    },
+    {
+      "label": "Inflation Targeting -> Inflation",
+      "paper_count": 16,
+      "edge_rows": 20,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "IT -> inflation: impacts less negative and less significant than previously found",
+      "example_paper_id": "W1995455747__gpt5mini_low"
+    },
+    {
+      "label": "Spillovers -> Spillovers",
+      "paper_count": 16,
+      "edge_rows": 20,
+      "role": "descriptive_pattern",
+      "relationship_type": "effect",
+      "example_claim_text": "investigate determinants -> net directional spillovers (panel analysis)",
+      "example_paper_id": "W2144055462__gpt5mini_low"
+    },
+    {
+      "label": "Financial Development -> Economic Growth",
+      "paper_count": 16,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "financial development -> reduce economic growth (when initial inflation high)",
+      "example_paper_id": "W1973682211__gpt5mini_low"
+    },
+    {
+      "label": "Inflationary Expectations -> Inflation",
+      "paper_count": 16,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "inflation expectations (forward-looking) -> non-administered prices",
+      "example_paper_id": "W2038173901__gpt5mini_low"
+    },
+    {
+      "label": "State of emergency -> Stock market volatility",
+      "paper_count": 16,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "COVID-19 -> increased US stock market volatility (more than GFC)",
+      "example_paper_id": "W3037078631__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Policy uncertainty",
+      "paper_count": 16,
+      "edge_rows": 16,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "individual security risk -- random technological change or demand uncertainty",
+      "example_paper_id": "W2118663964__gpt5mini_low"
+    },
+    {
+      "label": "Volatility risk -> Volatility risk",
+      "paper_count": 15,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "difference",
+      "example_claim_text": "shocks to smaller firms -> predict volatility of larger firms",
+      "example_paper_id": "W1569955407__gpt5mini_low"
+    },
+    {
+      "label": "Volatility Models -> Volatility (finance)",
+      "paper_count": 15,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "standard volatility models -> forecast integrated volatility",
+      "example_paper_id": "W1978980639__gpt5mini_low"
+    },
+    {
+      "label": "Implied volatility -> Volatility (finance)",
+      "paper_count": 15,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "difference",
+      "example_claim_text": "Implied volatility is believed superior to historical volatility",
+      "example_paper_id": "W2070862805__gpt5mini_low"
+    },
+    {
+      "label": "Stock market volatility -> Stock Returns",
+      "paper_count": 15,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "Market volatility -- stock return variance (does not fully explain post-listing decline)",
+      "example_paper_id": "W2076604634__gpt5mini_low"
+    },
+    {
+      "label": "Fiscal deficit -> Inflation",
+      "paper_count": 15,
+      "edge_rows": 16,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "High fiscal deficits and public debt -- Inflation/policies discussed",
+      "example_paper_id": "W1986391381__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Spillovers",
+      "paper_count": 15,
+      "edge_rows": 16,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "economic policy uncertainty -> credit market risk spillovers",
+      "example_paper_id": "W2761001951__gpt5mini_low"
+    },
+    {
+      "label": "VIX -> Stock market volatility",
+      "paper_count": 14,
+      "edge_rows": 21,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "no strong long-run equilibrium relationships -> supports cross-market volatility portfolio strategy effectiveness",
+      "example_paper_id": "W2064162177__gpt5mini_low"
+    },
+    {
+      "label": "Macroprudential regulation -> Bank credit",
+      "paper_count": 14,
+      "edge_rows": 20,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "macro-prudential policies -> bank risk exposure (offset incentives for risk-taking)",
+      "example_paper_id": "W2105415695__gpt5mini_low"
+    },
+    {
+      "label": "Market liquidity -> Market liquidity",
+      "paper_count": 14,
+      "edge_rows": 19,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "variance of liquidity trades -> market liquidity (nonmonotonic) under endogenous information acquisition",
+      "example_paper_id": "W2000633988__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Renewable Energy",
+      "paper_count": 14,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Higher policy change arrival rate -> lower investment",
+      "example_paper_id": "W2599663356__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Forward volatility",
+      "paper_count": 14,
+      "edge_rows": 16,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "EPU -> future volatility (positive)",
+      "example_paper_id": "W2609175820__gpt5mini_low"
+    },
+    {
+      "label": "Garch Models -> Volatility Forecasting",
+      "paper_count": 14,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "prediction",
+      "example_claim_text": "GARCH with contemporaneous spillover -> superior forecasting of volatility",
+      "example_paper_id": "W2006321901__gpt5mini_low"
+    },
+    {
+      "label": "Monetary Policy -> Liquidity risk",
+      "paper_count": 14,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "monetary loosening -> reduced cost of liquidity shortfalls",
+      "example_paper_id": "W1561679736__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Welfare cost of inflation",
+      "paper_count": 14,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Inflation -> output-reducing inefficiencies",
+      "example_paper_id": "W1992124979__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Liquidity premium",
+      "paper_count": 14,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "reduction in liquidity -> no evidence of being priced",
+      "example_paper_id": "W4232518544__gpt5mini_low"
+    },
+    {
+      "label": "Stochastic volatility -> Volatility (finance)",
+      "paper_count": 14,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "stochastic volatility models -> model unobservable volatility time series",
+      "example_paper_id": "W2079990952__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Volatility risk",
+      "paper_count": 14,
+      "edge_rows": 14,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "underlying asset volatility -> magnitude of interest-rate-volatility effect",
+      "example_paper_id": "W3123978525__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Green innovation",
+      "paper_count": 13,
+      "edge_rows": 26,
+      "role": "heterogeneity",
+      "relationship_type": "effect",
+      "example_claim_text": "Increased economic policy uncertainty -> weakened G-innovation willingness",
+      "example_paper_id": "W4200130710__gpt5mini_low"
+    },
+    {
+      "label": "Oil Shocks -> Stock market volatility",
+      "paper_count": 13,
+      "edge_rows": 19,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Crude oil shocks -> reduce moderate/expansion stock market phases (temporarily)",
+      "example_paper_id": "W2022680132__gpt5mini_low"
+    },
+    {
+      "label": "Bank credit -> Economic Growth",
+      "paper_count": 13,
+      "edge_rows": 18,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "domestic bank credit to the private sector -> economic growth (Granger causality)",
+      "example_paper_id": "W2064236775__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Inflation",
+      "paper_count": 13,
+      "edge_rows": 18,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "breakdown of causes of inflation -> inflation",
+      "example_paper_id": "W2053986608__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Economic Growth",
+      "paper_count": 13,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "monetary volatility -> lower cross-country economic growth",
+      "example_paper_id": "W2073552413__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Volatility (finance)",
+      "paper_count": 13,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "reduced posthalt uncertainty -> dampened volatility effects",
+      "example_paper_id": "W3121749190__gpt5mini_low"
+    },
+    {
+      "label": "Funding liquidity -> Funding liquidity",
+      "paper_count": 13,
+      "edge_rows": 16,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "publicly supplied liquidity -> supports firms' liquidity needs (intermediary role)",
+      "example_paper_id": "W2067743386__gpt5mini_low"
+    },
+    {
+      "label": "Oil price -> Stock market volatility",
+      "paper_count": 13,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Oil price -> Firm return variance",
+      "example_paper_id": "W1973032420__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Investment",
+      "paper_count": 13,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Regulatory uncertainty -> Investment",
+      "example_paper_id": "W2141004455__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Uncertainty",
+      "paper_count": 13,
+      "edge_rows": 15,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "product price uncertainty -- total price uncertainty",
+      "example_paper_id": "W1973878657__gpt5mini_low"
+    },
+    {
+      "label": "Trading Volume -> Stock market volatility",
+      "paper_count": 13,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Decrease trading volume -> decrease volatility of stock prices",
+      "example_paper_id": "W2014709540__gpt5mini_low"
+    },
+    {
+      "label": "Borrowing -> Borrowing",
+      "paper_count": 13,
+      "edge_rows": 14,
+      "role": "descriptive_pattern",
+      "relationship_type": "effect",
+      "example_claim_text": "borrowing ceiling -> smooth transition between free and no borrowing",
+      "example_paper_id": "W1974558568__gpt5mini_low"
+    },
+    {
+      "label": "GARCH -> Stock market volatility",
+      "paper_count": 13,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Markov-switching GARCH models -> detect volatility regime-switches in target stock price",
+      "example_paper_id": "W3122218439__gpt5mini_low"
+    },
+    {
+      "label": "Trading Volume -> Volatility clustering",
+      "paper_count": 12,
+      "edge_rows": 17,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "trading volume -> return volatility (reversal effects)",
+      "example_paper_id": "W1998972298__gpt5mini_low"
+    },
+    {
+      "label": "Money growth -> Inflation",
+      "paper_count": 12,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "money growth -> inflation (Mexico)",
+      "example_paper_id": "W1971432687__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Welfare",
+      "paper_count": 12,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Inflation -- Welfare",
+      "example_paper_id": "W2054575436__gpt5mini_low"
+    },
+    {
+      "label": "Money Supply -> Inflation",
+      "paper_count": 12,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "money supply -> inflation (monetarist claim)",
+      "example_paper_id": "W1953631627__gpt5mini_low"
+    },
+    {
+      "label": "Idiosyncratic risk -> Stock Returns",
+      "paper_count": 12,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "high idiosyncratic volatility -> abysmally low average stock returns",
+      "example_paper_id": "W2113208252__gpt5mini_low"
+    },
+    {
+      "label": "Quantitative easing -> Inflation",
+      "paper_count": 12,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "quantitative easing -> time adjustment of inflation (depends on regime)",
+      "example_paper_id": "W1997022007__gpt5mini_low"
+    },
+    {
+      "label": "Garch Models -> Garch Models",
+      "paper_count": 12,
+      "edge_rows": 13,
+      "role": "background",
+      "relationship_type": "difference",
+      "example_claim_text": "simulated threshold GARCH option prices -- simulated GARCH prices (threshold GARCH closer to market)",
+      "example_paper_id": "W2026302029__gpt5mini_low"
+    },
+    {
+      "label": "Central Bank Independence -> Inflation",
+      "paper_count": 12,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "central bank independence -> low inflation",
+      "example_paper_id": "W2045843512__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Investment Decisions",
+      "paper_count": 12,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Demand uncertainty -> Optimal investment decision",
+      "example_paper_id": "W3121272664__gpt5mini_low"
+    },
+    {
+      "label": "Sentiment analysis -> Market sentiment",
+      "paper_count": 12,
+      "edge_rows": 12,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "indirect measures of sentiment -- direct (survey) measures of investor sentiment",
+      "example_paper_id": "W3121285187__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Trading Volume",
+      "paper_count": 12,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "price volatility -- market trading volume (positive correlation)",
+      "example_paper_id": "W2011903355__gpt5mini_low"
+    },
+    {
+      "label": "Monetary Policy -> Output",
+      "paper_count": 12,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "monetary policy -> output",
+      "example_paper_id": "W2107710318__gpt5mini_low"
+    },
+    {
+      "label": "Global Financial Crisis -> Volatility (finance)",
+      "paper_count": 12,
+      "edge_rows": 12,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "macroeconomic phases -- volatility (distinguishing feature)",
+      "example_paper_id": "W2158632698__gpt5mini_low"
+    },
+    {
+      "label": "Fit model -> Stock market volatility",
+      "paper_count": 12,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "multiple-security OLG model -> explains stock price volatility",
+      "example_paper_id": "W2013065791__gpt5mini_low"
+    },
+    {
+      "label": "Bid–ask spread -> Bid–ask spread",
+      "paper_count": 11,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "difference",
+      "example_claim_text": "low-frequency spread measures -> proxy spread dynamics (vs benchmark)",
+      "example_paper_id": "W1563792195__gpt5mini_low"
+    },
+    {
+      "label": "Investor behavior -> Trading Volume",
+      "paper_count": 11,
+      "edge_rows": 14,
+      "role": "background",
+      "relationship_type": "effect",
+      "example_claim_text": "disagreement between buyer and seller expectations -> trading volume",
+      "example_paper_id": "W1996121590__gpt5mini_low"
+    },
+    {
+      "label": "Sovereign credit risk -> Bank credit",
+      "paper_count": 11,
+      "edge_rows": 14,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "sovereign rating actions -> bank valuations",
+      "example_paper_id": "W2057760141__gpt5mini_low"
+    },
+    {
+      "label": "Credit spread (options) -> Credit spread (options)",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "credit-spread curves -> credit-spread slopes (extracted)",
+      "example_paper_id": "W2116534306__gpt5mini_low"
+    },
+    {
+      "label": "Emerging markets -> Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "emerging equity markets -> high volatility",
+      "example_paper_id": "W3022360661__gpt5mini_low"
+    },
+    {
+      "label": "High-frequency trading -> Market liquidity",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "entries of HFTs -> improvement in market liquidity level",
+      "example_paper_id": "W1510216607__gpt5mini_low"
+    },
+    {
+      "label": "Supply shock -> Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Unexpected volume shocks -> increase Price volatility (larger effect)",
+      "example_paper_id": "W2086729180__gpt5mini_low"
+    },
+    {
+      "label": "Macroeconomic Data -> Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "scheduled macroeconomic news releases -- higher volatility just before the release",
+      "example_paper_id": "W2115770250__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Stock Returns",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "inflation -- common stock returns (no positive relation)",
+      "example_paper_id": "W1967490906__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Spillover Effect",
+      "paper_count": 11,
+      "edge_rows": 13,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "market uncertainty periods -> higher volatility spillover index",
+      "example_paper_id": "W3122966955__gpt5mini_low"
+    },
+    {
+      "label": "Autoregressive conditional heteroskedasticity -> Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "other",
+      "example_claim_text": "ARCH regression -> measure maize price volatility",
+      "example_paper_id": "W1981236740__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Credit risk",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Illiquidity -> sustains mispricing / credit risk effect",
+      "example_paper_id": "W3123084053__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Excess return",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "liquidity -> affects value strategy excess return",
+      "example_paper_id": "W2038169880__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Expected return",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "liquidity -> variation in expected monthly stock returns (weaker)",
+      "example_paper_id": "W2009043345__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Systemic risk",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "liquidity effects interacting with banking structure -> increased chance of systemic breakdown",
+      "example_paper_id": "W3123232430__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Swap spread",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Liquidity factors -> variation in swap spreads",
+      "example_paper_id": "W1974496993__gpt5mini_low"
+    },
+    {
+      "label": "Stock market volatility -> Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "differences in exposure among industrial countries -- short-term volatility",
+      "example_paper_id": "W2016902065__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Bid–ask spread",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "exchange rate uncertainty -> bid-ask spread (positive relation)",
+      "example_paper_id": "W1498286110__gpt5mini_low"
+    },
+    {
+      "label": "Inflation -> Inflationary Expectations",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "Past inflation -> Inflation uncertainty (positive relationship)",
+      "example_paper_id": "W2043215671__gpt5mini_low"
+    },
+    {
+      "label": "Institutional Investors -> Liquidity risk",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "lower institutional ownership -> less significant outflows",
+      "example_paper_id": "W2089985462__gpt5mini_low"
+    },
+    {
+      "label": "Policy uncertainty -> Risk Premium",
+      "paper_count": 11,
+      "edge_rows": 12,
+      "role": "mechanism",
+      "relationship_type": "effect",
+      "example_claim_text": "policy uncertainty -> risk premium for power generation investments",
+      "example_paper_id": "W2068558806__gpt5mini_low"
+    },
+    {
+      "label": "Bid–ask spread -> Liquidity risk",
+      "paper_count": 11,
+      "edge_rows": 11,
+      "role": "background",
+      "relationship_type": "association",
+      "example_claim_text": "Prior studies -- compare markets using bid-ask spreads",
+      "example_paper_id": "W2048881425__gpt5mini_low"
+    }
+  ],
+  "year_counts": [
+    {
+      "year": 1976,
+      "paper_count": 26
+    },
+    {
+      "year": 1977,
+      "paper_count": 23
+    },
+    {
+      "year": 1978,
+      "paper_count": 27
+    },
+    {
+      "year": 1979,
+      "paper_count": 31
+    },
+    {
+      "year": 1980,
+      "paper_count": 38
+    },
+    {
+      "year": 1981,
+      "paper_count": 39
+    },
+    {
+      "year": 1982,
+      "paper_count": 35
+    },
+    {
+      "year": 1983,
+      "paper_count": 40
+    },
+    {
+      "year": 1984,
+      "paper_count": 34
+    },
+    {
+      "year": 1985,
+      "paper_count": 39
+    },
+    {
+      "year": 1986,
+      "paper_count": 61
+    },
+    {
+      "year": 1987,
+      "paper_count": 53
+    },
+    {
+      "year": 1988,
+      "paper_count": 56
+    },
+    {
+      "year": 1989,
+      "paper_count": 59
+    },
+    {
+      "year": 1990,
+      "paper_count": 72
+    },
+    {
+      "year": 1991,
+      "paper_count": 71
+    },
+    {
+      "year": 1992,
+      "paper_count": 93
+    },
+    {
+      "year": 1993,
+      "paper_count": 108
+    },
+    {
+      "year": 1994,
+      "paper_count": 107
+    },
+    {
+      "year": 1995,
+      "paper_count": 85
+    },
+    {
+      "year": 1996,
+      "paper_count": 96
+    },
+    {
+      "year": 1997,
+      "paper_count": 103
+    },
+    {
+      "year": 1998,
+      "paper_count": 134
+    },
+    {
+      "year": 1999,
+      "paper_count": 117
+    },
+    {
+      "year": 2000,
+      "paper_count": 130
+    },
+    {
+      "year": 2001,
+      "paper_count": 145
+    },
+    {
+      "year": 2002,
+      "paper_count": 166
+    },
+    {
+      "year": 2003,
+      "paper_count": 206
+    },
+    {
+      "year": 2004,
+      "paper_count": 221
+    },
+    {
+      "year": 2005,
+      "paper_count": 202
+    },
+    {
+      "year": 2006,
+      "paper_count": 205
+    },
+    {
+      "year": 2007,
+      "paper_count": 213
+    },
+    {
+      "year": 2008,
+      "paper_count": 226
+    },
+    {
+      "year": 2009,
+      "paper_count": 245
+    },
+    {
+      "year": 2010,
+      "paper_count": 286
+    },
+    {
+      "year": 2011,
+      "paper_count": 296
+    },
+    {
+      "year": 2012,
+      "paper_count": 388
+    },
+    {
+      "year": 2013,
+      "paper_count": 436
+    },
+    {
+      "year": 2014,
+      "paper_count": 491
+    },
+    {
+      "year": 2015,
+      "paper_count": 497
+    },
+    {
+      "year": 2016,
+      "paper_count": 534
+    },
+    {
+      "year": 2017,
+      "paper_count": 601
+    },
+    {
+      "year": 2018,
+      "paper_count": 619
+    },
+    {
+      "year": 2019,
+      "paper_count": 655
+    },
+    {
+      "year": 2020,
+      "paper_count": 727
+    },
+    {
+      "year": 2021,
+      "paper_count": 816
+    },
+    {
+      "year": 2022,
+      "paper_count": 910
+    },
+    {
+      "year": 2023,
+      "paper_count": 1044
+    }
+  ],
+  "field_decades": [
+    {
+      "decade": 1970,
+      "field": "finance",
+      "paper_count": 107,
+      "share": 1.0
+    },
+    {
+      "decade": 1970,
+      "field": "macro",
+      "paper_count": 73,
+      "share": 0.6822429906542056
+    },
+    {
+      "decade": 1970,
+      "field": "micro",
+      "paper_count": 58,
+      "share": 0.5420560747663551
+    },
+    {
+      "decade": 1970,
+      "field": "public",
+      "paper_count": 42,
+      "share": 0.3925233644859813
+    },
+    {
+      "decade": 1970,
+      "field": "methods",
+      "paper_count": 29,
+      "share": 0.27102803738317754
+    },
+    {
+      "decade": 1970,
+      "field": "io",
+      "paper_count": 25,
+      "share": 0.2336448598130841
+    },
+    {
+      "decade": 1970,
+      "field": "environment",
+      "paper_count": 15,
+      "share": 0.14018691588785046
+    },
+    {
+      "decade": 1970,
+      "field": "trade",
+      "paper_count": 14,
+      "share": 0.1308411214953271
+    },
+    {
+      "decade": 1980,
+      "field": "finance",
+      "paper_count": 454,
+      "share": 1.0
+    },
+    {
+      "decade": 1980,
+      "field": "macro",
+      "paper_count": 331,
+      "share": 0.7290748898678414
+    },
+    {
+      "decade": 1980,
+      "field": "micro",
+      "paper_count": 224,
+      "share": 0.4933920704845815
+    },
+    {
+      "decade": 1980,
+      "field": "public",
+      "paper_count": 183,
+      "share": 0.40308370044052866
+    },
+    {
+      "decade": 1980,
+      "field": "methods",
+      "paper_count": 138,
+      "share": 0.3039647577092511
+    },
+    {
+      "decade": 1980,
+      "field": "io",
+      "paper_count": 83,
+      "share": 0.1828193832599119
+    },
+    {
+      "decade": 1980,
+      "field": "trade",
+      "paper_count": 63,
+      "share": 0.13876651982378854
+    },
+    {
+      "decade": 1980,
+      "field": "environment",
+      "paper_count": 50,
+      "share": 0.11013215859030837
+    },
+    {
+      "decade": 1990,
+      "field": "finance",
+      "paper_count": 986,
+      "share": 1.0
+    },
+    {
+      "decade": 1990,
+      "field": "macro",
+      "paper_count": 601,
+      "share": 0.6095334685598377
+    },
+    {
+      "decade": 1990,
+      "field": "micro",
+      "paper_count": 529,
+      "share": 0.5365111561866126
+    },
+    {
+      "decade": 1990,
+      "field": "public",
+      "paper_count": 364,
+      "share": 0.3691683569979716
+    },
+    {
+      "decade": 1990,
+      "field": "methods",
+      "paper_count": 331,
+      "share": 0.3356997971602434
+    },
+    {
+      "decade": 1990,
+      "field": "io",
+      "paper_count": 223,
+      "share": 0.22616632860040567
+    },
+    {
+      "decade": 1990,
+      "field": "trade",
+      "paper_count": 123,
+      "share": 0.12474645030425964
+    },
+    {
+      "decade": 1990,
+      "field": "environment",
+      "paper_count": 79,
+      "share": 0.08012170385395538
+    },
+    {
+      "decade": 2000,
+      "field": "finance",
+      "paper_count": 1959,
+      "share": 1.0
+    },
+    {
+      "decade": 2000,
+      "field": "macro",
+      "paper_count": 1133,
+      "share": 0.5783563042368556
+    },
+    {
+      "decade": 2000,
+      "field": "micro",
+      "paper_count": 1056,
+      "share": 0.5390505359877489
+    },
+    {
+      "decade": 2000,
+      "field": "methods",
+      "paper_count": 763,
+      "share": 0.3894844308320572
+    },
+    {
+      "decade": 2000,
+      "field": "public",
+      "paper_count": 634,
+      "share": 0.3236345074017356
+    },
+    {
+      "decade": 2000,
+      "field": "io",
+      "paper_count": 431,
+      "share": 0.2200102092904543
+    },
+    {
+      "decade": 2000,
+      "field": "trade",
+      "paper_count": 281,
+      "share": 0.14344053088310363
+    },
+    {
+      "decade": 2000,
+      "field": "environment",
+      "paper_count": 146,
+      "share": 0.07452782031648801
+    },
+    {
+      "decade": 2010,
+      "field": "finance",
+      "paper_count": 4803,
+      "share": 1.0
+    },
+    {
+      "decade": 2010,
+      "field": "macro",
+      "paper_count": 3043,
+      "share": 0.6335623568602956
+    },
+    {
+      "decade": 2010,
+      "field": "micro",
+      "paper_count": 2324,
+      "share": 0.48386425150947326
+    },
+    {
+      "decade": 2010,
+      "field": "methods",
+      "paper_count": 1860,
+      "share": 0.3872579637726421
+    },
+    {
+      "decade": 2010,
+      "field": "public",
+      "paper_count": 1572,
+      "share": 0.32729544034978136
+    },
+    {
+      "decade": 2010,
+      "field": "io",
+      "paper_count": 1044,
+      "share": 0.21736414740787008
+    },
+    {
+      "decade": 2010,
+      "field": "environment",
+      "paper_count": 616,
+      "share": 0.12825317509889653
+    },
+    {
+      "decade": 2010,
+      "field": "trade",
+      "paper_count": 560,
+      "share": 0.11659379554445139
+    },
+    {
+      "decade": 2020,
+      "field": "finance",
+      "paper_count": 4377,
+      "share": 1.0
+    },
+    {
+      "decade": 2020,
+      "field": "macro",
+      "paper_count": 2978,
+      "share": 0.6803746858578935
+    },
+    {
+      "decade": 2020,
+      "field": "micro",
+      "paper_count": 2109,
+      "share": 0.4818368745716244
+    },
+    {
+      "decade": 2020,
+      "field": "public",
+      "paper_count": 1716,
+      "share": 0.39204934886908843
+    },
+    {
+      "decade": 2020,
+      "field": "methods",
+      "paper_count": 1530,
+      "share": 0.34955448937628514
+    },
+    {
+      "decade": 2020,
+      "field": "io",
+      "paper_count": 1134,
+      "share": 0.2590815627141878
+    },
+    {
+      "decade": 2020,
+      "field": "environment",
+      "paper_count": 1116,
+      "share": 0.25496915695681976
+    },
+    {
+      "decade": 2020,
+      "field": "trade",
+      "paper_count": 534,
+      "share": 0.12200137080191913
+    }
+  ],
+  "sample_papers": [
+    {
+      "id": "W4406080891__gpt5mini_low",
+      "title": "Low-risk anomaly: Idiosyncratic risk or return distribution",
+      "year": 2025,
+      "source": "Finance research letters",
+      "node_count": 14,
+      "edge_count": 12,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4410139727__gpt5mini_low",
+      "title": "Market Returns and a Tale of Two Types of Attention",
+      "year": 2025,
+      "source": "Management Science",
+      "node_count": 14,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4412459327__gpt5mini_low",
+      "title": "Index futures mispricing: A global phenomenon? A comparative analysis of market dynamics",
+      "year": 2025,
+      "source": "Borsa Istanbul Review",
+      "node_count": 14,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4409085085__gpt5mini_low",
+      "title": "Market time-series reversal: evidence from China’s market",
+      "year": 2025,
+      "source": "Technological and Economic Development of Economy",
+      "node_count": 11,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4406560789__gpt5mini_low",
+      "title": "When to bet against beta? Ask Google",
+      "year": 2025,
+      "source": "Borsa Istanbul Review",
+      "node_count": 10,
+      "edge_count": 4,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4411181481__gpt5mini_low",
+      "title": "Predictable liquidity properties in a Segmented, inelastic stock market",
+      "year": 2025,
+      "source": "Journal of International Financial Markets Institutions and Money",
+      "node_count": 9,
+      "edge_count": 10,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4411582752__gpt5mini_low",
+      "title": "Economic policy uncertainty, digital transformation, and bank systemic risk",
+      "year": 2025,
+      "source": "International Review of Economics & Finance",
+      "node_count": 9,
+      "edge_count": 12,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4414346572__gpt5mini_low",
+      "title": "Efficient Estimation in Extreme Value Regression Models of Hedge Funds Tail risks",
+      "year": 2025,
+      "source": "Journal of Financial Econometrics",
+      "node_count": 9,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4414845222__gpt5mini_low",
+      "title": "A Bayesian Stochastic Discount Factor for the Cross-Section of Individual Equity Options",
+      "year": 2025,
+      "source": "Journal of Financial and Quantitative Analysis",
+      "node_count": 9,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4416011111__gpt5mini_low",
+      "title": "Information, Asset Price Volatility, and Liquidity",
+      "year": 2025,
+      "source": "Management Science",
+      "node_count": 9,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4407241322__gpt5mini_low",
+      "title": "(In)Frequently traded corporate bonds and pricing implications of liquidity dry-ups",
+      "year": 2025,
+      "source": "Finance research letters",
+      "node_count": 6,
+      "edge_count": 6,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4392627704__gpt5mini_low",
+      "title": "Unsmoothing Returns of Illiquid Funds",
+      "year": 2024,
+      "source": "Review of Financial Studies",
+      "node_count": 13,
+      "edge_count": 10,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4394694007__gpt5mini_low",
+      "title": "Idiosyncratic risk and market volatility: Threat or opportunity for returns? A study of Borsa Istanbul stocks",
+      "year": 2024,
+      "source": "Borsa Istanbul Review",
+      "node_count": 12,
+      "edge_count": 11,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4401889229__gpt5mini_low",
+      "title": "The “Butterfly Effect” of Volatility in Net International Capital Flows: An Analysis of Co-Movement Characteristics...",
+      "year": 2024,
+      "source": "Sustainability",
+      "node_count": 11,
+      "edge_count": 11,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4403541632__gpt5mini_low",
+      "title": "Short-term momentum and reversals, turnover, and a stock’s price-to-52-week-high ratio",
+      "year": 2024,
+      "source": "Journal of Empirical Finance",
+      "node_count": 11,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4400106159__gpt5mini_low",
+      "title": "The impact of climate change on credit cycles: Evidence from China's bond market",
+      "year": 2024,
+      "source": "Technological Forecasting and Social Change",
+      "node_count": 10,
+      "edge_count": 12,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4402290310__gpt5mini_low",
+      "title": "Option-based variables and future stock returns in normal times and recessions",
+      "year": 2024,
+      "source": "Borsa Istanbul Review",
+      "node_count": 10,
+      "edge_count": 6,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4404611472__gpt5mini_low",
+      "title": "Dynamic Anomaly Detection in the Chinese Energy Market During Financial Turbulence Using Ratio Mutual Information a...",
+      "year": 2024,
+      "source": "Energies",
+      "node_count": 10,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4390862136__gpt5mini_low",
+      "title": "Estimating spot volatility under infinite variation jumps with dependent market microstructure noise",
+      "year": 2024,
+      "source": "Econometrics Journal",
+      "node_count": 9,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4392946419__gpt5mini_low",
+      "title": "The effects of non-deliverable forward programs of emerging-market central banks: A synthetic control approach",
+      "year": 2024,
+      "source": "Borsa Istanbul Review",
+      "node_count": 9,
+      "edge_count": 14,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4391051975__gpt5mini_low",
+      "title": "Common risk factors in cross-sectional FX options returns",
+      "year": 2024,
+      "source": "European Finance Review",
+      "node_count": 7,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4313830066__gpt5mini_low",
+      "title": "Time-varying fund manager skills of socially responsible investing (SRI) funds in developed and emerging markets",
+      "year": 2023,
+      "source": "Research in International Business and Finance",
+      "node_count": 13,
+      "edge_count": 14,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4390146073__gpt5mini_low",
+      "title": "Corporate bond price reversals",
+      "year": 2023,
+      "source": "Journal of Financial Markets",
+      "node_count": 12,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4383067722__gpt5mini_low",
+      "title": "The Price of Safety: The Evolution of Municipal Bond Insurance Value",
+      "year": 2023,
+      "source": "Management Science",
+      "node_count": 11,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4383667944__gpt5mini_low",
+      "title": "Capital investments and firm characteristics: The moderating role of economic policy uncertainty in the hospitality...",
+      "year": 2023,
+      "source": "International Journal of Hospitality Management",
+      "node_count": 11,
+      "edge_count": 12,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4378550054__gpt5mini_low",
+      "title": "Foreign institutions, local investors and momentum trading",
+      "year": 2023,
+      "source": "Journal of Empirical Finance",
+      "node_count": 10,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4322496406__gpt5mini_low",
+      "title": "The Only Constant Is Change: Nonconstant Volatility and Implied Volatility Spreads",
+      "year": 2023,
+      "source": "Journal of Financial and Quantitative Analysis",
+      "node_count": 9,
+      "edge_count": 8,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4360841609__gpt5mini_low",
+      "title": "Disagreement, speculation, and the idiosyncratic volatility",
+      "year": 2023,
+      "source": "Journal of Empirical Finance",
+      "node_count": 9,
+      "edge_count": 9,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4367597431__gpt5mini_low",
+      "title": "Monetary policy as market stabilizer in the COVID-19 pandemic",
+      "year": 2023,
+      "source": "Finance research letters",
+      "node_count": 9,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W3047536233__gpt5mini_low",
+      "title": "Stock market evidence on the international transmission channels of US monetary policy surprises",
+      "year": 2023,
+      "source": "Journal of International Money and Finance",
+      "node_count": 8,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4313594128__gpt5mini_low",
+      "title": "Short selling, divergence of opinion and volatility in the corporate bond market",
+      "year": 2023,
+      "source": "Journal of Economic Dynamics and Control",
+      "node_count": 8,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4366824514__gpt5mini_low",
+      "title": "Idiosyncratic risk and cross-section of stock returns in emerging European markets",
+      "year": 2023,
+      "source": "Economic Modelling",
+      "node_count": 8,
+      "edge_count": 6,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4377819062__gpt5mini_low",
+      "title": "Factor-timing in the Chinese factor zoo: The role of economic policy uncertainty",
+      "year": 2023,
+      "source": "Journal of International Financial Markets Institutions and Money",
+      "node_count": 8,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4385322874__gpt5mini_low",
+      "title": "Mechanisms of overpricing: An investigation on momentum crashes",
+      "year": 2023,
+      "source": "International Review of Economics & Finance",
+      "node_count": 8,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4389220439__gpt5mini_low",
+      "title": "Tail risks and private equity performance",
+      "year": 2023,
+      "source": "Journal of Empirical Finance",
+      "node_count": 8,
+      "edge_count": 6,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    },
+    {
+      "id": "W4321379208__gpt5mini_low",
+      "title": "Is there an expiration effect in the bitcoin market?",
+      "year": 2023,
+      "source": "International Review of Economics & Finance",
+      "node_count": 7,
+      "edge_count": 7,
+      "tags": [
+        "factor",
+        "asset pricing",
+        "microstructure",
+        "macro/state"
+      ]
+    }
+  ]
+}

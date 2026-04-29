@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Finance Atlas</title>
+    <meta
+      name="description"
+      content="An interactive explorer of mapped finance research themes, concepts, and relationships."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Finance Atlas home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Finance Atlas</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#concepts">Concepts</a>
+        <a href="#relationships">Relationships</a>
+        <a href="#papers">Papers</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>A map of finance research themes.</h1>
+          <p>
+            Explore what finance papers study, which concepts rise over time, and how ideas connect inside
+            graph-based representations of the literature.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#concepts">Explore concepts</a>
+            <a class="button secondary" href="#relationships">View relationships</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Corpus snapshot">
+          <div class="signal-line"></div>
+          <div class="metric-grid" id="metric-grid"></div>
+        </div>
+      </section>
+
+      <section class="section deck-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <h2 id="overview-title">Current map</h2>
+          <p>
+            This first public slice is descriptive. It shows the materialized finance graph workspace, not a
+            market-validation result.
+          </p>
+        </div>
+        <div class="overview-grid">
+          <article class="story-card">
+            <span class="card-number">01</span>
+            <h3>Finance concepts cluster around risk and market states.</h3>
+            <p>
+              Volatility, liquidity, inflation, policy uncertainty, sentiment, credit, and recession are among the
+              most visible concepts in the current map.
+            </p>
+          </article>
+          <article class="story-card">
+            <span class="card-number">02</span>
+            <h3>Recent decades shift toward uncertainty and intervention.</h3>
+            <p>
+              Policy uncertainty, sentiment, bank credit, quantitative easing, COVID-19, and crisis language rise
+              strongly in the 2020s relative to earlier decades.
+            </p>
+          </article>
+          <article class="story-card">
+            <span class="card-number">03</span>
+            <h3>Relationships are inspectable, not just counted.</h3>
+            <p>
+              Canonical edge pairs reveal recurring claims such as sentiment to returns, policy uncertainty to
+              volatility, and liquidity risk to stock returns.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section explorer" id="concepts" aria-labelledby="concepts-title">
+        <div class="section-heading">
+          <h2 id="concepts-title">Concept explorer</h2>
+          <p>Search the mapped ontology concepts and inspect their coverage by decade.</p>
+        </div>
+
+        <div class="toolbar">
+          <label class="search-label" for="concept-search">Search concepts</label>
+          <input id="concept-search" type="search" placeholder="Try volatility, sentiment, liquidity..." />
+          <div class="chip-row" role="group" aria-label="Concept filters">
+            <button class="chip active" data-field="all">All</button>
+            <button class="chip" data-field="finance">Finance</button>
+            <button class="chip" data-field="macro">Macro</button>
+            <button class="chip" data-field="micro">Micro</button>
+            <button class="chip" data-field="methods">Methods</button>
+          </div>
+        </div>
+
+        <div class="split-view">
+          <div class="list-panel">
+            <div class="panel-title-row">
+              <h3>Mapped concepts</h3>
+              <span id="concept-count"></span>
+            </div>
+            <div class="concept-list" id="concept-list"></div>
+          </div>
+          <div class="detail-panel" id="concept-detail"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="rising-title">
+        <div class="section-heading">
+          <h2 id="rising-title">Rising themes</h2>
+          <p>Concepts whose paper share has increased most in the 2020s relative to the 2000s.</p>
+        </div>
+        <div class="bar-list" id="rising-list"></div>
+      </section>
+
+      <section class="section" id="relationships" aria-labelledby="relationships-title">
+        <div class="section-heading">
+          <h2 id="relationships-title">Recurring relationships</h2>
+          <p>Common concept-to-concept edge pairs extracted from paper-local research graphs.</p>
+        </div>
+        <div class="edge-table-wrap">
+          <table class="edge-table">
+            <thead>
+              <tr>
+                <th>Relationship</th>
+                <th>Papers</th>
+                <th>Role</th>
+                <th>Example claim</th>
+              </tr>
+            </thead>
+            <tbody id="edge-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="papers" aria-labelledby="papers-title">
+        <div class="section-heading">
+          <h2 id="papers-title">Sample papers</h2>
+          <p>A small rotating sample from the materialized workspace, useful for checking what the map is built from.</p>
+        </div>
+        <div class="paper-grid" id="paper-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Finance Atlas is an exploratory interface for graph-based finance literature data. It is not investment
+        advice and does not yet report market-validation results.
+      </p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
