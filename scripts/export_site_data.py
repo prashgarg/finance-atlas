@@ -105,18 +105,27 @@ def build_rising() -> list[dict[str, Any]]:
 
 def build_edges() -> list[dict[str, Any]]:
     rows = read_csv("top_canonical_edge_pairs_overall.csv")[:100]
-    return [
-        {
+    out = []
+    for row in rows:
+        label = row["canonical_edge_pair_label"]
+        parts = [part.strip() for part in label.split(" -> ", 1)]
+        source_label = parts[0] if parts else ""
+        target_label = parts[1] if len(parts) > 1 else ""
+        out.append(
+            {
             "label": row["canonical_edge_pair_label"],
+            "source_label": source_label,
+            "target_label": target_label,
+            "is_self_loop": source_label == target_label,
             "paper_count": as_int(row["paper_count"]),
             "edge_rows": as_int(row["edge_rows"]),
             "role": row["most_common_edge_role"],
             "relationship_type": row["most_common_relationship_type"],
             "example_claim_text": row["example_claim_text"],
             "example_paper_id": row["example_paper_id"],
-        }
-        for row in rows
-    ]
+            }
+        )
+    return out
 
 
 def build_year_counts() -> list[dict[str, Any]]:
@@ -127,6 +136,40 @@ def build_year_counts() -> list[dict[str, Any]]:
         if year and year <= 2023:
             counts[year] = counts.get(year, 0) + 1
     return [{"year": year, "paper_count": counts[year]} for year in sorted(counts)]
+
+
+def build_slice_year_counts() -> list[dict[str, Any]]:
+    rows = read_csv("paper_theme_panel.csv")
+    slices = {
+        "asset_pricing": "slice_asset_pricing_broad",
+        "factor_investing": "slice_factor_investing",
+        "market_microstructure": "slice_market_microstructure",
+        "macro_state": "slice_macro_finance_states",
+    }
+    counts: dict[tuple[int, str], int] = {}
+    denominators: dict[int, int] = {}
+    for row in rows:
+        year = as_int(row["publication_year"])
+        if not year or year > 2023:
+            continue
+        denominators[year] = denominators.get(year, 0) + 1
+        for label, col in slices.items():
+            if as_bool(row[col]):
+                counts[(year, label)] = counts.get((year, label), 0) + 1
+
+    out = []
+    for year in sorted(denominators):
+        for label in slices:
+            paper_count = counts.get((year, label), 0)
+            out.append(
+                {
+                    "year": year,
+                    "slice": label,
+                    "paper_count": paper_count,
+                    "share": paper_count / denominators[year] if denominators[year] else 0,
+                }
+            )
+    return out
 
 
 def build_field_decades() -> list[dict[str, Any]]:
@@ -187,6 +230,7 @@ def main() -> None:
         "rising_concepts": build_rising(),
         "edge_pairs": build_edges(),
         "year_counts": build_year_counts(),
+        "slice_year_counts": build_slice_year_counts(),
         "field_decades": build_field_decades(),
         "sample_papers": build_sample_papers(),
     }

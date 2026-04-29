@@ -18,6 +18,7 @@
         <span>Finance Atlas</span>
       </a>
       <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#time">Time</a>
         <a href="#concepts">Concepts</a>
         <a href="#relationships">Relationships</a>
         <a href="#papers">Papers</a>
@@ -27,10 +28,10 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <h1>A map of finance research themes.</h1>
+          <h1>Finance research, mapped.</h1>
           <p>
-            Explore what finance papers study, which concepts rise over time, and how ideas connect inside
-            graph-based representations of the literature.
+            Explore what finance papers study, how themes move over time, and which ideas connect inside
+            graph-based maps of the literature.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#concepts">Explore concepts</a>
@@ -79,6 +80,25 @@
         </div>
       </section>
 
+      <section class="section" id="time" aria-labelledby="time-title">
+        <div class="section-heading">
+          <h2 id="time-title">Time view</h2>
+          <p>Switch between paper volume, field coverage, and theme-slice shares.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="time-view-select">View</label>
+            <select id="time-view-select">
+              <option value="volume">Papers per year</option>
+              <option value="fields">Field coverage by decade</option>
+              <option value="slices">Theme-slice share by year</option>
+            </select>
+          </div>
+          <div id="time-chart" class="time-chart" role="img" aria-label="Time series chart"></div>
+          <div id="time-legend" class="time-legend"></div>
+        </div>
+      </section>
+
       <section class="section explorer" id="concepts" aria-labelledby="concepts-title">
         <div class="section-heading">
           <h2 id="concepts-title">Concept explorer</h2>
@@ -120,7 +140,17 @@
       <section class="section" id="relationships" aria-labelledby="relationships-title">
         <div class="section-heading">
           <h2 id="relationships-title">Recurring relationships</h2>
-          <p>Common concept-to-concept edge pairs extracted from paper-local research graphs.</p>
+          <p>Common concept-to-concept edge pairs. Self-links are hidden by default because they are usually audit signals.</p>
+        </div>
+        <div class="chart-toolbar relationship-toolbar">
+          <label for="edge-role-select">Role</label>
+          <select id="edge-role-select">
+            <option value="all">All roles</option>
+          </select>
+          <label class="toggle-label">
+            <input id="include-self-links" type="checkbox" />
+            Include self-links
+          </label>
         </div>
         <div class="edge-table-wrap">
           <table class="edge-table">

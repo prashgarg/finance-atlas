@@ -5126,6 +5126,9 @@
   "edge_pairs": [
     {
       "label": "Stock market volatility -> Stock market volatility",
+      "source_label": "Stock market volatility",
+      "target_label": "Stock market volatility",
+      "is_self_loop": true,
       "paper_count": 82,
       "edge_rows": 122,
       "role": "main_effect",
@@ -5135,6 +5138,9 @@
     },
     {
       "label": "Market sentiment -> Stock Returns",
+      "source_label": "Market sentiment",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 64,
       "edge_rows": 93,
       "role": "main_effect",
@@ -5144,6 +5150,9 @@
     },
     {
       "label": "Monetary Policy -> Inflation",
+      "source_label": "Monetary Policy",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 48,
       "edge_rows": 51,
       "role": "main_effect",
@@ -5153,6 +5162,9 @@
     },
     {
       "label": "Policy uncertainty -> Stock market volatility",
+      "source_label": "Policy uncertainty",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 37,
       "edge_rows": 53,
       "role": "main_effect",
@@ -5162,6 +5174,9 @@
     },
     {
       "label": "Trading Volume -> Volatility (finance)",
+      "source_label": "Trading Volume",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 33,
       "edge_rows": 40,
       "role": "main_effect",
@@ -5171,6 +5186,9 @@
     },
     {
       "label": "Garch Models -> Volatility (finance)",
+      "source_label": "Garch Models",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 33,
       "edge_rows": 36,
       "role": "main_effect",
@@ -5180,6 +5198,9 @@
     },
     {
       "label": "Inflation -> Economic Growth",
+      "source_label": "Inflation",
+      "target_label": "Economic Growth",
+      "is_self_loop": false,
       "paper_count": 31,
       "edge_rows": 35,
       "role": "main_effect",
@@ -5189,6 +5210,9 @@
     },
     {
       "label": "Policy uncertainty -> Stock Returns",
+      "source_label": "Policy uncertainty",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 27,
       "edge_rows": 42,
       "role": "main_effect",
@@ -5198,6 +5222,9 @@
     },
     {
       "label": "Forward volatility -> Stock market volatility",
+      "source_label": "Forward volatility",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 27,
       "edge_rows": 31,
       "role": "main_effect",
@@ -5207,6 +5234,9 @@
     },
     {
       "label": "Trading Volume -> Stock Returns",
+      "source_label": "Trading Volume",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 25,
       "edge_rows": 33,
       "role": "main_effect",
@@ -5216,6 +5246,9 @@
     },
     {
       "label": "Volatility (finance) -> Volatility (finance)",
+      "source_label": "Volatility (finance)",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": true,
       "paper_count": 25,
       "edge_rows": 29,
       "role": "descriptive_pattern",
@@ -5225,6 +5258,9 @@
     },
     {
       "label": "Liquidity risk -> Stock Returns",
+      "source_label": "Liquidity risk",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 24,
       "edge_rows": 27,
       "role": "main_effect",
@@ -5234,6 +5270,9 @@
     },
     {
       "label": "Market sentiment -> Stock market volatility",
+      "source_label": "Market sentiment",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 23,
       "edge_rows": 33,
       "role": "main_effect",
@@ -5243,6 +5282,9 @@
     },
     {
       "label": "Trading Volume -> Trading Volume",
+      "source_label": "Trading Volume",
+      "target_label": "Trading Volume",
+      "is_self_loop": true,
       "paper_count": 23,
       "edge_rows": 28,
       "role": "main_effect",
@@ -5252,6 +5294,9 @@
     },
     {
       "label": "Garch Models -> Stock market volatility",
+      "source_label": "Garch Models",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 23,
       "edge_rows": 24,
       "role": "background",
@@ -5261,6 +5306,9 @@
     },
     {
       "label": "Implied volatility -> Stock market volatility",
+      "source_label": "Implied volatility",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 22,
       "edge_rows": 29,
       "role": "main_effect",
@@ -5270,6 +5318,9 @@
     },
     {
       "label": "Investor behavior -> Stock market volatility",
+      "source_label": "Investor behavior",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 22,
       "edge_rows": 24,
       "role": "main_effect",
@@ -5279,6 +5330,9 @@
     },
     {
       "label": "Liquidity risk -> Liquidity risk",
+      "source_label": "Liquidity risk",
+      "target_label": "Liquidity risk",
+      "is_self_loop": true,
       "paper_count": 21,
       "edge_rows": 24,
       "role": "descriptive_pattern",
@@ -5288,6 +5342,9 @@
     },
     {
       "label": "COVID-19 -> Stock market volatility",
+      "source_label": "COVID-19",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 25,
       "role": "main_effect",
@@ -5297,6 +5354,9 @@
     },
     {
       "label": "Funding liquidity -> Market liquidity",
+      "source_label": "Funding liquidity",
+      "target_label": "Market liquidity",
+      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 24,
       "role": "main_effect",
@@ -5306,6 +5366,9 @@
     },
     {
       "label": "Volatility risk -> Stock market volatility",
+      "source_label": "Volatility risk",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 24,
       "role": "main_effect",
@@ -5315,6 +5378,9 @@
     },
     {
       "label": "Stock market volatility -> Spillovers",
+      "source_label": "Stock market volatility",
+      "target_label": "Spillovers",
+      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 22,
       "role": "main_effect",
@@ -5324,6 +5390,9 @@
     },
     {
       "label": "Volatility (finance) -> Stock market volatility",
+      "source_label": "Volatility (finance)",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 21,
       "role": "main_effect",
@@ -5333,6 +5402,9 @@
     },
     {
       "label": "Market liquidity -> Liquidity risk",
+      "source_label": "Market liquidity",
+      "target_label": "Liquidity risk",
+      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5342,6 +5414,9 @@
     },
     {
       "label": "Market sentiment -> Market sentiment",
+      "source_label": "Market sentiment",
+      "target_label": "Market sentiment",
+      "is_self_loop": true,
       "paper_count": 18,
       "edge_rows": 19,
       "role": "background",
@@ -5351,6 +5426,9 @@
     },
     {
       "label": "Uncertainty -> Stock market volatility",
+      "source_label": "Uncertainty",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 23,
       "role": "main_effect",
@@ -5360,6 +5438,9 @@
     },
     {
       "label": "Stock market volatility -> Volatility risk",
+      "source_label": "Stock market volatility",
+      "target_label": "Volatility risk",
+      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 21,
       "role": "main_effect",
@@ -5369,6 +5450,9 @@
     },
     {
       "label": "Monetary Policy -> Stock market volatility",
+      "source_label": "Monetary Policy",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5378,6 +5462,9 @@
     },
     {
       "label": "Inflation Targeting -> Inflation",
+      "source_label": "Inflation Targeting",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5387,6 +5474,9 @@
     },
     {
       "label": "Spillovers -> Spillovers",
+      "source_label": "Spillovers",
+      "target_label": "Spillovers",
+      "is_self_loop": true,
       "paper_count": 16,
       "edge_rows": 20,
       "role": "descriptive_pattern",
@@ -5396,6 +5486,9 @@
     },
     {
       "label": "Financial Development -> Economic Growth",
+      "source_label": "Financial Development",
+      "target_label": "Economic Growth",
+      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5405,6 +5498,9 @@
     },
     {
       "label": "Inflationary Expectations -> Inflation",
+      "source_label": "Inflationary Expectations",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5414,6 +5510,9 @@
     },
     {
       "label": "State of emergency -> Stock market volatility",
+      "source_label": "State of emergency",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5423,6 +5522,9 @@
     },
     {
       "label": "Policy uncertainty -> Policy uncertainty",
+      "source_label": "Policy uncertainty",
+      "target_label": "Policy uncertainty",
+      "is_self_loop": true,
       "paper_count": 16,
       "edge_rows": 16,
       "role": "descriptive_pattern",
@@ -5432,6 +5534,9 @@
     },
     {
       "label": "Volatility risk -> Volatility risk",
+      "source_label": "Volatility risk",
+      "target_label": "Volatility risk",
+      "is_self_loop": true,
       "paper_count": 15,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5441,6 +5546,9 @@
     },
     {
       "label": "Volatility Models -> Volatility (finance)",
+      "source_label": "Volatility Models",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5450,6 +5558,9 @@
     },
     {
       "label": "Implied volatility -> Volatility (finance)",
+      "source_label": "Implied volatility",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5459,6 +5570,9 @@
     },
     {
       "label": "Stock market volatility -> Stock Returns",
+      "source_label": "Stock market volatility",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5468,6 +5582,9 @@
     },
     {
       "label": "Fiscal deficit -> Inflation",
+      "source_label": "Fiscal deficit",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 16,
       "role": "main_effect",
@@ -5477,6 +5594,9 @@
     },
     {
       "label": "Policy uncertainty -> Spillovers",
+      "source_label": "Policy uncertainty",
+      "target_label": "Spillovers",
+      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 16,
       "role": "main_effect",
@@ -5486,6 +5606,9 @@
     },
     {
       "label": "VIX -> Stock market volatility",
+      "source_label": "VIX",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 21,
       "role": "main_effect",
@@ -5495,6 +5618,9 @@
     },
     {
       "label": "Macroprudential regulation -> Bank credit",
+      "source_label": "Macroprudential regulation",
+      "target_label": "Bank credit",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5504,6 +5630,9 @@
     },
     {
       "label": "Market liquidity -> Market liquidity",
+      "source_label": "Market liquidity",
+      "target_label": "Market liquidity",
+      "is_self_loop": true,
       "paper_count": 14,
       "edge_rows": 19,
       "role": "descriptive_pattern",
@@ -5513,6 +5642,9 @@
     },
     {
       "label": "Policy uncertainty -> Renewable Energy",
+      "source_label": "Policy uncertainty",
+      "target_label": "Renewable Energy",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5522,6 +5654,9 @@
     },
     {
       "label": "Policy uncertainty -> Forward volatility",
+      "source_label": "Policy uncertainty",
+      "target_label": "Forward volatility",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 16,
       "role": "main_effect",
@@ -5531,6 +5666,9 @@
     },
     {
       "label": "Garch Models -> Volatility Forecasting",
+      "source_label": "Garch Models",
+      "target_label": "Volatility Forecasting",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5540,6 +5678,9 @@
     },
     {
       "label": "Monetary Policy -> Liquidity risk",
+      "source_label": "Monetary Policy",
+      "target_label": "Liquidity risk",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5549,6 +5690,9 @@
     },
     {
       "label": "Inflation -> Welfare cost of inflation",
+      "source_label": "Inflation",
+      "target_label": "Welfare cost of inflation",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5558,6 +5702,9 @@
     },
     {
       "label": "Liquidity risk -> Liquidity premium",
+      "source_label": "Liquidity risk",
+      "target_label": "Liquidity premium",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5567,6 +5714,9 @@
     },
     {
       "label": "Stochastic volatility -> Volatility (finance)",
+      "source_label": "Stochastic volatility",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5576,6 +5726,9 @@
     },
     {
       "label": "Volatility (finance) -> Volatility risk",
+      "source_label": "Volatility (finance)",
+      "target_label": "Volatility risk",
+      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "descriptive_pattern",
@@ -5585,6 +5738,9 @@
     },
     {
       "label": "Policy uncertainty -> Green innovation",
+      "source_label": "Policy uncertainty",
+      "target_label": "Green innovation",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 26,
       "role": "heterogeneity",
@@ -5594,6 +5750,9 @@
     },
     {
       "label": "Oil Shocks -> Stock market volatility",
+      "source_label": "Oil Shocks",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5603,6 +5762,9 @@
     },
     {
       "label": "Bank credit -> Economic Growth",
+      "source_label": "Bank credit",
+      "target_label": "Economic Growth",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 18,
       "role": "main_effect",
@@ -5612,6 +5774,9 @@
     },
     {
       "label": "Inflation -> Inflation",
+      "source_label": "Inflation",
+      "target_label": "Inflation",
+      "is_self_loop": true,
       "paper_count": 13,
       "edge_rows": 18,
       "role": "main_effect",
@@ -5621,6 +5786,9 @@
     },
     {
       "label": "Volatility (finance) -> Economic Growth",
+      "source_label": "Volatility (finance)",
+      "target_label": "Economic Growth",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5630,6 +5798,9 @@
     },
     {
       "label": "Policy uncertainty -> Volatility (finance)",
+      "source_label": "Policy uncertainty",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5639,6 +5810,9 @@
     },
     {
       "label": "Funding liquidity -> Funding liquidity",
+      "source_label": "Funding liquidity",
+      "target_label": "Funding liquidity",
+      "is_self_loop": true,
       "paper_count": 13,
       "edge_rows": 16,
       "role": "background",
@@ -5648,6 +5822,9 @@
     },
     {
       "label": "Oil price -> Stock market volatility",
+      "source_label": "Oil price",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5657,6 +5834,9 @@
     },
     {
       "label": "Policy uncertainty -> Investment",
+      "source_label": "Policy uncertainty",
+      "target_label": "Investment",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5666,6 +5846,9 @@
     },
     {
       "label": "Policy uncertainty -> Uncertainty",
+      "source_label": "Policy uncertainty",
+      "target_label": "Uncertainty",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "descriptive_pattern",
@@ -5675,6 +5858,9 @@
     },
     {
       "label": "Trading Volume -> Stock market volatility",
+      "source_label": "Trading Volume",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5684,6 +5870,9 @@
     },
     {
       "label": "Borrowing -> Borrowing",
+      "source_label": "Borrowing",
+      "target_label": "Borrowing",
+      "is_self_loop": true,
       "paper_count": 13,
       "edge_rows": 14,
       "role": "descriptive_pattern",
@@ -5693,6 +5882,9 @@
     },
     {
       "label": "GARCH -> Stock market volatility",
+      "source_label": "GARCH",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5702,6 +5894,9 @@
     },
     {
       "label": "Trading Volume -> Volatility clustering",
+      "source_label": "Trading Volume",
+      "target_label": "Volatility clustering",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5711,6 +5906,9 @@
     },
     {
       "label": "Money growth -> Inflation",
+      "source_label": "Money growth",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5720,6 +5918,9 @@
     },
     {
       "label": "Inflation -> Welfare",
+      "source_label": "Inflation",
+      "target_label": "Welfare",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5729,6 +5930,9 @@
     },
     {
       "label": "Money Supply -> Inflation",
+      "source_label": "Money Supply",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5738,6 +5942,9 @@
     },
     {
       "label": "Idiosyncratic risk -> Stock Returns",
+      "source_label": "Idiosyncratic risk",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5747,6 +5954,9 @@
     },
     {
       "label": "Quantitative easing -> Inflation",
+      "source_label": "Quantitative easing",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5756,6 +5966,9 @@
     },
     {
       "label": "Garch Models -> Garch Models",
+      "source_label": "Garch Models",
+      "target_label": "Garch Models",
+      "is_self_loop": true,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "background",
@@ -5765,6 +5978,9 @@
     },
     {
       "label": "Central Bank Independence -> Inflation",
+      "source_label": "Central Bank Independence",
+      "target_label": "Inflation",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5774,6 +5990,9 @@
     },
     {
       "label": "Policy uncertainty -> Investment Decisions",
+      "source_label": "Policy uncertainty",
+      "target_label": "Investment Decisions",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5783,6 +6002,9 @@
     },
     {
       "label": "Sentiment analysis -> Market sentiment",
+      "source_label": "Sentiment analysis",
+      "target_label": "Market sentiment",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "background",
@@ -5792,6 +6014,9 @@
     },
     {
       "label": "Volatility (finance) -> Trading Volume",
+      "source_label": "Volatility (finance)",
+      "target_label": "Trading Volume",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5801,6 +6026,9 @@
     },
     {
       "label": "Monetary Policy -> Output",
+      "source_label": "Monetary Policy",
+      "target_label": "Output",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5810,6 +6038,9 @@
     },
     {
       "label": "Global Financial Crisis -> Volatility (finance)",
+      "source_label": "Global Financial Crisis",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "descriptive_pattern",
@@ -5819,6 +6050,9 @@
     },
     {
       "label": "Fit model -> Stock market volatility",
+      "source_label": "Fit model",
+      "target_label": "Stock market volatility",
+      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5828,6 +6062,9 @@
     },
     {
       "label": "Bid–ask spread -> Bid–ask spread",
+      "source_label": "Bid–ask spread",
+      "target_label": "Bid–ask spread",
+      "is_self_loop": true,
       "paper_count": 11,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5837,6 +6074,9 @@
     },
     {
       "label": "Investor behavior -> Trading Volume",
+      "source_label": "Investor behavior",
+      "target_label": "Trading Volume",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 14,
       "role": "background",
@@ -5846,6 +6086,9 @@
     },
     {
       "label": "Sovereign credit risk -> Bank credit",
+      "source_label": "Sovereign credit risk",
+      "target_label": "Bank credit",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 14,
       "role": "background",
@@ -5855,6 +6098,9 @@
     },
     {
       "label": "Credit spread (options) -> Credit spread (options)",
+      "source_label": "Credit spread (options)",
+      "target_label": "Credit spread (options)",
+      "is_self_loop": true,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5864,6 +6110,9 @@
     },
     {
       "label": "Emerging markets -> Volatility (finance)",
+      "source_label": "Emerging markets",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5873,6 +6122,9 @@
     },
     {
       "label": "High-frequency trading -> Market liquidity",
+      "source_label": "High-frequency trading",
+      "target_label": "Market liquidity",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5882,6 +6134,9 @@
     },
     {
       "label": "Supply shock -> Volatility (finance)",
+      "source_label": "Supply shock",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5891,6 +6146,9 @@
     },
     {
       "label": "Macroeconomic Data -> Volatility (finance)",
+      "source_label": "Macroeconomic Data",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5900,6 +6158,9 @@
     },
     {
       "label": "Inflation -> Stock Returns",
+      "source_label": "Inflation",
+      "target_label": "Stock Returns",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "background",
@@ -5909,6 +6170,9 @@
     },
     {
       "label": "Policy uncertainty -> Spillover Effect",
+      "source_label": "Policy uncertainty",
+      "target_label": "Spillover Effect",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "descriptive_pattern",
@@ -5918,6 +6182,9 @@
     },
     {
       "label": "Autoregressive conditional heteroskedasticity -> Volatility (finance)",
+      "source_label": "Autoregressive conditional heteroskedasticity",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5927,6 +6194,9 @@
     },
     {
       "label": "Liquidity risk -> Credit risk",
+      "source_label": "Liquidity risk",
+      "target_label": "Credit risk",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5936,6 +6206,9 @@
     },
     {
       "label": "Liquidity risk -> Excess return",
+      "source_label": "Liquidity risk",
+      "target_label": "Excess return",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5945,6 +6218,9 @@
     },
     {
       "label": "Liquidity risk -> Expected return",
+      "source_label": "Liquidity risk",
+      "target_label": "Expected return",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5954,6 +6230,9 @@
     },
     {
       "label": "Liquidity risk -> Systemic risk",
+      "source_label": "Liquidity risk",
+      "target_label": "Systemic risk",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5963,6 +6242,9 @@
     },
     {
       "label": "Liquidity risk -> Swap spread",
+      "source_label": "Liquidity risk",
+      "target_label": "Swap spread",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5972,6 +6254,9 @@
     },
     {
       "label": "Stock market volatility -> Volatility (finance)",
+      "source_label": "Stock market volatility",
+      "target_label": "Volatility (finance)",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "descriptive_pattern",
@@ -5981,6 +6266,9 @@
     },
     {
       "label": "Volatility (finance) -> Bid–ask spread",
+      "source_label": "Volatility (finance)",
+      "target_label": "Bid–ask spread",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5990,6 +6278,9 @@
     },
     {
       "label": "Inflation -> Inflationary Expectations",
+      "source_label": "Inflation",
+      "target_label": "Inflationary Expectations",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -5999,6 +6290,9 @@
     },
     {
       "label": "Institutional Investors -> Liquidity risk",
+      "source_label": "Institutional Investors",
+      "target_label": "Liquidity risk",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6008,6 +6302,9 @@
     },
     {
       "label": "Policy uncertainty -> Risk Premium",
+      "source_label": "Policy uncertainty",
+      "target_label": "Risk Premium",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "mechanism",
@@ -6017,6 +6314,9 @@
     },
     {
       "label": "Bid–ask spread -> Liquidity risk",
+      "source_label": "Bid–ask spread",
+      "target_label": "Liquidity risk",
+      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 11,
       "role": "background",
@@ -6217,6 +6517,1160 @@
     {
       "year": 2023,
       "paper_count": 1044
+    }
+  ],
+  "slice_year_counts": [
+    {
+      "year": 1976,
+      "slice": "asset_pricing",
+      "paper_count": 4,
+      "share": 0.15384615384615385
+    },
+    {
+      "year": 1976,
+      "slice": "factor_investing",
+      "paper_count": 1,
+      "share": 0.038461538461538464
+    },
+    {
+      "year": 1976,
+      "slice": "market_microstructure",
+      "paper_count": 6,
+      "share": 0.23076923076923078
+    },
+    {
+      "year": 1976,
+      "slice": "macro_state",
+      "paper_count": 17,
+      "share": 0.6538461538461539
+    },
+    {
+      "year": 1977,
+      "slice": "asset_pricing",
+      "paper_count": 3,
+      "share": 0.13043478260869565
+    },
+    {
+      "year": 1977,
+      "slice": "factor_investing",
+      "paper_count": 2,
+      "share": 0.08695652173913043
+    },
+    {
+      "year": 1977,
+      "slice": "market_microstructure",
+      "paper_count": 7,
+      "share": 0.30434782608695654
+    },
+    {
+      "year": 1977,
+      "slice": "macro_state",
+      "paper_count": 16,
+      "share": 0.6956521739130435
+    },
+    {
+      "year": 1978,
+      "slice": "asset_pricing",
+      "paper_count": 4,
+      "share": 0.14814814814814814
+    },
+    {
+      "year": 1978,
+      "slice": "factor_investing",
+      "paper_count": 2,
+      "share": 0.07407407407407407
+    },
+    {
+      "year": 1978,
+      "slice": "market_microstructure",
+      "paper_count": 11,
+      "share": 0.4074074074074074
+    },
+    {
+      "year": 1978,
+      "slice": "macro_state",
+      "paper_count": 15,
+      "share": 0.5555555555555556
+    },
+    {
+      "year": 1979,
+      "slice": "asset_pricing",
+      "paper_count": 5,
+      "share": 0.16129032258064516
+    },
+    {
+      "year": 1979,
+      "slice": "factor_investing",
+      "paper_count": 2,
+      "share": 0.06451612903225806
+    },
+    {
+      "year": 1979,
+      "slice": "market_microstructure",
+      "paper_count": 7,
+      "share": 0.22580645161290322
+    },
+    {
+      "year": 1979,
+      "slice": "macro_state",
+      "paper_count": 18,
+      "share": 0.5806451612903226
+    },
+    {
+      "year": 1980,
+      "slice": "asset_pricing",
+      "paper_count": 6,
+      "share": 0.15789473684210525
+    },
+    {
+      "year": 1980,
+      "slice": "factor_investing",
+      "paper_count": 5,
+      "share": 0.13157894736842105
+    },
+    {
+      "year": 1980,
+      "slice": "market_microstructure",
+      "paper_count": 12,
+      "share": 0.3157894736842105
+    },
+    {
+      "year": 1980,
+      "slice": "macro_state",
+      "paper_count": 23,
+      "share": 0.6052631578947368
+    },
+    {
+      "year": 1981,
+      "slice": "asset_pricing",
+      "paper_count": 6,
+      "share": 0.15384615384615385
+    },
+    {
+      "year": 1981,
+      "slice": "factor_investing",
+      "paper_count": 2,
+      "share": 0.05128205128205128
+    },
+    {
+      "year": 1981,
+      "slice": "market_microstructure",
+      "paper_count": 9,
+      "share": 0.23076923076923078
+    },
+    {
+      "year": 1981,
+      "slice": "macro_state",
+      "paper_count": 28,
+      "share": 0.717948717948718
+    },
+    {
+      "year": 1982,
+      "slice": "asset_pricing",
+      "paper_count": 3,
+      "share": 0.08571428571428572
+    },
+    {
+      "year": 1982,
+      "slice": "factor_investing",
+      "paper_count": 3,
+      "share": 0.08571428571428572
+    },
+    {
+      "year": 1982,
+      "slice": "market_microstructure",
+      "paper_count": 5,
+      "share": 0.14285714285714285
+    },
+    {
+      "year": 1982,
+      "slice": "macro_state",
+      "paper_count": 30,
+      "share": 0.8571428571428571
+    },
+    {
+      "year": 1983,
+      "slice": "asset_pricing",
+      "paper_count": 7,
+      "share": 0.175
+    },
+    {
+      "year": 1983,
+      "slice": "factor_investing",
+      "paper_count": 3,
+      "share": 0.075
+    },
+    {
+      "year": 1983,
+      "slice": "market_microstructure",
+      "paper_count": 7,
+      "share": 0.175
+    },
+    {
+      "year": 1983,
+      "slice": "macro_state",
+      "paper_count": 33,
+      "share": 0.825
+    },
+    {
+      "year": 1984,
+      "slice": "asset_pricing",
+      "paper_count": 3,
+      "share": 0.08823529411764706
+    },
+    {
+      "year": 1984,
+      "slice": "factor_investing",
+      "paper_count": 3,
+      "share": 0.08823529411764706
+    },
+    {
+      "year": 1984,
+      "slice": "market_microstructure",
+      "paper_count": 5,
+      "share": 0.14705882352941177
+    },
+    {
+      "year": 1984,
+      "slice": "macro_state",
+      "paper_count": 22,
+      "share": 0.6470588235294118
+    },
+    {
+      "year": 1985,
+      "slice": "asset_pricing",
+      "paper_count": 7,
+      "share": 0.1794871794871795
+    },
+    {
+      "year": 1985,
+      "slice": "factor_investing",
+      "paper_count": 4,
+      "share": 0.10256410256410256
+    },
+    {
+      "year": 1985,
+      "slice": "market_microstructure",
+      "paper_count": 10,
+      "share": 0.2564102564102564
+    },
+    {
+      "year": 1985,
+      "slice": "macro_state",
+      "paper_count": 30,
+      "share": 0.7692307692307693
+    },
+    {
+      "year": 1986,
+      "slice": "asset_pricing",
+      "paper_count": 6,
+      "share": 0.09836065573770492
+    },
+    {
+      "year": 1986,
+      "slice": "factor_investing",
+      "paper_count": 1,
+      "share": 0.01639344262295082
+    },
+    {
+      "year": 1986,
+      "slice": "market_microstructure",
+      "paper_count": 16,
+      "share": 0.26229508196721313
+    },
+    {
+      "year": 1986,
+      "slice": "macro_state",
+      "paper_count": 45,
+      "share": 0.7377049180327869
+    },
+    {
+      "year": 1987,
+      "slice": "asset_pricing",
+      "paper_count": 5,
+      "share": 0.09433962264150944
+    },
+    {
+      "year": 1987,
+      "slice": "factor_investing",
+      "paper_count": 1,
+      "share": 0.018867924528301886
+    },
+    {
+      "year": 1987,
+      "slice": "market_microstructure",
+      "paper_count": 13,
+      "share": 0.24528301886792453
+    },
+    {
+      "year": 1987,
+      "slice": "macro_state",
+      "paper_count": 36,
+      "share": 0.6792452830188679
+    },
+    {
+      "year": 1988,
+      "slice": "asset_pricing",
+      "paper_count": 14,
+      "share": 0.25
+    },
+    {
+      "year": 1988,
+      "slice": "factor_investing",
+      "paper_count": 6,
+      "share": 0.10714285714285714
+    },
+    {
+      "year": 1988,
+      "slice": "market_microstructure",
+      "paper_count": 22,
+      "share": 0.39285714285714285
+    },
+    {
+      "year": 1988,
+      "slice": "macro_state",
+      "paper_count": 34,
+      "share": 0.6071428571428571
+    },
+    {
+      "year": 1989,
+      "slice": "asset_pricing",
+      "paper_count": 12,
+      "share": 0.2033898305084746
+    },
+    {
+      "year": 1989,
+      "slice": "factor_investing",
+      "paper_count": 4,
+      "share": 0.06779661016949153
+    },
+    {
+      "year": 1989,
+      "slice": "market_microstructure",
+      "paper_count": 12,
+      "share": 0.2033898305084746
+    },
+    {
+      "year": 1989,
+      "slice": "macro_state",
+      "paper_count": 44,
+      "share": 0.7457627118644068
+    },
+    {
+      "year": 1990,
+      "slice": "asset_pricing",
+      "paper_count": 23,
+      "share": 0.3194444444444444
+    },
+    {
+      "year": 1990,
+      "slice": "factor_investing",
+      "paper_count": 6,
+      "share": 0.08333333333333333
+    },
+    {
+      "year": 1990,
+      "slice": "market_microstructure",
+      "paper_count": 27,
+      "share": 0.375
+    },
+    {
+      "year": 1990,
+      "slice": "macro_state",
+      "paper_count": 52,
+      "share": 0.7222222222222222
+    },
+    {
+      "year": 1991,
+      "slice": "asset_pricing",
+      "paper_count": 14,
+      "share": 0.19718309859154928
+    },
+    {
+      "year": 1991,
+      "slice": "factor_investing",
+      "paper_count": 6,
+      "share": 0.08450704225352113
+    },
+    {
+      "year": 1991,
+      "slice": "market_microstructure",
+      "paper_count": 20,
+      "share": 0.28169014084507044
+    },
+    {
+      "year": 1991,
+      "slice": "macro_state",
+      "paper_count": 46,
+      "share": 0.647887323943662
+    },
+    {
+      "year": 1992,
+      "slice": "asset_pricing",
+      "paper_count": 24,
+      "share": 0.25806451612903225
+    },
+    {
+      "year": 1992,
+      "slice": "factor_investing",
+      "paper_count": 10,
+      "share": 0.10752688172043011
+    },
+    {
+      "year": 1992,
+      "slice": "market_microstructure",
+      "paper_count": 37,
+      "share": 0.3978494623655914
+    },
+    {
+      "year": 1992,
+      "slice": "macro_state",
+      "paper_count": 59,
+      "share": 0.6344086021505376
+    },
+    {
+      "year": 1993,
+      "slice": "asset_pricing",
+      "paper_count": 21,
+      "share": 0.19444444444444445
+    },
+    {
+      "year": 1993,
+      "slice": "factor_investing",
+      "paper_count": 7,
+      "share": 0.06481481481481481
+    },
+    {
+      "year": 1993,
+      "slice": "market_microstructure",
+      "paper_count": 35,
+      "share": 0.32407407407407407
+    },
+    {
+      "year": 1993,
+      "slice": "macro_state",
+      "paper_count": 77,
+      "share": 0.7129629629629629
+    },
+    {
+      "year": 1994,
+      "slice": "asset_pricing",
+      "paper_count": 21,
+      "share": 0.19626168224299065
+    },
+    {
+      "year": 1994,
+      "slice": "factor_investing",
+      "paper_count": 10,
+      "share": 0.09345794392523364
+    },
+    {
+      "year": 1994,
+      "slice": "market_microstructure",
+      "paper_count": 51,
+      "share": 0.4766355140186916
+    },
+    {
+      "year": 1994,
+      "slice": "macro_state",
+      "paper_count": 69,
+      "share": 0.6448598130841121
+    },
+    {
+      "year": 1995,
+      "slice": "asset_pricing",
+      "paper_count": 22,
+      "share": 0.25882352941176473
+    },
+    {
+      "year": 1995,
+      "slice": "factor_investing",
+      "paper_count": 4,
+      "share": 0.047058823529411764
+    },
+    {
+      "year": 1995,
+      "slice": "market_microstructure",
+      "paper_count": 26,
+      "share": 0.3058823529411765
+    },
+    {
+      "year": 1995,
+      "slice": "macro_state",
+      "paper_count": 62,
+      "share": 0.7294117647058823
+    },
+    {
+      "year": 1996,
+      "slice": "asset_pricing",
+      "paper_count": 15,
+      "share": 0.15625
+    },
+    {
+      "year": 1996,
+      "slice": "factor_investing",
+      "paper_count": 4,
+      "share": 0.041666666666666664
+    },
+    {
+      "year": 1996,
+      "slice": "market_microstructure",
+      "paper_count": 43,
+      "share": 0.4479166666666667
+    },
+    {
+      "year": 1996,
+      "slice": "macro_state",
+      "paper_count": 60,
+      "share": 0.625
+    },
+    {
+      "year": 1997,
+      "slice": "asset_pricing",
+      "paper_count": 17,
+      "share": 0.1650485436893204
+    },
+    {
+      "year": 1997,
+      "slice": "factor_investing",
+      "paper_count": 4,
+      "share": 0.038834951456310676
+    },
+    {
+      "year": 1997,
+      "slice": "market_microstructure",
+      "paper_count": 40,
+      "share": 0.3883495145631068
+    },
+    {
+      "year": 1997,
+      "slice": "macro_state",
+      "paper_count": 78,
+      "share": 0.7572815533980582
+    },
+    {
+      "year": 1998,
+      "slice": "asset_pricing",
+      "paper_count": 21,
+      "share": 0.15671641791044777
+    },
+    {
+      "year": 1998,
+      "slice": "factor_investing",
+      "paper_count": 6,
+      "share": 0.04477611940298507
+    },
+    {
+      "year": 1998,
+      "slice": "market_microstructure",
+      "paper_count": 59,
+      "share": 0.44029850746268656
+    },
+    {
+      "year": 1998,
+      "slice": "macro_state",
+      "paper_count": 92,
+      "share": 0.6865671641791045
+    },
+    {
+      "year": 1999,
+      "slice": "asset_pricing",
+      "paper_count": 19,
+      "share": 0.1623931623931624
+    },
+    {
+      "year": 1999,
+      "slice": "factor_investing",
+      "paper_count": 10,
+      "share": 0.08547008547008547
+    },
+    {
+      "year": 1999,
+      "slice": "market_microstructure",
+      "paper_count": 50,
+      "share": 0.42735042735042733
+    },
+    {
+      "year": 1999,
+      "slice": "macro_state",
+      "paper_count": 88,
+      "share": 0.7521367521367521
+    },
+    {
+      "year": 2000,
+      "slice": "asset_pricing",
+      "paper_count": 23,
+      "share": 0.17692307692307693
+    },
+    {
+      "year": 2000,
+      "slice": "factor_investing",
+      "paper_count": 11,
+      "share": 0.08461538461538462
+    },
+    {
+      "year": 2000,
+      "slice": "market_microstructure",
+      "paper_count": 50,
+      "share": 0.38461538461538464
+    },
+    {
+      "year": 2000,
+      "slice": "macro_state",
+      "paper_count": 89,
+      "share": 0.6846153846153846
+    },
+    {
+      "year": 2001,
+      "slice": "asset_pricing",
+      "paper_count": 36,
+      "share": 0.2482758620689655
+    },
+    {
+      "year": 2001,
+      "slice": "factor_investing",
+      "paper_count": 15,
+      "share": 0.10344827586206896
+    },
+    {
+      "year": 2001,
+      "slice": "market_microstructure",
+      "paper_count": 61,
+      "share": 0.4206896551724138
+    },
+    {
+      "year": 2001,
+      "slice": "macro_state",
+      "paper_count": 104,
+      "share": 0.7172413793103448
+    },
+    {
+      "year": 2002,
+      "slice": "asset_pricing",
+      "paper_count": 29,
+      "share": 0.1746987951807229
+    },
+    {
+      "year": 2002,
+      "slice": "factor_investing",
+      "paper_count": 11,
+      "share": 0.06626506024096386
+    },
+    {
+      "year": 2002,
+      "slice": "market_microstructure",
+      "paper_count": 62,
+      "share": 0.37349397590361444
+    },
+    {
+      "year": 2002,
+      "slice": "macro_state",
+      "paper_count": 114,
+      "share": 0.6867469879518072
+    },
+    {
+      "year": 2003,
+      "slice": "asset_pricing",
+      "paper_count": 41,
+      "share": 0.19902912621359223
+    },
+    {
+      "year": 2003,
+      "slice": "factor_investing",
+      "paper_count": 23,
+      "share": 0.11165048543689321
+    },
+    {
+      "year": 2003,
+      "slice": "market_microstructure",
+      "paper_count": 91,
+      "share": 0.441747572815534
+    },
+    {
+      "year": 2003,
+      "slice": "macro_state",
+      "paper_count": 143,
+      "share": 0.6941747572815534
+    },
+    {
+      "year": 2004,
+      "slice": "asset_pricing",
+      "paper_count": 46,
+      "share": 0.2081447963800905
+    },
+    {
+      "year": 2004,
+      "slice": "factor_investing",
+      "paper_count": 21,
+      "share": 0.09502262443438914
+    },
+    {
+      "year": 2004,
+      "slice": "market_microstructure",
+      "paper_count": 86,
+      "share": 0.3891402714932127
+    },
+    {
+      "year": 2004,
+      "slice": "macro_state",
+      "paper_count": 157,
+      "share": 0.7104072398190046
+    },
+    {
+      "year": 2005,
+      "slice": "asset_pricing",
+      "paper_count": 57,
+      "share": 0.28217821782178215
+    },
+    {
+      "year": 2005,
+      "slice": "factor_investing",
+      "paper_count": 21,
+      "share": 0.10396039603960396
+    },
+    {
+      "year": 2005,
+      "slice": "market_microstructure",
+      "paper_count": 83,
+      "share": 0.41089108910891087
+    },
+    {
+      "year": 2005,
+      "slice": "macro_state",
+      "paper_count": 146,
+      "share": 0.7227722772277227
+    },
+    {
+      "year": 2006,
+      "slice": "asset_pricing",
+      "paper_count": 44,
+      "share": 0.2146341463414634
+    },
+    {
+      "year": 2006,
+      "slice": "factor_investing",
+      "paper_count": 23,
+      "share": 0.11219512195121951
+    },
+    {
+      "year": 2006,
+      "slice": "market_microstructure",
+      "paper_count": 77,
+      "share": 0.375609756097561
+    },
+    {
+      "year": 2006,
+      "slice": "macro_state",
+      "paper_count": 155,
+      "share": 0.7560975609756098
+    },
+    {
+      "year": 2007,
+      "slice": "asset_pricing",
+      "paper_count": 47,
+      "share": 0.22065727699530516
+    },
+    {
+      "year": 2007,
+      "slice": "factor_investing",
+      "paper_count": 21,
+      "share": 0.09859154929577464
+    },
+    {
+      "year": 2007,
+      "slice": "market_microstructure",
+      "paper_count": 84,
+      "share": 0.39436619718309857
+    },
+    {
+      "year": 2007,
+      "slice": "macro_state",
+      "paper_count": 162,
+      "share": 0.7605633802816901
+    },
+    {
+      "year": 2008,
+      "slice": "asset_pricing",
+      "paper_count": 42,
+      "share": 0.18584070796460178
+    },
+    {
+      "year": 2008,
+      "slice": "factor_investing",
+      "paper_count": 19,
+      "share": 0.084070796460177
+    },
+    {
+      "year": 2008,
+      "slice": "market_microstructure",
+      "paper_count": 100,
+      "share": 0.4424778761061947
+    },
+    {
+      "year": 2008,
+      "slice": "macro_state",
+      "paper_count": 166,
+      "share": 0.7345132743362832
+    },
+    {
+      "year": 2009,
+      "slice": "asset_pricing",
+      "paper_count": 60,
+      "share": 0.24489795918367346
+    },
+    {
+      "year": 2009,
+      "slice": "factor_investing",
+      "paper_count": 37,
+      "share": 0.1510204081632653
+    },
+    {
+      "year": 2009,
+      "slice": "market_microstructure",
+      "paper_count": 94,
+      "share": 0.3836734693877551
+    },
+    {
+      "year": 2009,
+      "slice": "macro_state",
+      "paper_count": 179,
+      "share": 0.7306122448979592
+    },
+    {
+      "year": 2010,
+      "slice": "asset_pricing",
+      "paper_count": 68,
+      "share": 0.23776223776223776
+    },
+    {
+      "year": 2010,
+      "slice": "factor_investing",
+      "paper_count": 35,
+      "share": 0.12237762237762238
+    },
+    {
+      "year": 2010,
+      "slice": "market_microstructure",
+      "paper_count": 119,
+      "share": 0.4160839160839161
+    },
+    {
+      "year": 2010,
+      "slice": "macro_state",
+      "paper_count": 227,
+      "share": 0.7937062937062938
+    },
+    {
+      "year": 2011,
+      "slice": "asset_pricing",
+      "paper_count": 85,
+      "share": 0.28716216216216217
+    },
+    {
+      "year": 2011,
+      "slice": "factor_investing",
+      "paper_count": 40,
+      "share": 0.13513513513513514
+    },
+    {
+      "year": 2011,
+      "slice": "market_microstructure",
+      "paper_count": 115,
+      "share": 0.3885135135135135
+    },
+    {
+      "year": 2011,
+      "slice": "macro_state",
+      "paper_count": 230,
+      "share": 0.777027027027027
+    },
+    {
+      "year": 2012,
+      "slice": "asset_pricing",
+      "paper_count": 91,
+      "share": 0.2345360824742268
+    },
+    {
+      "year": 2012,
+      "slice": "factor_investing",
+      "paper_count": 50,
+      "share": 0.12886597938144329
+    },
+    {
+      "year": 2012,
+      "slice": "market_microstructure",
+      "paper_count": 157,
+      "share": 0.40463917525773196
+    },
+    {
+      "year": 2012,
+      "slice": "macro_state",
+      "paper_count": 308,
+      "share": 0.7938144329896907
+    },
+    {
+      "year": 2013,
+      "slice": "asset_pricing",
+      "paper_count": 116,
+      "share": 0.26605504587155965
+    },
+    {
+      "year": 2013,
+      "slice": "factor_investing",
+      "paper_count": 53,
+      "share": 0.12155963302752294
+    },
+    {
+      "year": 2013,
+      "slice": "market_microstructure",
+      "paper_count": 206,
+      "share": 0.4724770642201835
+    },
+    {
+      "year": 2013,
+      "slice": "macro_state",
+      "paper_count": 331,
+      "share": 0.7591743119266054
+    },
+    {
+      "year": 2014,
+      "slice": "asset_pricing",
+      "paper_count": 117,
+      "share": 0.23828920570264767
+    },
+    {
+      "year": 2014,
+      "slice": "factor_investing",
+      "paper_count": 59,
+      "share": 0.12016293279022404
+    },
+    {
+      "year": 2014,
+      "slice": "market_microstructure",
+      "paper_count": 200,
+      "share": 0.4073319755600815
+    },
+    {
+      "year": 2014,
+      "slice": "macro_state",
+      "paper_count": 388,
+      "share": 0.790224032586558
+    },
+    {
+      "year": 2015,
+      "slice": "asset_pricing",
+      "paper_count": 134,
+      "share": 0.26961770623742454
+    },
+    {
+      "year": 2015,
+      "slice": "factor_investing",
+      "paper_count": 76,
+      "share": 0.1529175050301811
+    },
+    {
+      "year": 2015,
+      "slice": "market_microstructure",
+      "paper_count": 202,
+      "share": 0.40643863179074446
+    },
+    {
+      "year": 2015,
+      "slice": "macro_state",
+      "paper_count": 391,
+      "share": 0.7867203219315896
+    },
+    {
+      "year": 2016,
+      "slice": "asset_pricing",
+      "paper_count": 141,
+      "share": 0.2640449438202247
+    },
+    {
+      "year": 2016,
+      "slice": "factor_investing",
+      "paper_count": 66,
+      "share": 0.12359550561797752
+    },
+    {
+      "year": 2016,
+      "slice": "market_microstructure",
+      "paper_count": 214,
+      "share": 0.40074906367041196
+    },
+    {
+      "year": 2016,
+      "slice": "macro_state",
+      "paper_count": 412,
+      "share": 0.7715355805243446
+    },
+    {
+      "year": 2017,
+      "slice": "asset_pricing",
+      "paper_count": 152,
+      "share": 0.2529118136439268
+    },
+    {
+      "year": 2017,
+      "slice": "factor_investing",
+      "paper_count": 75,
+      "share": 0.12479201331114809
+    },
+    {
+      "year": 2017,
+      "slice": "market_microstructure",
+      "paper_count": 224,
+      "share": 0.37271214642262895
+    },
+    {
+      "year": 2017,
+      "slice": "macro_state",
+      "paper_count": 471,
+      "share": 0.78369384359401
+    },
+    {
+      "year": 2018,
+      "slice": "asset_pricing",
+      "paper_count": 152,
+      "share": 0.2455573505654281
+    },
+    {
+      "year": 2018,
+      "slice": "factor_investing",
+      "paper_count": 86,
+      "share": 0.13893376413570274
+    },
+    {
+      "year": 2018,
+      "slice": "market_microstructure",
+      "paper_count": 260,
+      "share": 0.420032310177706
+    },
+    {
+      "year": 2018,
+      "slice": "macro_state",
+      "paper_count": 463,
+      "share": 0.7479806138933764
+    },
+    {
+      "year": 2019,
+      "slice": "asset_pricing",
+      "paper_count": 161,
+      "share": 0.24580152671755726
+    },
+    {
+      "year": 2019,
+      "slice": "factor_investing",
+      "paper_count": 89,
+      "share": 0.13587786259541984
+    },
+    {
+      "year": 2019,
+      "slice": "market_microstructure",
+      "paper_count": 248,
+      "share": 0.3786259541984733
+    },
+    {
+      "year": 2019,
+      "slice": "macro_state",
+      "paper_count": 525,
+      "share": 0.8015267175572519
+    },
+    {
+      "year": 2020,
+      "slice": "asset_pricing",
+      "paper_count": 153,
+      "share": 0.21045392022008252
+    },
+    {
+      "year": 2020,
+      "slice": "factor_investing",
+      "paper_count": 83,
+      "share": 0.11416781292984869
+    },
+    {
+      "year": 2020,
+      "slice": "market_microstructure",
+      "paper_count": 267,
+      "share": 0.3672627235213205
+    },
+    {
+      "year": 2020,
+      "slice": "macro_state",
+      "paper_count": 542,
+      "share": 0.7455295735900963
+    },
+    {
+      "year": 2021,
+      "slice": "asset_pricing",
+      "paper_count": 180,
+      "share": 0.22058823529411764
+    },
+    {
+      "year": 2021,
+      "slice": "factor_investing",
+      "paper_count": 85,
+      "share": 0.10416666666666667
+    },
+    {
+      "year": 2021,
+      "slice": "market_microstructure",
+      "paper_count": 269,
+      "share": 0.32965686274509803
+    },
+    {
+      "year": 2021,
+      "slice": "macro_state",
+      "paper_count": 649,
+      "share": 0.7953431372549019
+    },
+    {
+      "year": 2022,
+      "slice": "asset_pricing",
+      "paper_count": 195,
+      "share": 0.21428571428571427
+    },
+    {
+      "year": 2022,
+      "slice": "factor_investing",
+      "paper_count": 105,
+      "share": 0.11538461538461539
+    },
+    {
+      "year": 2022,
+      "slice": "market_microstructure",
+      "paper_count": 290,
+      "share": 0.31868131868131866
+    },
+    {
+      "year": 2022,
+      "slice": "macro_state",
+      "paper_count": 714,
+      "share": 0.7846153846153846
+    },
+    {
+      "year": 2023,
+      "slice": "asset_pricing",
+      "paper_count": 204,
+      "share": 0.19540229885057472
+    },
+    {
+      "year": 2023,
+      "slice": "factor_investing",
+      "paper_count": 103,
+      "share": 0.09865900383141762
+    },
+    {
+      "year": 2023,
+      "slice": "market_microstructure",
+      "paper_count": 304,
+      "share": 0.29118773946360155
+    },
+    {
+      "year": 2023,
+      "slice": "macro_state",
+      "paper_count": 830,
+      "share": 0.7950191570881227
     }
   ],
   "field_decades": [
