@@ -14576,6 +14576,1684 @@
         "edge_pair_count": 407,
         "top_edge_pair": "Policy uncertainty -> Cross-correlation"
       }
-    ]
+    ],
+    "global_context": {
+      "available": true,
+      "summary": {
+        "global_concept_count": 57850,
+        "global_edge_pair_count": 1044409,
+        "finance_concept_count": 13213,
+        "finance_concepts_missing_from_full_graph": 0,
+        "category_counts": {
+          "background_or_tail": 8184,
+          "global_general_concept_used_in_finance": 2100,
+          "finance_relevant_mid_global": 1707,
+          "local_and_global_core": 913,
+          "local_only_visible": 185,
+          "finance_local_specialist": 124
+        }
+      },
+      "category_summary": [
+        {
+          "category": "background_or_tail",
+          "concept_count": 8184,
+          "mean_finance_pagerank_percentile": 0.44558529724599427,
+          "mean_global_pagerank_percentile": 0.5929542724293826
+        },
+        {
+          "category": "global_general_concept_used_in_finance",
+          "concept_count": 2100,
+          "mean_finance_pagerank_percentile": 0.47167564119198996,
+          "mean_global_pagerank_percentile": 0.9491597829818024
+        },
+        {
+          "category": "finance_relevant_mid_global",
+          "concept_count": 1707,
+          "mean_finance_pagerank_percentile": 0.8461502307199381,
+          "mean_global_pagerank_percentile": 0.8928222854557524
+        },
+        {
+          "category": "local_and_global_core",
+          "concept_count": 913,
+          "mean_finance_pagerank_percentile": 0.9548046865025953,
+          "mean_global_pagerank_percentile": 0.9655009415020261
+        },
+        {
+          "category": "local_only_visible",
+          "concept_count": 185,
+          "mean_finance_pagerank_percentile": 0.8162640842477356,
+          "mean_global_pagerank_percentile": 0.3223078910471951
+        },
+        {
+          "category": "finance_local_specialist",
+          "concept_count": 124,
+          "mean_finance_pagerank_percentile": 0.9362456417919194,
+          "mean_global_pagerank_percentile": 0.5758512568037254
+        }
+      ],
+      "local_and_global_core": [
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "paper_count": 2021,
+          "finance_pagerank_percentile": 1.0,
+          "global_pagerank_percentile": 0.9981330705803039,
+          "finance_pagerank": 0.0217615392523871,
+          "global_pagerank": 0.0004435395151504234,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility",
+          "label": "Volatility (finance)",
+          "field": "finance",
+          "paper_count": 2064,
+          "finance_pagerank_percentile": 0.9999243112322131,
+          "global_pagerank_percentile": 0.9969921692682674,
+          "finance_pagerank": 0.0202128516613149,
+          "global_pagerank": 0.0003317487861627018,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-risk",
+          "label": "Liquidity risk",
+          "field": "finance",
+          "paper_count": 1644,
+          "finance_pagerank_percentile": 0.9998486224644263,
+          "global_pagerank_percentile": 0.9922557001849643,
+          "finance_pagerank": 0.0124860708384147,
+          "global_pagerank": 0.00020406751477852845,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:E31:Inflation",
+          "label": "Inflation",
+          "field": "macro",
+          "paper_count": 1343,
+          "finance_pagerank_percentile": 0.9997729336966394,
+          "global_pagerank_percentile": 0.9953326764507597,
+          "finance_pagerank": 0.0119193302097262,
+          "global_pagerank": 0.00026947641244027566,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G12:Trading Volume",
+          "label": "Trading Volume",
+          "field": "finance",
+          "paper_count": 975,
+          "finance_pagerank_percentile": 0.9996972449288526,
+          "global_pagerank_percentile": 0.9941226296046604,
+          "finance_pagerank": 0.008665941043123,
+          "global_pagerank": 0.0002422591833722163,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/bank-credit",
+          "label": "Bank credit",
+          "field": "finance",
+          "paper_count": 699,
+          "finance_pagerank_percentile": 0.9996215561610657,
+          "global_pagerank_percentile": 0.9890922920015903,
+          "finance_pagerank": 0.0085490181297439,
+          "global_pagerank": 0.00016474603031443018,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "paper_count": 576,
+          "finance_pagerank_percentile": 0.9995458673932789,
+          "global_pagerank_percentile": 0.9995505540285917,
+          "finance_pagerank": 0.0084790192106828,
+          "global_pagerank": 0.0008192337716566142,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/market-liquidity",
+          "label": "Market liquidity",
+          "field": "finance",
+          "paper_count": 805,
+          "finance_pagerank_percentile": 0.9994701786254919,
+          "global_pagerank_percentile": 0.9844422548358658,
+          "finance_pagerank": 0.0067598820900836,
+          "global_pagerank": 0.0001305379168387494,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G21:Borrowing",
+          "label": "Borrowing",
+          "field": "finance",
+          "paper_count": 608,
+          "finance_pagerank_percentile": 0.9993944898577051,
+          "global_pagerank_percentile": 0.9926532870058256,
+          "finance_pagerank": 0.0062789529221462,
+          "global_pagerank": 0.00021366126511991596,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/market-sentiment",
+          "label": "Market sentiment",
+          "field": "finance",
+          "paper_count": 769,
+          "finance_pagerank_percentile": 0.9993188010899182,
+          "global_pagerank_percentile": 0.9667409981157842,
+          "finance_pagerank": 0.0047589442189122,
+          "global_pagerank": 7.623242400426913e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "paper_count": 1233,
+          "finance_pagerank_percentile": 0.9992431123221314,
+          "global_pagerank_percentile": 0.9998617089318743,
+          "finance_pagerank": 0.0045890634236274,
+          "global_pagerank": 0.0013607686026392296,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:F62:Economic Growth",
+          "label": "Economic Growth",
+          "field": "macro",
+          "paper_count": 214,
+          "finance_pagerank_percentile": 0.9991674235543445,
+          "global_pagerank_percentile": 0.9999827136164843,
+          "finance_pagerank": 0.0045392186342177,
+          "global_pagerank": 0.002114351888169447,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/volatility-risk",
+          "label": "Volatility risk",
+          "field": "finance",
+          "paper_count": 345,
+          "finance_pagerank_percentile": 0.9990917347865577,
+          "global_pagerank_percentile": 0.989991183944407,
+          "finance_pagerank": 0.0036586808479705,
+          "global_pagerank": 0.00017442889328093977,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:O33:Spillovers",
+          "label": "Spillovers",
+          "field": "micro",
+          "paper_count": 194,
+          "finance_pagerank_percentile": 0.9990160460187708,
+          "global_pagerank_percentile": 0.999654272329686,
+          "finance_pagerank": 0.0036458590957162,
+          "global_pagerank": 0.0008697269639231927,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:E32:Recession",
+          "label": "Recession",
+          "field": "macro",
+          "paper_count": 476,
+          "finance_pagerank_percentile": 0.998940357250984,
+          "global_pagerank_percentile": 0.9712181714463517,
+          "finance_pagerank": 0.0034564628121274,
+          "global_pagerank": 8.501899773444661e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:E32:Business Cycle",
+          "label": "Business Cycle",
+          "field": "macro",
+          "paper_count": 390,
+          "finance_pagerank_percentile": 0.9988646684831971,
+          "global_pagerank_percentile": 0.9925322823212156,
+          "finance_pagerank": 0.0033715178042056,
+          "global_pagerank": 0.00021085273118474768,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/credit-spread",
+          "label": "Credit spread (options)",
+          "field": "finance",
+          "paper_count": 252,
+          "finance_pagerank_percentile": 0.9987889797154103,
+          "global_pagerank_percentile": 0.9217099690573736,
+          "finance_pagerank": 0.0033590750415011,
+          "global_pagerank": 3.783735148067292e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/bid–ask-spread",
+          "label": "Bid–ask spread",
+          "field": "finance",
+          "paper_count": 270,
+          "finance_pagerank_percentile": 0.9987132909476234,
+          "global_pagerank_percentile": 0.9869487804456429,
+          "finance_pagerank": 0.0028564713700957,
+          "global_pagerank": 0.0001450543335960046,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:I:Welfare",
+          "label": "Welfare",
+          "field": "public",
+          "paper_count": 162,
+          "finance_pagerank_percentile": 0.9986376021798365,
+          "global_pagerank_percentile": 0.998945530605542,
+          "finance_pagerank": 0.0026436262892242,
+          "global_pagerank": 0.0005768173270223884,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/systemic-risk",
+          "label": "Systemic risk",
+          "field": "finance",
+          "paper_count": 121,
+          "finance_pagerank_percentile": 0.9985619134120497,
+          "global_pagerank_percentile": 0.9970440284188145,
+          "finance_pagerank": 0.0025293033943718,
+          "global_pagerank": 0.00034079445347681426,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/forward-volatility",
+          "label": "Forward volatility",
+          "field": "finance",
+          "paper_count": 301,
+          "finance_pagerank_percentile": 0.9984862246442628,
+          "global_pagerank_percentile": 0.9626268388390464,
+          "finance_pagerank": 0.002491727628697,
+          "global_pagerank": 6.890544182354684e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:E23:Output",
+          "label": "Output",
+          "field": "unknown",
+          "paper_count": 232,
+          "finance_pagerank_percentile": 0.9984105358764759,
+          "global_pagerank_percentile": 0.9939497657695033,
+          "finance_pagerank": 0.0024124841310742,
+          "global_pagerank": 0.00023941377209668786,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:C54:Monetary Policy",
+          "label": "Monetary Policy",
+          "field": "macro",
+          "paper_count": 459,
+          "finance_pagerank_percentile": 0.998334847108689,
+          "global_pagerank_percentile": 0.9947103666441943,
+          "finance_pagerank": 0.0022843037665929,
+          "global_pagerank": 0.00025572091749152196,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/excess-return",
+          "label": "Excess return",
+          "field": "finance",
+          "paper_count": 135,
+          "finance_pagerank_percentile": 0.9982591583409022,
+          "global_pagerank_percentile": 0.9806046776953794,
+          "finance_pagerank": 0.0022670529001338,
+          "global_pagerank": 0.00011323762122682394,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/funding-liquidity",
+          "label": "Funding liquidity",
+          "field": "finance",
+          "paper_count": 382,
+          "finance_pagerank_percentile": 0.9981834695731153,
+          "global_pagerank_percentile": 0.9471728119760066,
+          "finance_pagerank": 0.0022483786327968,
+          "global_pagerank": 5.2607963709998914e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/abnormal-return",
+          "label": "Abnormal return",
+          "field": "finance",
+          "paper_count": 113,
+          "finance_pagerank_percentile": 0.9981077808053285,
+          "global_pagerank_percentile": 0.9996024131791388,
+          "finance_pagerank": 0.0022472272156909,
+          "global_pagerank": 0.000844882509308908,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:11871466",
+          "label": "Net interest spread",
+          "field": "finance",
+          "paper_count": 232,
+          "finance_pagerank_percentile": 0.9980320920375416,
+          "global_pagerank_percentile": 0.9935348925651265,
+          "finance_pagerank": 0.0022158423207294,
+          "global_pagerank": 0.00023026802197563108,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/investor-behavior",
+          "label": "Investor behavior",
+          "field": "finance",
+          "paper_count": 254,
+          "finance_pagerank_percentile": 0.9979564032697548,
+          "global_pagerank_percentile": 0.9940361976870818,
+          "finance_pagerank": 0.0021706943587161,
+          "global_pagerank": 0.0002407398640034317,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:D25:Investment",
+          "label": "Investment",
+          "field": "finance",
+          "paper_count": 166,
+          "finance_pagerank_percentile": 0.9978807145019679,
+          "global_pagerank_percentile": 0.9949523760134142,
+          "finance_pagerank": 0.0020871850788305,
+          "global_pagerank": 0.0002618332397411692,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:C53:Predictability",
+          "label": "Predictability",
+          "field": "unknown",
+          "paper_count": 113,
+          "finance_pagerank_percentile": 0.9978050257341811,
+          "global_pagerank_percentile": 0.9976144790748328,
+          "finance_pagerank": 0.001990101129077,
+          "global_pagerank": 0.00038460415676906554,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G21:Bank Lending",
+          "label": "Bank Lending",
+          "field": "finance",
+          "paper_count": 142,
+          "finance_pagerank_percentile": 0.9977293369663942,
+          "global_pagerank_percentile": 0.9953672492177912,
+          "finance_pagerank": 0.0017601691394522,
+          "global_pagerank": 0.0002716847623472641,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/credit-risk",
+          "label": "Credit risk",
+          "field": "finance",
+          "paper_count": 151,
+          "finance_pagerank_percentile": 0.9976536481986074,
+          "global_pagerank_percentile": 0.9956784041210738,
+          "finance_pagerank": 0.0017527284917903,
+          "global_pagerank": 0.0002797517566390881,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:E44:Asset Price",
+          "label": "Asset Price",
+          "field": "finance",
+          "paper_count": 139,
+          "finance_pagerank_percentile": 0.9975779594308205,
+          "global_pagerank_percentile": 0.984839841656727,
+          "finance_pagerank": 0.001701567665678,
+          "global_pagerank": 0.00013251974576943413,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G12:Stock Price",
+          "label": "Stock Price",
+          "field": "finance",
+          "paper_count": 124,
+          "finance_pagerank_percentile": 0.9975022706630337,
+          "global_pagerank_percentile": 0.9980812114297568,
+          "finance_pagerank": 0.0016650449459104,
+          "global_pagerank": 0.0004409705058486261,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:Q42:Renewable Energy",
+          "label": "Renewable Energy",
+          "field": "environment",
+          "paper_count": 63,
+          "finance_pagerank_percentile": 0.9974265818952468,
+          "global_pagerank_percentile": 0.9999654272329686,
+          "finance_pagerank": 0.0016563646555451,
+          "global_pagerank": 0.00171011677869491,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:C92:Herding",
+          "label": "Herding",
+          "field": "finance",
+          "paper_count": 60,
+          "finance_pagerank_percentile": 0.997275204359673,
+          "global_pagerank_percentile": 0.9566111773755812,
+          "finance_pagerank": 0.0016275179933606,
+          "global_pagerank": 6.135293425336786e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:O11:GDP",
+          "label": "GDP",
+          "field": "macro",
+          "paper_count": 140,
+          "finance_pagerank_percentile": 0.9971995155918861,
+          "global_pagerank_percentile": 0.9993085446593718,
+          "finance_pagerank": 0.0016120967022605,
+          "global_pagerank": 0.0006860304079709521,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:C58:Volatility Forecasting",
+          "label": "Volatility Forecasting",
+          "field": "finance",
+          "paper_count": 154,
+          "finance_pagerank_percentile": 0.9971238268240993,
+          "global_pagerank_percentile": 0.9719269131704956,
+          "finance_pagerank": 0.0015976052689361,
+          "global_pagerank": 8.656299009219e-05,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:R12:Spillover Effect",
+          "label": "Spillover Effect",
+          "field": "unknown",
+          "paper_count": 112,
+          "finance_pagerank_percentile": 0.9970481380563124,
+          "global_pagerank_percentile": 0.9996369859461702,
+          "finance_pagerank": 0.0015921131363414,
+          "global_pagerank": 0.0008570752380249688,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:D80:Uncertainty.",
+          "label": "Uncertainty",
+          "field": "micro",
+          "paper_count": 315,
+          "finance_pagerank_percentile": 0.9969724492885256,
+          "global_pagerank_percentile": 0.9978219156770212,
+          "finance_pagerank": 0.0015790962480384,
+          "global_pagerank": 0.0004078908166505599,
+          "category": "local_and_global_core"
+        }
+      ],
+      "macro_finance_local_specialists": [
+        {
+          "id": "https://openalex.org/keywords/alternative-asset",
+          "label": "Alternative asset",
+          "field": "finance",
+          "paper_count": 52,
+          "finance_pagerank_percentile": 0.9853163790493491,
+          "global_pagerank_percentile": 0.7106432263306194,
+          "finance_pagerank": 0.0005544252336732,
+          "global_pagerank": 1.1430173996271759e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q136726545",
+          "label": "monetary stability",
+          "field": "macro",
+          "paper_count": 44,
+          "finance_pagerank_percentile": 0.9816833181955797,
+          "global_pagerank_percentile": 0.6850939514944079,
+          "finance_pagerank": 0.0004782581454124,
+          "global_pagerank": 1.0627830250312946e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/T11413",
+          "label": "Risk and Portfolio Optimization",
+          "field": "finance",
+          "paper_count": 34,
+          "finance_pagerank_percentile": 0.9785800787163185,
+          "global_pagerank_percentile": 0.6156718352953379,
+          "finance_pagerank": 0.0004328748910322,
+          "global_pagerank": 8.871424338030886e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/nominal-interest-rate",
+          "label": "Nominal interest rate",
+          "field": "macro",
+          "paper_count": 44,
+          "finance_pagerank_percentile": 0.9774447471995156,
+          "global_pagerank_percentile": 0.7244377603761517,
+          "finance_pagerank": 0.0004151025223409,
+          "global_pagerank": 1.2004184640088858e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q2298435",
+          "label": "futures exchange",
+          "field": "finance",
+          "paper_count": 57,
+          "finance_pagerank_percentile": 0.9769149258250076,
+          "global_pagerank_percentile": 0.554201455513492,
+          "finance_pagerank": 0.0004082099187809,
+          "global_pagerank": 7.759108081786307e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/affine-term-structure-model",
+          "label": "Affine term structure model",
+          "field": "finance",
+          "paper_count": 33,
+          "finance_pagerank_percentile": 0.972903421132304,
+          "global_pagerank_percentile": 0.49840100952479727,
+          "finance_pagerank": 0.0003618061598254,
+          "global_pagerank": 7.052971176749748e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/interest-rate-channel",
+          "label": "Interest rate channel",
+          "field": "macro",
+          "paper_count": 25,
+          "finance_pagerank_percentile": 0.9665455646382077,
+          "global_pagerank_percentile": 0.7448875520752303,
+          "finance_pagerank": 0.0003126012117239,
+          "global_pagerank": 1.2892480515336134e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/conditional-variance",
+          "label": "Conditional variance",
+          "field": "finance",
+          "paper_count": 37,
+          "finance_pagerank_percentile": 0.9649561005146836,
+          "global_pagerank_percentile": 0.72243253988833,
+          "finance_pagerank": 0.0002977632132308,
+          "global_pagerank": 1.192302569943922e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/liquidity-constraint",
+          "label": "Liquidity constraint",
+          "field": "finance",
+          "paper_count": 48,
+          "finance_pagerank_percentile": 0.9648804117468968,
+          "global_pagerank_percentile": 0.7096579024702242,
+          "finance_pagerank": 0.0002975978663987,
+          "global_pagerank": 1.139019366825163e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q831772",
+          "label": "foreign currencies",
+          "field": "finance",
+          "paper_count": 26,
+          "finance_pagerank_percentile": 0.9635180139267333,
+          "global_pagerank_percentile": 0.7260626804266279,
+          "finance_pagerank": 0.0002894252337472,
+          "global_pagerank": 1.2059913040739335e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "FGV21FAM:economic-fundamentals:5ea12eb3fd",
+          "label": "Economic Fundamentals",
+          "field": "macro",
+          "paper_count": 46,
+          "finance_pagerank_percentile": 0.962609748713291,
+          "global_pagerank_percentile": 0.626026379021245,
+          "finance_pagerank": 0.0002830575713321,
+          "global_pagerank": 9.108257524957583e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q1934287",
+          "label": "derivatives market",
+          "field": "finance",
+          "paper_count": 28,
+          "finance_pagerank_percentile": 0.9517862549197699,
+          "global_pagerank_percentile": 0.19111825614963096,
+          "finance_pagerank": 0.0002265539099617,
+          "global_pagerank": 5.424508693267177e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/limits-to-arbitrage",
+          "label": "Limits to arbitrage",
+          "field": "finance",
+          "paper_count": 41,
+          "finance_pagerank_percentile": 0.9504238570996064,
+          "global_pagerank_percentile": 0.6985946170201732,
+          "finance_pagerank": 0.0002198341521946,
+          "global_pagerank": 1.1035703373805816e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/capital-market-imperfections",
+          "label": "Capital market imperfections",
+          "field": "finance",
+          "paper_count": 55,
+          "finance_pagerank_percentile": 0.9497426581895246,
+          "global_pagerank_percentile": 0.6931494062127262,
+          "finance_pagerank": 0.0002188210014673,
+          "global_pagerank": 1.0861934252654261e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/financial-accelerator",
+          "label": "Financial accelerator",
+          "field": "finance",
+          "paper_count": 26,
+          "finance_pagerank_percentile": 0.9470178625491977,
+          "global_pagerank_percentile": 0.559231793116562,
+          "finance_pagerank": 0.0002108295146047,
+          "global_pagerank": 7.83507798245765e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q361390",
+          "label": "interbank foreign exchange market",
+          "field": "finance",
+          "paper_count": 30,
+          "finance_pagerank_percentile": 0.9445201332122313,
+          "global_pagerank_percentile": 0.6085325589033519,
+          "finance_pagerank": 0.0002051042320094,
+          "global_pagerank": 8.71335806745802e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/black–scholes-model",
+          "label": "Black–Scholes model",
+          "field": "finance",
+          "paper_count": 29,
+          "finance_pagerank_percentile": 0.9420980926430518,
+          "global_pagerank_percentile": 0.5407872219053051,
+          "finance_pagerank": 0.0001982215618354,
+          "global_pagerank": 7.564450362870462e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "FGV21FAM:inflation-volatility:ba868a66ab",
+          "label": "inflation volatility",
+          "field": "macro",
+          "paper_count": 25,
+          "finance_pagerank_percentile": 0.9386164093248562,
+          "global_pagerank_percentile": 0.7365209424536292,
+          "finance_pagerank": 0.000191387255502,
+          "global_pagerank": 1.2513617557036665e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/autoregressive-conditional-heteroskedasticity",
+          "label": "Autoregressive conditional heteroskedasticity",
+          "field": "finance",
+          "paper_count": 36,
+          "finance_pagerank_percentile": 0.9288525582803512,
+          "global_pagerank_percentile": 0.7314906048505592,
+          "finance_pagerank": 0.000168657241866,
+          "global_pagerank": 1.2292534417323058e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/forward-guidance",
+          "label": "Forward guidance",
+          "field": "macro",
+          "paper_count": 32,
+          "finance_pagerank_percentile": 0.9234786557674841,
+          "global_pagerank_percentile": 0.7134436204601635,
+          "finance_pagerank": 0.0001581470458908,
+          "global_pagerank": 1.1547375997113435e-05,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "Q806718",
+          "label": "economics of banking",
+          "field": "finance",
+          "paper_count": 25,
+          "finance_pagerank_percentile": 0.9077353920678172,
+          "global_pagerank_percentile": 0.6050925685837266,
+          "finance_pagerank": 0.0001350209618243,
+          "global_pagerank": 8.634908080665863e-06,
+          "category": "finance_local_specialist"
+        },
+        {
+          "id": "https://openalex.org/keywords/dividend-yield",
+          "label": "Dividend yield",
+          "field": "finance",
+          "paper_count": 35,
+          "finance_pagerank_percentile": 0.907281259461096,
+          "global_pagerank_percentile": 0.5594738024857819,
+          "finance_pagerank": 0.000134475146962,
+          "global_pagerank": 7.838612157150837e-06,
+          "category": "finance_local_specialist"
+        }
+      ],
+      "global_macro_finance": [
+        {
+          "id": "jel:F62:Economic Growth",
+          "label": "Economic Growth",
+          "field": "macro",
+          "paper_count": 214,
+          "finance_pagerank_percentile": 0.9991674235543445,
+          "global_pagerank_percentile": 0.9999827136164843,
+          "finance_pagerank": 0.0045392186342177,
+          "global_pagerank": 0.002114351888169447,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:982802",
+          "label": "Shock (economics)",
+          "field": "macro",
+          "paper_count": 69,
+          "finance_pagerank_percentile": 0.9470935513169846,
+          "global_pagerank_percentile": 0.9998962816989058,
+          "finance_pagerank": 0.0002110167815595,
+          "global_pagerank": 0.0014494131847336948,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:37671470",
+          "label": "Policy uncertainty",
+          "field": "macro",
+          "paper_count": 1233,
+          "finance_pagerank_percentile": 0.9992431123221314,
+          "global_pagerank_percentile": 0.9998617089318743,
+          "finance_pagerank": 0.0045890634236274,
+          "global_pagerank": 0.0013607686026392296,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/total-factor-productivity",
+          "label": "Total factor productivity",
+          "field": "macro",
+          "paper_count": 42,
+          "finance_pagerank_percentile": 0.9866030881017257,
+          "global_pagerank_percentile": 0.9998098497813273,
+          "finance_pagerank": 0.0005840247218334,
+          "global_pagerank": 0.0012441462499535045,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:751683",
+          "label": "Household final consumption expenditure",
+          "field": "macro",
+          "paper_count": 14,
+          "finance_pagerank_percentile": 0.9660914320314865,
+          "global_pagerank_percentile": 0.9996196995626545,
+          "finance_pagerank": 0.0003095825943815,
+          "global_pagerank": 0.0008554056298563337,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/abnormal-return",
+          "label": "Abnormal return",
+          "field": "finance",
+          "paper_count": 113,
+          "finance_pagerank_percentile": 0.9981077808053285,
+          "global_pagerank_percentile": 0.9996024131791388,
+          "finance_pagerank": 0.0022472272156909,
+          "global_pagerank": 0.000844882509308908,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G12:Stock Returns",
+          "label": "Stock Returns",
+          "field": "finance",
+          "paper_count": 576,
+          "finance_pagerank_percentile": 0.9995458673932789,
+          "global_pagerank_percentile": 0.9995505540285917,
+          "finance_pagerank": 0.0084790192106828,
+          "global_pagerank": 0.0008192337716566142,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:61589899",
+          "label": "Matching adjustment",
+          "field": "finance",
+          "paper_count": 32,
+          "finance_pagerank_percentile": 0.96745382985165,
+          "global_pagerank_percentile": 0.9994641221110132,
+          "finance_pagerank": 0.0003190930828878,
+          "global_pagerank": 0.0007527308874843374,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:3119243",
+          "label": "Yield spread premium",
+          "field": "finance",
+          "paper_count": 36,
+          "finance_pagerank_percentile": 0.9922797456857403,
+          "global_pagerank_percentile": 0.9994468357274975,
+          "finance_pagerank": 0.0008623567369184,
+          "global_pagerank": 0.0007428388833228943,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:80406565",
+          "label": "Stochastic volatility jump models",
+          "field": "finance",
+          "paper_count": 26,
+          "finance_pagerank_percentile": 0.9254465637299425,
+          "global_pagerank_percentile": 0.9994295493439818,
+          "finance_pagerank": 0.0001625395856196,
+          "global_pagerank": 0.0007319297661442199,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:9986126",
+          "label": "Complex multiplier",
+          "field": "macro",
+          "paper_count": 6,
+          "finance_pagerank_percentile": 0.8907811080835604,
+          "global_pagerank_percentile": 0.9993776901934346,
+          "finance_pagerank": 0.0001180700356126,
+          "global_pagerank": 0.0007177463955229731,
+          "category": "finance_relevant_mid_global"
+        },
+        {
+          "id": "wp:897547",
+          "label": "Market-based valuation",
+          "field": "finance",
+          "paper_count": 11,
+          "finance_pagerank_percentile": 0.8334090221011202,
+          "global_pagerank_percentile": 0.9993431174264032,
+          "finance_pagerank": 7.971467044029873e-05,
+          "global_pagerank": 0.0006938182936530629,
+          "category": "finance_relevant_mid_global"
+        },
+        {
+          "id": "jel:O11:GDP",
+          "label": "GDP",
+          "field": "macro",
+          "paper_count": 140,
+          "finance_pagerank_percentile": 0.9971995155918861,
+          "global_pagerank_percentile": 0.9993085446593718,
+          "finance_pagerank": 0.0016120967022605,
+          "global_pagerank": 0.0006860304079709521,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:8768048",
+          "label": "Relative valuation",
+          "field": "finance",
+          "paper_count": 4,
+          "finance_pagerank_percentile": 0.432182864062973,
+          "global_pagerank_percentile": 0.999239399125309,
+          "finance_pagerank": 2.345961712318421e-05,
+          "global_pagerank": 0.0006646223114024579,
+          "category": "global_general_concept_used_in_finance"
+        },
+        {
+          "id": "wp:67916703",
+          "label": "Macroeconomic indicators",
+          "field": "macro",
+          "paper_count": 85,
+          "finance_pagerank_percentile": 0.9695731153496822,
+          "global_pagerank_percentile": 0.9992221127417933,
+          "finance_pagerank": 0.000336542406201,
+          "global_pagerank": 0.0006610922285190136,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:79115507",
+          "label": "NAV lending",
+          "field": "finance",
+          "paper_count": 33,
+          "finance_pagerank_percentile": 0.9464123524069028,
+          "global_pagerank_percentile": 0.9991875399747618,
+          "finance_pagerank": 0.0002083038121422,
+          "global_pagerank": 0.0006584608530740037,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:3898531",
+          "label": "Naked short selling",
+          "field": "finance",
+          "paper_count": 73,
+          "finance_pagerank_percentile": 0.9786557674841053,
+          "global_pagerank_percentile": 0.9991529672077305,
+          "finance_pagerank": 0.0004347938764567,
+          "global_pagerank": 0.000649509490206509,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:71382365",
+          "label": "Hedge effectiveness",
+          "field": "finance",
+          "paper_count": 31,
+          "finance_pagerank_percentile": 0.9833484710868907,
+          "global_pagerank_percentile": 0.9991356808242148,
+          "finance_pagerank": 0.0005129536357826,
+          "global_pagerank": 0.0006379173043483375,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:8598331",
+          "label": "Stock market prediction",
+          "field": "finance",
+          "paper_count": 45,
+          "finance_pagerank_percentile": 0.9852406902815622,
+          "global_pagerank_percentile": 0.999118394440699,
+          "finance_pagerank": 0.0005517344296743,
+          "global_pagerank": 0.0006367988761806689,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:8400911",
+          "label": "Cyclical asymmetry",
+          "field": "macro",
+          "paper_count": 27,
+          "finance_pagerank_percentile": 0.9601120193763245,
+          "global_pagerank_percentile": 0.9990838216736676,
+          "finance_pagerank": 0.0002680334092351,
+          "global_pagerank": 0.0006131624944971513,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:47786",
+          "label": "Environmental finance",
+          "field": "finance",
+          "paper_count": 17,
+          "finance_pagerank_percentile": 0.9722979109900091,
+          "global_pagerank_percentile": 0.9990492489066363,
+          "finance_pagerank": 0.0003563706813197,
+          "global_pagerank": 0.0005923281763395207,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:7307109",
+          "label": "SET Index",
+          "field": "finance",
+          "paper_count": 14,
+          "finance_pagerank_percentile": 0.9367998788979716,
+          "global_pagerank_percentile": 0.9989628169890578,
+          "finance_pagerank": 0.0001875823971737,
+          "global_pagerank": 0.000579310005604949,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:69535838",
+          "label": "Order flow trading",
+          "field": "finance",
+          "paper_count": 89,
+          "finance_pagerank_percentile": 0.9871329094762338,
+          "global_pagerank_percentile": 0.9988763850714792,
+          "finance_pagerank": 0.0005994710016522,
+          "global_pagerank": 0.0005641107548483976,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:64029999",
+          "label": "Everything bubble",
+          "field": "finance",
+          "paper_count": 31,
+          "finance_pagerank_percentile": 0.9747199515591887,
+          "global_pagerank_percentile": 0.998772666770385,
+          "finance_pagerank": 0.0003785104669076,
+          "global_pagerank": 0.0005526631294689389,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:D24:Productivity",
+          "label": "Productivity",
+          "field": "macro",
+          "paper_count": 56,
+          "finance_pagerank_percentile": 0.9811534968210718,
+          "global_pagerank_percentile": 0.9986170893187436,
+          "finance_pagerank": 0.0004730686191298,
+          "global_pagerank": 0.0005196598437154416,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:498022",
+          "label": "Price stability",
+          "field": "macro",
+          "paper_count": 49,
+          "finance_pagerank_percentile": 0.9868301544050863,
+          "global_pagerank_percentile": 0.9985998029352279,
+          "finance_pagerank": 0.0005870699380504,
+          "global_pagerank": 0.0005171508167249859,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:79567317",
+          "label": "Excess volatility puzzle",
+          "field": "finance",
+          "paper_count": 46,
+          "finance_pagerank_percentile": 0.98047229791099,
+          "global_pagerank_percentile": 0.998478798250618,
+          "finance_pagerank": 0.0004665559497182,
+          "global_pagerank": 0.000490811333195056,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:897558",
+          "label": "Beta (finance)",
+          "field": "finance",
+          "paper_count": 16,
+          "finance_pagerank_percentile": 0.9557220708446866,
+          "global_pagerank_percentile": 0.9984615118671023,
+          "finance_pagerank": 0.0002464592960219,
+          "global_pagerank": 0.0004791433453521999,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:50802539",
+          "label": "Probability of success",
+          "field": "finance",
+          "paper_count": 18,
+          "finance_pagerank_percentile": 0.9738116863457463,
+          "global_pagerank_percentile": 0.9984442254835866,
+          "finance_pagerank": 0.0003706540241834,
+          "global_pagerank": 0.00047881100350606864,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:52100819",
+          "label": "Multiple factor models",
+          "field": "finance",
+          "paper_count": 24,
+          "finance_pagerank_percentile": 0.8981986073266728,
+          "global_pagerank_percentile": 0.9983059344154609,
+          "finance_pagerank": 0.0001249376680224,
+          "global_pagerank": 0.0004539725377698693,
+          "category": "finance_relevant_mid_global"
+        },
+        {
+          "id": "wp:683683",
+          "label": "Net investment",
+          "field": "macro",
+          "paper_count": 22,
+          "finance_pagerank_percentile": 0.9742658189524674,
+          "global_pagerank_percentile": 0.9982367888813981,
+          "finance_pagerank": 0.0003756753840643,
+          "global_pagerank": 0.0004505668094815486,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:32005855",
+          "label": "2008 financial crisis",
+          "field": "finance",
+          "paper_count": 124,
+          "finance_pagerank_percentile": 0.9856948228882834,
+          "global_pagerank_percentile": 0.9982195024978824,
+          "finance_pagerank": 0.000563283030855,
+          "global_pagerank": 0.0004495716973666712,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "https://openalex.org/keywords/stock-market-volatility",
+          "label": "Stock market volatility",
+          "field": "finance",
+          "paper_count": 2021,
+          "finance_pagerank_percentile": 1.0,
+          "global_pagerank_percentile": 0.9981330705803039,
+          "finance_pagerank": 0.0217615392523871,
+          "global_pagerank": 0.0004435395151504234,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:24419375",
+          "label": "Idiosyncratic risk",
+          "field": "finance",
+          "paper_count": 142,
+          "finance_pagerank_percentile": 0.9961398728428701,
+          "global_pagerank_percentile": 0.9980984978132725,
+          "finance_pagerank": 0.0013751714868459,
+          "global_pagerank": 0.0004421576558830255,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "jel:G12:Stock Price",
+          "label": "Stock Price",
+          "field": "finance",
+          "paper_count": 124,
+          "finance_pagerank_percentile": 0.9975022706630337,
+          "global_pagerank_percentile": 0.9980812114297568,
+          "finance_pagerank": 0.0016650449459104,
+          "global_pagerank": 0.0004409705058486261,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:7404517",
+          "label": "Vertical spread",
+          "field": "finance",
+          "paper_count": 33,
+          "finance_pagerank_percentile": 0.9745685740236149,
+          "global_pagerank_percentile": 0.9980639250462411,
+          "finance_pagerank": 0.0003783127490137,
+          "global_pagerank": 0.00043957608180646417,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:7634908",
+          "label": "Intertemporal CAPM",
+          "field": "finance",
+          "paper_count": 19,
+          "finance_pagerank_percentile": 0.8781410838631547,
+          "global_pagerank_percentile": 0.9979429203616311,
+          "finance_pagerank": 0.0001084965072087,
+          "global_pagerank": 0.0004283862450877571,
+          "category": "finance_relevant_mid_global"
+        },
+        {
+          "id": "jel:O43:Financial Development",
+          "label": "Financial Development",
+          "field": "finance",
+          "paper_count": 83,
+          "finance_pagerank_percentile": 0.9900847714199212,
+          "global_pagerank_percentile": 0.9979256339781154,
+          "finance_pagerank": 0.0007040469115417,
+          "global_pagerank": 0.00042626864074576254,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:38953877",
+          "label": "Sovereign credit risk",
+          "field": "finance",
+          "paper_count": 66,
+          "finance_pagerank_percentile": 0.9956100514683621,
+          "global_pagerank_percentile": 0.9979083475945998,
+          "finance_pagerank": 0.0012189185217862,
+          "global_pagerank": 0.00042524641979367725,
+          "category": "local_and_global_core"
+        },
+        {
+          "id": "wp:6999795",
+          "label": "Required rate of return",
+          "field": "finance",
+          "paper_count": 9,
+          "finance_pagerank_percentile": 0.9240084771419921,
+          "global_pagerank_percentile": 0.9978392020605369,
+          "finance_pagerank": 0.0001593497485992,
+          "global_pagerank": 0.00041918232238060353,
+          "category": "local_and_global_core"
+        }
+      ]
+    },
+    "credibility_audit": {
+      "available": true,
+      "summary": {
+        "community_count": 82,
+        "high_credibility_communities": 8,
+        "medium_credibility_communities": 56,
+        "low_or_audit_first_communities": 18,
+        "self_links_in_top_100_edges": 15,
+        "method_edges_in_top_100_edges": 7
+      },
+      "communities": [
+        {
+          "id": 1,
+          "label": "Stock market volatility / Volatility (finance) / Volatility risk",
+          "node_count": 2583,
+          "internal_edge_weight": 9004.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; duplicated_family_signal; method_concept_present; unknown_field_heavy",
+          "top_concepts": "Stock market volatility; Volatility (finance); Volatility risk; Spillovers; Forward volatility; Investor behavior; Predictability; Stock Price",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 2,
+          "label": "Inflation / Economic Growth / Recession",
+          "node_count": 2114,
+          "internal_edge_weight": 8775.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; generic_label_present",
+          "top_concepts": "Inflation; Economic Growth; Recession; Welfare; Output; Monetary Policy; Net interest spread; Investment",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 3,
+          "label": "Liquidity risk / Market liquidity / Bid–ask spread",
+          "node_count": 1908,
+          "internal_edge_weight": 6894.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; method_concept_present",
+          "top_concepts": "Liquidity risk; Market liquidity; Bid–ask spread; Systemic risk; Excess return; Funding liquidity; Abnormal return; Expected return",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 5,
+          "label": "Bank credit / Credit spread (options) / Bank Lending",
+          "node_count": 1255,
+          "internal_edge_weight": 3065.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Bank credit; Credit spread (options); Bank Lending; Credit risk; Diversification; Sovereign credit risk; Financial Stability; Financial distress",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 6,
+          "label": "Stock Returns / Market sentiment / Herding",
+          "node_count": 808,
+          "internal_edge_weight": 1588.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; method_concept_present; unknown_field_heavy",
+          "top_concepts": "Stock Returns; Market sentiment; Herding; Idiosyncratic risk; Forecasting Returns; Momentum (technical analysis); Market reversal; Sentiment analysis",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 7,
+          "label": "Trading Volume / Asset Price / Price fluctuation",
+          "node_count": 941,
+          "internal_edge_weight": 1556.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; method_concept_present; unknown_field_heavy",
+          "top_concepts": "Trading Volume; Asset Price; Price fluctuation; Volatility clustering; Multifractal system; Pairs trade; Cross-correlation; returns",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 9,
+          "label": "Business Cycle / Equity Premium / Emerging markets",
+          "node_count": 556,
+          "internal_edge_weight": 746.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; unknown_field_heavy",
+          "top_concepts": "Business Cycle; Equity Premium; Emerging markets; Countercyclical; Risk Sharing; Capital flows; Financial Economics; Recovery",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 17,
+          "label": "Feed forward / Dynamism / Trade Forecast",
+          "node_count": 14,
+          "internal_edge_weight": 13.0,
+          "assessment": "high",
+          "flags": "cross_field_or_policy_mixed; method_concept_present",
+          "top_concepts": "Feed forward; Dynamism; Trade Forecast; Exotic option; Total shareholder return; CDP Equity; Planning Models; Volatility Forecasting",
+          "action": "Safe to keep in the headline map, while showing top concepts for audit."
+        },
+        {
+          "id": 4,
+          "label": "Policy uncertainty / Renewable Energy / Uncertainty",
+          "node_count": 1520,
+          "internal_edge_weight": 3126.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed; generic_label_present",
+          "top_concepts": "Policy uncertainty; Renewable Energy; Uncertainty; Investment Decisions; Leverage; Firms; Green innovation; Carbon price",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 13,
+          "label": "Additive utility / Production / Employment contract",
+          "node_count": 44,
+          "internal_edge_weight": 47.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed; unknown_field_heavy",
+          "top_concepts": "Additive utility; Production; Employment contract; Full Employment; Fund platform; Consumers; Long-run cost curve; Financial Market Policy",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 15,
+          "label": "Security interest / Global trade of secondhand clothing / Windfall gain",
+          "node_count": 15,
+          "internal_edge_weight": 14.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed; unknown_field_heavy",
+          "top_concepts": "Security interest; Global trade of secondhand clothing; Windfall gain; National Debt; Non-possession; Stewardship; Anticipation (artificial intelligence); Psychology of Social Influence",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 16,
+          "label": "IRS penalties / Collaborative network / Behavioral Economics",
+          "node_count": 14,
+          "internal_edge_weight": 14.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed; unknown_field_heavy",
+          "top_concepts": "IRS penalties; Collaborative network; Behavioral Economics; Publication; Novelty; Article structure; Documentation; Keyword Planner",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 20,
+          "label": "Mortgage elimination / Spin offs / Flood insurance",
+          "node_count": 8,
+          "internal_edge_weight": 7.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Mortgage elimination; Spin offs; Flood insurance; New Firm; Research spin-off; local finance; Knowledge Based; Displacement after Hurricane Katrina",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 21,
+          "label": "Information Choice in Macroeconomics and Finance / labour economics / The Accumulation of Capital",
+          "node_count": 7,
+          "internal_edge_weight": 6.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Information Choice in Macroeconomics and Finance; labour economics; The Accumulation of Capital; Keynesian economics; Fix Price; Stephen Hicks; Windfall tax",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 22,
+          "label": "FTSE China A50 Index / China Unicom / UBPC",
+          "node_count": 5,
+          "internal_edge_weight": 6.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "FTSE China A50 Index; China Unicom; UBPC; China Telecom; Entitlement program",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 25,
+          "label": "Hydropower / Implementation / 1973 oil crisis",
+          "node_count": 6,
+          "internal_edge_weight": 5.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Hydropower; Implementation; 1973 oil crisis; New public administration; Culture change; 1979 oil crisis",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 27,
+          "label": "Faustmann's formula / Pricing strategy / Optimal rotation age",
+          "node_count": 5,
+          "internal_edge_weight": 4.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Faustmann's formula; Pricing strategy; Optimal rotation age; SureHarvest; Fractionalization",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 28,
+          "label": "Health Care Financing / Master plan / government program",
+          "node_count": 5,
+          "internal_edge_weight": 4.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Health Care Financing; Master plan; government program; Fiscal agent; Uninsured employer",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 29,
+          "label": "Adverse drug reaction / Government Budget Constraint / Airports Development Program",
+          "node_count": 5,
+          "internal_edge_weight": 4.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed",
+          "top_concepts": "Adverse drug reaction; Government Budget Constraint; Airports Development Program; Post Privatization; Energy and Environment Impacts",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 30,
+          "label": "central marketplace / Annual premium equivalent / Computational Techniques",
+          "node_count": 5,
+          "internal_edge_weight": 4.0,
+          "assessment": "medium",
+          "flags": "unknown_field_heavy",
+          "top_concepts": "central marketplace; Annual premium equivalent; Computational Techniques; Instant payment notification; Arithmetic",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 31,
+          "label": "Government budget / National Priorities Project / Incrementalism",
+          "node_count": 5,
+          "internal_edge_weight": 4.0,
+          "assessment": "medium",
+          "flags": "cross_field_or_policy_mixed; unknown_field_heavy",
+          "top_concepts": "Government budget; National Priorities Project; Incrementalism; Budget analyst; Event management",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 33,
+          "label": "Trainee / On-the-job training / Organizational Management and Innovation",
+          "node_count": 4,
+          "internal_edge_weight": 3.0,
+          "assessment": "medium",
+          "flags": "",
+          "top_concepts": "Trainee; On-the-job training; Organizational Management and Innovation; Job Matching",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 34,
+          "label": "Destruction of the healthcare system / Free-market healthcare / Single-payer healthcare",
+          "node_count": 4,
+          "internal_edge_weight": 3.0,
+          "assessment": "medium",
+          "flags": "",
+          "top_concepts": "Destruction of the healthcare system; Free-market healthcare; Single-payer healthcare; Biomedical technology",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        },
+        {
+          "id": 35,
+          "label": "Healthcare of Ontario Pension Plan / Paid-in capital / Professional conduct",
+          "node_count": 4,
+          "internal_edge_weight": 3.0,
+          "assessment": "medium",
+          "flags": "",
+          "top_concepts": "Healthcare of Ontario Pension Plan; Paid-in capital; Professional conduct; Cost control",
+          "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
+        }
+      ],
+      "edge_audit": [
+        {
+          "label": "Stock market volatility -> Stock market volatility",
+          "paper_count": 82,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        },
+        {
+          "label": "Market sentiment -> Stock Returns",
+          "paper_count": 64,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Monetary Policy -> Inflation",
+          "paper_count": 48,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Policy uncertainty -> Stock market volatility",
+          "paper_count": 37,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Trading Volume -> Volatility (finance)",
+          "paper_count": 33,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Garch Models -> Volatility (finance)",
+          "paper_count": 33,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": true,
+          "include_in_headline_relationship_map": false,
+          "action": "show only in method/measurement view"
+        },
+        {
+          "label": "Inflation -> Economic Growth",
+          "paper_count": 31,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Policy uncertainty -> Stock Returns",
+          "paper_count": 27,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Forward volatility -> Stock market volatility",
+          "paper_count": 27,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Trading Volume -> Stock Returns",
+          "paper_count": 25,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Volatility (finance) -> Volatility (finance)",
+          "paper_count": 25,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        },
+        {
+          "label": "Liquidity risk -> Stock Returns",
+          "paper_count": 24,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Market sentiment -> Stock market volatility",
+          "paper_count": 23,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Trading Volume -> Trading Volume",
+          "paper_count": 23,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        },
+        {
+          "label": "Garch Models -> Stock market volatility",
+          "paper_count": 23,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": true,
+          "include_in_headline_relationship_map": false,
+          "action": "show only in method/measurement view"
+        },
+        {
+          "label": "Implied volatility -> Stock market volatility",
+          "paper_count": 22,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Investor behavior -> Stock market volatility",
+          "paper_count": 22,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Liquidity risk -> Liquidity risk",
+          "paper_count": 21,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        },
+        {
+          "label": "COVID-19 -> Stock market volatility",
+          "paper_count": 20,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Funding liquidity -> Market liquidity",
+          "paper_count": 20,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Volatility risk -> Stock market volatility",
+          "paper_count": 20,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Stock market volatility -> Spillovers",
+          "paper_count": 19,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Volatility (finance) -> Stock market volatility",
+          "paper_count": 19,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Market liquidity -> Liquidity risk",
+          "paper_count": 19,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Market sentiment -> Market sentiment",
+          "paper_count": 18,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        },
+        {
+          "label": "Uncertainty -> Stock market volatility",
+          "paper_count": 17,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Stock market volatility -> Volatility risk",
+          "paper_count": 17,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Monetary Policy -> Stock market volatility",
+          "paper_count": 17,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Inflation Targeting -> Inflation",
+          "paper_count": 16,
+          "is_self_link": false,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": true,
+          "action": "usable as a recurring non-self relationship"
+        },
+        {
+          "label": "Spillovers -> Spillovers",
+          "paper_count": 16,
+          "is_self_link": true,
+          "is_method_or_measurement_edge": false,
+          "include_in_headline_relationship_map": false,
+          "action": "drop from headline relationship figure; keep for ontology audit"
+        }
+      ]
+    }
   }
 }

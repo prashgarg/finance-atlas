@@ -338,6 +338,43 @@ main {
   margin-top: 3px;
 }
 
+.empty-note {
+  color: var(--muted);
+  font-weight: 800;
+  margin: 8px;
+}
+
+.audit-line {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.audit-badge {
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 4px 8px;
+}
+
+.audit-badge.high {
+  background: rgba(47, 111, 78, 0.14);
+  color: var(--green-dark);
+}
+
+.audit-badge.medium {
+  background: rgba(197, 141, 45, 0.18);
+  color: #765018;
+}
+
+.audit-badge.low_or_audit_first {
+  background: rgba(138, 90, 68, 0.16);
+  color: #6d3f30;
+}
+
 .community-row {
   grid-template-columns: minmax(360px, 0.58fr) 1fr;
 }

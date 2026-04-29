@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_descriptive_v0"
 OUT = ROOT / "data/site-data.json"
 GRAPH_DIAGNOSTICS = ROOT / "data/analysis/graph_diagnostics_v0"
+GLOBAL_CONTEXT = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_global_context_v0"
+CREDIBILITY_AUDIT = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_credibility_audit_v0"
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -228,6 +230,12 @@ def read_optional_csv(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def read_optional_json(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
 def compact_metric_row(row: dict[str, str], metric: str, count_col: str = "paper_count_2020s") -> dict[str, Any]:
     return {
         "id": row.get("onto_id", ""),
@@ -240,6 +248,102 @@ def compact_metric_row(row: dict[str, str], metric: str, count_col: str = "paper
         "share_2020s": as_float(row.get("share_2020s", "0")),
         "max_decade": row.get("max_decade", ""),
         "max_decade_paper_count": as_int(row.get("max_decade_paper_count", "0")),
+    }
+
+
+def compact_global_concept(row: dict[str, str]) -> dict[str, Any]:
+    return {
+        "id": row.get("onto_id", ""),
+        "label": row.get("display_label") or row.get("finance_label") or row.get("global_label") or "",
+        "field": row.get("finance_field_primary", "") or "unknown",
+        "paper_count": as_int(row.get("finance_paper_count", "0")),
+        "finance_pagerank_percentile": as_float(row.get("finance_pagerank_percentile", "0")),
+        "global_pagerank_percentile": as_float(row.get("global_pagerank_percentile", "0")),
+        "finance_pagerank": as_float(row.get("finance_pagerank", "0")),
+        "global_pagerank": as_float(row.get("global_pagerank", "0")),
+        "category": row.get("context_category", ""),
+    }
+
+
+def build_global_context() -> dict[str, Any]:
+    summary = read_optional_json(GLOBAL_CONTEXT / "package_summary.json")
+    if not summary:
+        return {"available": False}
+
+    return {
+        "available": True,
+        "summary": {
+            "global_concept_count": int(summary["global_concept_count"]),
+            "global_edge_pair_count": int(summary["global_edge_pair_count"]),
+            "finance_concept_count": int(summary["finance_concept_count"]),
+            "finance_concepts_missing_from_full_graph": int(summary["finance_concepts_missing_from_full_graph"]),
+            "category_counts": summary.get("category_counts", {}),
+        },
+        "category_summary": [
+            {
+                "category": row["context_category"],
+                "concept_count": as_int(row["concept_count"]),
+                "mean_finance_pagerank_percentile": as_float(row["mean_finance_pagerank_percentile"]),
+                "mean_global_pagerank_percentile": as_float(row["mean_global_pagerank_percentile"]),
+            }
+            for row in read_optional_csv(GLOBAL_CONTEXT / "summary_by_category.csv")
+        ],
+        "local_and_global_core": [
+            compact_global_concept(row)
+            for row in read_optional_csv(GLOBAL_CONTEXT / "top_local_and_global_core.csv")[:40]
+        ],
+        "macro_finance_local_specialists": [
+            compact_global_concept(row)
+            for row in read_optional_csv(GLOBAL_CONTEXT / "top_macro_finance_local_specialists.csv")[:40]
+        ],
+        "global_macro_finance": [
+            compact_global_concept(row)
+            for row in read_optional_csv(GLOBAL_CONTEXT / "top_global_macro_finance_concepts.csv")[:40]
+        ],
+    }
+
+
+def build_credibility_audit() -> dict[str, Any]:
+    summary = read_optional_json(CREDIBILITY_AUDIT / "audit_summary.json")
+    if not summary:
+        return {"available": False}
+
+    community_rows = read_optional_csv(CREDIBILITY_AUDIT / "community_audit.csv")
+    edge_rows = read_optional_csv(CREDIBILITY_AUDIT / "edge_pair_audit.csv")
+    return {
+        "available": True,
+        "summary": {
+            "community_count": int(summary["community_count"]),
+            "high_credibility_communities": int(summary["high_credibility_communities"]),
+            "medium_credibility_communities": int(summary["medium_credibility_communities"]),
+            "low_or_audit_first_communities": int(summary["low_or_audit_first_communities"]),
+            "self_links_in_top_100_edges": int(summary["self_links_in_top_100_edges"]),
+            "method_edges_in_top_100_edges": int(summary["method_edges_in_top_100_edges"]),
+        },
+        "communities": [
+            {
+                "id": as_int(row["community_id"]),
+                "label": row["community_label"],
+                "node_count": as_int(row["node_count"]),
+                "internal_edge_weight": as_float(row["internal_edge_weight"]),
+                "assessment": row["credibility_assessment"],
+                "flags": row["flags"],
+                "top_concepts": row["top_concepts"],
+                "action": row["recommended_action"],
+            }
+            for row in community_rows[:24]
+        ],
+        "edge_audit": [
+            {
+                "label": row["canonical_edge_pair_label"],
+                "paper_count": as_int(row["paper_count"]),
+                "is_self_link": as_bool(row["is_self_link"]),
+                "is_method_or_measurement_edge": as_bool(row["is_method_or_measurement_edge"]),
+                "include_in_headline_relationship_map": as_bool(row["include_in_headline_relationship_map"]),
+                "action": row["recommended_action"],
+            }
+            for row in edge_rows[:30]
+        ],
     }
 
 
@@ -424,6 +528,8 @@ def build_graph_diagnostics() -> dict[str, Any]:
             }
             for row in field_bridge_summary[:20]
         ],
+        "global_context": build_global_context(),
+        "credibility_audit": build_credibility_audit(),
     }
 
 

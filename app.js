@@ -326,6 +326,9 @@ const networkCopy = {
   bridges: "Bridge concepts have high approximate betweenness: they sit on paths between otherwise separate parts of the map.",
   field_bridges: "Cross-field links show where finance concepts connect to macro, public, methods, environment, and other fields.",
   decade: "This view shows which concepts are central within a selected decade, not just overall.",
+  global_core: "Concepts central in the finance map and also central in the broader FrontierGraph economics graph.",
+  local_specialists: "Narrower macro-finance concepts that are much more central inside finance than in the full economics graph.",
+  credibility_audit: "A map-quality check: which detected communities look credible, mixed, or audit-first.",
 };
 
 function renderSparkline(points) {
@@ -404,6 +407,86 @@ function renderNetworkDiagnostics() {
             <div>
               <strong>${escapeHtml(row.label)}</strong>
               <span>${escapeHtml(row.field_pair)} · ${formatNumber.format(row.paper_count)} papers</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
+
+  if (state.activeNetworkView === "global_core") {
+    const context = diagnostics.global_context;
+    if (!context?.available) {
+      list.innerHTML = `<p class="empty-note">Global context is not available in this export.</p>`;
+      return;
+    }
+    const rows = context.local_and_global_core.slice(0, 14);
+    const maxValue = Math.max(...rows.map((row) => row.finance_pagerank_percentile), 0.01);
+    list.innerHTML = rows
+      .map((row) => {
+        const width = Math.max(2, (row.finance_pagerank_percentile / maxValue) * 100);
+        return `
+          <article class="diagnostic-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${escapeHtml(row.field)} · ${formatNumber.format(row.paper_count)} finance papers · finance ${asPercent(row.finance_pagerank_percentile)} · economics ${asPercent(row.global_pagerank_percentile)}</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
+
+  if (state.activeNetworkView === "local_specialists") {
+    const context = diagnostics.global_context;
+    if (!context?.available) {
+      list.innerHTML = `<p class="empty-note">Global context is not available in this export.</p>`;
+      return;
+    }
+    const rows = context.macro_finance_local_specialists.slice(0, 14);
+    const maxValue = Math.max(...rows.map((row) => row.finance_pagerank_percentile - row.global_pagerank_percentile), 0.01);
+    list.innerHTML = rows
+      .map((row) => {
+        const gap = Math.max(0, row.finance_pagerank_percentile - row.global_pagerank_percentile);
+        const width = Math.max(2, (gap / maxValue) * 100);
+        return `
+          <article class="diagnostic-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${escapeHtml(row.field)} · ${formatNumber.format(row.paper_count)} finance papers · finance ${asPercent(row.finance_pagerank_percentile)} · economics ${asPercent(row.global_pagerank_percentile)}</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width: ${width}%"></div></div>
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
+
+  if (state.activeNetworkView === "credibility_audit") {
+    const audit = diagnostics.credibility_audit;
+    if (!audit?.available) {
+      list.innerHTML = `<p class="empty-note">Credibility audit is not available in this export.</p>`;
+      return;
+    }
+    const rows = audit.communities.slice(0, 14);
+    const maxValue = Math.max(...rows.map((row) => row.internal_edge_weight), 1);
+    list.innerHTML = rows
+      .map((row) => {
+        const width = Math.max(2, (row.internal_edge_weight / maxValue) * 100);
+        return `
+          <article class="diagnostic-row community-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${formatNumber.format(row.node_count)} concepts · ${formatNumber.format(row.internal_edge_weight)} internal paper-links</span>
+              <div class="audit-line">
+                <b class="audit-badge ${escapeHtml(row.assessment)}">${escapeHtml(niceLabel(row.assessment))}</b>
+                <span>${escapeHtml(row.flags || "no major flag")}</span>
+              </div>
             </div>
             <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
           </article>
