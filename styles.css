@@ -338,6 +338,55 @@ main {
   margin-top: 3px;
 }
 
+.community-row {
+  grid-template-columns: minmax(360px, 0.58fr) 1fr;
+}
+
+.trajectory-row {
+  grid-template-columns: minmax(260px, 0.5fr) 190px;
+}
+
+.mini-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+.mini-tag {
+  background: rgba(47, 111, 78, 0.1);
+  border: 1px solid rgba(47, 111, 78, 0.16);
+  border-radius: 999px;
+  color: var(--green-dark) !important;
+  display: inline-flex !important;
+  font-size: 11px !important;
+  margin: 0 !important;
+  padding: 3px 7px;
+}
+
+.sparkline {
+  align-self: center;
+  display: block;
+  justify-self: end;
+  max-width: 190px;
+  overflow: visible;
+  width: 100%;
+}
+
+.sparkline path {
+  fill: none;
+  stroke: var(--blue);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.sparkline circle {
+  fill: var(--cream);
+  stroke: var(--green-dark);
+  stroke-width: 1.4;
+}
+
 .time-chart {
   background:
     linear-gradient(180deg, rgba(255, 250, 240, 0.65), rgba(244, 239, 226, 0.5)),

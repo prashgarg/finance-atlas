@@ -253,6 +253,9 @@ def build_graph_diagnostics() -> dict[str, Any]:
     decade = read_optional_csv(GRAPH_DIAGNOSTICS / "concept_centrality_by_decade.csv")
     field_bridges = read_optional_csv(GRAPH_DIAGNOSTICS / "field_bridge_edges.csv")
     field_bridge_summary = read_optional_csv(GRAPH_DIAGNOSTICS / "field_bridge_summary.csv")
+    centrality_change = read_optional_csv(GRAPH_DIAGNOSTICS / "concept_centrality_change.csv")
+    centrality_trajectories = read_optional_csv(GRAPH_DIAGNOSTICS / "concept_centrality_trajectories.csv")
+    community_summary = read_optional_csv(GRAPH_DIAGNOSTICS / "community_summary.csv")
 
     top_central = [
         {
@@ -290,6 +293,87 @@ def build_graph_diagnostics() -> dict[str, Any]:
                 }
             )
 
+    centrality_risers = [
+        {
+            "id": row["onto_id"],
+            "label": row["concept_label"],
+            "field": row.get("field_primary", "") or "unknown",
+            "pagerank_2000s": as_float(row.get("pagerank_2000s", "0")),
+            "pagerank_2020s": as_float(row.get("pagerank_2020s", "0")),
+            "pagerank_change": as_float(row.get("pagerank_change_2020s_vs_2000s", "0")),
+            "degree_change": as_float(row.get("degree_change_2020s_vs_2000s", "0")),
+        }
+        for row in centrality_change
+        if as_float(row.get("pagerank_change_2020s_vs_2000s", "0")) > 0
+    ][:35]
+
+    centrality_fallers = [
+        {
+            "id": row["onto_id"],
+            "label": row["concept_label"],
+            "field": row.get("field_primary", "") or "unknown",
+            "pagerank_2000s": as_float(row.get("pagerank_2000s", "0")),
+            "pagerank_2020s": as_float(row.get("pagerank_2020s", "0")),
+            "pagerank_change": as_float(row.get("pagerank_change_2020s_vs_2000s", "0")),
+            "degree_change": as_float(row.get("degree_change_2020s_vs_2000s", "0")),
+        }
+        for row in sorted(
+            centrality_change,
+            key=lambda x: as_float(x.get("pagerank_change_2020s_vs_2000s", "0")),
+        )
+        if as_float(row.get("pagerank_change_2020s_vs_2000s", "0")) < 0
+    ][:25]
+
+    trajectory_map: dict[str, dict[str, Any]] = {}
+    for row in centrality_trajectories:
+        concept_id = row["onto_id"]
+        item = trajectory_map.setdefault(
+            concept_id,
+            {
+                "id": concept_id,
+                "label": row["concept_label"],
+                "field": row.get("field_primary", "") or "unknown",
+                "points": [],
+            },
+        )
+        item["points"].append(
+            {
+                "decade": as_int(row["decade"]),
+                "pagerank": as_float(row["pagerank"]),
+                "degree_weighted": as_float(row["degree_weighted"]),
+            }
+        )
+
+    communities = []
+    for row in community_summary[:18]:
+        try:
+            top_concepts = json.loads(row.get("top_concepts_json", "[]"))
+        except json.JSONDecodeError:
+            top_concepts = []
+        try:
+            top_fields = json.loads(row.get("top_fields_json", "[]"))
+        except json.JSONDecodeError:
+            top_fields = []
+        communities.append(
+            {
+                "community_id": as_int(row["community_id"]),
+                "label": row["community_label"],
+                "node_count": as_int(row["node_count"]),
+                "internal_edge_weight": as_float(row["internal_edge_weight"]),
+                "top_field": row.get("top_field", "") or "unknown",
+                "top_concepts": [
+                    {
+                        "label": concept.get("concept_label", ""),
+                        "field": concept.get("field_primary", "") or "unknown",
+                        "pagerank": as_float(concept.get("pagerank", 0)),
+                        "paper_count": as_int(concept.get("paper_count", 0)),
+                    }
+                    for concept in top_concepts[:6]
+                ],
+                "top_fields": top_fields[:5],
+            }
+        )
+
     buckets = {}
     bucket_specs = {
         "rising": ("theme_rising.csv", "rise_2020s_vs_2000s"),
@@ -310,11 +394,16 @@ def build_graph_diagnostics() -> dict[str, Any]:
             "scope": summary["scope"],
             "graph_nodes": summary["graph_nodes"],
             "graph_edges_non_self": summary["graph_edges_non_self"],
+            "community_count": summary.get("community_count", 0),
             "betweenness_sample_size": summary["betweenness_sample_size"],
         },
         "top_central": top_central,
         "bridge_concepts": bridge_concepts,
         "centrality_by_decade": top_by_decade,
+        "centrality_risers": centrality_risers,
+        "centrality_fallers": centrality_fallers,
+        "centrality_trajectories": list(trajectory_map.values())[:50],
+        "communities": communities,
         "theme_buckets": buckets,
         "field_bridge_edges": [
             {

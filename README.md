@@ -9,7 +9,7 @@ The first version is static and runs on GitHub Pages. It uses small JSON exports
 - rising concepts by decade
 - common concept-to-concept relationships
 - sample papers from selected slices
-- within-finance graph diagnostics, including central concepts, bridge concepts, and theme-change buckets
+- within-finance graph diagnostics, including central concepts, centrality change, graph communities, bridge concepts, and theme-change buckets
 
 The site is intentionally simple. It is a public-facing inspection layer for the research map, not the full research database.
 

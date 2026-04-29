@@ -198,6 +198,124 @@ def decade_centrality(edge_weights: pd.DataFrame, edges: pd.DataFrame, papers: p
     return pd.DataFrame(rows).sort_values(["decade", "pagerank", "degree_weighted"], ascending=[True, False, False])
 
 
+def centrality_change(decade: pd.DataFrame) -> pd.DataFrame:
+    id_cols = ["onto_id", "concept_label", "field_primary"]
+    page = decade.pivot_table(index=id_cols, columns="decade", values="pagerank", fill_value=0.0, aggfunc="max").reset_index()
+    degree = decade.pivot_table(index=["onto_id"], columns="decade", values="degree_weighted", fill_value=0.0, aggfunc="max").reset_index()
+    rename_page = {d: f"pagerank_{d}s" for d in DECADES if d in page.columns}
+    rename_degree = {d: f"degree_weighted_{d}s" for d in DECADES if d in degree.columns}
+    out = page.rename(columns=rename_page).merge(degree.rename(columns=rename_degree), on="onto_id", how="left")
+    for decade_value in DECADES:
+        if f"pagerank_{decade_value}s" not in out.columns:
+            out[f"pagerank_{decade_value}s"] = 0.0
+        if f"degree_weighted_{decade_value}s" not in out.columns:
+            out[f"degree_weighted_{decade_value}s"] = 0.0
+    out["pagerank_change_2020s_vs_2000s"] = out["pagerank_2020s"] - out["pagerank_2000s"]
+    out["pagerank_change_2020s_vs_2010s"] = out["pagerank_2020s"] - out["pagerank_2010s"]
+    out["degree_change_2020s_vs_2000s"] = out["degree_weighted_2020s"] - out["degree_weighted_2000s"]
+    out["degree_change_2020s_vs_2010s"] = out["degree_weighted_2020s"] - out["degree_weighted_2010s"]
+    out["max_pagerank"] = out[[f"pagerank_{d}s" for d in DECADES]].max(axis=1)
+    out["max_degree_weighted"] = out[[f"degree_weighted_{d}s" for d in DECADES]].max(axis=1)
+    return out.sort_values(["pagerank_change_2020s_vs_2000s", "pagerank_2020s"], ascending=[False, False])
+
+
+def centrality_trajectories(decade: pd.DataFrame, central: pd.DataFrame, change: pd.DataFrame) -> pd.DataFrame:
+    selected = set(central.head(20)["onto_id"])
+    selected.update(change.head(20)["onto_id"])
+    selected.update(change.sort_values("pagerank_change_2020s_vs_2000s").head(12)["onto_id"])
+    selected.update(central.sort_values(["bridge_score", "pagerank"], ascending=[False, False]).head(20)["onto_id"])
+    out = decade[decade["onto_id"].isin(selected)].copy()
+    return out.sort_values(["onto_id", "decade"])
+
+
+def undirected_graph_from_edges(edge_weights: pd.DataFrame) -> nx.Graph:
+    graph = nx.Graph()
+    for row in edge_weights.itertuples(index=False):
+        source = row.source_onto_id
+        target = row.target_onto_id
+        weight = float(row.paper_count)
+        if graph.has_edge(source, target):
+            graph[source][target]["weight"] += weight
+            graph[source][target]["edge_rows"] += float(row.edge_rows)
+        else:
+            graph.add_edge(source, target, weight=weight, edge_rows=float(row.edge_rows))
+    return graph
+
+
+def community_tables(edge_weights: pd.DataFrame, central: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    graph = undirected_graph_from_edges(edge_weights)
+    communities = nx.algorithms.community.louvain_communities(
+        graph,
+        weight="weight",
+        seed=BETWEENNESS_SEED,
+        resolution=1.0,
+    )
+    central_lookup = central.set_index("onto_id").to_dict("index")
+    assignments = {}
+    raw_summaries = []
+    for raw_id, nodes_in_community in enumerate(communities):
+        nodes = list(nodes_in_community)
+        subgraph = graph.subgraph(nodes)
+        members = []
+        field_counts: dict[str, int] = {}
+        for node in nodes:
+            meta = central_lookup.get(node, {})
+            field = clean(meta.get("field_primary", "")) or "unknown"
+            field_counts[field] = field_counts.get(field, 0) + 1
+            members.append(
+                {
+                    "onto_id": node,
+                    "concept_label": clean(meta.get("concept_label", "")),
+                    "field_primary": field,
+                    "paper_count": safe_int(meta.get("paper_count", 0)),
+                    "pagerank": safe_float(meta.get("pagerank", 0)),
+                    "degree_weighted": safe_float(meta.get("degree_weighted", 0)),
+                    "bridge_score": safe_float(meta.get("bridge_score", 0)),
+                }
+            )
+        members_sorted = sorted(members, key=lambda x: (x["pagerank"], x["degree_weighted"], x["paper_count"]), reverse=True)
+        internal_weight = sum(data.get("weight", 0.0) for _, _, data in subgraph.edges(data=True))
+        total_papers = sum(member["paper_count"] for member in members)
+        raw_summaries.append(
+            {
+                "raw_community_id": raw_id,
+                "node_count": len(nodes),
+                "internal_edge_count": subgraph.number_of_edges(),
+                "internal_edge_weight": internal_weight,
+                "member_paper_count_sum": total_papers,
+                "top_concepts": members_sorted[:10],
+                "field_counts": field_counts,
+            }
+        )
+
+    ranked = sorted(raw_summaries, key=lambda x: (x["internal_edge_weight"], x["node_count"]), reverse=True)
+    community_id_map = {item["raw_community_id"]: rank + 1 for rank, item in enumerate(ranked)}
+    rows = []
+    member_rows = []
+    for item in ranked:
+        community_id = community_id_map[item["raw_community_id"]]
+        top_concepts = item["top_concepts"]
+        top_labels = [member["concept_label"] for member in top_concepts if member["concept_label"]]
+        field_counts = sorted(item["field_counts"].items(), key=lambda kv: kv[1], reverse=True)
+        rows.append(
+            {
+                "community_id": community_id,
+                "community_label": " / ".join(top_labels[:3]),
+                "node_count": item["node_count"],
+                "internal_edge_count": item["internal_edge_count"],
+                "internal_edge_weight": item["internal_edge_weight"],
+                "member_paper_count_sum": item["member_paper_count_sum"],
+                "top_field": field_counts[0][0] if field_counts else "",
+                "top_fields_json": json.dumps([{"field": field, "count": count} for field, count in field_counts[:6]], ensure_ascii=False),
+                "top_concepts_json": json.dumps(top_concepts[:8], ensure_ascii=False),
+            }
+        )
+        for member in top_concepts:
+            member_rows.append({"community_id": community_id, **member})
+
+    return pd.DataFrame(rows), pd.DataFrame(member_rows)
+
+
 def field_bridge_edges(edge_weights: pd.DataFrame) -> pd.DataFrame:
     bridges = edge_weights[
         (edge_weights["source_field"].map(clean) != "")
@@ -309,6 +427,9 @@ def main() -> None:
     graph = graph_from_edges(edge_weights)
     central = centrality_table(graph, lookup)
     decade = decade_centrality(edge_weights, edges, papers, lookup)
+    change = centrality_change(decade)
+    trajectories = centrality_trajectories(decade, central, change)
+    community_summary, community_members = community_tables(edge_weights, central)
     bridges = field_bridge_edges(edge_weights)
     bridge_summary = field_bridge_summary(bridges)
     buckets = concept_change_buckets(concept_decade)
@@ -316,6 +437,10 @@ def main() -> None:
     write_csv(edge_weights, OUT / "canonical_edge_weights.csv")
     write_csv(central, OUT / "concept_centrality_overall.csv")
     write_csv(decade, OUT / "concept_centrality_by_decade.csv")
+    write_csv(change, OUT / "concept_centrality_change.csv")
+    write_csv(trajectories, OUT / "concept_centrality_trajectories.csv")
+    write_csv(community_summary, OUT / "community_summary.csv")
+    write_csv(community_members, OUT / "community_members_top.csv")
     write_csv(bridges, OUT / "field_bridge_edges.csv")
     write_csv(bridge_summary, OUT / "field_bridge_summary.csv")
     for name, frame in buckets.items():
@@ -328,6 +453,7 @@ def main() -> None:
         "graph_edges_non_self": graph.number_of_edges(),
         "input_edge_rows": int(edges.shape[0]),
         "non_self_canonical_edge_pairs": int(edge_weights.shape[0]),
+        "community_count": int(community_summary.shape[0]),
         "betweenness_sample_size": min(BETWEENNESS_SAMPLE_SIZE, graph.number_of_nodes()),
         "betweenness_seed": BETWEENNESS_SEED,
         "top_pagerank": central[["concept_label", "field_primary", "pagerank", "degree_weighted"]].head(12).to_dict("records"),
@@ -351,6 +477,10 @@ def main() -> None:
                 "",
                 "- `concept_centrality_overall.csv`: weighted degree, in/out degree, PageRank, approximate betweenness, and bridge score.",
                 "- `concept_centrality_by_decade.csv`: within-decade weighted degree and PageRank.",
+                "- `concept_centrality_change.csv`: changes in PageRank and weighted degree across decades.",
+                "- `concept_centrality_trajectories.csv`: decade centrality trajectories for selected important concepts.",
+                "- `community_summary.csv`: Louvain communities in the within-finance concept graph.",
+                "- `community_members_top.csv`: top concepts in each community.",
                 "- `canonical_edge_weights.csv`: non-self canonical edge-pair weights.",
                 "- `field_bridge_edges.csv`: cross-field canonical edge pairs.",
                 "- `field_bridge_summary.csv`: cross-field field-pair summaries.",

@@ -8475,6 +8475,7 @@
       "scope": "within_materialized_finance_workspace",
       "graph_nodes": 13213,
       "graph_edges_non_self": 66740,
+      "community_count": 82,
       "betweenness_sample_size": 500
     },
     "top_central": [
@@ -9685,6 +9686,3161 @@
         }
       ]
     },
+    "centrality_risers": [
+      {
+        "id": "jel:O33:Spillovers",
+        "label": "Spillovers",
+        "field": "micro",
+        "pagerank_2000s": 0.0005144305741060964,
+        "pagerank_2020s": 0.007133468425634466,
+        "pagerank_change": 0.006619037851528369,
+        "degree_change": 289.0
+      },
+      {
+        "id": "wp:37671470",
+        "label": "Policy uncertainty",
+        "field": "macro",
+        "pagerank_2000s": 0.001093386802506417,
+        "pagerank_2020s": 0.007084854654658803,
+        "pagerank_change": 0.0059914678521523854,
+        "degree_change": 1264.0
+      },
+      {
+        "id": "https://openalex.org/keywords/bank-credit",
+        "label": "Bank credit",
+        "field": "finance",
+        "pagerank_2000s": 0.00430954530360324,
+        "pagerank_2020s": 0.009675235514597999,
+        "pagerank_change": 0.005365690210994758,
+        "degree_change": 384.0
+      },
+      {
+        "id": "https://openalex.org/keywords/market-sentiment",
+        "label": "Market sentiment",
+        "field": "finance",
+        "pagerank_2000s": 0.002311433075942026,
+        "pagerank_2020s": 0.007493489670009255,
+        "pagerank_change": 0.005182056594067229,
+        "degree_change": 616.0
+      },
+      {
+        "id": "jel:Q42:Renewable Energy",
+        "label": "Renewable Energy",
+        "field": "environment",
+        "pagerank_2000s": 7.127137206352307e-05,
+        "pagerank_2020s": 0.004276362305901489,
+        "pagerank_change": 0.004205090933837966,
+        "degree_change": 158.0
+      },
+      {
+        "id": "jel:R12:Spillover Effect",
+        "label": "Spillover Effect",
+        "field": "unknown",
+        "pagerank_2000s": 0.00046195600002697123,
+        "pagerank_2020s": 0.0039003556313919395,
+        "pagerank_change": 0.003438399631364968,
+        "degree_change": 175.0
+      },
+      {
+        "id": "jel:G21:Borrowing",
+        "label": "Borrowing",
+        "field": "finance",
+        "pagerank_2000s": 0.0038817973767668007,
+        "pagerank_2020s": 0.0067333524945125765,
+        "pagerank_change": 0.0028515551177457758,
+        "degree_change": 236.0
+      },
+      {
+        "id": "https://openalex.org/keywords/systemic-risk",
+        "label": "Systemic risk",
+        "field": "finance",
+        "pagerank_2000s": 0.0008532592159559493,
+        "pagerank_2020s": 0.0035004514643846405,
+        "pagerank_change": 0.0026471922484286913,
+        "degree_change": 128.0
+      },
+      {
+        "id": "https://openalex.org/keywords/interconnectivity",
+        "label": "Interconnectivity",
+        "field": "unknown",
+        "pagerank_2000s": 7.127137206352307e-05,
+        "pagerank_2020s": 0.002474647467618822,
+        "pagerank_change": 0.002403376095555299,
+        "degree_change": 130.0
+      },
+      {
+        "id": "jel:C92:Herding",
+        "label": "Herding",
+        "field": "finance",
+        "pagerank_2000s": 0.0003671320717526181,
+        "pagerank_2020s": 0.002521287957258463,
+        "pagerank_change": 0.002154155885505845,
+        "degree_change": 70.0
+      },
+      {
+        "id": "https://openalex.org/keywords/stock-market-volatility",
+        "label": "Stock market volatility",
+        "field": "finance",
+        "pagerank_2000s": 0.018679520213993706,
+        "pagerank_2020s": 0.020771059725598007,
+        "pagerank_change": 0.0020915395116043005,
+        "degree_change": 730.0
+      },
+      {
+        "id": "https://openalex.org/keywords/green-innovation",
+        "label": "Green innovation",
+        "field": "environment",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.002065494327932918,
+        "pagerank_change": 0.002065494327932918,
+        "degree_change": 113.0
+      },
+      {
+        "id": "https://openalex.org/keywords/abnormal-return",
+        "label": "Abnormal return",
+        "field": "finance",
+        "pagerank_2000s": 0.0014706388763598658,
+        "pagerank_2020s": 0.0034820736140073892,
+        "pagerank_change": 0.0020114347376475232,
+        "degree_change": 91.0
+      },
+      {
+        "id": "wp:27179299",
+        "label": "Green bond",
+        "field": "finance",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0018603173562601627,
+        "pagerank_change": 0.0018603173562601627,
+        "degree_change": 147.0
+      },
+      {
+        "id": "https://openalex.org/keywords/non-performing-loan",
+        "label": "Non-performing loan",
+        "field": "finance",
+        "pagerank_2000s": 7.884554346004874e-05,
+        "pagerank_2020s": 0.0017628090759536274,
+        "pagerank_change": 0.0016839635324935787,
+        "degree_change": 44.0
+      },
+      {
+        "id": "https://openalex.org/keywords/liquidity-risk",
+        "label": "Liquidity risk",
+        "field": "finance",
+        "pagerank_2000s": 0.010483066244130647,
+        "pagerank_2020s": 0.012046786091246271,
+        "pagerank_change": 0.001563719847115624,
+        "degree_change": 343.0
+      },
+      {
+        "id": "https://openalex.org/keywords/predictive-power",
+        "label": "Predictive power",
+        "field": "methods",
+        "pagerank_2000s": 0.00010206586077897019,
+        "pagerank_2020s": 0.0016302518779387847,
+        "pagerank_change": 0.0015281860171598145,
+        "degree_change": 56.0
+      },
+      {
+        "id": "https://openalex.org/keywords/carbon-dioxide",
+        "label": "Carbon dioxide",
+        "field": "environment",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0014616380921488538,
+        "pagerank_change": 0.0014616380921488538,
+        "degree_change": 66.0
+      },
+      {
+        "id": "https://openalex.org/keywords/oil-price",
+        "label": "Oil price",
+        "field": "macro",
+        "pagerank_2000s": 0.00026891594895450113,
+        "pagerank_2020s": 0.001629762636230154,
+        "pagerank_change": 0.0013608466872756528,
+        "degree_change": 132.0
+      },
+      {
+        "id": "jel:G21:Bank Lending",
+        "label": "Bank Lending",
+        "field": "finance",
+        "pagerank_2000s": 0.0006373683907152901,
+        "pagerank_2020s": 0.0019457404476392567,
+        "pagerank_change": 0.0013083720569239665,
+        "degree_change": 83.0
+      },
+      {
+        "id": "https://openalex.org/keywords/atmospheric-emissions",
+        "label": "Atmospheric emissions",
+        "field": "environment",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0012025301350888575,
+        "pagerank_change": 0.0012025301350888575,
+        "degree_change": 32.0
+      },
+      {
+        "id": "https://openalex.org/keywords/return-on-equity",
+        "label": "Return on equity",
+        "field": "finance",
+        "pagerank_2000s": 0.00012212244922428723,
+        "pagerank_2020s": 0.0013234240787128799,
+        "pagerank_change": 0.0012013016294885926,
+        "degree_change": 32.0
+      },
+      {
+        "id": "https://openalex.org/T13146",
+        "label": "Sustainable Finance and Green Bonds",
+        "field": "finance",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0011951385642909864,
+        "pagerank_change": 0.0011951385642909864,
+        "degree_change": 29.0
+      },
+      {
+        "id": "https://openalex.org/keywords/investment-performance",
+        "label": "Investment performance",
+        "field": "finance",
+        "pagerank_2000s": 7.127137206352307e-05,
+        "pagerank_2020s": 0.0012546918441963726,
+        "pagerank_change": 0.0011834204721328494,
+        "degree_change": 38.0
+      },
+      {
+        "id": "jel:C54:Monetary Policy",
+        "label": "Monetary Policy",
+        "field": "macro",
+        "pagerank_2000s": 0.001389669275274403,
+        "pagerank_2020s": 0.002571763523119842,
+        "pagerank_change": 0.0011820942478454391,
+        "degree_change": 209.0
+      },
+      {
+        "id": "jel:L71:Crude Oil",
+        "label": "Crude Oil",
+        "field": "environment",
+        "pagerank_2000s": 0.0001918301474558835,
+        "pagerank_2020s": 0.0013544617092628801,
+        "pagerank_change": 0.0011626315618069967,
+        "degree_change": 121.0
+      },
+      {
+        "id": "https://openalex.org/keywords/total-factor-productivity",
+        "label": "Total factor productivity",
+        "field": "macro",
+        "pagerank_2000s": 9.600962966219267e-05,
+        "pagerank_2020s": 0.0012472547041156204,
+        "pagerank_change": 0.0011512450744534278,
+        "degree_change": 41.0
+      },
+      {
+        "id": "https://openalex.org/keywords/macroprudential-regulation",
+        "label": "Macroprudential regulation",
+        "field": "finance",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.001147281410408481,
+        "pagerank_change": 0.001147281410408481,
+        "degree_change": 93.0
+      },
+      {
+        "id": "https://openalex.org/keywords/reversing",
+        "label": "Reversing",
+        "field": "unknown",
+        "pagerank_2000s": 0.0005385267720046643,
+        "pagerank_2020s": 0.0016758920461863237,
+        "pagerank_change": 0.0011373652741816594,
+        "degree_change": 42.0
+      },
+      {
+        "id": "jel:C53:Predictability",
+        "label": "Predictability",
+        "field": "unknown",
+        "pagerank_2000s": 0.001319755700117482,
+        "pagerank_2020s": 0.0024450529577185872,
+        "pagerank_change": 0.0011252972576011053,
+        "degree_change": 74.0
+      },
+      {
+        "id": "wp:27303774",
+        "label": "Environmental, social, and governance",
+        "field": "environment",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0011132560263827553,
+        "pagerank_change": 0.0011132560263827553,
+        "degree_change": 80.0
+      },
+      {
+        "id": "jel:Q31:Oil Prices",
+        "label": "Oil Prices",
+        "field": "macro",
+        "pagerank_2000s": 8.137026725889061e-05,
+        "pagerank_2020s": 0.0011613167967377892,
+        "pagerank_change": 0.0010799465294788985,
+        "degree_change": 58.0
+      },
+      {
+        "id": "wp:13211135",
+        "label": "Financial Markets and Portfolio Management",
+        "field": "finance",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0010607167739787333,
+        "pagerank_change": 0.0010607167739787333,
+        "degree_change": 1.0
+      },
+      {
+        "id": "wp:62454472",
+        "label": "Fiscal council",
+        "field": "public",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0010607167739787333,
+        "pagerank_change": 0.0010607167739787333,
+        "degree_change": 1.0
+      },
+      {
+        "id": "jel:L16:Financialization",
+        "label": "Financialization",
+        "field": "finance",
+        "pagerank_2000s": 0.0,
+        "pagerank_2020s": 0.0010590963640147314,
+        "pagerank_change": 0.0010590963640147314,
+        "degree_change": 62.0
+      }
+    ],
+    "centrality_fallers": [
+      {
+        "id": "https://openalex.org/keywords/volatility",
+        "label": "Volatility (finance)",
+        "field": "finance",
+        "pagerank_2000s": 0.02320504122525387,
+        "pagerank_2020s": 0.01584595880544465,
+        "pagerank_change": -0.0073590824198092215,
+        "degree_change": 264.0
+      },
+      {
+        "id": "jel:G12:Trading Volume",
+        "label": "Trading Volume",
+        "field": "finance",
+        "pagerank_2000s": 0.009892790969504229,
+        "pagerank_2020s": 0.005849440660144212,
+        "pagerank_change": -0.004043350309360017,
+        "degree_change": 3.0
+      },
+      {
+        "id": "jel:E31:Inflation",
+        "label": "Inflation",
+        "field": "macro",
+        "pagerank_2000s": 0.012088284679645362,
+        "pagerank_2020s": 0.00863889327307263,
+        "pagerank_change": -0.0034493914065727316,
+        "degree_change": 209.0
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-default-swap",
+        "label": "Credit default swap",
+        "field": "finance",
+        "pagerank_2000s": 0.0024239224350218985,
+        "pagerank_2020s": 0.00027730454750033606,
+        "pagerank_change": -0.0021466178875215623,
+        "degree_change": -6.0
+      },
+      {
+        "id": "jel:D23:Transaction Costs",
+        "label": "Transaction Costs",
+        "field": "micro",
+        "pagerank_2000s": 0.0026032440817038427,
+        "pagerank_2020s": 0.0006330683832595328,
+        "pagerank_change": -0.00197017569844431,
+        "degree_change": -16.0
+      },
+      {
+        "id": "https://openalex.org/keywords/bid–ask-spread",
+        "label": "Bid–ask spread",
+        "field": "finance",
+        "pagerank_2000s": 0.00357088005666384,
+        "pagerank_2020s": 0.0016917340128756676,
+        "pagerank_change": -0.0018791460437881725,
+        "degree_change": -33.0
+      },
+      {
+        "id": "https://openalex.org/keywords/skewness",
+        "label": "Skewness",
+        "field": "unknown",
+        "pagerank_2000s": 0.0025439372404925816,
+        "pagerank_2020s": 0.0009076940807036461,
+        "pagerank_change": -0.0016362431597889355,
+        "degree_change": 55.0
+      },
+      {
+        "id": "https://openalex.org/keywords/dividend-payout-ratio",
+        "label": "Dividend payout ratio",
+        "field": "finance",
+        "pagerank_2000s": 0.0015456188538533276,
+        "pagerank_2020s": 0.0,
+        "pagerank_change": -0.0015456188538533276,
+        "degree_change": -12.0
+      },
+      {
+        "id": "https://openalex.org/keywords/seasonality",
+        "label": "Seasonality",
+        "field": "methods",
+        "pagerank_2000s": 0.0016820797470066017,
+        "pagerank_2020s": 0.0001561431920425395,
+        "pagerank_change": -0.0015259365549640622,
+        "degree_change": 3.0
+      },
+      {
+        "id": "jel:G12:Risk Premium",
+        "label": "Risk Premium",
+        "field": "finance",
+        "pagerank_2000s": 0.003124482586613754,
+        "pagerank_2020s": 0.001635153164613446,
+        "pagerank_change": -0.0014893294220003081,
+        "degree_change": 36.0
+      },
+      {
+        "id": "jel:L14:Discounts",
+        "label": "Discounts",
+        "field": "micro",
+        "pagerank_2000s": 0.0016455890315983392,
+        "pagerank_2020s": 0.00017622256654540016,
+        "pagerank_change": -0.001469366465052939,
+        "degree_change": -23.0
+      },
+      {
+        "id": "wp:17484884",
+        "label": "Market impact cost",
+        "field": "finance",
+        "pagerank_2000s": 0.0019815579801683338,
+        "pagerank_2020s": 0.0005665866942314552,
+        "pagerank_change": -0.0014149712859368785,
+        "degree_change": -8.0
+      },
+      {
+        "id": "https://openalex.org/keywords/expected-return",
+        "label": "Expected return",
+        "field": "finance",
+        "pagerank_2000s": 0.00241381249280194,
+        "pagerank_2020s": 0.0010088000308742333,
+        "pagerank_change": -0.0014050124619277066,
+        "degree_change": -1.0
+      },
+      {
+        "id": "https://openalex.org/keywords/streamflow",
+        "label": "Streamflow",
+        "field": "environment",
+        "pagerank_2000s": 0.0017226016326823874,
+        "pagerank_2020s": 0.00032703105804854604,
+        "pagerank_change": -0.0013955705746338414,
+        "degree_change": -1.0
+      },
+      {
+        "id": "jel:G12:Asset Returns",
+        "label": "Asset Returns",
+        "field": "finance",
+        "pagerank_2000s": 0.0017019623678025551,
+        "pagerank_2020s": 0.0003350215527684792,
+        "pagerank_change": -0.001366940815034076,
+        "degree_change": -9.0
+      },
+      {
+        "id": "https://openalex.org/keywords/mean-reversion",
+        "label": "Mean reversion",
+        "field": "finance",
+        "pagerank_2000s": 0.0014647518549869953,
+        "pagerank_2020s": 0.00013996058148937405,
+        "pagerank_change": -0.0013247912734976213,
+        "degree_change": -28.0
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-spread",
+        "label": "Credit spread (options)",
+        "field": "finance",
+        "pagerank_2000s": 0.004224524000003907,
+        "pagerank_2020s": 0.0029055375760298568,
+        "pagerank_change": -0.0013189864239740502,
+        "degree_change": 86.0
+      },
+      {
+        "id": "https://openalex.org/keywords/regime-shift",
+        "label": "Regime shift",
+        "field": "macro",
+        "pagerank_2000s": 0.0014145037091122569,
+        "pagerank_2020s": 0.00011055253716540524,
+        "pagerank_change": -0.0013039511719468515,
+        "degree_change": -7.0
+      },
+      {
+        "id": "jel:E44:Asset Price",
+        "label": "Asset Price",
+        "field": "finance",
+        "pagerank_2000s": 0.002374696605233263,
+        "pagerank_2020s": 0.0010846741220256586,
+        "pagerank_change": -0.0012900224832076046,
+        "degree_change": 21.0
+      },
+      {
+        "id": "Q518886",
+        "label": "social market economy",
+        "field": "political_economy",
+        "pagerank_2000s": 0.001302624958181825,
+        "pagerank_2020s": 9.231596194026278e-05,
+        "pagerank_change": -0.0012103089962415621,
+        "degree_change": -16.0
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility-clustering",
+        "label": "Volatility clustering",
+        "field": "finance",
+        "pagerank_2000s": 0.0017319291797382144,
+        "pagerank_2020s": 0.0005787693202743519,
+        "pagerank_change": -0.0011531598594638624,
+        "degree_change": -7.0
+      },
+      {
+        "id": "jel:F31:Currency Crisis",
+        "label": "Currency Crisis",
+        "field": "finance",
+        "pagerank_2000s": 0.0013034708068414634,
+        "pagerank_2020s": 0.0001639275034478949,
+        "pagerank_change": -0.0011395433033935685,
+        "degree_change": -13.0
+      },
+      {
+        "id": "jel:G12:January Effect",
+        "label": "January Effect",
+        "field": "finance",
+        "pagerank_2000s": 0.0010993096050913426,
+        "pagerank_2020s": 0.0,
+        "pagerank_change": -0.0010993096050913426,
+        "degree_change": -11.0
+      },
+      {
+        "id": "wp:19342225",
+        "label": "Economic (cyclecar)",
+        "field": "io",
+        "pagerank_2000s": 0.0010829153049773173,
+        "pagerank_2020s": 0.0,
+        "pagerank_change": -0.0010829153049773173,
+        "degree_change": -10.0
+      },
+      {
+        "id": "wp:8023486",
+        "label": "Security community",
+        "field": "political_economy",
+        "pagerank_2000s": 0.001145329752475357,
+        "pagerank_2020s": 7.531056095520685e-05,
+        "pagerank_change": -0.0010700191915201502,
+        "degree_change": -11.0
+      }
+    ],
+    "centrality_trajectories": [
+      {
+        "id": "https://openalex.org/keywords/abnormal-return",
+        "label": "Abnormal return",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0011423929694793973,
+            "degree_weighted": 6.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0009063117851318647,
+            "degree_weighted": 14.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0014706388763598658,
+            "degree_weighted": 27.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0020628133634472343,
+            "degree_weighted": 99.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0034820736140073892,
+            "degree_weighted": 118.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/bank-credit",
+        "label": "Bank credit",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0074864794787783805,
+            "degree_weighted": 13.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0028794067398074585,
+            "degree_weighted": 35.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.00581635118488841,
+            "degree_weighted": 89.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00430954530360324,
+            "degree_weighted": 121.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.009503804075095525,
+            "degree_weighted": 515.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.009675235514597999,
+            "degree_weighted": 505.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/bid–ask-spread",
+        "label": "Bid–ask spread",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0009682827388890788,
+            "degree_weighted": 8.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.006401261565087187,
+            "degree_weighted": 85.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00357088005666384,
+            "degree_weighted": 107.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0024843392749367673,
+            "degree_weighted": 170.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0016917340128756676,
+            "degree_weighted": 74.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/carbon-dioxide",
+        "label": "Carbon dioxide",
+        "field": "environment",
+        "points": [
+          {
+            "decade": 2010,
+            "pagerank": 0.00020999548877383056,
+            "degree_weighted": 6.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0014616380921488538,
+            "degree_weighted": 66.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-default-swap",
+        "label": "Credit default swap",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 2000,
+            "pagerank": 0.0024239224350218985,
+            "degree_weighted": 24.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0017725505582539438,
+            "degree_weighted": 99.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.00027730454750033606,
+            "degree_weighted": 18.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/credit-spread",
+        "label": "Credit spread (options)",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00017644522067038201,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.004224524000003907,
+            "degree_weighted": 69.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.004086860370318354,
+            "degree_weighted": 195.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0029055375760298568,
+            "degree_weighted": 155.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/dividend-payout-ratio",
+        "label": "Dividend payout ratio",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00014304203324224228,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0015456188538533276,
+            "degree_weighted": 12.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 9.590259369213376e-05,
+            "degree_weighted": 11.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/funding-liquidity",
+        "label": "Funding liquidity",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0009473592764126112,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0013990825794016953,
+            "degree_weighted": 5.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0005123297719265898,
+            "degree_weighted": 17.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0014795424821647343,
+            "degree_weighted": 59.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0027223750818220543,
+            "degree_weighted": 281.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0024526455735034655,
+            "degree_weighted": 194.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/green-innovation",
+        "label": "Green innovation",
+        "field": "environment",
+        "points": [
+          {
+            "decade": 2020,
+            "pagerank": 0.002065494327932918,
+            "degree_weighted": 113.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/interconnectivity",
+        "label": "Interconnectivity",
+        "field": "unknown",
+        "points": [
+          {
+            "decade": 2000,
+            "pagerank": 7.127137206352307e-05,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0006132248561240523,
+            "degree_weighted": 24.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.002474647467618822,
+            "degree_weighted": 131.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/liquidity-risk",
+        "label": "Liquidity risk",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.005640198752402421,
+            "degree_weighted": 18.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.005688372366759912,
+            "degree_weighted": 49.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.006315517001523156,
+            "degree_weighted": 169.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.010483066244130647,
+            "degree_weighted": 402.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.013442306996225211,
+            "degree_weighted": 1143.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.012046786091246271,
+            "degree_weighted": 745.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/market-liquidity",
+        "label": "Market liquidity",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0009473592764126112,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.002161117179051217,
+            "degree_weighted": 12.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.002535510799913195,
+            "degree_weighted": 58.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.005844915384031257,
+            "degree_weighted": 191.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.007950111895118768,
+            "degree_weighted": 600.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0059220546101108745,
+            "degree_weighted": 406.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/market-sentiment",
+        "label": "Market sentiment",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.001148693547260568,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0018015567751640496,
+            "degree_weighted": 8.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0014435182881469553,
+            "degree_weighted": 25.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.002311433075942026,
+            "degree_weighted": 97.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0034957164184070445,
+            "degree_weighted": 491.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.007493489670009255,
+            "degree_weighted": 713.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/non-performing-loan",
+        "label": "Non-performing loan",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00012662763390774507,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 7.884554346004874e-05,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0013616095770312615,
+            "degree_weighted": 29.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0017628090759536274,
+            "degree_weighted": 48.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/oil-price",
+        "label": "Oil price",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.001148693547260568,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0002586563887551433,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.00012662763390774507,
+            "degree_weighted": 3.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00026891594895450113,
+            "degree_weighted": 12.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0010191963377714766,
+            "degree_weighted": 66.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.001629762636230154,
+            "degree_weighted": 144.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/predictive-power",
+        "label": "Predictive power",
+        "field": "methods",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0012541606309497382,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0003119752301896543,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00010206586077897019,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0009769229044198384,
+            "degree_weighted": 38.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0016302518779387847,
+            "degree_weighted": 58.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/quantitative-easing",
+        "label": "Quantitative easing",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00027966942731972016,
+            "degree_weighted": 7.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00016315132365280868,
+            "degree_weighted": 12.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0009035363490707758,
+            "degree_weighted": 262.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0007206768293173639,
+            "degree_weighted": 302.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/seasonality",
+        "label": "Seasonality",
+        "field": "methods",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0002586563887551433,
+            "degree_weighted": 7.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0004450115315952971,
+            "degree_weighted": 14.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0016820797470066017,
+            "degree_weighted": 12.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.00017200196495834237,
+            "degree_weighted": 22.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0001561431920425395,
+            "degree_weighted": 15.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/skewness",
+        "label": "Skewness",
+        "field": "unknown",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0017877510918092407,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.00012662763390774507,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0025439372404925816,
+            "degree_weighted": 25.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0007030381559768005,
+            "degree_weighted": 54.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0009076940807036461,
+            "degree_weighted": 80.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/stock-market-volatility",
+        "label": "Stock market volatility",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0025580334431962643,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.010241789477010512,
+            "degree_weighted": 74.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.01727158233806287,
+            "degree_weighted": 239.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.018679520213993706,
+            "degree_weighted": 500.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.020847456312687224,
+            "degree_weighted": 1249.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.020771059725598007,
+            "degree_weighted": 1230.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/systemic-risk",
+        "label": "Systemic risk",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 2000,
+            "pagerank": 0.0008532592159559493,
+            "degree_weighted": 13.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0024947173452200557,
+            "degree_weighted": 124.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0035004514643846405,
+            "degree_weighted": 141.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility",
+        "label": "Volatility (finance)",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.008278903222199232,
+            "degree_weighted": 11.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.010136801372703216,
+            "degree_weighted": 82.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.016993894660015843,
+            "degree_weighted": 248.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.02320504122525387,
+            "degree_weighted": 650.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.01830172480844841,
+            "degree_weighted": 1282.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.01584595880544465,
+            "degree_weighted": 914.0
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/keywords/volatility-risk",
+        "label": "Volatility risk",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0009473592764126112,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0002586563887551433,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0030091098924930125,
+            "degree_weighted": 46.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.003786373933637337,
+            "degree_weighted": 96.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.002818124332807107,
+            "degree_weighted": 233.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.003938881095355035,
+            "degree_weighted": 215.0
+          }
+        ]
+      },
+      {
+        "id": "jel:C54:Monetary Policy",
+        "label": "Monetary Policy",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.005097373994912267,
+            "degree_weighted": 6.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0011984653246930042,
+            "degree_weighted": 15.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.002677693113832932,
+            "degree_weighted": 53.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.001389669275274403,
+            "degree_weighted": 93.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.002630042135311953,
+            "degree_weighted": 294.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.002571763523119842,
+            "degree_weighted": 302.0
+          }
+        ]
+      },
+      {
+        "id": "jel:C92:Herding",
+        "label": "Herding",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00039537491400537094,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0003671320717526181,
+            "degree_weighted": 7.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.002145888880025119,
+            "degree_weighted": 104.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.002521287957258463,
+            "degree_weighted": 77.0
+          }
+        ]
+      },
+      {
+        "id": "jel:D23:Transaction Costs",
+        "label": "Transaction Costs",
+        "field": "micro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0011084266930909766,
+            "degree_weighted": 3.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0015171999690107483,
+            "degree_weighted": 7.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0007991926557287535,
+            "degree_weighted": 27.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0026032440817038427,
+            "degree_weighted": 63.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0015061658957955604,
+            "degree_weighted": 105.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0006330683832595328,
+            "degree_weighted": 47.0
+          }
+        ]
+      },
+      {
+        "id": "jel:D80:Uncertainty.",
+        "label": "Uncertainty",
+        "field": "micro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0009473592764126112,
+            "degree_weighted": 3.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0010812924082651864,
+            "degree_weighted": 14.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.00048164404219757994,
+            "degree_weighted": 13.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0011684954004286341,
+            "degree_weighted": 51.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0016827420690107811,
+            "degree_weighted": 199.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0018334926641950385,
+            "degree_weighted": 261.0
+          }
+        ]
+      },
+      {
+        "id": "jel:E31:Inflation",
+        "label": "Inflation",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.018262290975611568,
+            "degree_weighted": 44.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.026003612866513447,
+            "degree_weighted": 242.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.016895530730437633,
+            "degree_weighted": 245.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.012088284679645362,
+            "degree_weighted": 367.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.008093231197669817,
+            "degree_weighted": 584.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.00863889327307263,
+            "degree_weighted": 576.0
+          }
+        ]
+      },
+      {
+        "id": "jel:E32:Business Cycle",
+        "label": "Business Cycle",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0014440246182844739,
+            "degree_weighted": 5.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.001864851544585099,
+            "degree_weighted": 25.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.004211759845361856,
+            "degree_weighted": 51.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0028757687271276353,
+            "degree_weighted": 82.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.004342181517218887,
+            "degree_weighted": 264.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0026964353041049106,
+            "degree_weighted": 113.0
+          }
+        ]
+      },
+      {
+        "id": "jel:E32:Recession",
+        "label": "Recession",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0066744697270341245,
+            "degree_weighted": 8.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0015550826929893772,
+            "degree_weighted": 15.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.002465350251139157,
+            "degree_weighted": 35.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0038323027858006955,
+            "degree_weighted": 93.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0032155724852809234,
+            "degree_weighted": 233.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.003442691648795625,
+            "degree_weighted": 215.0
+          }
+        ]
+      },
+      {
+        "id": "jel:F62:Economic Growth",
+        "label": "Economic Growth",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0009473592764126112,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.005901488023858946,
+            "degree_weighted": 26.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0029003317813464974,
+            "degree_weighted": 33.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0033603472881285614,
+            "degree_weighted": 64.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.004430659511659754,
+            "degree_weighted": 151.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.00433683069547284,
+            "degree_weighted": 177.0
+          }
+        ]
+      },
+      {
+        "id": "jel:G12:Risk Premium",
+        "label": "Risk Premium",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0003319585667830819,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.001136642753854873,
+            "degree_weighted": 22.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.003124482586613754,
+            "degree_weighted": 38.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.001686262922270455,
+            "degree_weighted": 92.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.001635153164613446,
+            "degree_weighted": 74.0
+          }
+        ]
+      },
+      {
+        "id": "jel:G12:Stock Returns",
+        "label": "Stock Returns",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.002869839183539617,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0019283059644535393,
+            "degree_weighted": 8.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.008704674946151137,
+            "degree_weighted": 82.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.007795834067589624,
+            "degree_weighted": 157.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.008930810420595722,
+            "degree_weighted": 418.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.007481337844210498,
+            "degree_weighted": 374.0
+          }
+        ]
+      },
+      {
+        "id": "jel:G12:Trading Volume",
+        "label": "Trading Volume",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.015283275354589647,
+            "degree_weighted": 21.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.012210533781559292,
+            "degree_weighted": 67.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.009875599700049352,
+            "degree_weighted": 192.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.009892790969504229,
+            "degree_weighted": 351.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.006943721871280229,
+            "degree_weighted": 504.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.005849440660144212,
+            "degree_weighted": 354.0
+          }
+        ]
+      },
+      {
+        "id": "jel:G21:Bank Lending",
+        "label": "Bank Lending",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.007582301348305606,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0006984694569227746,
+            "degree_weighted": 3.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0009811691176295867,
+            "degree_weighted": 8.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0006373683907152901,
+            "degree_weighted": 16.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0021285328652424235,
+            "degree_weighted": 122.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0019457404476392567,
+            "degree_weighted": 99.0
+          }
+        ]
+      },
+      {
+        "id": "jel:G21:Borrowing",
+        "label": "Borrowing",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.005576856263763502,
+            "degree_weighted": 9.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.00883636510682769,
+            "degree_weighted": 65.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0035174817365103655,
+            "degree_weighted": 74.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0038817973767668007,
+            "degree_weighted": 104.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.005975232925100316,
+            "degree_weighted": 355.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0067333524945125765,
+            "degree_weighted": 340.0
+          }
+        ]
+      },
+      {
+        "id": "jel:I:Welfare",
+        "label": "Welfare",
+        "field": "public",
+        "points": [
+          {
+            "decade": 1980,
+            "pagerank": 0.0011666182549884857,
+            "degree_weighted": 6.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.0013158592360520622,
+            "degree_weighted": 16.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0025105663538780025,
+            "degree_weighted": 44.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.003007288503166359,
+            "degree_weighted": 108.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0024258123794855774,
+            "degree_weighted": 95.0
+          }
+        ]
+      },
+      {
+        "id": "jel:L14:Discounts",
+        "label": "Discounts",
+        "field": "micro",
+        "points": [
+          {
+            "decade": 2000,
+            "pagerank": 0.0016455890315983392,
+            "degree_weighted": 32.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0002713287516477898,
+            "degree_weighted": 18.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.00017622256654540016,
+            "degree_weighted": 9.0
+          }
+        ]
+      },
+      {
+        "id": "jel:O33:Spillovers",
+        "label": "Spillovers",
+        "field": "micro",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.00019319392862557298,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0005144305741060964,
+            "degree_weighted": 19.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0025295489304143766,
+            "degree_weighted": 141.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.007133468425634466,
+            "degree_weighted": 308.0
+          }
+        ]
+      },
+      {
+        "id": "jel:Q42:Renewable Energy",
+        "label": "Renewable Energy",
+        "field": "environment",
+        "points": [
+          {
+            "decade": 2000,
+            "pagerank": 7.127137206352307e-05,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.00013496805303913457,
+            "degree_weighted": 11.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.004276362305901489,
+            "degree_weighted": 160.0
+          }
+        ]
+      },
+      {
+        "id": "jel:R12:Spillover Effect",
+        "label": "Spillover Effect",
+        "field": "unknown",
+        "points": [
+          {
+            "decade": 1990,
+            "pagerank": 0.0002414993171336906,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.00046195600002697123,
+            "degree_weighted": 11.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0006833258717746728,
+            "degree_weighted": 43.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0039003556313919395,
+            "degree_weighted": 186.0
+          }
+        ]
+      },
+      {
+        "id": "wp:11871466",
+        "label": "Net interest spread",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0029003629143081445,
+            "degree_weighted": 4.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.003082651420286309,
+            "degree_weighted": 25.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.005461098432882584,
+            "degree_weighted": 53.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.002297295851780184,
+            "degree_weighted": 72.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0018502972609965498,
+            "degree_weighted": 133.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0013285827063315753,
+            "degree_weighted": 77.0
+          }
+        ]
+      },
+      {
+        "id": "wp:17484884",
+        "label": "Market impact cost",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0013500278181085247,
+            "degree_weighted": 1.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.00013859343424378105,
+            "degree_weighted": 2.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.0019815579801683338,
+            "degree_weighted": 36.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.00031772942569201115,
+            "degree_weighted": 24.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.0005665866942314552,
+            "degree_weighted": 28.0
+          }
+        ]
+      },
+      {
+        "id": "wp:27179299",
+        "label": "Green bond",
+        "field": "finance",
+        "points": [
+          {
+            "decade": 2020,
+            "pagerank": 0.0018603173562601627,
+            "degree_weighted": 147.0
+          }
+        ]
+      },
+      {
+        "id": "wp:37671470",
+        "label": "Policy uncertainty",
+        "field": "macro",
+        "points": [
+          {
+            "decade": 1970,
+            "pagerank": 0.0028400238437241115,
+            "degree_weighted": 3.0
+          },
+          {
+            "decade": 1980,
+            "pagerank": 0.0018499427522022684,
+            "degree_weighted": 42.0
+          },
+          {
+            "decade": 1990,
+            "pagerank": 0.001892543023466537,
+            "degree_weighted": 55.0
+          },
+          {
+            "decade": 2000,
+            "pagerank": 0.001093386802506417,
+            "degree_weighted": 106.0
+          },
+          {
+            "decade": 2010,
+            "pagerank": 0.0026705474529187946,
+            "degree_weighted": 583.0
+          },
+          {
+            "decade": 2020,
+            "pagerank": 0.007084854654658803,
+            "degree_weighted": 1370.0
+          }
+        ]
+      }
+    ],
+    "communities": [
+      {
+        "community_id": 1,
+        "label": "Stock market volatility / Volatility (finance) / Volatility risk",
+        "node_count": 2583,
+        "internal_edge_weight": 9004.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Stock market volatility",
+            "field": "finance",
+            "pagerank": 0.021761539252387115,
+            "paper_count": 2021
+          },
+          {
+            "label": "Volatility (finance)",
+            "field": "finance",
+            "pagerank": 0.020212851661314934,
+            "paper_count": 2064
+          },
+          {
+            "label": "Volatility risk",
+            "field": "finance",
+            "pagerank": 0.0036586808479705238,
+            "paper_count": 345
+          },
+          {
+            "label": "Spillovers",
+            "field": "micro",
+            "pagerank": 0.003645859095716233,
+            "paper_count": 194
+          },
+          {
+            "label": "Forward volatility",
+            "field": "finance",
+            "pagerank": 0.0024917276286970714,
+            "paper_count": 301
+          },
+          {
+            "label": "Investor behavior",
+            "field": "finance",
+            "pagerank": 0.0021706943587161353,
+            "paper_count": 254
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 635
+          },
+          {
+            "field": "finance",
+            "count": 460
+          },
+          {
+            "field": "methods",
+            "count": 317
+          },
+          {
+            "field": "macro",
+            "count": 229
+          },
+          {
+            "field": "environment",
+            "count": 220
+          }
+        ]
+      },
+      {
+        "community_id": 2,
+        "label": "Inflation / Economic Growth / Recession",
+        "node_count": 2114,
+        "internal_edge_weight": 8775.0,
+        "top_field": "macro",
+        "top_concepts": [
+          {
+            "label": "Inflation",
+            "field": "macro",
+            "pagerank": 0.01191933020972625,
+            "paper_count": 1343
+          },
+          {
+            "label": "Economic Growth",
+            "field": "macro",
+            "pagerank": 0.004539218634217784,
+            "paper_count": 214
+          },
+          {
+            "label": "Recession",
+            "field": "macro",
+            "pagerank": 0.003456462812127406,
+            "paper_count": 476
+          },
+          {
+            "label": "Welfare",
+            "field": "public",
+            "pagerank": 0.002643626289224252,
+            "paper_count": 162
+          },
+          {
+            "label": "Output",
+            "field": "unknown",
+            "pagerank": 0.0024124841310742325,
+            "paper_count": 232
+          },
+          {
+            "label": "Monetary Policy",
+            "field": "macro",
+            "pagerank": 0.0022843037665929784,
+            "paper_count": 459
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "macro",
+            "count": 519
+          },
+          {
+            "field": "finance",
+            "count": 359
+          },
+          {
+            "field": "unknown",
+            "count": 285
+          },
+          {
+            "field": "public",
+            "count": 189
+          },
+          {
+            "field": "micro",
+            "count": 147
+          }
+        ]
+      },
+      {
+        "community_id": 3,
+        "label": "Liquidity risk / Market liquidity / Bid–ask spread",
+        "node_count": 1908,
+        "internal_edge_weight": 6894.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Liquidity risk",
+            "field": "finance",
+            "pagerank": 0.01248607083841475,
+            "paper_count": 1644
+          },
+          {
+            "label": "Market liquidity",
+            "field": "finance",
+            "pagerank": 0.006759882090083689,
+            "paper_count": 805
+          },
+          {
+            "label": "Bid–ask spread",
+            "field": "finance",
+            "pagerank": 0.0028564713700957776,
+            "paper_count": 270
+          },
+          {
+            "label": "Systemic risk",
+            "field": "finance",
+            "pagerank": 0.0025293033943718413,
+            "paper_count": 121
+          },
+          {
+            "label": "Excess return",
+            "field": "finance",
+            "pagerank": 0.0022670529001338636,
+            "paper_count": 135
+          },
+          {
+            "label": "Funding liquidity",
+            "field": "finance",
+            "pagerank": 0.0022483786327968667,
+            "paper_count": 382
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 644
+          },
+          {
+            "field": "unknown",
+            "count": 423
+          },
+          {
+            "field": "micro",
+            "count": 205
+          },
+          {
+            "field": "io",
+            "count": 106
+          },
+          {
+            "field": "public",
+            "count": 94
+          }
+        ]
+      },
+      {
+        "community_id": 4,
+        "label": "Policy uncertainty / Renewable Energy / Uncertainty",
+        "node_count": 1520,
+        "internal_edge_weight": 3126.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Policy uncertainty",
+            "field": "macro",
+            "pagerank": 0.004589063423627441,
+            "paper_count": 1233
+          },
+          {
+            "label": "Renewable Energy",
+            "field": "environment",
+            "pagerank": 0.001656364655545114,
+            "paper_count": 63
+          },
+          {
+            "label": "Uncertainty",
+            "field": "micro",
+            "pagerank": 0.0015790962480384755,
+            "paper_count": 315
+          },
+          {
+            "label": "Investment Decisions",
+            "field": "finance",
+            "pagerank": 0.0012958023415544431,
+            "paper_count": 84
+          },
+          {
+            "label": "Leverage",
+            "field": "finance",
+            "pagerank": 0.0009611149511759471,
+            "paper_count": 129
+          },
+          {
+            "label": "Firms",
+            "field": "micro",
+            "pagerank": 0.0008373881083032907,
+            "paper_count": 163
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 258
+          },
+          {
+            "field": "environment",
+            "count": 253
+          },
+          {
+            "field": "unknown",
+            "count": 237
+          },
+          {
+            "field": "io",
+            "count": 132
+          },
+          {
+            "field": "public",
+            "count": 124
+          }
+        ]
+      },
+      {
+        "community_id": 5,
+        "label": "Bank credit / Credit spread (options) / Bank Lending",
+        "node_count": 1255,
+        "internal_edge_weight": 3065.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Bank credit",
+            "field": "finance",
+            "pagerank": 0.00854901812974391,
+            "paper_count": 699
+          },
+          {
+            "label": "Credit spread (options)",
+            "field": "finance",
+            "pagerank": 0.003359075041501178,
+            "paper_count": 252
+          },
+          {
+            "label": "Bank Lending",
+            "field": "finance",
+            "pagerank": 0.0017601691394522933,
+            "paper_count": 142
+          },
+          {
+            "label": "Credit risk",
+            "field": "finance",
+            "pagerank": 0.0017527284917903975,
+            "paper_count": 151
+          },
+          {
+            "label": "Diversification",
+            "field": "finance",
+            "pagerank": 0.0014288115002580267,
+            "paper_count": 147
+          },
+          {
+            "label": "Sovereign credit risk",
+            "field": "finance",
+            "pagerank": 0.0012189185217862815,
+            "paper_count": 66
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 434
+          },
+          {
+            "field": "unknown",
+            "count": 188
+          },
+          {
+            "field": "public",
+            "count": 104
+          },
+          {
+            "field": "micro",
+            "count": 80
+          },
+          {
+            "field": "macro",
+            "count": 78
+          }
+        ]
+      },
+      {
+        "community_id": 6,
+        "label": "Stock Returns / Market sentiment / Herding",
+        "node_count": 808,
+        "internal_edge_weight": 1588.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Stock Returns",
+            "field": "finance",
+            "pagerank": 0.008479019210682807,
+            "paper_count": 576
+          },
+          {
+            "label": "Market sentiment",
+            "field": "finance",
+            "pagerank": 0.004758944218912285,
+            "paper_count": 769
+          },
+          {
+            "label": "Herding",
+            "field": "finance",
+            "pagerank": 0.0016275179933606678,
+            "paper_count": 60
+          },
+          {
+            "label": "Idiosyncratic risk",
+            "field": "finance",
+            "pagerank": 0.0013751714868459714,
+            "paper_count": 142
+          },
+          {
+            "label": "Forecasting Returns",
+            "field": "finance",
+            "pagerank": 0.0007722470746720393,
+            "paper_count": 80
+          },
+          {
+            "label": "Momentum (technical analysis)",
+            "field": "finance",
+            "pagerank": 0.000713457676934238,
+            "paper_count": 51
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 196
+          },
+          {
+            "field": "finance",
+            "count": 189
+          },
+          {
+            "field": "micro",
+            "count": 72
+          },
+          {
+            "field": "methods",
+            "count": 57
+          },
+          {
+            "field": "io",
+            "count": 49
+          }
+        ]
+      },
+      {
+        "community_id": 7,
+        "label": "Trading Volume / Asset Price / Price fluctuation",
+        "node_count": 941,
+        "internal_edge_weight": 1556.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Trading Volume",
+            "field": "finance",
+            "pagerank": 0.00866594104312308,
+            "paper_count": 975
+          },
+          {
+            "label": "Asset Price",
+            "field": "finance",
+            "pagerank": 0.0017015676656780036,
+            "paper_count": 139
+          },
+          {
+            "label": "Price fluctuation",
+            "field": "macro",
+            "pagerank": 0.001202297909342132,
+            "paper_count": 117
+          },
+          {
+            "label": "Volatility clustering",
+            "field": "finance",
+            "pagerank": 0.0011348080546277242,
+            "paper_count": 117
+          },
+          {
+            "label": "Multifractal system",
+            "field": "unknown",
+            "pagerank": 0.001082560973242974,
+            "paper_count": 43
+          },
+          {
+            "label": "Pairs trade",
+            "field": "finance",
+            "pagerank": 0.0010421339524094362,
+            "paper_count": 121
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 277
+          },
+          {
+            "field": "finance",
+            "count": 150
+          },
+          {
+            "field": "methods",
+            "count": 112
+          },
+          {
+            "field": "micro",
+            "count": 93
+          },
+          {
+            "field": "macro",
+            "count": 46
+          }
+        ]
+      },
+      {
+        "community_id": 8,
+        "label": "Borrowing / Fit model / Equilibrium",
+        "node_count": 973,
+        "internal_edge_weight": 1373.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Borrowing",
+            "field": "finance",
+            "pagerank": 0.006278952922146281,
+            "paper_count": 608
+          },
+          {
+            "label": "Fit model",
+            "field": "methods",
+            "pagerank": 0.0008154475867786961,
+            "paper_count": 203
+          },
+          {
+            "label": "Equilibrium",
+            "field": "micro",
+            "pagerank": 0.0006802693059525483,
+            "paper_count": 55
+          },
+          {
+            "label": "Alternative asset",
+            "field": "finance",
+            "pagerank": 0.0005544252336732397,
+            "paper_count": 52
+          },
+          {
+            "label": "default logic",
+            "field": "unknown",
+            "pagerank": 0.0005313801087890917,
+            "paper_count": 37
+          },
+          {
+            "label": "Leverage ratio",
+            "field": "finance",
+            "pagerank": 0.00041913771803360613,
+            "paper_count": 39
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 204
+          },
+          {
+            "field": "unknown",
+            "count": 191
+          },
+          {
+            "field": "micro",
+            "count": 95
+          },
+          {
+            "field": "public",
+            "count": 81
+          },
+          {
+            "field": "methods",
+            "count": 61
+          }
+        ]
+      },
+      {
+        "community_id": 9,
+        "label": "Business Cycle / Equity Premium / Emerging markets",
+        "node_count": 556,
+        "internal_edge_weight": 746.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Business Cycle",
+            "field": "macro",
+            "pagerank": 0.003371517804205603,
+            "paper_count": 390
+          },
+          {
+            "label": "Equity Premium",
+            "field": "finance",
+            "pagerank": 0.0014957149342712708,
+            "paper_count": 85
+          },
+          {
+            "label": "Emerging markets",
+            "field": "development",
+            "pagerank": 0.0012208809890534422,
+            "paper_count": 208
+          },
+          {
+            "label": "Countercyclical",
+            "field": "macro",
+            "pagerank": 0.0008078645818568076,
+            "paper_count": 100
+          },
+          {
+            "label": "Risk Sharing",
+            "field": "public",
+            "pagerank": 0.0007582327760332774,
+            "paper_count": 59
+          },
+          {
+            "label": "Capital flows",
+            "field": "finance",
+            "pagerank": 0.0006380620820916331,
+            "paper_count": 69
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 126
+          },
+          {
+            "field": "finance",
+            "count": 89
+          },
+          {
+            "field": "macro",
+            "count": 63
+          },
+          {
+            "field": "labor",
+            "count": 45
+          },
+          {
+            "field": "micro",
+            "count": 40
+          }
+        ]
+      },
+      {
+        "community_id": 10,
+        "label": "Price stability / Regime / Negative pricing",
+        "node_count": 131,
+        "internal_edge_weight": 161.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Price stability",
+            "field": "macro",
+            "pagerank": 0.0005870699380504948,
+            "paper_count": 49
+          },
+          {
+            "label": "Regime",
+            "field": "political_economy",
+            "pagerank": 0.0004364231049888897,
+            "paper_count": 41
+          },
+          {
+            "label": "Negative pricing",
+            "field": "micro",
+            "pagerank": 0.0003350770340753288,
+            "paper_count": 23
+          },
+          {
+            "label": "Old measures",
+            "field": "history",
+            "pagerank": 0.00019155844636409189,
+            "paper_count": 22
+          },
+          {
+            "label": "LIBOR",
+            "field": "finance",
+            "pagerank": 0.00018188892182627227,
+            "paper_count": 10
+          },
+          {
+            "label": "IPO",
+            "field": "finance",
+            "pagerank": 0.0001645259988661311,
+            "paper_count": 10
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 36
+          },
+          {
+            "field": "finance",
+            "count": 24
+          },
+          {
+            "field": "macro",
+            "count": 15
+          },
+          {
+            "field": "methods",
+            "count": 13
+          },
+          {
+            "field": "io",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "community_id": 11,
+        "label": "Behavioral Finance / Asset price bubbles / Regression Variables",
+        "node_count": 54,
+        "internal_edge_weight": 54.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Behavioral Finance",
+            "field": "finance",
+            "pagerank": 0.00014676041635606015,
+            "paper_count": 14
+          },
+          {
+            "label": "Asset price bubbles",
+            "field": "finance",
+            "pagerank": 0.00012630036244287495,
+            "paper_count": 13
+          },
+          {
+            "label": "Regression Variables",
+            "field": "methods",
+            "pagerank": 7.59287064621449e-05,
+            "paper_count": 5
+          },
+          {
+            "label": "Applicable margin reset",
+            "field": "finance",
+            "pagerank": 5.9694670187021345e-05,
+            "paper_count": 5
+          },
+          {
+            "label": "Mortality",
+            "field": "health",
+            "pagerank": 5.620327507731114e-05,
+            "paper_count": 1
+          },
+          {
+            "label": "New Firm Growth",
+            "field": "io",
+            "pagerank": 4.686883822173158e-05,
+            "paper_count": 4
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 17
+          },
+          {
+            "field": "methods",
+            "count": 8
+          },
+          {
+            "field": "finance",
+            "count": 8
+          },
+          {
+            "field": "health",
+            "count": 6
+          },
+          {
+            "field": "micro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "community_id": 12,
+        "label": "Financial bubble / Untradable assets / Stepwise regression",
+        "node_count": 41,
+        "internal_edge_weight": 48.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Financial bubble",
+            "field": "finance",
+            "pagerank": 0.00018722404940425157,
+            "paper_count": 15
+          },
+          {
+            "label": "Untradable assets",
+            "field": "finance",
+            "pagerank": 9.070499096776213e-05,
+            "paper_count": 7
+          },
+          {
+            "label": "Stepwise regression",
+            "field": "methods",
+            "pagerank": 8.914113605893137e-05,
+            "paper_count": 2
+          },
+          {
+            "label": "Efficiency factor",
+            "field": "micro",
+            "pagerank": 8.608679416952982e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "Lease-option",
+            "field": "urban",
+            "pagerank": 6.0932204056309615e-05,
+            "paper_count": 5
+          },
+          {
+            "label": "National savings",
+            "field": "macro",
+            "pagerank": 5.666212724535799e-05,
+            "paper_count": 4
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 10
+          },
+          {
+            "field": "finance",
+            "count": 7
+          },
+          {
+            "field": "micro",
+            "count": 6
+          },
+          {
+            "field": "io",
+            "count": 5
+          },
+          {
+            "field": "methods",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "community_id": 13,
+        "label": "Additive utility / Production / Employment contract",
+        "node_count": 44,
+        "internal_edge_weight": 47.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Additive utility",
+            "field": "micro",
+            "pagerank": 0.0002973836200040116,
+            "paper_count": 2
+          },
+          {
+            "label": "Production",
+            "field": "macro",
+            "pagerank": 0.0002441543948732179,
+            "paper_count": 9
+          },
+          {
+            "label": "Employment contract",
+            "field": "labor",
+            "pagerank": 0.00010657796731876303,
+            "paper_count": 3
+          },
+          {
+            "label": "Full Employment",
+            "field": "macro",
+            "pagerank": 0.00010454445567487492,
+            "paper_count": 3
+          },
+          {
+            "label": "Fund platform",
+            "field": "finance",
+            "pagerank": 8.614858591222508e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "Consumers",
+            "field": "micro",
+            "pagerank": 7.174145295617039e-05,
+            "paper_count": 13
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 10
+          },
+          {
+            "field": "finance",
+            "count": 9
+          },
+          {
+            "field": "labor",
+            "count": 6
+          },
+          {
+            "field": "macro",
+            "count": 5
+          },
+          {
+            "field": "micro",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "community_id": 14,
+        "label": "social market economy / Regional Employment / Thumb index",
+        "node_count": 35,
+        "internal_edge_weight": 35.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "social market economy",
+            "field": "political_economy",
+            "pagerank": 0.00028878288039641496,
+            "paper_count": 2
+          },
+          {
+            "label": "Regional Employment",
+            "field": "labor",
+            "pagerank": 0.00011537289546489519,
+            "paper_count": 3
+          },
+          {
+            "label": "Thumb index",
+            "field": "unknown",
+            "pagerank": 9.244810205278672e-05,
+            "paper_count": 7
+          },
+          {
+            "label": "Prices paid index",
+            "field": "environment",
+            "pagerank": 6.873015404362917e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "Political crisis",
+            "field": "political_economy",
+            "pagerank": 5.989077281625927e-05,
+            "paper_count": 9
+          },
+          {
+            "label": "Recovery testing",
+            "field": "finance",
+            "pagerank": 4.8447109604036004e-05,
+            "paper_count": 2
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 8
+          },
+          {
+            "field": "political_economy",
+            "count": 6
+          },
+          {
+            "field": "methods",
+            "count": 3
+          },
+          {
+            "field": "finance",
+            "count": 3
+          },
+          {
+            "field": "urban",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "community_id": 15,
+        "label": "Security interest / Global trade of secondhand clothing / Windfall gain",
+        "node_count": 15,
+        "internal_edge_weight": 14.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "Security interest",
+            "field": "finance",
+            "pagerank": 7.76595034578609e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "Global trade of secondhand clothing",
+            "field": "trade",
+            "pagerank": 3.0592653620200466e-05,
+            "paper_count": 1
+          },
+          {
+            "label": "Windfall gain",
+            "field": "finance",
+            "pagerank": 3.0592653620200466e-05,
+            "paper_count": 1
+          },
+          {
+            "label": "National Debt",
+            "field": "macro",
+            "pagerank": 2.5370405274092967e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "Non-possession",
+            "field": "unknown",
+            "pagerank": 1.8589637747659954e-05,
+            "paper_count": 1
+          },
+          {
+            "label": "Stewardship",
+            "field": "unknown",
+            "pagerank": 1.8589637747659954e-05,
+            "paper_count": 1
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 7
+          },
+          {
+            "field": "finance",
+            "count": 3
+          },
+          {
+            "field": "macro",
+            "count": 1
+          },
+          {
+            "field": "political_economy",
+            "count": 1
+          },
+          {
+            "field": "micro",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "community_id": 16,
+        "label": "IRS penalties / Collaborative network / Behavioral Economics",
+        "node_count": 14,
+        "internal_edge_weight": 14.0,
+        "top_field": "unknown",
+        "top_concepts": [
+          {
+            "label": "IRS penalties",
+            "field": "public",
+            "pagerank": 0.00020682092421543758,
+            "paper_count": 4
+          },
+          {
+            "label": "Collaborative network",
+            "field": "unknown",
+            "pagerank": 5.342182147068721e-05,
+            "paper_count": 4
+          },
+          {
+            "label": "Behavioral Economics",
+            "field": "micro",
+            "pagerank": 4.154865722409461e-05,
+            "paper_count": 2
+          },
+          {
+            "label": "Publication",
+            "field": "unknown",
+            "pagerank": 3.8003770756448853e-05,
+            "paper_count": 1
+          },
+          {
+            "label": "Novelty",
+            "field": "unknown",
+            "pagerank": 1.7520575298328387e-05,
+            "paper_count": 2
+          },
+          {
+            "label": "Article structure",
+            "field": "labor",
+            "pagerank": 1.7520575298328387e-05,
+            "paper_count": 2
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "unknown",
+            "count": 10
+          },
+          {
+            "field": "finance",
+            "count": 1
+          },
+          {
+            "field": "public",
+            "count": 1
+          },
+          {
+            "field": "micro",
+            "count": 1
+          },
+          {
+            "field": "labor",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "community_id": 17,
+        "label": "Feed forward / Dynamism / Trade Forecast",
+        "node_count": 14,
+        "internal_edge_weight": 13.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Feed forward",
+            "field": "unknown",
+            "pagerank": 4.584455494768315e-05,
+            "paper_count": 7
+          },
+          {
+            "label": "Dynamism",
+            "field": "unknown",
+            "pagerank": 4.2809655580311936e-05,
+            "paper_count": 5
+          },
+          {
+            "label": "Trade Forecast",
+            "field": "trade",
+            "pagerank": 4.1013926142196965e-05,
+            "paper_count": 6
+          },
+          {
+            "label": "Exotic option",
+            "field": "finance",
+            "pagerank": 3.812654010364767e-05,
+            "paper_count": 2
+          },
+          {
+            "label": "Total shareholder return",
+            "field": "finance",
+            "pagerank": 3.4729382021454474e-05,
+            "paper_count": 3
+          },
+          {
+            "label": "CDP Equity",
+            "field": "finance",
+            "pagerank": 3.403196829739391e-05,
+            "paper_count": 3
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 6
+          },
+          {
+            "field": "unknown",
+            "count": 4
+          },
+          {
+            "field": "methods",
+            "count": 2
+          },
+          {
+            "field": "macro",
+            "count": 1
+          },
+          {
+            "field": "trade",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "community_id": 18,
+        "label": "Sovereign Debt Forecast / Quarterly financial report / T Bill",
+        "node_count": 14,
+        "internal_edge_weight": 13.0,
+        "top_field": "finance",
+        "top_concepts": [
+          {
+            "label": "Sovereign Debt Forecast",
+            "field": "finance",
+            "pagerank": 0.0001356697974450222,
+            "paper_count": 3
+          },
+          {
+            "label": "Quarterly financial report",
+            "field": "finance",
+            "pagerank": 0.00012154857966780372,
+            "paper_count": 16
+          },
+          {
+            "label": "T Bill",
+            "field": "finance",
+            "pagerank": 0.00010994527973967852,
+            "paper_count": 7
+          },
+          {
+            "label": "Yield to maturity",
+            "field": "finance",
+            "pagerank": 9.473458212052682e-05,
+            "paper_count": 18
+          },
+          {
+            "label": "List of exports of India",
+            "field": "trade",
+            "pagerank": 6.923985487057528e-05,
+            "paper_count": 2
+          },
+          {
+            "label": "Variables",
+            "field": "methods",
+            "pagerank": 5.4282983236735336e-05,
+            "paper_count": 2
+          }
+        ],
+        "top_fields": [
+          {
+            "field": "finance",
+            "count": 7
+          },
+          {
+            "field": "methods",
+            "count": 5
+          },
+          {
+            "field": "trade",
+            "count": 1
+          },
+          {
+            "field": "unknown",
+            "count": 1
+          }
+        ]
+      }
+    ],
     "theme_buckets": {
       "rising": [
         {

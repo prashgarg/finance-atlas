@@ -319,10 +319,40 @@ function renderChangeDiagnostics() {
 
 const networkCopy = {
   central: "PageRank highlights concepts connected to other important concepts within the finance graph.",
+  centrality_change: "Concepts whose within-finance PageRank rose most from the 2000s to the 2020s.",
+  centrality_fall: "Concepts whose within-finance PageRank fell most from the 2000s to the 2020s.",
+  trajectories: "Selected concepts tracked by within-finance PageRank across decades.",
+  communities: "Louvain communities group concepts that repeatedly connect to one another inside the finance graph.",
   bridges: "Bridge concepts have high approximate betweenness: they sit on paths between otherwise separate parts of the map.",
   field_bridges: "Cross-field links show where finance concepts connect to macro, public, methods, environment, and other fields.",
   decade: "This view shows which concepts are central within a selected decade, not just overall.",
 };
+
+function renderSparkline(points) {
+  const width = 180;
+  const height = 42;
+  const padding = { top: 5, right: 5, bottom: 6, left: 5 };
+  const sorted = [...points].sort((a, b) => a.decade - b.decade);
+  const maxValue = Math.max(...sorted.map((point) => point.pagerank), 0.0001);
+  const minDecade = Math.min(...sorted.map((point) => point.decade));
+  const maxDecade = Math.max(...sorted.map((point) => point.decade));
+  const x = (decade) =>
+    padding.left +
+    ((decade - minDecade) / Math.max(1, maxDecade - minDecade)) * (width - padding.left - padding.right);
+  const y = (value) => padding.top + (1 - value / maxValue) * (height - padding.top - padding.bottom);
+  const d = sorted
+    .map((point, index) => `${index === 0 ? "M" : "L"}${x(point.decade).toFixed(1)},${y(point.pagerank).toFixed(1)}`)
+    .join(" ");
+  const circles = sorted
+    .map((point) => `<circle cx="${x(point.decade).toFixed(1)}" cy="${y(point.pagerank).toFixed(1)}" r="2.1"></circle>`)
+    .join("");
+  return `
+    <svg class="sparkline" viewBox="0 0 ${width} ${height}" aria-hidden="true">
+      <path d="${d}"></path>
+      ${circles}
+    </svg>
+  `;
+}
 
 function renderNetworkDiagnostics() {
   const diagnostics = state.data.graph_diagnostics;
@@ -337,6 +367,31 @@ function renderNetworkDiagnostics() {
 
   decadeSelect.hidden = state.activeNetworkView !== "decade";
   copy.textContent = networkCopy[state.activeNetworkView];
+
+  if (state.activeNetworkView === "communities") {
+    const rows = diagnostics.communities.slice(0, 12);
+    const maxValue = Math.max(...rows.map((row) => row.internal_edge_weight), 1);
+    list.innerHTML = rows
+      .map((row) => {
+        const width = Math.max(2, (row.internal_edge_weight / maxValue) * 100);
+        const tags = row.top_concepts
+          .slice(0, 5)
+          .map((concept) => `<span class="mini-tag">${escapeHtml(concept.label)}</span>`)
+          .join("");
+        return `
+          <article class="diagnostic-row community-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${formatNumber.format(row.node_count)} concepts · ${escapeHtml(row.top_field)} · ${formatNumber.format(row.internal_edge_weight)} internal paper-links</span>
+              <div class="mini-tags">${tags}</div>
+            </div>
+            <div class="bar-track"><div class="bar-fill blue-fill" style="width: ${width}%"></div></div>
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
 
   if (state.activeNetworkView === "field_bridges") {
     const rows = diagnostics.field_bridge_edges.slice(0, 14);
@@ -358,9 +413,47 @@ function renderNetworkDiagnostics() {
     return;
   }
 
+  if (state.activeNetworkView === "trajectories") {
+    const rows = diagnostics.centrality_trajectories
+      .map((row) => ({
+        ...row,
+        maxPagerank: Math.max(...row.points.map((point) => point.pagerank), 0),
+        latest: [...row.points].sort((a, b) => b.decade - a.decade)[0],
+      }))
+      .sort((a, b) => b.maxPagerank - a.maxPagerank)
+      .slice(0, 12);
+    list.innerHTML = rows
+      .map((row) => {
+        return `
+          <article class="diagnostic-row trajectory-row">
+            <div>
+              <strong>${escapeHtml(row.label)}</strong>
+              <span>${escapeHtml(row.field)} · latest PageRank ${row.latest.pagerank.toFixed(4)} in ${row.latest.decade}s</span>
+            </div>
+            ${renderSparkline(row.points)}
+          </article>
+        `;
+      })
+      .join("");
+    return;
+  }
+
   let rows = diagnostics.top_central;
   let metric = "pagerank";
   let meta = (row) => `PageRank ${row.pagerank.toFixed(4)} · weighted degree ${formatNumber.format(row.degree_weighted)}`;
+  if (state.activeNetworkView === "centrality_change") {
+    rows = diagnostics.centrality_risers;
+    metric = "pagerank_change";
+    meta = (row) =>
+      `PageRank +${row.pagerank_change.toFixed(4)} · degree +${formatNumber.format(row.degree_change)}`;
+  }
+  if (state.activeNetworkView === "centrality_fall") {
+    rows = diagnostics.centrality_fallers;
+    metric = "pagerank_change_abs";
+    rows = rows.map((row) => ({ ...row, pagerank_change_abs: Math.abs(row.pagerank_change) }));
+    meta = (row) =>
+      `PageRank ${row.pagerank_change.toFixed(4)} · degree ${formatNumber.format(row.degree_change)}`;
+  }
   if (state.activeNetworkView === "bridges") {
     rows = diagnostics.bridge_concepts;
     metric = "bridge_score";
