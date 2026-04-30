@@ -5125,22 +5125,9 @@
   ],
   "edge_pairs": [
     {
-      "label": "Stock market volatility -> Stock market volatility",
-      "source_label": "Stock market volatility",
-      "target_label": "Stock market volatility",
-      "is_self_loop": true,
-      "paper_count": 82,
-      "edge_rows": 122,
-      "role": "main_effect",
-      "relationship_type": "effect",
-      "example_claim_text": "determinants of common stock returns volatility -> common stock returns volatility",
-      "example_paper_id": "W4242274318__gpt5mini_low"
-    },
-    {
       "label": "Market sentiment -> Stock Returns",
       "source_label": "Market sentiment",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 64,
       "edge_rows": 93,
       "role": "main_effect",
@@ -5152,43 +5139,39 @@
       "label": "Monetary Policy -> Inflation",
       "source_label": "Monetary Policy",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 48,
       "edge_rows": 51,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Domestic monetary policy -- Inflation (interplay)",
-      "example_paper_id": "W2033364419__gpt5mini_low"
+      "example_claim_text": "monetary policy (interest rate/inflation targeting) -> stabilizes inflation",
+      "example_paper_id": "W1749071689__gpt5mini_low"
     },
     {
       "label": "Policy uncertainty -> Stock market volatility",
       "source_label": "Policy uncertainty",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 37,
       "edge_rows": 53,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "political uncertainty -> stock volatility (increases)",
-      "example_paper_id": "W2021001809__gpt5mini_low"
+      "example_claim_text": "EPU -> stock market volatility (increase)",
+      "example_paper_id": "W1241192787__gpt5mini_low"
     },
     {
       "label": "Trading Volume -> Volatility (finance)",
       "source_label": "Trading Volume",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 33,
       "edge_rows": 40,
       "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "Total trading volume -- Price volatility (association incomplete)",
-      "example_paper_id": "W2086729180__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "unexpected trading volume -> volatility (greater impact)",
+      "example_paper_id": "W1990002830__gpt5mini_low"
     },
     {
       "label": "Garch Models -> Volatility (finance)",
       "source_label": "Garch Models",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 33,
       "edge_rows": 36,
       "role": "main_effect",
@@ -5200,19 +5183,17 @@
       "label": "Inflation -> Economic Growth",
       "source_label": "Inflation",
       "target_label": "Economic Growth",
-      "is_self_loop": false,
       "paper_count": 31,
       "edge_rows": 35,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Inflation -> real growth (structuralist position: positive effect)",
-      "example_paper_id": "W1992124979__gpt5mini_low"
+      "example_claim_text": "Inflation -> Long-run economic growth (negative relationship)",
+      "example_paper_id": "W1479670280__gpt5mini_low"
     },
     {
       "label": "Policy uncertainty -> Stock Returns",
       "source_label": "Policy uncertainty",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 27,
       "edge_rows": 42,
       "role": "main_effect",
@@ -5224,19 +5205,17 @@
       "label": "Forward volatility -> Stock market volatility",
       "source_label": "Forward volatility",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 27,
       "edge_rows": 31,
       "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "determinants of volatility -> common stock returns volatility",
-      "example_paper_id": "W1963713454__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "own past volatility and news -> explain volatility and shock transmissions (after EMU)",
+      "example_paper_id": "W1539908885__gpt5mini_low"
     },
     {
       "label": "Trading Volume -> Stock Returns",
       "source_label": "Trading Volume",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 25,
       "edge_rows": 33,
       "role": "main_effect",
@@ -5245,34 +5224,20 @@
       "example_paper_id": "W1560849420__gpt5mini_low"
     },
     {
-      "label": "Volatility (finance) -> Volatility (finance)",
-      "source_label": "Volatility (finance)",
-      "target_label": "Volatility (finance)",
-      "is_self_loop": true,
-      "paper_count": 25,
-      "edge_rows": 29,
-      "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "Spot price volatility -- Futures price volatility (comparison)",
-      "example_paper_id": "W2027332626__gpt5mini_low"
-    },
-    {
       "label": "Liquidity risk -> Stock Returns",
       "source_label": "Liquidity risk",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 24,
       "edge_rows": 27,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Liquidity -> Stock returns",
-      "example_paper_id": "W1997564944__gpt5mini_low"
+      "example_claim_text": "liquidity risk -- cross-section of stock returns",
+      "example_paper_id": "W1524139035__gpt5mini_low"
     },
     {
       "label": "Market sentiment -> Stock market volatility",
       "source_label": "Market sentiment",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 23,
       "edge_rows": 33,
       "role": "main_effect",
@@ -5281,70 +5246,42 @@
       "example_paper_id": "W2039677128__gpt5mini_low"
     },
     {
-      "label": "Trading Volume -> Trading Volume",
-      "source_label": "Trading Volume",
-      "target_label": "Trading Volume",
-      "is_self_loop": true,
-      "paper_count": 23,
-      "edge_rows": 28,
-      "role": "main_effect",
-      "relationship_type": "effect",
-      "example_claim_text": "stock trading volume -> option trading volume (stock market lead may be longer)",
-      "example_paper_id": "W2003268269__gpt5mini_low"
-    },
-    {
       "label": "Garch Models -> Stock market volatility",
       "source_label": "Garch Models",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 23,
       "edge_rows": 24,
       "role": "background",
       "relationship_type": "other",
-      "example_claim_text": "multivariate GARCH model does not support U.S. results",
-      "example_paper_id": "W2040343460__gpt5mini_low"
+      "example_claim_text": "ARCH/GARCH models -> conditional stock market volatility (estimation)",
+      "example_paper_id": "W1520297715__gpt5mini_low"
     },
     {
       "label": "Implied volatility -> Stock market volatility",
       "source_label": "Implied volatility",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 22,
       "edge_rows": 29,
       "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "volatility implicit in option prices -- volatility of underlying stock indexes",
-      "example_paper_id": "W2156685740__gpt5mini_low"
+      "relationship_type": "prediction",
+      "example_claim_text": "S&P 100 implied volatility -> forecast of future stock market volatility (upward biased but informative)",
+      "example_paper_id": "W1963570115__gpt5mini_low"
     },
     {
       "label": "Investor behavior -> Stock market volatility",
       "source_label": "Investor behavior",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 22,
       "edge_rows": 24,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Investors' anticipations -> anticipate increased stock price variability at disclosure",
-      "example_paper_id": "W2313770960__gpt5mini_low"
-    },
-    {
-      "label": "Liquidity risk -> Liquidity risk",
-      "source_label": "Liquidity risk",
-      "target_label": "Liquidity risk",
-      "is_self_loop": true,
-      "paper_count": 21,
-      "edge_rows": 24,
-      "role": "descriptive_pattern",
-      "relationship_type": "other",
-      "example_claim_text": "liquidity effects -> highly non-linear liquidity effects",
-      "example_paper_id": "W3123577596__gpt5mini_low"
+      "example_claim_text": "heterogeneous expectations -> increased stock market volatility",
+      "example_paper_id": "W1996121779__gpt5mini_low"
     },
     {
       "label": "COVID-19 -> Stock market volatility",
       "source_label": "COVID-19",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 25,
       "role": "main_effect",
@@ -5356,31 +5293,28 @@
       "label": "Funding liquidity -> Market liquidity",
       "source_label": "Funding liquidity",
       "target_label": "Market liquidity",
-      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 24,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "funding liquidity -> market liquidity",
-      "example_paper_id": "W3121630491__gpt5mini_low"
+      "example_claim_text": "funds' correlated liquidity shocks -> liquidity comovements",
+      "example_paper_id": "W155205468__gpt5mini_low"
     },
     {
       "label": "Volatility risk -> Stock market volatility",
       "source_label": "Volatility risk",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 20,
       "edge_rows": 24,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "volatility changes -> asymmetry in market reaction (increases vs decreases)",
-      "example_paper_id": "W4255411983__gpt5mini_low"
+      "example_claim_text": "reduced volatility of sales -> reduction in GDP volatility",
+      "example_paper_id": "W1964009886__gpt5mini_low"
     },
     {
       "label": "Stock market volatility -> Spillovers",
       "source_label": "Stock market volatility",
       "target_label": "Spillovers",
-      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 22,
       "role": "main_effect",
@@ -5392,19 +5326,17 @@
       "label": "Volatility (finance) -> Stock market volatility",
       "source_label": "Volatility (finance)",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 21,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "changes in volatility -> marketwide volatility effect",
-      "example_paper_id": "W2070153718__gpt5mini_low"
+      "example_claim_text": "asset volatility -- equity volatility (properties differ)",
+      "example_paper_id": "W1605781629__gpt5mini_low"
     },
     {
       "label": "Market liquidity -> Liquidity risk",
       "source_label": "Market liquidity",
       "target_label": "Liquidity risk",
-      "is_self_loop": false,
       "paper_count": 19,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5413,58 +5345,42 @@
       "example_paper_id": "W1554485019__gpt5mini_low"
     },
     {
-      "label": "Market sentiment -> Market sentiment",
-      "source_label": "Market sentiment",
-      "target_label": "Market sentiment",
-      "is_self_loop": true,
-      "paper_count": 18,
-      "edge_rows": 19,
-      "role": "background",
-      "relationship_type": "association",
-      "example_claim_text": "sovereign credit downgrades -- stronger market reaction than upgrades",
-      "example_paper_id": "W2081986658__gpt5mini_low"
-    },
-    {
       "label": "Uncertainty -> Stock market volatility",
       "source_label": "Uncertainty",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 23,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Uncertainty about average future profitability -> increases Nasdaq stock price volatility",
-      "example_paper_id": "W3123076868__gpt5mini_low"
+      "example_claim_text": "uncertainty shocks -> increased price-dividend ratio volatility",
+      "example_paper_id": "W1518227723__gpt5mini_low"
     },
     {
       "label": "Stock market volatility -> Volatility risk",
       "source_label": "Stock market volatility",
       "target_label": "Volatility risk",
-      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 21,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "changes in volatility behavior are present but may have been overstated",
-      "example_paper_id": "W2024861634__gpt5mini_low"
+      "example_claim_text": "Volatility trends and contributors in Britain differ from US counterparts",
+      "example_paper_id": "W1985342201__gpt5mini_low"
     },
     {
       "label": "Monetary Policy -> Stock market volatility",
       "source_label": "Monetary Policy",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 17,
       "edge_rows": 19,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Monetary policy (accounting for asset price misalignments) -> lower macroeconomic volatility",
-      "example_paper_id": "W2048616566__gpt5mini_low"
+      "example_claim_text": "Monetary policy changes -> increase stock market volatility",
+      "example_paper_id": "W1969691874__gpt5mini_low"
     },
     {
       "label": "Inflation Targeting -> Inflation",
       "source_label": "Inflation Targeting",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5473,22 +5389,9 @@
       "example_paper_id": "W1995455747__gpt5mini_low"
     },
     {
-      "label": "Spillovers -> Spillovers",
-      "source_label": "Spillovers",
-      "target_label": "Spillovers",
-      "is_self_loop": true,
-      "paper_count": 16,
-      "edge_rows": 20,
-      "role": "descriptive_pattern",
-      "relationship_type": "effect",
-      "example_claim_text": "investigate determinants -> net directional spillovers (panel analysis)",
-      "example_paper_id": "W2144055462__gpt5mini_low"
-    },
-    {
       "label": "Financial Development -> Economic Growth",
       "source_label": "Financial Development",
       "target_label": "Economic Growth",
-      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5500,19 +5403,17 @@
       "label": "Inflationary Expectations -> Inflation",
       "source_label": "Inflationary Expectations",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 17,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "inflation expectations (forward-looking) -> non-administered prices",
-      "example_paper_id": "W2038173901__gpt5mini_low"
+      "example_claim_text": "inflation surprises -> inflation compensation (effects attributed mainly to changes in expectations and pricing)",
+      "example_paper_id": "W1997303266__gpt5mini_low"
     },
     {
       "label": "State of emergency -> Stock market volatility",
       "source_label": "State of emergency",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 16,
       "edge_rows": 17,
       "role": "main_effect",
@@ -5521,82 +5422,53 @@
       "example_paper_id": "W3037078631__gpt5mini_low"
     },
     {
-      "label": "Policy uncertainty -> Policy uncertainty",
-      "source_label": "Policy uncertainty",
-      "target_label": "Policy uncertainty",
-      "is_self_loop": true,
-      "paper_count": 16,
-      "edge_rows": 16,
-      "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "individual security risk -- random technological change or demand uncertainty",
-      "example_paper_id": "W2118663964__gpt5mini_low"
-    },
-    {
-      "label": "Volatility risk -> Volatility risk",
-      "source_label": "Volatility risk",
-      "target_label": "Volatility risk",
-      "is_self_loop": true,
-      "paper_count": 15,
-      "edge_rows": 19,
-      "role": "main_effect",
-      "relationship_type": "difference",
-      "example_claim_text": "shocks to smaller firms -> predict volatility of larger firms",
-      "example_paper_id": "W1569955407__gpt5mini_low"
-    },
-    {
       "label": "Volatility Models -> Volatility (finance)",
       "source_label": "Volatility Models",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 19,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "standard volatility models -> forecast integrated volatility",
-      "example_paper_id": "W1978980639__gpt5mini_low"
+      "example_claim_text": "supply and demand based volatility model -> volatility in energy prices",
+      "example_paper_id": "W1971902718__gpt5mini_low"
     },
     {
       "label": "Implied volatility -> Volatility (finance)",
       "source_label": "Implied volatility",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 17,
       "role": "main_effect",
-      "relationship_type": "difference",
-      "example_claim_text": "Implied volatility is believed superior to historical volatility",
-      "example_paper_id": "W2070862805__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "REIT implied volatility -> future stock volatility (positive relationship)",
+      "example_paper_id": "W1732511827__gpt5mini_low"
     },
     {
       "label": "Stock market volatility -> Stock Returns",
       "source_label": "Stock market volatility",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 17,
       "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "Market volatility -- stock return variance (does not fully explain post-listing decline)",
-      "example_paper_id": "W2076604634__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "market-level volatility -- expected stock returns (weak or negative association)",
+      "example_paper_id": "W1967693106__gpt5mini_low"
     },
     {
       "label": "Fiscal deficit -> Inflation",
       "source_label": "Fiscal deficit",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 16,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "High fiscal deficits and public debt -- Inflation/policies discussed",
-      "example_paper_id": "W1986391381__gpt5mini_low"
+      "example_claim_text": "fiscal deficits -- inflation (low-frequency association)",
+      "example_paper_id": "W1552674797__gpt5mini_low"
     },
     {
       "label": "Policy uncertainty -> Spillovers",
       "source_label": "Policy uncertainty",
       "target_label": "Spillovers",
-      "is_self_loop": false,
       "paper_count": 15,
       "edge_rows": 16,
       "role": "main_effect",
@@ -5608,11 +5480,10 @@
       "label": "VIX -> Stock market volatility",
       "source_label": "VIX",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 21,
       "role": "main_effect",
-      "relationship_type": "association",
+      "relationship_type": "prediction",
       "example_claim_text": "no strong long-run equilibrium relationships -> supports cross-market volatility portfolio strategy effectiveness",
       "example_paper_id": "W2064162177__gpt5mini_low"
     },
@@ -5620,7 +5491,6 @@
       "label": "Macroprudential regulation -> Bank credit",
       "source_label": "Macroprudential regulation",
       "target_label": "Bank credit",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 20,
       "role": "main_effect",
@@ -5629,22 +5499,9 @@
       "example_paper_id": "W2105415695__gpt5mini_low"
     },
     {
-      "label": "Market liquidity -> Market liquidity",
-      "source_label": "Market liquidity",
-      "target_label": "Market liquidity",
-      "is_self_loop": true,
-      "paper_count": 14,
-      "edge_rows": 19,
-      "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "variance of liquidity trades -> market liquidity (nonmonotonic) under endogenous information acquisition",
-      "example_paper_id": "W2000633988__gpt5mini_low"
-    },
-    {
       "label": "Policy uncertainty -> Renewable Energy",
       "source_label": "Policy uncertainty",
       "target_label": "Renewable Energy",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5656,7 +5513,6 @@
       "label": "Policy uncertainty -> Forward volatility",
       "source_label": "Policy uncertainty",
       "target_label": "Forward volatility",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 16,
       "role": "main_effect",
@@ -5668,19 +5524,17 @@
       "label": "Garch Models -> Volatility Forecasting",
       "source_label": "Garch Models",
       "target_label": "Volatility Forecasting",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
       "relationship_type": "prediction",
-      "example_claim_text": "GARCH with contemporaneous spillover -> superior forecasting of volatility",
-      "example_paper_id": "W2006321901__gpt5mini_low"
+      "example_claim_text": "GARCH and EGARCH models -- used as benchmarks for out-of-sample volatility forecasts",
+      "example_paper_id": "W1964864228__gpt5mini_low"
     },
     {
       "label": "Monetary Policy -> Liquidity risk",
       "source_label": "Monetary Policy",
       "target_label": "Liquidity risk",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5692,55 +5546,50 @@
       "label": "Inflation -> Welfare cost of inflation",
       "source_label": "Inflation",
       "target_label": "Welfare cost of inflation",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 15,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Inflation -> output-reducing inefficiencies",
-      "example_paper_id": "W1992124979__gpt5mini_low"
+      "example_claim_text": "inflation -> sizeable welfare cost of inflation",
+      "example_paper_id": "W1575716300__gpt5mini_low"
     },
     {
       "label": "Liquidity risk -> Liquidity premium",
       "source_label": "Liquidity risk",
       "target_label": "Liquidity premium",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "reduction in liquidity -> no evidence of being priced",
-      "example_paper_id": "W4232518544__gpt5mini_low"
+      "example_claim_text": "liquidity risk -> expected liquidity premium for credit protection seller",
+      "example_paper_id": "W1769223717__gpt5mini_low"
     },
     {
       "label": "Stochastic volatility -> Volatility (finance)",
       "source_label": "Stochastic volatility",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "stochastic volatility models -> model unobservable volatility time series",
-      "example_paper_id": "W2079990952__gpt5mini_low"
+      "example_claim_text": "nonparametric Bayesian stochastic volatility model -> characterizes dynamics of the volatility distribution",
+      "example_paper_id": "W1848831403__gpt5mini_low"
     },
     {
       "label": "Volatility (finance) -> Volatility risk",
       "source_label": "Volatility (finance)",
       "target_label": "Volatility risk",
-      "is_self_loop": false,
       "paper_count": 14,
       "edge_rows": 14,
       "role": "descriptive_pattern",
       "relationship_type": "association",
-      "example_claim_text": "underlying asset volatility -> magnitude of interest-rate-volatility effect",
-      "example_paper_id": "W3123978525__gpt5mini_low"
+      "example_claim_text": "volatility increases -> increased volatility in other regions (interregional diffusion)",
+      "example_paper_id": "W1996577247__gpt5mini_low"
     },
     {
       "label": "Policy uncertainty -> Green innovation",
       "source_label": "Policy uncertainty",
       "target_label": "Green innovation",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 26,
       "role": "heterogeneity",
@@ -5752,7 +5601,6 @@
       "label": "Oil Shocks -> Stock market volatility",
       "source_label": "Oil Shocks",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 19,
       "role": "main_effect",
@@ -5764,67 +5612,39 @@
       "label": "Bank credit -> Economic Growth",
       "source_label": "Bank credit",
       "target_label": "Economic Growth",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 18,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "domestic bank credit to the private sector -> economic growth (Granger causality)",
-      "example_paper_id": "W2064236775__gpt5mini_low"
-    },
-    {
-      "label": "Inflation -> Inflation",
-      "source_label": "Inflation",
-      "target_label": "Inflation",
-      "is_self_loop": true,
-      "paper_count": 13,
-      "edge_rows": 18,
-      "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "breakdown of causes of inflation -> inflation",
-      "example_paper_id": "W2053986608__gpt5mini_low"
+      "example_claim_text": "bank finance -> economic growth (effect depends on banking sector development)",
+      "example_paper_id": "W2015315359__gpt5mini_low"
     },
     {
       "label": "Volatility (finance) -> Economic Growth",
       "source_label": "Volatility (finance)",
       "target_label": "Economic Growth",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 17,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "monetary volatility -> lower cross-country economic growth",
-      "example_paper_id": "W2073552413__gpt5mini_low"
+      "example_claim_text": "volatility -> reduces growth",
+      "example_paper_id": "W1868719122__gpt5mini_low"
     },
     {
       "label": "Policy uncertainty -> Volatility (finance)",
       "source_label": "Policy uncertainty",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 17,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "reduced posthalt uncertainty -> dampened volatility effects",
-      "example_paper_id": "W3121749190__gpt5mini_low"
-    },
-    {
-      "label": "Funding liquidity -> Funding liquidity",
-      "source_label": "Funding liquidity",
-      "target_label": "Funding liquidity",
-      "is_self_loop": true,
-      "paper_count": 13,
-      "edge_rows": 16,
-      "role": "background",
-      "relationship_type": "association",
-      "example_claim_text": "publicly supplied liquidity -> supports firms' liquidity needs (intermediary role)",
-      "example_paper_id": "W2067743386__gpt5mini_low"
+      "example_claim_text": "environmental policy uncertainty / carbon credits fluctuations -> increases electricity price volatility",
+      "example_paper_id": "W2159822936__gpt5mini_low"
     },
     {
       "label": "Oil price -> Stock market volatility",
       "source_label": "Oil price",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5836,7 +5656,6 @@
       "label": "Policy uncertainty -> Investment",
       "source_label": "Policy uncertainty",
       "target_label": "Investment",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "main_effect",
@@ -5848,7 +5667,6 @@
       "label": "Policy uncertainty -> Uncertainty",
       "source_label": "Policy uncertainty",
       "target_label": "Uncertainty",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 15,
       "role": "descriptive_pattern",
@@ -5860,7 +5678,6 @@
       "label": "Trading Volume -> Stock market volatility",
       "source_label": "Trading Volume",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5869,70 +5686,53 @@
       "example_paper_id": "W2014709540__gpt5mini_low"
     },
     {
-      "label": "Borrowing -> Borrowing",
-      "source_label": "Borrowing",
-      "target_label": "Borrowing",
-      "is_self_loop": true,
-      "paper_count": 13,
-      "edge_rows": 14,
-      "role": "descriptive_pattern",
-      "relationship_type": "effect",
-      "example_claim_text": "borrowing ceiling -> smooth transition between free and no borrowing",
-      "example_paper_id": "W1974558568__gpt5mini_low"
-    },
-    {
       "label": "GARCH -> Stock market volatility",
       "source_label": "GARCH",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 13,
       "edge_rows": 13,
       "role": "main_effect",
-      "relationship_type": "effect",
-      "example_claim_text": "Markov-switching GARCH models -> detect volatility regime-switches in target stock price",
-      "example_paper_id": "W3122218439__gpt5mini_low"
+      "relationship_type": "other",
+      "example_claim_text": "DCC-ECM-MVGARCH model -> more sensitive to market fluctuations and better describes volatility changes",
+      "example_paper_id": "W2038099081__gpt5mini_low"
     },
     {
       "label": "Trading Volume -> Volatility clustering",
       "source_label": "Trading Volume",
       "target_label": "Volatility clustering",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 17,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "trading volume -> return volatility (reversal effects)",
-      "example_paper_id": "W1998972298__gpt5mini_low"
+      "example_claim_text": "increase in trading volume -> higher return volatility",
+      "example_paper_id": "W1967853182__gpt5mini_low"
     },
     {
       "label": "Money growth -> Inflation",
       "source_label": "Money growth",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 15,
       "role": "main_effect",
       "relationship_type": "association",
-      "example_claim_text": "money growth -> inflation (Mexico)",
-      "example_paper_id": "W1971432687__gpt5mini_low"
+      "example_claim_text": "money growth -> inflation",
+      "example_paper_id": "W1965488695__gpt5mini_low"
     },
     {
       "label": "Inflation -> Welfare",
       "source_label": "Inflation",
       "target_label": "Welfare",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Inflation -- Welfare",
-      "example_paper_id": "W2054575436__gpt5mini_low"
+      "example_claim_text": "inflation -> welfare",
+      "example_paper_id": "W2053356627__gpt5mini_low"
     },
     {
       "label": "Money Supply -> Inflation",
       "source_label": "Money Supply",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
@@ -5944,19 +5744,17 @@
       "label": "Idiosyncratic risk -> Stock Returns",
       "source_label": "Idiosyncratic risk",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 14,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "high idiosyncratic volatility -> abysmally low average stock returns",
-      "example_paper_id": "W2113208252__gpt5mini_low"
+      "example_claim_text": "idiosyncratic volatility -> lower stock returns (in down-markets)",
+      "example_paper_id": "W1524139035__gpt5mini_low"
     },
     {
       "label": "Quantitative easing -> Inflation",
       "source_label": "Quantitative easing",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5965,22 +5763,9 @@
       "example_paper_id": "W1997022007__gpt5mini_low"
     },
     {
-      "label": "Garch Models -> Garch Models",
-      "source_label": "Garch Models",
-      "target_label": "Garch Models",
-      "is_self_loop": true,
-      "paper_count": 12,
-      "edge_rows": 13,
-      "role": "background",
-      "relationship_type": "difference",
-      "example_claim_text": "simulated threshold GARCH option prices -- simulated GARCH prices (threshold GARCH closer to market)",
-      "example_paper_id": "W2026302029__gpt5mini_low"
-    },
-    {
       "label": "Central Bank Independence -> Inflation",
       "source_label": "Central Bank Independence",
       "target_label": "Inflation",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
@@ -5992,31 +5777,28 @@
       "label": "Policy uncertainty -> Investment Decisions",
       "source_label": "Policy uncertainty",
       "target_label": "Investment Decisions",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 13,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Demand uncertainty -> Optimal investment decision",
-      "example_paper_id": "W3121272664__gpt5mini_low"
+      "example_claim_text": "price uncertainty -> production and financing decisions",
+      "example_paper_id": "W2009783294__gpt5mini_low"
     },
     {
       "label": "Sentiment analysis -> Market sentiment",
       "source_label": "Sentiment analysis",
       "target_label": "Market sentiment",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
-      "role": "background",
-      "relationship_type": "association",
-      "example_claim_text": "indirect measures of sentiment -- direct (survey) measures of investor sentiment",
-      "example_paper_id": "W3121285187__gpt5mini_low"
+      "role": "main_effect",
+      "relationship_type": "other",
+      "example_claim_text": "Choice of sentiment proxy -> measured investor sentiment effect",
+      "example_paper_id": "W1964439796__gpt5mini_low"
     },
     {
       "label": "Volatility (finance) -> Trading Volume",
       "source_label": "Volatility (finance)",
       "target_label": "Trading Volume",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6028,58 +5810,42 @@
       "label": "Monetary Policy -> Output",
       "source_label": "Monetary Policy",
       "target_label": "Output",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "monetary policy -> output",
-      "example_paper_id": "W2107710318__gpt5mini_low"
+      "example_claim_text": "Monetary policy -> Output",
+      "example_paper_id": "W1929597172__gpt5mini_low"
     },
     {
       "label": "Global Financial Crisis -> Volatility (finance)",
       "source_label": "Global Financial Crisis",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "macroeconomic phases -- volatility (distinguishing feature)",
-      "example_paper_id": "W2158632698__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "global financial crisis -> change in term structure volatility",
+      "example_paper_id": "W1188031064__gpt5mini_low"
     },
     {
       "label": "Fit model -> Stock market volatility",
       "source_label": "Fit model",
       "target_label": "Stock market volatility",
-      "is_self_loop": false,
       "paper_count": 12,
       "edge_rows": 12,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "multiple-security OLG model -> explains stock price volatility",
-      "example_paper_id": "W2013065791__gpt5mini_low"
-    },
-    {
-      "label": "Bid–ask spread -> Bid–ask spread",
-      "source_label": "Bid–ask spread",
-      "target_label": "Bid–ask spread",
-      "is_self_loop": true,
-      "paper_count": 11,
-      "edge_rows": 14,
-      "role": "main_effect",
-      "relationship_type": "difference",
-      "example_claim_text": "low-frequency spread measures -> proxy spread dynamics (vs benchmark)",
-      "example_paper_id": "W1563792195__gpt5mini_low"
+      "example_claim_text": "model -> accounts for discontinuous impacts from deal cancellation",
+      "example_paper_id": "W1983467223__gpt5mini_low"
     },
     {
       "label": "Investor behavior -> Trading Volume",
       "source_label": "Investor behavior",
       "target_label": "Trading Volume",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 14,
-      "role": "background",
+      "role": "main_effect",
       "relationship_type": "effect",
       "example_claim_text": "disagreement between buyer and seller expectations -> trading volume",
       "example_paper_id": "W1996121590__gpt5mini_low"
@@ -6088,43 +5854,28 @@
       "label": "Sovereign credit risk -> Bank credit",
       "source_label": "Sovereign credit risk",
       "target_label": "Bank credit",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 14,
-      "role": "background",
-      "relationship_type": "association",
+      "role": "main_effect",
+      "relationship_type": "effect",
       "example_claim_text": "sovereign rating actions -> bank valuations",
       "example_paper_id": "W2057760141__gpt5mini_low"
-    },
-    {
-      "label": "Credit spread (options) -> Credit spread (options)",
-      "source_label": "Credit spread (options)",
-      "target_label": "Credit spread (options)",
-      "is_self_loop": true,
-      "paper_count": 11,
-      "edge_rows": 13,
-      "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "credit-spread curves -> credit-spread slopes (extracted)",
-      "example_paper_id": "W2116534306__gpt5mini_low"
     },
     {
       "label": "Emerging markets -> Volatility (finance)",
       "source_label": "Emerging markets",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "emerging equity markets -> high volatility",
-      "example_paper_id": "W3022360661__gpt5mini_low"
+      "example_claim_text": "Misfortunes in Zimbabwe and other emerging-market countries -- Volatility of the South African Rand",
+      "example_paper_id": "W2017249216__gpt5mini_low"
     },
     {
       "label": "High-frequency trading -> Market liquidity",
       "source_label": "High-frequency trading",
       "target_label": "Market liquidity",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
@@ -6136,35 +5887,32 @@
       "label": "Supply shock -> Volatility (finance)",
       "source_label": "Supply shock",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Unexpected volume shocks -> increase Price volatility (larger effect)",
-      "example_paper_id": "W2086729180__gpt5mini_low"
+      "example_claim_text": "negative shocks -> higher volatility",
+      "example_paper_id": "W1492458269__gpt5mini_low"
     },
     {
       "label": "Macroeconomic Data -> Volatility (finance)",
       "source_label": "Macroeconomic Data",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
       "role": "main_effect",
-      "relationship_type": "association",
-      "example_claim_text": "scheduled macroeconomic news releases -- higher volatility just before the release",
-      "example_paper_id": "W2115770250__gpt5mini_low"
+      "relationship_type": "effect",
+      "example_claim_text": "US macroeconomic news announcements -> increase realized volatility of metal futures",
+      "example_paper_id": "W2057157111__gpt5mini_low"
     },
     {
       "label": "Inflation -> Stock Returns",
       "source_label": "Inflation",
       "target_label": "Stock Returns",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
-      "role": "background",
-      "relationship_type": "association",
+      "role": "main_effect",
+      "relationship_type": "effect",
       "example_claim_text": "inflation -- common stock returns (no positive relation)",
       "example_paper_id": "W1967490906__gpt5mini_low"
     },
@@ -6172,19 +5920,17 @@
       "label": "Policy uncertainty -> Spillover Effect",
       "source_label": "Policy uncertainty",
       "target_label": "Spillover Effect",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 13,
-      "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "market uncertainty periods -> higher volatility spillover index",
-      "example_paper_id": "W3122966955__gpt5mini_low"
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "economic policy uncertainty -> driver of cross-border financial spillovers",
+      "example_paper_id": "W3091933360__gpt5mini_low"
     },
     {
       "label": "Autoregressive conditional heteroskedasticity -> Volatility (finance)",
       "source_label": "Autoregressive conditional heteroskedasticity",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6196,31 +5942,28 @@
       "label": "Liquidity risk -> Credit risk",
       "source_label": "Liquidity risk",
       "target_label": "Credit risk",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "Illiquidity -> sustains mispricing / credit risk effect",
-      "example_paper_id": "W3123084053__gpt5mini_low"
+      "example_claim_text": "liquidity risk -- no significant role -> government credit spreads",
+      "example_paper_id": "W1973614842__gpt5mini_low"
     },
     {
       "label": "Liquidity risk -> Excess return",
       "source_label": "Liquidity risk",
       "target_label": "Excess return",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "liquidity -> affects value strategy excess return",
-      "example_paper_id": "W2038169880__gpt5mini_low"
+      "example_claim_text": "liquidity factors predict corporate bond excess returns",
+      "example_paper_id": "W1986178981__gpt5mini_low"
     },
     {
       "label": "Liquidity risk -> Expected return",
       "source_label": "Liquidity risk",
       "target_label": "Expected return",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6232,19 +5975,17 @@
       "label": "Liquidity risk -> Systemic risk",
       "source_label": "Liquidity risk",
       "target_label": "Systemic risk",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
       "relationship_type": "effect",
-      "example_claim_text": "liquidity effects interacting with banking structure -> increased chance of systemic breakdown",
-      "example_paper_id": "W3123232430__gpt5mini_low"
+      "example_claim_text": "liquidity mismatch -> increases average systemic risk (whole period)",
+      "example_paper_id": "W2583435432__gpt5mini_low"
     },
     {
       "label": "Liquidity risk -> Swap spread",
       "source_label": "Liquidity risk",
       "target_label": "Swap spread",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6256,19 +5997,17 @@
       "label": "Stock market volatility -> Volatility (finance)",
       "source_label": "Stock market volatility",
       "target_label": "Volatility (finance)",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
-      "role": "descriptive_pattern",
-      "relationship_type": "association",
-      "example_claim_text": "differences in exposure among industrial countries -- short-term volatility",
-      "example_paper_id": "W2016902065__gpt5mini_low"
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "stock market volatility -> macroeconomic volatility",
+      "example_paper_id": "W1972208167__gpt5mini_low"
     },
     {
       "label": "Volatility (finance) -> Bid–ask spread",
       "source_label": "Volatility (finance)",
       "target_label": "Bid–ask spread",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6280,11 +6019,10 @@
       "label": "Inflation -> Inflationary Expectations",
       "source_label": "Inflation",
       "target_label": "Inflationary Expectations",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
-      "relationship_type": "association",
+      "relationship_type": "effect",
       "example_claim_text": "Past inflation -> Inflation uncertainty (positive relationship)",
       "example_paper_id": "W2043215671__gpt5mini_low"
     },
@@ -6292,7 +6030,6 @@
       "label": "Institutional Investors -> Liquidity risk",
       "source_label": "Institutional Investors",
       "target_label": "Liquidity risk",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "main_effect",
@@ -6304,7 +6041,6 @@
       "label": "Policy uncertainty -> Risk Premium",
       "source_label": "Policy uncertainty",
       "target_label": "Risk Premium",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 12,
       "role": "mechanism",
@@ -6316,13 +6052,177 @@
       "label": "Bid–ask spread -> Liquidity risk",
       "source_label": "Bid–ask spread",
       "target_label": "Liquidity risk",
-      "is_self_loop": false,
       "paper_count": 11,
       "edge_rows": 11,
-      "role": "background",
+      "role": "main_effect",
       "relationship_type": "association",
-      "example_claim_text": "Prior studies -- compare markets using bid-ask spreads",
-      "example_paper_id": "W2048881425__gpt5mini_low"
+      "example_claim_text": "bid-ask spreads -- proxy for liquidity risk",
+      "example_paper_id": "W1995966915__gpt5mini_low"
+    },
+    {
+      "label": "Forward volatility -> Volatility (finance)",
+      "source_label": "Forward volatility",
+      "target_label": "Volatility (finance)",
+      "paper_count": 11,
+      "edge_rows": 11,
+      "role": "descriptive_pattern",
+      "relationship_type": "association",
+      "example_claim_text": "short-term equity futures volatility -> future oil futures volatility",
+      "example_paper_id": "W1981058438__gpt5mini_low"
+    },
+    {
+      "label": "Stock Returns -> Trading Volume",
+      "source_label": "Stock Returns",
+      "target_label": "Trading Volume",
+      "paper_count": 11,
+      "edge_rows": 11,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "stock price return series (ri) -- trading volume variation series (vi) (multifractal cross-correlation)",
+      "example_paper_id": "W2018049097__gpt5mini_low"
+    },
+    {
+      "label": "Stock market volatility -> Forward volatility",
+      "source_label": "Stock market volatility",
+      "target_label": "Forward volatility",
+      "paper_count": 10,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Russia market volatility is short-lived (low persistence)",
+      "example_paper_id": "W1567699536__gpt5mini_low"
+    },
+    {
+      "label": "Diversification -> Bank credit",
+      "source_label": "Diversification",
+      "target_label": "Bank credit",
+      "paper_count": 10,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "bank diversification into real estate -> bank risk (can yield benefits)",
+      "example_paper_id": "W1579306797__gpt5mini_low"
+    },
+    {
+      "label": "Uncertainty -> Volatility (finance)",
+      "source_label": "Uncertainty",
+      "target_label": "Volatility (finance)",
+      "paper_count": 10,
+      "edge_rows": 15,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "higher uncertainty about news value (first half) -> higher return volatility",
+      "example_paper_id": "W2134581386__gpt5mini_low"
+    },
+    {
+      "label": "Sentiment analysis -> Stock Returns",
+      "source_label": "Sentiment analysis",
+      "target_label": "Stock Returns",
+      "paper_count": 10,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "daily sentiment -> contemporaneous stock returns (positive)",
+      "example_paper_id": "W1997898540__gpt5mini_low"
+    },
+    {
+      "label": "Crude Oil -> Stock market volatility",
+      "source_label": "Crude Oil",
+      "target_label": "Stock market volatility",
+      "paper_count": 10,
+      "edge_rows": 14,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "crude oil price -> volatility of gold price (linear Granger causality)",
+      "example_paper_id": "W2079493819__gpt5mini_low"
+    },
+    {
+      "label": "Deposit Insurance -> Bank credit",
+      "source_label": "Deposit Insurance",
+      "target_label": "Bank credit",
+      "paper_count": 10,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "deposit insurance schemes -> increased bank risk",
+      "example_paper_id": "W2066329574__gpt5mini_low"
+    },
+    {
+      "label": "Spillovers -> Stock market volatility",
+      "source_label": "Spillovers",
+      "target_label": "Stock market volatility",
+      "paper_count": 10,
+      "edge_rows": 12,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Russia experiences volatility spillovers from other markets",
+      "example_paper_id": "W1567699536__gpt5mini_low"
+    },
+    {
+      "label": "Investor behavior -> Liquidity risk",
+      "source_label": "Investor behavior",
+      "target_label": "Liquidity risk",
+      "paper_count": 10,
+      "edge_rows": 11,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "higher investors' trading propensity -> improved liquidity levels",
+      "example_paper_id": "W2083568141__gpt5mini_low"
+    },
+    {
+      "label": "Liquidity risk -> Liquidity crisis",
+      "source_label": "Liquidity risk",
+      "target_label": "Liquidity crisis",
+      "paper_count": 10,
+      "edge_rows": 11,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "underlying causes of illiquidity -> East European commercial banks' illiquidity problems",
+      "example_paper_id": "W1986025634__gpt5mini_low"
+    },
+    {
+      "label": "Volatility (finance) -> Stock Returns",
+      "source_label": "Volatility (finance)",
+      "target_label": "Stock Returns",
+      "paper_count": 10,
+      "edge_rows": 11,
+      "role": "main_effect",
+      "relationship_type": "association",
+      "example_claim_text": "volatility -> stock index returns (negative)",
+      "example_paper_id": "W1990086641__gpt5mini_low"
+    },
+    {
+      "label": "Announcements -> Volatility (finance)",
+      "source_label": "Announcements",
+      "target_label": "Volatility (finance)",
+      "paper_count": 10,
+      "edge_rows": 11,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "Announcements -> rapid adjustment in price volatility (within 240 seconds)",
+      "example_paper_id": "W2037027401__gpt5mini_low"
+    },
+    {
+      "label": "Market sentiment -> Abnormal return",
+      "source_label": "Market sentiment",
+      "target_label": "Abnormal return",
+      "paper_count": 10,
+      "edge_rows": 10,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "real estate investor sentiment -> affects magnitude of abnormal announcement returns",
+      "example_paper_id": "W2063660373__gpt5mini_low"
+    },
+    {
+      "label": "Oil price -> Volatility (finance)",
+      "source_label": "Oil price",
+      "target_label": "Volatility (finance)",
+      "paper_count": 10,
+      "edge_rows": 10,
+      "role": "main_effect",
+      "relationship_type": "effect",
+      "example_claim_text": "World oil prices -> price volatility (question)",
+      "example_paper_id": "W2141315971__gpt5mini_low"
     }
   ],
   "year_counts": [
@@ -8474,7 +8374,7 @@
     "summary": {
       "scope": "within_materialized_finance_workspace",
       "graph_nodes": 13213,
-      "graph_edges_non_self": 66740,
+      "graph_relationship_pairs": 66740,
       "community_count": 82,
       "betweenness_sample_size": 500
     },
@@ -15767,7 +15667,6 @@
         "high_credibility_communities": 8,
         "medium_credibility_communities": 56,
         "low_or_audit_first_communities": 18,
-        "self_links_in_top_100_edges": 15,
         "method_edges_in_top_100_edges": 7
       },
       "communities": [
@@ -16010,248 +15909,6 @@
           "flags": "",
           "top_concepts": "Healthcare of Ontario Pension Plan; Paid-in capital; Professional conduct; Cost control",
           "action": "Use as a mixed theme and avoid over-naming until examples are inspected."
-        }
-      ],
-      "edge_audit": [
-        {
-          "label": "Stock market volatility -> Stock market volatility",
-          "paper_count": 82,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
-        },
-        {
-          "label": "Market sentiment -> Stock Returns",
-          "paper_count": 64,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Monetary Policy -> Inflation",
-          "paper_count": 48,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Policy uncertainty -> Stock market volatility",
-          "paper_count": 37,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Trading Volume -> Volatility (finance)",
-          "paper_count": 33,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Garch Models -> Volatility (finance)",
-          "paper_count": 33,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": true,
-          "include_in_headline_relationship_map": false,
-          "action": "show only in method/measurement view"
-        },
-        {
-          "label": "Inflation -> Economic Growth",
-          "paper_count": 31,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Policy uncertainty -> Stock Returns",
-          "paper_count": 27,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Forward volatility -> Stock market volatility",
-          "paper_count": 27,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Trading Volume -> Stock Returns",
-          "paper_count": 25,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Volatility (finance) -> Volatility (finance)",
-          "paper_count": 25,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
-        },
-        {
-          "label": "Liquidity risk -> Stock Returns",
-          "paper_count": 24,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Market sentiment -> Stock market volatility",
-          "paper_count": 23,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Trading Volume -> Trading Volume",
-          "paper_count": 23,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
-        },
-        {
-          "label": "Garch Models -> Stock market volatility",
-          "paper_count": 23,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": true,
-          "include_in_headline_relationship_map": false,
-          "action": "show only in method/measurement view"
-        },
-        {
-          "label": "Implied volatility -> Stock market volatility",
-          "paper_count": 22,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Investor behavior -> Stock market volatility",
-          "paper_count": 22,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Liquidity risk -> Liquidity risk",
-          "paper_count": 21,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
-        },
-        {
-          "label": "COVID-19 -> Stock market volatility",
-          "paper_count": 20,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Funding liquidity -> Market liquidity",
-          "paper_count": 20,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Volatility risk -> Stock market volatility",
-          "paper_count": 20,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Stock market volatility -> Spillovers",
-          "paper_count": 19,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Volatility (finance) -> Stock market volatility",
-          "paper_count": 19,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Market liquidity -> Liquidity risk",
-          "paper_count": 19,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Market sentiment -> Market sentiment",
-          "paper_count": 18,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
-        },
-        {
-          "label": "Uncertainty -> Stock market volatility",
-          "paper_count": 17,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Stock market volatility -> Volatility risk",
-          "paper_count": 17,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Monetary Policy -> Stock market volatility",
-          "paper_count": 17,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Inflation Targeting -> Inflation",
-          "paper_count": 16,
-          "is_self_link": false,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": true,
-          "action": "usable as a recurring non-self relationship"
-        },
-        {
-          "label": "Spillovers -> Spillovers",
-          "paper_count": 16,
-          "is_self_link": true,
-          "is_method_or_measurement_edge": false,
-          "include_in_headline_relationship_map": false,
-          "action": "drop from headline relationship figure; keep for ontology audit"
         }
       ]
     }

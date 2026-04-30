@@ -7,7 +7,6 @@ const state = {
   activeNetworkDecade: "2020",
   activeTimeView: "volume",
   edgeRole: "all",
-  includeSelfLinks: false,
   query: "",
   selectedConceptId: null,
 };
@@ -568,7 +567,6 @@ function renderNetworkDiagnostics() {
 
 function renderEdges() {
   const edges = state.data.edge_pairs
-    .filter((edge) => state.includeSelfLinks || !edge.is_self_loop)
     .filter((edge) => state.edgeRole === "all" || edge.role === state.edgeRole)
     .slice(0, 18);
 
@@ -652,10 +650,6 @@ function wireControls() {
     renderEdges();
   });
 
-  document.querySelector("#include-self-links").addEventListener("change", (event) => {
-    state.includeSelfLinks = event.target.checked;
-    renderEdges();
-  });
 }
 
 async function init() {

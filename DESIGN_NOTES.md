@@ -6,7 +6,7 @@ Finance Atlas should feel like a research instrument, not a marketing page.
 
 - Keep text minimal, but make controls self-explanatory.
 - Put time-series exploration near the top, because the main object is how the literature changes.
-- Hide known audit artifacts by default, especially self-links in graph relationships.
+- Keep the public relationship view focused on economically interpretable source-target pairs.
 - Keep audit artifacts available through toggles instead of deleting them.
 - Prefer compact controls over long explanatory copy.
 - Let users move between three views: concepts, time, and relationships.
@@ -16,7 +16,7 @@ Finance Atlas should feel like a research instrument, not a marketing page.
 
 ## Current Interface Choices
 
-- Self-links are hidden by default in recurring relationships.
+- Recurring relationships should show interpretable source-target pairs.
 - The main time content is now diagnostic: rising themes, fading themes, new arrivals, persistent themes, and spike-like attention.
 - The network section uses within-finance PageRank, approximate betweenness, bridge scores, and cross-field edge pairs.
 - A smaller trend-check chart remains for raw yearly/decade context.

@@ -741,21 +741,6 @@ main {
   justify-content: flex-end;
 }
 
-.toggle-label {
-  align-items: center;
-  background: rgba(255, 250, 240, 0.68);
-  border: 1px solid rgba(16, 35, 31, 0.14);
-  border-radius: 999px;
-  cursor: pointer;
-  display: inline-flex;
-  gap: 8px;
-  padding: 10px 13px;
-}
-
-.toggle-label input {
-  accent-color: var(--green);
-}
-
 .edge-table {
   border-collapse: collapse;
   min-width: 900px;

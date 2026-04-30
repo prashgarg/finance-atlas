@@ -107,25 +107,20 @@ def build_rising() -> list[dict[str, Any]]:
 
 
 def build_edges() -> list[dict[str, Any]]:
-    rows = read_csv("top_canonical_edge_pairs_overall.csv")[:100]
+    rows = read_optional_csv(GRAPH_DIAGNOSTICS / "canonical_edge_weights.csv")[:100]
     out = []
     for row in rows:
-        label = row["canonical_edge_pair_label"]
-        parts = [part.strip() for part in label.split(" -> ", 1)]
-        source_label = parts[0] if parts else ""
-        target_label = parts[1] if len(parts) > 1 else ""
         out.append(
             {
-            "label": row["canonical_edge_pair_label"],
-            "source_label": source_label,
-            "target_label": target_label,
-            "is_self_loop": source_label == target_label,
-            "paper_count": as_int(row["paper_count"]),
-            "edge_rows": as_int(row["edge_rows"]),
-            "role": row["most_common_edge_role"],
-            "relationship_type": row["most_common_relationship_type"],
-            "example_claim_text": row["example_claim_text"],
-            "example_paper_id": row["example_paper_id"],
+                "label": row["edge_pair_label"],
+                "source_label": row["source_label"],
+                "target_label": row["target_label"],
+                "paper_count": as_int(row["paper_count"]),
+                "edge_rows": as_int(row["edge_rows"]),
+                "role": row["most_common_role"],
+                "relationship_type": row["most_common_relationship"],
+                "example_claim_text": row["example_claim_text"],
+                "example_paper_id": row["example_paper_id"],
             }
         )
     return out
@@ -317,7 +312,6 @@ def build_credibility_audit() -> dict[str, Any]:
             "high_credibility_communities": int(summary["high_credibility_communities"]),
             "medium_credibility_communities": int(summary["medium_credibility_communities"]),
             "low_or_audit_first_communities": int(summary["low_or_audit_first_communities"]),
-            "self_links_in_top_100_edges": int(summary["self_links_in_top_100_edges"]),
             "method_edges_in_top_100_edges": int(summary["method_edges_in_top_100_edges"]),
         },
         "communities": [
@@ -332,17 +326,6 @@ def build_credibility_audit() -> dict[str, Any]:
                 "action": row["recommended_action"],
             }
             for row in community_rows[:24]
-        ],
-        "edge_audit": [
-            {
-                "label": row["canonical_edge_pair_label"],
-                "paper_count": as_int(row["paper_count"]),
-                "is_self_link": as_bool(row["is_self_link"]),
-                "is_method_or_measurement_edge": as_bool(row["is_method_or_measurement_edge"]),
-                "include_in_headline_relationship_map": as_bool(row["include_in_headline_relationship_map"]),
-                "action": row["recommended_action"],
-            }
-            for row in edge_rows[:30]
         ],
     }
 
@@ -497,7 +480,7 @@ def build_graph_diagnostics() -> dict[str, Any]:
         "summary": {
             "scope": summary["scope"],
             "graph_nodes": summary["graph_nodes"],
-            "graph_edges_non_self": summary["graph_edges_non_self"],
+            "graph_relationship_pairs": summary["graph_edges_non_self"],
             "community_count": summary.get("community_count", 0),
             "betweenness_sample_size": summary["betweenness_sample_size"],
         },
