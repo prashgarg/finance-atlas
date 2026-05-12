@@ -170,7 +170,7 @@ main {
 
 .hero-copy h1 {
   font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  font-size: clamp(40px, 6.2vw, 76px);
+  font-size: clamp(38px, 5.4vw, 68px);
   font-weight: 700;
   letter-spacing: -0.062em;
   line-height: 0.94;
@@ -189,7 +189,7 @@ main {
 
 .hero-copy p {
   color: var(--muted);
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(17px, 1.7vw, 20px);
   max-width: 720px;
 }
 
