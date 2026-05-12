@@ -464,14 +464,40 @@ main {
 }
 
 .bridge-tab-grid summary {
+  align-items: center;
   color: var(--green-dark);
   cursor: pointer;
+  display: flex;
   font-size: 12px;
   font-weight: 900;
+  justify-content: space-between;
   letter-spacing: 0.08em;
   list-style: none;
   padding: 14px 18px;
   text-transform: uppercase;
+}
+
+.bridge-tab-grid summary::after {
+  align-items: center;
+  background: rgba(16, 35, 31, 0.07);
+  border: 1px solid rgba(16, 35, 31, 0.1);
+  border-radius: 999px;
+  color: var(--muted);
+  content: "Open ▾";
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  margin-left: 14px;
+  padding: 5px 8px;
+}
+
+.bridge-tab-grid details[open] summary::after {
+  content: "Hide ▴";
+}
+
+.bridge-tab-grid summary:hover {
+  background: rgba(16, 35, 31, 0.035);
 }
 
 .bridge-tab-grid summary::-webkit-details-marker {
@@ -504,7 +530,10 @@ main {
 
 .bridge-controls select {
   appearance: none;
-  background: rgba(244, 239, 226, 0.95);
+  background:
+    linear-gradient(45deg, transparent 50%, var(--green-dark) 50%) calc(100% - 18px) 50% / 6px 6px no-repeat,
+    linear-gradient(135deg, var(--green-dark) 50%, transparent 50%) calc(100% - 13px) 50% / 6px 6px no-repeat,
+    rgba(244, 239, 226, 0.95);
   border: 1px solid rgba(16, 35, 31, 0.16);
   border-radius: 999px;
   color: var(--ink);
@@ -525,11 +554,24 @@ main {
 }
 
 .bridge-overview .metric {
-  background: rgba(244, 239, 226, 0.84);
+  background: rgba(255, 250, 240, 0.52);
+  border-color: rgba(16, 35, 31, 0.08);
+  border-radius: 16px;
+  padding: 12px 14px;
 }
 
 .bridge-overview .metric strong {
-  font-size: 30px;
+  color: var(--green-dark);
+  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.bridge-overview .metric span {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
 }
 
 .bridge-label-guide {
@@ -1611,7 +1653,10 @@ main {
 
 .chart-toolbar select {
   appearance: none;
-  background: rgba(244, 239, 226, 0.95);
+  background:
+    linear-gradient(45deg, transparent 50%, var(--green-dark) 50%) calc(100% - 18px) 50% / 6px 6px no-repeat,
+    linear-gradient(135deg, var(--green-dark) 50%, transparent 50%) calc(100% - 13px) 50% / 6px 6px no-repeat,
+    rgba(244, 239, 226, 0.95);
   border: 1px solid rgba(16, 35, 31, 0.16);
   border-radius: 999px;
   color: var(--ink);
@@ -1619,6 +1664,15 @@ main {
   font-weight: 800;
   min-width: 230px;
   padding: 11px 36px 11px 14px;
+}
+
+.bridge-controls select:hover,
+.bridge-controls select:focus,
+.chart-toolbar select:hover,
+.chart-toolbar select:focus {
+  border-color: rgba(47, 111, 78, 0.42);
+  box-shadow: 0 0 0 3px rgba(47, 111, 78, 0.09);
+  outline: none;
 }
 
 .chart-toolbar .compact-select {
