@@ -36,8 +36,9 @@
           <p class="draft-kicker">Beta research instrument</p>
           <h1>Finance Atlas</h1>
           <p>
-            A map for asking how investment products relate to academic finance: same strategy, same
-            mechanism, shared motif, or only a loose keyword match.
+            A map for asking whether an investment product is linked to academic finance because it
+            uses the same strategy, relies on the same economic mechanism, shares a broader design
+            pattern, or only happens to use similar words.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#bridge-explorer">Open bridge explorer</a>
@@ -52,16 +53,16 @@
 
       <section class="orientation-strip" aria-label="How to read this site">
         <article>
-          <strong>Product graph</strong>
+          <strong><span class="term" tabindex="0" data-tip="A compact map of what a prospectus says the fund is trying to do, what it holds, and how it implements the strategy.">Product graph</span></strong>
           <p>What the fund document says the product does: objective, exposure, instrument, rule, benchmark, horizon, and risk.</p>
         </article>
         <article>
-          <strong>Academic neighborhood</strong>
+          <strong><span class="term" tabindex="0" data-tip="The nearby papers, concepts, and relationships in the academic finance graph around a product-related idea.">Academic neighborhood</span></strong>
           <p>The nearby concepts and relationships in the finance research graph, built from paper-level extractions.</p>
         </article>
         <article>
-          <strong>Bridge label</strong>
-          <p>The type of link between product and research: same strategy, same mechanism, shared motif, weak concept match, or no bridge.</p>
+          <strong><span class="term" tabindex="0" data-tip="Our classification of how a product and the academic literature are connected. It is not a performance score.">Bridge label</span></strong>
+          <p>The type of link between product and research: same strategy, same mechanism, broader pattern, weak concept match, or no useful link.</p>
         </article>
       </section>
 
@@ -83,32 +84,31 @@
             <span class="card-number">01</span>
             <h3>Academic finance graph.</h3>
             <p>
-              Concepts, relationships, centrality, and time patterns from the materialized finance graph
-              workspace.
+              Concepts, relationships, and time patterns from the finance papers currently available
+              in the local research graph.
             </p>
           </article>
           <article class="story-card">
             <span class="card-number">02</span>
             <h3>Product bridge.</h3>
             <p>
-              Product graphs are compared with academic neighborhoods to separate strategy, mechanism,
-              motif, and weak-concept links.
+              Fund descriptions are compared with nearby academic papers to separate strategy,
+              mechanism, broader-pattern, and weak keyword links.
             </p>
           </article>
           <article class="story-card">
             <span class="card-number">03</span>
             <h3>Current-pass numbers.</h3>
             <p>
-              Counts, family labels, and examples reflect the latest local extraction and bridge
-              adjudication pass.
+              Counts, family labels, and examples reflect the latest local extraction and review pass.
             </p>
           </article>
           <article class="story-card">
             <span class="card-number">04</span>
             <h3>Next evidence layer.</h3>
             <p>
-              Source-text excerpts, noisy-family review, and stronger academic evidence checks are the
-              next additions.
+              More source excerpts, closer review of noisy families, and stronger academic-paper
+              evidence are the next additions.
             </p>
           </article>
         </div>
@@ -118,8 +118,9 @@
         <div class="section-heading">
           <h2 id="bridge-explorer-title">Bridge explorer</h2>
           <p>
-            Compare product-family graphs with nearby academic finance objects. The labels show where
-            the current links are clean, mechanism-level, motif-level, or noisy.
+            Compare groups of similar products with nearby academic finance objects. The labels show
+            whether the current link is a close strategy match, a mechanism link, a broader pattern,
+            or a noisy keyword match.
           </p>
         </div>
         <div class="bridge-shell">
@@ -129,13 +130,13 @@
               <select id="bridge-family-select"></select>
             </div>
             <div>
-              <label for="bridge-type-select">Bridge type</label>
+              <label for="bridge-type-select">Link type</label>
               <select id="bridge-type-select">
                 <option value="all">All families</option>
                 <option value="same_strategy">Same strategy</option>
                 <option value="same_mechanism">Same mechanism</option>
-                <option value="shared_motif">Shared motif</option>
-                <option value="weak">Concept-only / no bridge</option>
+                <option value="shared_motif">Broader pattern</option>
+                <option value="weak">Concept-only / no useful link</option>
               </select>
             </div>
           </div>
@@ -147,9 +148,9 @@
               <thead>
                 <tr>
                   <th>Product family</th>
-                  <th>Product graph signature</th>
-                  <th>Nearest academic object</th>
-                  <th>First-pass bridge</th>
+                  <th><span class="term" tabindex="0" data-tip="The recurring product-side relations in the prospectus graph, such as uses instrument, tracks benchmark, or targets factor.">Product graph signature</span></th>
+                  <th><span class="term" tabindex="0" data-tip="The closest academic-side concept, paper group, or research relationship retrieved from the finance graph.">Nearest academic object</span></th>
+                  <th><span class="term" tabindex="0" data-tip="Current review label for how the product family connects to academic finance.">Current link type</span></th>
                   <th>Main caveat</th>
                 </tr>
               </thead>
@@ -164,7 +165,7 @@
           <h2 id="examples-title">Worked examples</h2>
           <p>
             A few bridge types are easier to see case by case. These examples show why the object is a
-            graph bridge, not a keyword match.
+            structured product-to-paper link, not a keyword match.
           </p>
         </div>
         <div class="example-grid" id="featured-examples"></div>
@@ -174,7 +175,7 @@
         <div class="section-heading">
           <h2 id="readout-title">Current readout</h2>
           <p>
-            The useful result is the bridge-type split. Different product families connect to academic
+            The useful result is the link-type split. Different product families connect to academic
             finance in different ways.
           </p>
         </div>
@@ -185,7 +186,7 @@
         <div class="section-heading">
           <h2 id="typology-title">Matched how?</h2>
           <p>
-            The paper-facing table: product family, product graph signature, nearest academic object,
+            The paper-facing table: product family, product design summary, closest academic object,
             bridge type, and caveat.
           </p>
         </div>
@@ -194,9 +195,9 @@
             <thead>
               <tr>
                 <th>Product family</th>
-                <th>Product graph signature</th>
-                <th>Nearest academic object</th>
-                <th>Bridge type</th>
+                <th><span class="term" tabindex="0" data-tip="Short summary of what the product descriptions repeatedly say the funds do.">Product design summary</span></th>
+                <th><span class="term" tabindex="0" data-tip="Closest research object found in the academic finance graph.">Closest academic object</span></th>
+                <th><span class="term" tabindex="0" data-tip="How the product side and research side are connected.">Bridge type</span></th>
                 <th>Main caveat</th>
               </tr>
             </thead>
@@ -209,8 +210,8 @@
         <div class="section-heading">
           <h2 id="methods-title">Method in brief</h2>
           <p>
-            The site compares two graph objects: product-local graphs from fund documents and academic
-            neighborhoods from the finance research graph.
+            The site compares two descriptions of the same broad idea: what fund documents say the
+            product does, and what academic papers say about nearby finance concepts.
           </p>
         </div>
         <div class="method-flow">
@@ -218,24 +219,24 @@
             <span>01</span>
             <h3>Product documents</h3>
             <p>
-              Prospectus text is reduced to product graphs: objective, exposure, instrument, benchmark,
-              rule, horizon, and risk.
+              Prospectus text is reduced to simple product descriptions: objective, exposure,
+              instrument, benchmark, rule, horizon, and risk.
             </p>
           </article>
           <article>
             <span>02</span>
             <h3>Academic neighborhoods</h3>
             <p>
-              FrontierGraph provides the academic side: finance concepts, paper-local relationships, and
-              graph neighborhoods around those concepts.
+              FrontierGraph provides the academic side: finance concepts, relationships extracted from
+              papers, and nearby papers around those concepts.
             </p>
           </article>
           <article>
             <span>03</span>
             <h3>Bridge labels</h3>
             <p>
-              We classify whether a product family and academic neighborhood share a strategy,
-              mechanism, motif, surface concept, or no useful bridge.
+              We classify whether a product group and nearby papers share a strategy, mechanism,
+              broader pattern, surface concept, or no useful link.
             </p>
           </article>
           <article class="method-placeholder">
@@ -273,15 +274,15 @@
           <article>
             <strong>Current paper claim</strong>
             <p>
-              Product-academic links differ by bridge type. Some are same-strategy, some are
-              mechanism-level, some are shared motifs, and some are false keyword matches.
+              Product-academic links differ by type. Some are same-strategy, some are
+              mechanism-level, some are broader-pattern links, and some are false keyword matches.
             </p>
           </article>
           <article>
             <strong>Current evidence</strong>
             <p>
               The bridge table is a design result: it shows which families look clean, mechanism-level,
-              motif-level, or noisy in the current pass.
+              broader-pattern, or noisy in the current pass.
             </p>
           </article>
           <article class="method-placeholder">

@@ -43,21 +43,46 @@ const bridgeLabelOrder = ["same_strategy", "same_mechanism", "shared_motif", "co
 const bridgeLabelText = {
   same_strategy: "Same strategy",
   same_mechanism: "Same mechanism",
-  shared_motif: "Shared motif",
+  shared_motif: "Broader pattern",
   concept_only: "Concept only",
-  no_bridge: "No bridge",
+  no_bridge: "No useful link",
 };
 
 const bridgeLabelDefinition = {
-  same_strategy: "The paper studies substantially the same investment strategy or style.",
-  same_mechanism: "The paper studies a mechanism that can explain the product design.",
-  shared_motif: "The two sides share a market, instrument, exposure, or broad motif.",
-  concept_only: "The match is mostly a shared word or loose concept.",
-  no_bridge: "The academic match is unlikely to be useful for this product family.",
+  same_strategy: "The product and paper describe substantially the same investment strategy or style.",
+  same_mechanism: "The paper studies an economic force that helps explain the product design.",
+  shared_motif: "The two sides share a market, instrument, exposure, or broad design pattern.",
+  concept_only: "The match is mostly a shared word or loose idea.",
+  no_bridge: "The academic match is unlikely to be useful for this product group.",
+};
+
+const termDefinitions = {
+  "product graph signature":
+    "The recurring product-side relations in prospectuses, such as uses instrument, tracks benchmark, or targets factor.",
+  "product node signature":
+    "The recurring product-side objects in prospectuses, such as instrument, benchmark, rule, risk, or factor.",
+  "nearest academic object":
+    "The closest paper, concept, or research relationship retrieved from the academic finance graph.",
+  "bridge-label mix":
+    "How reviewed candidate links for this product group split across same strategy, mechanism, broader pattern, weak concept, and no useful link.",
+  "substantive rows":
+    "Reviewed candidate links currently classified as same strategy, same mechanism, or broader pattern.",
+  "source-evidence check":
+    "A local check that compares the link label against product excerpts and academic graph evidence.",
+  "academic match examples":
+    "Example papers returned by the academic retrieval step. These are evidence to inspect, not final citations.",
+  "nodes per graph": "Average number of product-side objects extracted from each fund document.",
+  "edges per graph": "Average number of product-side relationships extracted from each fund document.",
 };
 
 function bridgeLabel(value) {
   return bridgeLabelText[value] || niceLabel(value || "unlabeled");
+}
+
+function withTerm(text, key = text) {
+  const definition = termDefinitions[String(key).toLowerCase()];
+  if (!definition) return escapeHtml(text);
+  return `<span class="term" tabindex="0" data-tip="${escapeHtml(definition)}">${escapeHtml(text)}</span>`;
 }
 
 function escapeHtml(value) {
@@ -77,7 +102,7 @@ function renderMetrics() {
     grid.innerHTML = [
       metricCard(formatNumber.format(bridge.summary.product_documents), "product documents"),
       metricCard(formatNumber.format(bridge.summary.product_families), "product families"),
-      metricCard(formatNumber.format(bridge.summary.bridge_review_rows), "bridge rows"),
+      metricCard(formatNumber.format(bridge.summary.bridge_review_rows), "reviewed links"),
       metricCard(formatNumber.format(summary.paper_count), "finance papers"),
     ].join("");
     return;
@@ -201,35 +226,35 @@ function renderFamilyModal(family) {
         <p>${escapeHtml(family.interpretation || "No additional interpretation recorded for this family.")}</p>
       </section>
       <section class="modal-block">
-        <strong>Product graph signature</strong>
+        <strong>${withTerm("Product graph signature")}</strong>
         <div class="signature-list">${signatureList(family.product_graph_signature)}</div>
       </section>
       <section class="modal-block">
-        <strong>Product node signature</strong>
+        <strong>${withTerm("Product node signature")}</strong>
         <div class="signature-list">${signatureList(family.product_node_signature)}</div>
       </section>
       <section class="modal-block modal-wide">
-        <strong>Nearest academic object</strong>
+        <strong>${withTerm("Nearest academic object")}</strong>
         <p>${escapeHtml(family.nearest_academic_object)}</p>
       </section>
       <section class="modal-block modal-full">
-        <strong>Source-evidence check</strong>
+        <strong>${withTerm("Source-evidence check")}</strong>
         ${familySourceAudit(family)}
       </section>
       <section class="modal-block">
-        <strong>Bridge-label mix</strong>
+        <strong>${withTerm("Bridge-label mix")}</strong>
         <div class="bridge-bars">${renderBridgeBars(family)}</div>
       </section>
       <section class="modal-block">
         <strong>Graph size</strong>
         <div class="modal-stats">
-          <div><b>${family.mean_nodes.toFixed(1)}</b><span>mean nodes</span></div>
-          <div><b>${family.mean_edges.toFixed(1)}</b><span>mean edges</span></div>
-          <div><b>${asPercent(family.substantive_bridge_share)}</b><span>substantive rows</span></div>
+          <div><b>${family.mean_nodes.toFixed(1)}</b><span>${withTerm("nodes per graph")}</span></div>
+          <div><b>${family.mean_edges.toFixed(1)}</b><span>${withTerm("edges per graph")}</span></div>
+          <div><b>${asPercent(family.substantive_bridge_share)}</b><span>${withTerm("substantive rows")}</span></div>
         </div>
       </section>
       <section class="modal-block modal-full">
-        <strong>Academic match examples</strong>
+        <strong>${withTerm("Academic match examples")}</strong>
         <div class="modal-matches">${familyModalExamples(family)}</div>
       </section>
     </div>
@@ -305,10 +330,10 @@ function renderBridgeExplorer() {
   typeSelect.value = state.bridgeTypeFilter;
 
   overview.innerHTML = [
-    metricCard(formatNumber.format(bridge.summary.substantive_bridge_rows), "substantive bridge rows"),
+    metricCard(formatNumber.format(bridge.summary.substantive_bridge_rows), "substantive rows"),
     metricCard(formatNumber.format(bridge.summary.same_strategy_rows), "same-strategy rows"),
     metricCard(formatNumber.format(bridge.summary.same_mechanism_rows), "same-mechanism rows"),
-    metricCard(formatNumber.format(bridge.summary.shared_motif_rows), "shared-motif rows"),
+    metricCard(formatNumber.format(bridge.summary.shared_motif_rows), "broader-pattern rows"),
   ].join("");
 
   guide.innerHTML = bridgeLabelOrder
@@ -346,22 +371,22 @@ function renderBridgeExplorer() {
       <p>${escapeHtml(selected.main_caveat)}</p>
       <div class="bridge-stat-row">
         <div><strong>${formatNumber.format(selected.documents)}</strong><span>product documents</span></div>
-        <div><strong>${selected.mean_nodes.toFixed(1)}</strong><span>nodes per graph</span></div>
-        <div><strong>${selected.mean_edges.toFixed(1)}</strong><span>edges per graph</span></div>
-        <div><strong>${asPercent(selected.substantive_bridge_share)}</strong><span>substantive rows</span></div>
+        <div><strong>${selected.mean_nodes.toFixed(1)}</strong><span>${withTerm("nodes per graph")}</span></div>
+        <div><strong>${selected.mean_edges.toFixed(1)}</strong><span>${withTerm("edges per graph")}</span></div>
+        <div><strong>${asPercent(selected.substantive_bridge_share)}</strong><span>${withTerm("substantive rows")}</span></div>
       </div>
     </div>
     <div class="bridge-side">
       <div>
-        <strong>Product graph signature</strong>
+        <strong>${withTerm("Product graph signature")}</strong>
         <div class="signature-list">${signatureList(selected.product_graph_signature)}</div>
       </div>
       <div>
-        <strong>Nearest academic object</strong>
+        <strong>${withTerm("Nearest academic object")}</strong>
         <p>${escapeHtml(selected.nearest_academic_object)}</p>
       </div>
       <div>
-        <strong>Bridge-label mix</strong>
+        <strong>${withTerm("Bridge-label mix")}</strong>
         <div class="bridge-bars">${renderBridgeBars(selected)}</div>
       </div>
       ${examples}
@@ -456,21 +481,21 @@ function renderReadout() {
 
   const cards = [
     {
-      title: "Same-strategy bridges",
+      title: "Same-strategy links",
       label: "same_strategy",
       claim: "Some product families map to an academic object that is close to the product strategy itself.",
       implication: "These are the best candidates for paper-facing examples and later timing analysis.",
       families: familyNamesByBridge(["same_strategy"]),
     },
     {
-      title: "Mechanism bridges",
+      title: "Mechanism links",
       label: "same_mechanism",
       claim: "Some products connect to academic mechanisms that explain the product design.",
       implication: "These support rationale or channel claims rather than identical-strategy claims.",
       families: familyNamesByBridge(["same_mechanism"]),
     },
     {
-      title: "Shared motifs",
+      title: "Broader-pattern links",
       label: "shared_motif",
       claim: "Some links are mainly through a market, instrument, or exposure.",
       implication: "These guide retrieval and become research claims after source-text evidence checks.",
@@ -479,7 +504,7 @@ function renderReadout() {
     {
       title: "Boundary cases",
       label: "concept_only",
-      claim: "Some product screens find adjacent concepts rather than genuine product-academic bridges.",
+      claim: "Some product screens find adjacent concepts rather than genuine product-academic links.",
       implication: "These cases show why graph extraction is needed beyond keyword matching.",
       families: familyNamesByBridge(["concept_only", "no_bridge"]),
     },

@@ -89,6 +89,43 @@ body.modal-open {
   color: var(--ink);
 }
 
+.term {
+  border-bottom: 1px dotted rgba(23, 60, 49, 0.52);
+  cursor: help;
+  position: relative;
+  text-decoration: none;
+}
+
+.term::after {
+  background: #10231f;
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 14px 35px rgba(16, 35, 31, 0.22);
+  color: var(--cream);
+  content: attr(data-tip);
+  font-size: 12px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 1.35;
+  opacity: 0;
+  padding: 10px 12px;
+  pointer-events: none;
+  position: absolute;
+  text-transform: none;
+  top: calc(100% + 8px);
+  transform: translateY(-3px);
+  transition: opacity 140ms ease, transform 140ms ease;
+  width: min(280px, 72vw);
+  z-index: 20;
+}
+
+.term:hover::after,
+.term:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 main {
   margin: 0 auto;
   max-width: 1180px;
