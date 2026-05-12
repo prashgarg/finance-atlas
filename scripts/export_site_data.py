@@ -16,6 +16,7 @@ BRIDGE_PACKAGE = (
     / "product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0/systematic_bridge_package_v0"
 )
 PRODUCT_GRAPH_PACKAGE = BRIDGE_PACKAGE.parent
+SOURCE_AUDIT = PRODUCT_GRAPH_PACKAGE / "source_evidence_audit_v0"
 
 NEAREST_ACADEMIC_OBJECT = {
     "broad allocation inflation sensitive": "inflation hedging and asset allocation under inflation",
@@ -493,6 +494,9 @@ def build_product_bridge() -> dict[str, Any]:
     family_rows = read_optional_csv(BRIDGE_PACKAGE / "family_bridge_cross_section.csv")
     label_rows = read_optional_csv(BRIDGE_PACKAGE / "bridge_label_overall_summary.csv")
     example_rows = read_optional_csv(BRIDGE_PACKAGE / "worked_example_candidate_rows.csv")
+    source_audit_rows = read_optional_csv(SOURCE_AUDIT / "bridge_typology_source_audit.csv")
+    product_evidence_rows = read_optional_csv(SOURCE_AUDIT / "bridge_typology_product_evidence_long.csv")
+    academic_evidence_rows = read_optional_csv(SOURCE_AUDIT / "bridge_typology_academic_evidence_long.csv")
     package_summary = read_optional_json(PRODUCT_GRAPH_PACKAGE / "package_summary.json")
 
     if not family_rows:
@@ -517,17 +521,63 @@ def build_product_bridge() -> dict[str, Any]:
             }
         )
 
+    product_evidence_by_display: dict[str, list[dict[str, Any]]] = {}
+    for row in product_evidence_rows:
+        family = row.get("product_family", "")
+        if not family:
+            continue
+        product_evidence_by_display.setdefault(family, []).append(
+            {
+                "slot": as_int(row.get("slot", "0")),
+                "field_group": row.get("field_group", ""),
+                "edge_or_node_type": row.get("edge_or_node_type", ""),
+                "quote": row.get("quote", ""),
+            }
+        )
+
+    academic_evidence_by_display: dict[str, list[dict[str, Any]]] = {}
+    for row in academic_evidence_rows:
+        family = row.get("product_family", "")
+        if not family:
+            continue
+        academic_evidence_by_display.setdefault(family, []).append(
+            {
+                "slot": as_int(row.get("slot", "0")),
+                "title": compact_title(row.get("title", ""), 110),
+                "year": as_int(row.get("year", "")),
+                "venue": row.get("venue", ""),
+                "matched_terms": row.get("matched_terms", ""),
+                "frontiergraph_edge": row.get("frontiergraph_edge", ""),
+            }
+        )
+
+    audit_by_display: dict[str, dict[str, Any]] = {}
+    for row in source_audit_rows:
+        family = row.get("product_family", "")
+        if not family:
+            continue
+        audit_by_display[family] = {
+            "survives": row.get("bridge_label_survives_source_evidence", ""),
+            "reason": row.get("audit_reason", ""),
+            "caveat_after_audit": row.get("main_caveat_after_audit", ""),
+            "product_evidence_count": as_int(row.get("product_evidence_count", "0")),
+            "academic_evidence_count": as_int(row.get("academic_evidence_count", "0")),
+            "product_excerpts": product_evidence_by_display.get(family, []),
+            "academic_evidence": academic_evidence_by_display.get(family, []),
+        }
+
     families = []
     for row in family_rows:
         family = row["product_family"]
         label_counts = {label: as_int(row.get(label, "0")) for label in BRIDGE_LABEL_ORDER}
         bridge_review_rows = as_int(row.get("bridge_review_rows", "0"))
         modal_label = row.get("modal_first_pass_bridge", "")
+        display_name = FAMILY_DISPLAY_NAME.get(family, family.replace(" or ", " / ").title())
         families.append(
             {
                 "id": slugify(family),
                 "product_family": family,
-                "display_name": FAMILY_DISPLAY_NAME.get(family, family.replace(" or ", " / ").title()),
+                "display_name": display_name,
                 "documents": as_int(row.get("documents", "0")),
                 "mean_nodes": as_float(row.get("mean_nodes", "0")),
                 "mean_edges": as_float(row.get("mean_edges", "0")),
@@ -547,6 +597,7 @@ def build_product_bridge() -> dict[str, Any]:
                 "current_use_status": row.get("current_use_status", ""),
                 "main_caveat": BRIDGE_CAVEATS.get(family, "Needs source-text review before stronger claims."),
                 "examples": examples_by_family.get(family, []),
+                "source_audit": audit_by_display.get(display_name, {}),
             }
         )
 
@@ -595,6 +646,7 @@ def build_product_bridge() -> dict[str, Any]:
                 "bridge_type": spec["bridge_type"],
                 "modal_first_pass_bridge": family_item.get("modal_first_pass_bridge", ""),
                 "main_caveat": spec["main_caveat"],
+                "source_audit": family_item.get("source_audit", {}),
             }
         )
 

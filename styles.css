@@ -946,6 +946,16 @@ main {
   background: rgba(47, 111, 78, 0.06);
 }
 
+.typology-audit {
+  color: var(--green-dark);
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
 .data-panel {
   background: rgba(255, 250, 240, 0.72);
   border: 1px solid rgba(16, 35, 31, 0.12);
@@ -1107,6 +1117,61 @@ main {
 .modal-block p {
   color: var(--muted);
   margin: 0 0 8px;
+}
+
+.audit-status {
+  background: rgba(47, 111, 78, 0.08);
+  border: 1px solid rgba(47, 111, 78, 0.14);
+  border-radius: 16px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.audit-status b {
+  color: var(--green-dark);
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.audit-columns {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.audit-columns strong {
+  color: var(--ink);
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.audit-columns ul {
+  display: grid;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.audit-columns li {
+  background: rgba(244, 239, 226, 0.72);
+  border-radius: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.35;
+  padding: 10px;
+}
+
+.audit-columns li span,
+.audit-columns li small {
+  color: var(--gold);
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  margin-bottom: 4px;
+  text-transform: uppercase;
 }
 
 .modal-stats {
@@ -1787,6 +1852,7 @@ main {
   .provenance-panel,
   .readout-grid,
   .data-panel,
+  .audit-columns,
   .paper-grid {
     grid-template-columns: 1fr;
   }

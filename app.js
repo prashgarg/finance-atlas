@@ -133,6 +133,54 @@ function familyModalExamples(family) {
     .join("");
 }
 
+function sourceAuditLabel(value) {
+  const labels = {
+    yes: "survives source check",
+    mostly: "mostly survives",
+    "yes-as-boundary": "survives as boundary case",
+  };
+  return labels[value] || value || "not audited";
+}
+
+function familySourceAudit(family) {
+  const audit = family.source_audit || {};
+  if (!audit.survives) {
+    return `<p class="empty-note">Source-evidence audit is not available for this family yet.</p>`;
+  }
+  const productExcerpts = (audit.product_excerpts || [])
+    .slice(0, 2)
+    .map((item) => `<li><span>${escapeHtml(item.field_group || "source")}</span>${escapeHtml(item.quote)}</li>`)
+    .join("");
+  const academicEvidence = (audit.academic_evidence || [])
+    .slice(0, 2)
+    .map(
+      (item) => `
+        <li>
+          <span>${escapeHtml(item.year || "")}</span>
+          ${escapeHtml(item.title)}
+          <small>${escapeHtml(item.matched_terms || item.frontiergraph_edge || "")}</small>
+        </li>
+      `,
+    )
+    .join("");
+  return `
+    <div class="audit-status">
+      <b>${escapeHtml(sourceAuditLabel(audit.survives))}</b>
+      <p>${escapeHtml(audit.reason || "")}</p>
+    </div>
+    <div class="audit-columns">
+      <div>
+        <strong>Product excerpts</strong>
+        <ul>${productExcerpts}</ul>
+      </div>
+      <div>
+        <strong>Academic evidence</strong>
+        <ul>${academicEvidence}</ul>
+      </div>
+    </div>
+  `;
+}
+
 function renderFamilyModal(family) {
   const content = document.querySelector("#family-modal-content");
   content.innerHTML = `
@@ -163,6 +211,10 @@ function renderFamilyModal(family) {
       <section class="modal-block modal-wide">
         <strong>Nearest academic object</strong>
         <p>${escapeHtml(family.nearest_academic_object)}</p>
+      </section>
+      <section class="modal-block modal-full">
+        <strong>Source-evidence check</strong>
+        ${familySourceAudit(family)}
       </section>
       <section class="modal-block">
         <strong>Bridge-label mix</strong>
@@ -465,7 +517,14 @@ function renderTypologyTable() {
           <td>${escapeHtml(row.product_graph_signature_text)}</td>
           <td>${escapeHtml(row.nearest_academic_object)}</td>
           <td><b class="bridge-badge ${escapeHtml(row.modal_first_pass_bridge)}">${escapeHtml(row.bridge_type)}</b></td>
-          <td>${escapeHtml(row.main_caveat)}</td>
+          <td>
+            ${escapeHtml(row.main_caveat)}
+            ${
+              row.source_audit?.survives
+                ? `<span class="typology-audit">${escapeHtml(sourceAuditLabel(row.source_audit.survives))}</span>`
+                : ""
+            }
+          </td>
         </tr>
       `,
     )

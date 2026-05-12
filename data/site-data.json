@@ -16026,7 +16026,46 @@
             "bridge_label": "same_strategy",
             "confidence": "medium"
           }
-        ]
+        ],
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product quotes and academic retrieval both point to operational trend-following or time-series momentum strategies.",
+          "caveat_after_audit": "Still verify that each selected product is not merely using broad managed-futures branding without a trend-following rule.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_uses_strategy",
+              "quote": "Managed Futures Strategy Fund ... seeks exposure to various asset classes ... uses proprietary quantitative models to identify price trends"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy",
+              "quote": "The sub-advisor uses proprietary quantitative models to identify price trends ... managed futures strategy"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Profitability of time series momentum",
+              "year": 2015,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "time series momentum; trend following",
+              "frontiergraph_edge": "Time horizon effect Stabilizing an Unstable Economy"
+            },
+            {
+              "slot": 2,
+              "title": "The trend is our friend: Risk parity, momentum and trend following in global asset allocation",
+              "year": 2016,
+              "venue": "Journal of Behavioral and Experimental Finance",
+              "matched_terms": "trend following",
+              "frontiergraph_edge": "Trend following association Momentum (finance)"
+            }
+          ]
+        }
       },
       {
         "id": "multifactor-smart-beta",
@@ -16091,7 +16130,46 @@
             "bridge_label": "same_strategy",
             "confidence": "medium"
           }
-        ]
+        ],
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product evidence names systematic factor exposures and the academic retrieval returns smart-beta/factor-investing papers.",
+          "caveat_after_audit": "The academic side may study factor construction more generally than the exact investable index wrapper.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "smart beta strategies that are designed to provide consistent exposure to systematic factors such as value, momentum, quality and size."
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "considering such factors as free float, momentum, trading strategies, liquidity, size, value, profitability"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Smart betas, return models and the tangency portfolio weights",
+              "year": 2024,
+              "venue": "PLoS ONE",
+              "matched_terms": "smart beta",
+              "frontiergraph_edge": "Tangent portfolio association Smart beta"
+            },
+            {
+              "slot": 2,
+              "title": "Performance of ESG-integrated smart beta strategies in Asia-Pacific stock markets",
+              "year": 2023,
+              "venue": "Research in International Business and Finance",
+              "matched_terms": "smart beta",
+              "frontiergraph_edge": "ESG Quant difference Smart beta"
+            }
+          ]
+        }
       },
       {
         "id": "esg-climate-sustainable-screen",
@@ -16131,7 +16209,8 @@
         "substantive_bridge_share": 1.0,
         "current_use_status": "ready_for_worked_example_shortlist",
         "main_caveat": "Same-strategy candidate: screens and exclusions are close, but ESG labels can combine preference, risk, and disclosure motives.",
-        "examples": []
+        "examples": [],
+        "source_audit": {}
       },
       {
         "id": "volatility-exposure-or-control-unsplit",
@@ -16196,7 +16275,46 @@
             "bridge_label": "same_mechanism",
             "confidence": "medium"
           }
-        ]
+        ],
+        "source_audit": {
+          "survives": "mostly",
+          "reason": "The bridge survives as a mechanism link: products reference volatility exposure or control, while the academic side studies volatility-risk pricing objects.",
+          "caveat_after_audit": "Some product quotes are generic volatility-selection or risk-control language rather than a specific volatility-risk-premium implementation.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "attempts to manage volatility and principal risk through issue, industry and quality diversification"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "factors such as market capitalization, volatility, correlation to other markets, liquidity, and perceived risk and potential for growth"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Predicting the VIX and the volatility risk premium: The role of short-run funding spreads Volatility Factors",
+              "year": 2020,
+              "venue": "Journal of Econometrics",
+              "matched_terms": "variance risk premium; VIX; volatility risk premium",
+              "frontiergraph_edge": "Forward volatility prediction VIX"
+            },
+            {
+              "slot": 2,
+              "title": "How does the market variance risk premium vary over time? Evidence from S&amp;P 500 variance swap investment...",
+              "year": 2015,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "variance risk premium",
+              "frontiergraph_edge": "Trading activity prediction Variance risk premium"
+            }
+          ]
+        }
       },
       {
         "id": "broad-allocation-inflation-sensitive",
@@ -16261,7 +16379,46 @@
             "bridge_label": "same_mechanism",
             "confidence": "medium_high"
           }
-        ]
+        ],
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product side contains explicit inflation-protected or inflation-indexed investment language, while academic matches study inflation hedging and inflation risk.",
+          "caveat_after_audit": "The link is through an inflation-hedging rationale, not necessarily through a single named product strategy.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_invests_in",
+              "quote": "inflation-indexed debt obligations of varying maturities ... (such as Treasury Inflation Protected Securities, or TIPS)"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_uses_strategy",
+              "quote": "the Fund seeks to achieve its investment objective of real return by investing at least 80% of its net assets ... in inflation protected instruments"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Inflation hedging effectiveness of farmland and timberland assets in the United States",
+              "year": 2023,
+              "venue": "Forest Policy and Economics",
+              "matched_terms": "inflation hedge; inflation hedging",
+              "frontiergraph_edge": "expected inflation effect Private investment in public equity"
+            },
+            {
+              "slot": 2,
+              "title": "Hedging inflation risk in a developing economy: The case of Brazil",
+              "year": 2012,
+              "venue": "Research in International Business and Finance",
+              "matched_terms": "asset allocation; inflation hedge; inflation risk; tactical asset allocation",
+              "frontiergraph_edge": "foreign currencies association Household Assets"
+            }
+          ]
+        }
       },
       {
         "id": "real-asset-inflation-hedge",
@@ -16301,7 +16458,8 @@
         "substantive_bridge_share": 1.0,
         "current_use_status": "ready_for_worked_example_shortlist",
         "main_caveat": "Mechanism bridge: products hold real assets; papers often study the inflation-hedging channel rather than the fund design.",
-        "examples": []
+        "examples": [],
+        "source_audit": {}
       },
       {
         "id": "tips-or-real-return-inflation-protection",
@@ -16341,7 +16499,8 @@
         "substantive_bridge_share": 1.0,
         "current_use_status": "needs_more_review_before_paper_claim",
         "main_caveat": "Shared market bridge: TIPS products and inflation-indexed bond papers are close, but the product wrapper adds maturity and allocation choices.",
-        "examples": []
+        "examples": [],
+        "source_audit": {}
       },
       {
         "id": "crypto-futures-exposure",
@@ -16406,7 +16565,8 @@
             "bridge_label": "shared_motif",
             "confidence": "medium"
           }
-        ]
+        ],
+        "source_audit": {}
       },
       {
         "id": "crypto-spot-or-reference-exposure",
@@ -16446,7 +16606,8 @@
         "substantive_bridge_share": 1.0,
         "current_use_status": "useful_as_motif_or_market_bridge",
         "main_caveat": "Shared motif bridge: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
-        "examples": []
+        "examples": [],
+        "source_audit": {}
       },
       {
         "id": "quality-growth-stock-selection",
@@ -16511,7 +16672,8 @@
             "bridge_label": "no_bridge",
             "confidence": "high"
           }
-        ]
+        ],
+        "source_audit": {}
       },
       {
         "id": "managed-volatility-overlay",
@@ -16551,7 +16713,8 @@
         "substantive_bridge_share": 0.25,
         "current_use_status": "useful_as_noise_or_boundary_case",
         "main_caveat": "Boundary case: volatility control can be a strategy rule, a risk disclosure, or incidental language.",
-        "examples": []
+        "examples": [],
+        "source_audit": {}
       },
       {
         "id": "low-volatility-or-multifactor-lowvol",
@@ -16616,7 +16779,46 @@
             "bridge_label": "concept_only",
             "confidence": "low_medium"
           }
-        ]
+        ],
+        "source_audit": {
+          "survives": "yes-as-boundary",
+          "reason": "There are plausible low-beta and minimum-variance academic counterparts, but the retrieval also mixes in unrelated volatility meanings.",
+          "caveat_after_audit": "The bridge needs tighter academic retrieval before it can be treated as a clean same-strategy family.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "Low Volatility. A company’s low volatility factor score is based on the standard deviation of monthly total returns …"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "These factors include low volatility ... The Index seeks to provide exposure to these factors with an emphasis on the low volatility factor"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "The betting against beta anomaly: Fact or fiction?",
+              "year": 2015,
+              "venue": "Finance research letters",
+              "matched_terms": "betting against beta",
+              "frontiergraph_edge": "Nonlinear regression association Intertemporal CAPM"
+            },
+            {
+              "slot": 2,
+              "title": "A note on the returns from minimum variance investing",
+              "year": 2011,
+              "venue": "Journal of Empirical Finance",
+              "matched_terms": "minimum variance",
+              "frontiergraph_edge": "Minimum-variance unbiased estimator association Fama–French three-factor model"
+            }
+          ]
+        }
       }
     ],
     "featured_examples": [
@@ -16730,7 +16932,46 @@
         "nearest_academic_object": "time-series momentum and trend-following strategies",
         "bridge_type": "Same strategy",
         "modal_first_pass_bridge": "same_strategy",
-        "main_caveat": "Need source-text check that the product rule is genuinely trend-following, not broad managed-futures branding."
+        "main_caveat": "Need source-text check that the product rule is genuinely trend-following, not broad managed-futures branding.",
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product quotes and academic retrieval both point to operational trend-following or time-series momentum strategies.",
+          "caveat_after_audit": "Still verify that each selected product is not merely using broad managed-futures branding without a trend-following rule.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_uses_strategy",
+              "quote": "Managed Futures Strategy Fund ... seeks exposure to various asset classes ... uses proprietary quantitative models to identify price trends"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy",
+              "quote": "The sub-advisor uses proprietary quantitative models to identify price trends ... managed futures strategy"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Profitability of time series momentum",
+              "year": 2015,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "time series momentum; trend following",
+              "frontiergraph_edge": "Time horizon effect Stabilizing an Unstable Economy"
+            },
+            {
+              "slot": 2,
+              "title": "The trend is our friend: Risk parity, momentum and trend following in global asset allocation",
+              "year": 2016,
+              "venue": "Journal of Behavioral and Experimental Finance",
+              "matched_terms": "trend following",
+              "frontiergraph_edge": "Trend following association Momentum (finance)"
+            }
+          ]
+        }
       },
       {
         "family_id": "multifactor-smart-beta",
@@ -16740,7 +16981,46 @@
         "nearest_academic_object": "factor investing, smart beta, and multifactor portfolio design",
         "bridge_type": "Same strategy",
         "modal_first_pass_bridge": "same_strategy",
-        "main_caveat": "Academic work may study factor construction more generally than investable index implementation."
+        "main_caveat": "Academic work may study factor construction more generally than investable index implementation.",
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product evidence names systematic factor exposures and the academic retrieval returns smart-beta/factor-investing papers.",
+          "caveat_after_audit": "The academic side may study factor construction more generally than the exact investable index wrapper.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "smart beta strategies that are designed to provide consistent exposure to systematic factors such as value, momentum, quality and size."
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "considering such factors as free float, momentum, trading strategies, liquidity, size, value, profitability"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Smart betas, return models and the tangency portfolio weights",
+              "year": 2024,
+              "venue": "PLoS ONE",
+              "matched_terms": "smart beta",
+              "frontiergraph_edge": "Tangent portfolio association Smart beta"
+            },
+            {
+              "slot": 2,
+              "title": "Performance of ESG-integrated smart beta strategies in Asia-Pacific stock markets",
+              "year": 2023,
+              "venue": "Research in International Business and Finance",
+              "matched_terms": "smart beta",
+              "frontiergraph_edge": "ESG Quant difference Smart beta"
+            }
+          ]
+        }
       },
       {
         "family_id": "volatility-exposure-or-control-unsplit",
@@ -16750,7 +17030,46 @@
         "nearest_academic_object": "volatility risk premium, variance risk, and volatility-managed exposure",
         "bridge_type": "Mechanism / rationale",
         "modal_first_pass_bridge": "same_mechanism",
-        "main_caveat": "Academic mechanisms may explain volatility-risk pricing rather than the product wrapper."
+        "main_caveat": "Academic mechanisms may explain volatility-risk pricing rather than the product wrapper.",
+        "source_audit": {
+          "survives": "mostly",
+          "reason": "The bridge survives as a mechanism link: products reference volatility exposure or control, while the academic side studies volatility-risk pricing objects.",
+          "caveat_after_audit": "Some product quotes are generic volatility-selection or risk-control language rather than a specific volatility-risk-premium implementation.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "attempts to manage volatility and principal risk through issue, industry and quality diversification"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "factors such as market capitalization, volatility, correlation to other markets, liquidity, and perceived risk and potential for growth"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Predicting the VIX and the volatility risk premium: The role of short-run funding spreads Volatility Factors",
+              "year": 2020,
+              "venue": "Journal of Econometrics",
+              "matched_terms": "variance risk premium; VIX; volatility risk premium",
+              "frontiergraph_edge": "Forward volatility prediction VIX"
+            },
+            {
+              "slot": 2,
+              "title": "How does the market variance risk premium vary over time? Evidence from S&amp;P 500 variance swap investment...",
+              "year": 2015,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "variance risk premium",
+              "frontiergraph_edge": "Trading activity prediction Variance risk premium"
+            }
+          ]
+        }
       },
       {
         "family_id": "broad-allocation-inflation-sensitive",
@@ -16760,7 +17079,46 @@
         "nearest_academic_object": "inflation hedging and asset allocation under inflation",
         "bridge_type": "Mechanism / rationale",
         "modal_first_pass_bridge": "same_mechanism",
-        "main_caveat": "The bridge may be through inflation-hedging rationale, not a single named strategy."
+        "main_caveat": "The bridge may be through inflation-hedging rationale, not a single named strategy.",
+        "source_audit": {
+          "survives": "yes",
+          "reason": "The product side contains explicit inflation-protected or inflation-indexed investment language, while academic matches study inflation hedging and inflation risk.",
+          "caveat_after_audit": "The link is through an inflation-hedging rationale, not necessarily through a single named product strategy.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_invests_in",
+              "quote": "inflation-indexed debt obligations of varying maturities ... (such as Treasury Inflation Protected Securities, or TIPS)"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_uses_strategy",
+              "quote": "the Fund seeks to achieve its investment objective of real return by investing at least 80% of its net assets ... in inflation protected instruments"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Inflation hedging effectiveness of farmland and timberland assets in the United States",
+              "year": 2023,
+              "venue": "Forest Policy and Economics",
+              "matched_terms": "inflation hedge; inflation hedging",
+              "frontiergraph_edge": "expected inflation effect Private investment in public equity"
+            },
+            {
+              "slot": 2,
+              "title": "Hedging inflation risk in a developing economy: The case of Brazil",
+              "year": 2012,
+              "venue": "Research in International Business and Finance",
+              "matched_terms": "asset allocation; inflation hedge; inflation risk; tactical asset allocation",
+              "frontiergraph_edge": "foreign currencies association Household Assets"
+            }
+          ]
+        }
       },
       {
         "family_id": "crypto-futures-exposure",
@@ -16770,7 +17128,8 @@
         "nearest_academic_object": "bitcoin futures, futures price discovery, and crypto market structure",
         "bridge_type": "Shared market / motif",
         "modal_first_pass_bridge": "shared_motif",
-        "main_caveat": "Academic work may study the market or instrument, not the product strategy."
+        "main_caveat": "Academic work may study the market or instrument, not the product strategy.",
+        "source_audit": {}
       },
       {
         "family_id": "quality-growth-stock-selection",
@@ -16780,7 +17139,8 @@
         "nearest_academic_object": "quality factor, earnings quality, and growth-stock selection",
         "bridge_type": "Boundary / noisy",
         "modal_first_pass_bridge": "concept_only",
-        "main_caveat": "Retrieval often confuses investment quality with accounting earnings quality or generic quality language."
+        "main_caveat": "Retrieval often confuses investment quality with accounting earnings quality or generic quality language.",
+        "source_audit": {}
       },
       {
         "family_id": "low-volatility-or-multifactor-lowvol",
@@ -16790,7 +17150,46 @@
         "nearest_academic_object": "low-beta, low-volatility, and minimum-variance strategies",
         "bridge_type": "Boundary / noisy",
         "modal_first_pass_bridge": "concept_only",
-        "main_caveat": "Retrieval can drift to volatility of flows or mathematical minimum-variance problems."
+        "main_caveat": "Retrieval can drift to volatility of flows or mathematical minimum-variance problems.",
+        "source_audit": {
+          "survives": "yes-as-boundary",
+          "reason": "There are plausible low-beta and minimum-variance academic counterparts, but the retrieval also mixes in unrelated volatility meanings.",
+          "caveat_after_audit": "The bridge needs tighter academic retrieval before it can be treated as a clean same-strategy family.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "Low Volatility. A company’s low volatility factor score is based on the standard deviation of monthly total returns …"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "These factors include low volatility ... The Index seeks to provide exposure to these factors with an emphasis on the low volatility factor"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "The betting against beta anomaly: Fact or fiction?",
+              "year": 2015,
+              "venue": "Finance research letters",
+              "matched_terms": "betting against beta",
+              "frontiergraph_edge": "Nonlinear regression association Intertemporal CAPM"
+            },
+            {
+              "slot": 2,
+              "title": "A note on the returns from minimum variance investing",
+              "year": 2011,
+              "venue": "Journal of Empirical Finance",
+              "matched_terms": "minimum variance",
+              "frontiergraph_edge": "Minimum-variance unbiased estimator association Fama–French three-factor model"
+            }
+          ]
+        }
       }
     ]
   }
