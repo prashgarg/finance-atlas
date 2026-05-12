@@ -1119,6 +1119,251 @@ main {
   transform: translateY(0);
 }
 
+.atlas-methods-flow {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.atlas-flow-card {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(197, 141, 45, 0.13), transparent 34%),
+    linear-gradient(145deg, rgba(255, 250, 240, 0.9), rgba(231, 220, 195, 0.5));
+  border: 1px solid rgba(16, 35, 31, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 16px 45px rgba(16, 35, 31, 0.07);
+  overflow: hidden;
+  padding: 20px 20px 16px;
+}
+
+.atlas-flow-card-wide {
+  grid-column: 1 / -1;
+}
+
+.atlas-flow-card-head {
+  align-items: baseline;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto 1fr auto;
+  margin-bottom: 8px;
+}
+
+.atlas-flow-card-head span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.atlas-flow-card-head h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0;
+}
+
+.atlas-flow-card-head p {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.atlas-flow-figure {
+  margin: 0;
+}
+
+.atlas-flow-figure svg {
+  display: block;
+  height: auto;
+  max-height: min(58vh, 470px);
+  overflow: visible;
+  width: 100%;
+}
+
+.atlas-flow-figure-compact svg {
+  max-height: 380px;
+}
+
+.atlas-flow-figure-low svg {
+  max-height: 250px;
+}
+
+.atlas-flow-edge,
+.atlas-flow-spine {
+  fill: none;
+  stroke: rgba(16, 35, 31, 0.25);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.atlas-flow-edge-arrow {
+  marker-end: url("#atlas-arrow");
+}
+
+.atlas-flow-edge-small {
+  marker-end: url("#atlas-small-arrow");
+  stroke: rgba(16, 35, 31, 0.18);
+  stroke-width: 1.6;
+}
+
+.atlas-arrow-head {
+  fill: rgba(16, 35, 31, 0.42);
+}
+
+.atlas-flow-edge-label,
+.atlas-flow-axis {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.atlas-flow-node,
+.atlas-pill-node,
+.atlas-level-node,
+.atlas-example-node {
+  cursor: help;
+}
+
+.atlas-flow-node circle,
+.atlas-pill-node rect,
+.atlas-level-node rect,
+.atlas-level-node circle,
+.atlas-example-node rect {
+  fill: rgba(255, 250, 240, 0.9);
+  stroke: rgba(16, 35, 31, 0.16);
+  stroke-width: 1.2;
+  transition:
+    fill 140ms ease,
+    stroke 140ms ease,
+    transform 140ms ease;
+}
+
+.atlas-flow-node:hover circle,
+.atlas-flow-node:focus circle,
+.atlas-pill-node:hover rect,
+.atlas-pill-node:focus rect,
+.atlas-level-node:hover rect,
+.atlas-level-node:focus rect,
+.atlas-level-node:hover circle,
+.atlas-level-node:focus circle,
+.atlas-example-node:hover rect,
+.atlas-example-node:focus rect {
+  fill: #fffaf0;
+  stroke: rgba(16, 35, 31, 0.38);
+}
+
+.atlas-flow-node:focus,
+.atlas-pill-node:focus,
+.atlas-level-node:focus,
+.atlas-example-node:focus {
+  outline: none;
+}
+
+.atlas-flow-node-product circle,
+.atlas-level-node-strong rect,
+.atlas-example-node-result rect {
+  fill: rgba(231, 220, 195, 0.92);
+  stroke: rgba(16, 35, 31, 0.24);
+}
+
+.atlas-flow-node-academic circle {
+  fill: rgba(78, 102, 143, 0.13);
+}
+
+.atlas-flow-node-output circle {
+  fill: rgba(47, 111, 78, 0.16);
+  stroke: rgba(23, 60, 49, 0.28);
+}
+
+.atlas-level-node-weak rect {
+  fill: rgba(255, 250, 240, 0.66);
+}
+
+.atlas-node-kicker {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.atlas-node-title {
+  fill: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.atlas-node-note {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.atlas-pill-node text,
+.atlas-level-node text,
+.atlas-example-node text {
+  fill: var(--ink);
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.atlas-level-node circle {
+  fill: var(--gold);
+  stroke: rgba(16, 35, 31, 0.2);
+}
+
+.atlas-level-node-weak circle {
+  fill: rgba(97, 113, 104, 0.5);
+}
+
+.atlas-method-tooltip {
+  background: rgba(16, 35, 31, 0.96);
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(16, 35, 31, 0.2);
+  color: var(--cream);
+  display: grid;
+  font-size: 12px;
+  gap: 3px;
+  left: 0;
+  line-height: 1.35;
+  max-width: min(310px, calc(100vw - 28px));
+  opacity: 0;
+  padding: 10px 12px;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transform: translateY(4px);
+  transition: opacity 120ms ease, transform 120ms ease;
+  width: max-content;
+  z-index: 80;
+}
+
+.atlas-method-tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.atlas-method-tooltip strong {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.atlas-method-tooltip span {
+  color: rgba(255, 250, 240, 0.8);
+  font-weight: 650;
+}
+
 .paper-note-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -2246,6 +2491,35 @@ main {
   .link-fan button:first-child,
   .link-fan button:last-child {
     width: 100%;
+  }
+
+  .atlas-methods-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-flow-card-wide {
+    grid-column: auto;
+  }
+
+  .atlas-flow-card {
+    overflow-x: auto;
+  }
+
+  .atlas-flow-card-head {
+    grid-template-columns: auto 1fr;
+  }
+
+  .atlas-flow-card-head p {
+    grid-column: 1 / -1;
+  }
+
+  .atlas-flow-card-wide .atlas-flow-figure svg,
+  .atlas-flow-card-example .atlas-flow-figure svg {
+    min-width: 760px;
+  }
+
+  .atlas-flow-figure-compact svg {
+    min-width: 440px;
   }
 
   .section-heading {

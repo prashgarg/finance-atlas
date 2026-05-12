@@ -581,6 +581,57 @@ function renderDataPanel() {
   `;
 }
 
+function wireMethodTooltips() {
+  const nodes = document.querySelectorAll("[data-flow-tip]");
+  if (!nodes.length || document.querySelector(".atlas-method-tooltip")) return;
+
+  const tooltip = document.createElement("div");
+  tooltip.className = "atlas-method-tooltip";
+  tooltip.setAttribute("role", "tooltip");
+  tooltip.setAttribute("aria-hidden", "true");
+  document.body.appendChild(tooltip);
+
+  const positionTooltip = (x, y) => {
+    tooltip.style.left = "0px";
+    tooltip.style.top = "0px";
+    const margin = 14;
+    const offset = 16;
+    const rect = tooltip.getBoundingClientRect();
+    const left = Math.min(Math.max(margin, x + offset), window.innerWidth - rect.width - margin);
+    const top = Math.min(Math.max(margin, y + offset), window.innerHeight - rect.height - margin);
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${top}px`;
+  };
+
+  const showTooltip = (node, x, y) => {
+    const title = node.dataset.flowTitle || "Method step";
+    const tip = node.dataset.flowTip || "";
+    if (!tip) return;
+    tooltip.innerHTML = `<strong>${escapeHtml(title)}</strong><span>${escapeHtml(tip)}</span>`;
+    tooltip.classList.add("is-visible");
+    tooltip.setAttribute("aria-hidden", "false");
+    positionTooltip(x, y);
+  };
+
+  const hideTooltip = () => {
+    tooltip.classList.remove("is-visible");
+    tooltip.setAttribute("aria-hidden", "true");
+  };
+
+  nodes.forEach((node) => {
+    node.addEventListener("pointerenter", (event) => showTooltip(node, event.clientX, event.clientY));
+    node.addEventListener("pointermove", (event) => {
+      if (tooltip.classList.contains("is-visible")) positionTooltip(event.clientX, event.clientY);
+    });
+    node.addEventListener("pointerleave", hideTooltip);
+    node.addEventListener("focus", () => {
+      const rect = node.getBoundingClientRect();
+      showTooltip(node, rect.left + rect.width / 2, rect.top + rect.height / 2);
+    });
+    node.addEventListener("blur", hideTooltip);
+  });
+}
+
 function correctHashScroll() {
   const hash = window.location.hash;
   if (!hash) return;
@@ -1256,6 +1307,7 @@ async function init() {
   renderEdges();
   renderPapers();
   wireControls();
+  wireMethodTooltips();
   correctHashScroll();
 }
 

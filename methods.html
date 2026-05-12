@@ -38,68 +38,203 @@
           <h2 id="methods-title">Method in brief</h2>
           <p>How product documents and academic research graphs become comparable objects.</p>
         </div>
-        <div class="methods-schematic" aria-label="Finance Atlas methods flow">
-          <article class="methods-panel methods-panel-wide">
-            <div class="methods-panel-head">
+        <div class="atlas-methods-flow" aria-label="Finance Atlas method schematics">
+          <article class="atlas-flow-card atlas-flow-card-wide">
+            <div class="atlas-flow-card-head">
               <span>01</span>
-              <h3>Project pipeline</h3>
+              <h3>Bridge pipeline</h3>
+              <p>Hover or focus a node for the measurement meaning.</p>
             </div>
-            <div class="flow-ribbon flow-ribbon-wide">
-              <button class="flow-node" data-tip="Fund and ETF filings that describe objectives, strategies, instruments, benchmarks, rules, and risks.">Product documents</button>
-              <span class="flow-arrow">parse</span>
-              <button class="flow-node" data-tip="The product-side decomposition: objective, exposure, instrument, rule or horizon, benchmark, and risk.">Product anatomy</button>
-              <span class="flow-arrow">extract</span>
-              <button class="flow-node strong" data-tip="A compact graph of what the product says it does, not a rating of whether the product is good.">Product graph</button>
-              <span class="flow-join" aria-hidden="true"></span>
-              <button class="flow-node strong" data-tip="Nearby papers, concepts, and relationships from FrontierGraph around the same broad finance idea.">Academic neighborhood</button>
-              <span class="flow-arrow">compare</span>
-              <button class="flow-node" data-tip="A classified connection between part of the product design and a nearby academic research object.">Product--research link</button>
-            </div>
+            <figure class="atlas-flow-figure" aria-label="Product and academic graph bridge pipeline">
+              <svg viewBox="0 0 1180 420" role="img" aria-labelledby="bridge-flow-title bridge-flow-desc">
+                <title id="bridge-flow-title">Bridge pipeline</title>
+                <desc id="bridge-flow-desc">Product filings and academic research graphs are converted into comparable local objects, then reviewed as bridge candidates.</desc>
+                <defs>
+                  <marker id="atlas-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" class="atlas-arrow-head"></path>
+                  </marker>
+                </defs>
+
+                <g class="atlas-flow-edge-group">
+                  <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 190 130 C 258 130, 286 178, 350 188"></path>
+                  <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 190 292 C 258 292, 286 244, 350 234"></path>
+                  <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 500 210 C 560 210, 600 210, 654 210"></path>
+                  <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 804 210 C 858 210, 898 210, 952 210"></path>
+                  <text class="atlas-flow-edge-label" x="268" y="154">extract</text>
+                  <text class="atlas-flow-edge-label" x="558" y="192">compare</text>
+                  <text class="atlas-flow-edge-label" x="856" y="192">review</text>
+                </g>
+
+                <g class="atlas-flow-node atlas-flow-node-source" tabindex="0" data-flow-title="Product documents" data-flow-tip="SEC mutual fund and ETF filings describe objectives, investment strategies, instruments, benchmarks, risks, and operating rules.">
+                  <circle cx="118" cy="130" r="64"></circle>
+                  <text class="atlas-node-kicker" x="118" y="110" text-anchor="middle">Product side</text>
+                  <text class="atlas-node-title" x="118" y="137" text-anchor="middle">Filings</text>
+                  <text class="atlas-node-note" x="118" y="160" text-anchor="middle">fund / ETF text</text>
+                </g>
+
+                <g class="atlas-flow-node atlas-flow-node-source" tabindex="0" data-flow-title="Academic graph" data-flow-tip="FrontierGraph represents papers as concepts and relationships extracted from academic research. We use nearby finance papers, nodes, and edges rather than plain keyword hits alone.">
+                  <circle cx="118" cy="292" r="64"></circle>
+                  <text class="atlas-node-kicker" x="118" y="272" text-anchor="middle">Research side</text>
+                  <text class="atlas-node-title" x="118" y="299" text-anchor="middle">Papers</text>
+                  <text class="atlas-node-note" x="118" y="322" text-anchor="middle">FrontierGraph</text>
+                </g>
+
+                <g class="atlas-flow-node atlas-flow-node-product" tabindex="0" data-flow-title="Product graph" data-flow-tip="A compact local graph of what the product says it does: objects such as instruments, exposures, rules, objectives, benchmarks, and risks, connected by typed relations.">
+                  <circle cx="424" cy="210" r="86"></circle>
+                  <text class="atlas-node-kicker" x="424" y="184" text-anchor="middle">Local object</text>
+                  <text class="atlas-node-title" x="424" y="214" text-anchor="middle">Product</text>
+                  <text class="atlas-node-title" x="424" y="242" text-anchor="middle">graph</text>
+                </g>
+
+                <g class="atlas-flow-node atlas-flow-node-academic" tabindex="0" data-flow-title="Academic neighborhood" data-flow-tip="The local academic counterpart: nearby concepts, papers, and relationships around the same strategy, instrument, market, mechanism, or risk idea.">
+                  <circle cx="730" cy="210" r="86"></circle>
+                  <text class="atlas-node-kicker" x="730" y="184" text-anchor="middle">Local object</text>
+                  <text class="atlas-node-title" x="730" y="214" text-anchor="middle">Academic</text>
+                  <text class="atlas-node-title" x="730" y="242" text-anchor="middle">neighborhood</text>
+                </g>
+
+                <g class="atlas-flow-node atlas-flow-node-output" tabindex="0" data-flow-title="Bridge candidate" data-flow-tip="A reviewed link between product design and academic research. The question is not only whether a link exists, but what kind of link it is.">
+                  <circle cx="1034" cy="210" r="78"></circle>
+                  <text class="atlas-node-kicker" x="1034" y="188" text-anchor="middle">Output</text>
+                  <text class="atlas-node-title" x="1034" y="218" text-anchor="middle">Bridge</text>
+                  <text class="atlas-node-note" x="1034" y="244" text-anchor="middle">typed link</text>
+                </g>
+              </svg>
+            </figure>
           </article>
 
-          <article class="methods-panel">
-            <div class="methods-panel-head">
+          <article class="atlas-flow-card">
+            <div class="atlas-flow-card-head">
               <span>02</span>
-              <h3>Product anatomy</h3>
+              <h3>Product graph anatomy</h3>
             </div>
-            <div class="anatomy-cloud">
-              <button data-tip="What outcome does the product say it seeks?">Objective</button>
-              <button data-tip="Which asset class, market, factor, sector, or reference asset does it give access to?">Exposure</button>
-              <button data-tip="What financial instruments create the exposure or payoff?">Instrument</button>
-              <button data-tip="Does the product state a rebalancing rule, outcome period, glide path, or maturity?">Rule / horizon</button>
-              <button data-tip="Does the product track, reference, or compare itself to an index?">Benchmark</button>
-              <button data-tip="What risks does the product disclose to investors?">Risk</button>
-            </div>
+            <figure class="atlas-flow-figure atlas-flow-figure-compact" aria-label="Product graph anatomy">
+              <svg viewBox="0 0 560 420" role="img" aria-labelledby="anatomy-title anatomy-desc">
+                <title id="anatomy-title">Product graph anatomy</title>
+                <desc id="anatomy-desc">A product graph decomposes a fund document into objects and typed relations.</desc>
+                <defs>
+                  <marker id="atlas-small-arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" class="atlas-arrow-head"></path>
+                  </marker>
+                </defs>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 164 96"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 396 96"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 448 222"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 378 336"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 178 336"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-small" d="M 278 206 L 108 222"></path>
+
+                <g class="atlas-flow-node atlas-flow-node-product" tabindex="0" data-flow-title="Product claim" data-flow-tip="The center is the investable object: a fund, ETF, or strategy wrapper described in a prospectus.">
+                  <circle cx="278" cy="206" r="74"></circle>
+                  <text class="atlas-node-kicker" x="278" y="184" text-anchor="middle">Product</text>
+                  <text class="atlas-node-title" x="278" y="214" text-anchor="middle">strategy</text>
+                  <text class="atlas-node-note" x="278" y="238" text-anchor="middle">local graph</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Objective" data-flow-tip="The investor-facing outcome: income, capital appreciation, downside protection, inflation hedging, volatility control, and so on.">
+                  <rect x="70" y="58" width="188" height="58" rx="29"></rect>
+                  <text x="164" y="93" text-anchor="middle">Objective</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Exposure" data-flow-tip="The asset class, factor, sector, country, index, reference asset, or economic exposure the product provides.">
+                  <rect x="302" y="58" width="188" height="58" rx="29"></rect>
+                  <text x="396" y="93" text-anchor="middle">Exposure</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Instrument" data-flow-tip="The instruments used to produce the payoff: equities, futures, swaps, options, Treasury securities, credit instruments, or crypto futures.">
+                  <rect x="354" y="193" width="188" height="58" rx="29"></rect>
+                  <text x="448" y="228" text-anchor="middle">Instrument</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Rule or horizon" data-flow-tip="Rebalancing rules, target-date glide paths, outcome periods, option-reset dates, maturities, or other design timing.">
+                  <rect x="284" y="310" width="188" height="58" rx="29"></rect>
+                  <text x="378" y="345" text-anchor="middle">Rule / horizon</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Benchmark" data-flow-tip="The named index, benchmark, or reference portfolio the product tracks, compares itself to, or builds from.">
+                  <rect x="84" y="310" width="188" height="58" rx="29"></rect>
+                  <text x="178" y="345" text-anchor="middle">Benchmark</text>
+                </g>
+                <g class="atlas-pill-node" tabindex="0" data-flow-title="Risk" data-flow-tip="Risk disclosures are kept as separate product objects, because they may connect to academic mechanisms without being the product's main strategy.">
+                  <rect x="14" y="193" width="188" height="58" rx="29"></rect>
+                  <text x="108" y="228" text-anchor="middle">Risk</text>
+                </g>
+              </svg>
+            </figure>
           </article>
 
-          <article class="methods-panel">
-            <div class="methods-panel-head">
+          <article class="atlas-flow-card">
+            <div class="atlas-flow-card-head">
               <span>03</span>
-              <h3>Link levels</h3>
+              <h3>Bridge levels</h3>
             </div>
-            <div class="link-fan">
-              <button data-tip="The product and academic literature describe substantially the same operational strategy.">Same strategy</button>
-              <button data-tip="The product uses a mechanism or rationale studied in academic work, but the wrapper differs.">Mechanism / rationale</button>
-              <button data-tip="The product and academic work share a traded object, market, instrument, or reference asset.">Market / instrument</button>
-              <button data-tip="The same word appears, but the economics is too broad or unstable to use as evidence.">Concept only</button>
-              <button data-tip="The candidate match does not survive review.">No useful link</button>
-            </div>
+            <figure class="atlas-flow-figure atlas-flow-figure-compact" aria-label="Bridge levels from product to academic research">
+              <svg viewBox="0 0 560 420" role="img" aria-labelledby="bridge-levels-title bridge-levels-desc">
+                <title id="bridge-levels-title">Bridge levels</title>
+                <desc id="bridge-levels-desc">Candidate links are organized by how close the product graph is to the academic object.</desc>
+                <path class="atlas-flow-spine" d="M 110 70 L 110 350"></path>
+                <text class="atlas-flow-axis" x="24" y="24">Closer product-research equivalence</text>
+                <text class="atlas-flow-axis" x="24" y="404">Weaker or noisier relation</text>
+
+                <g class="atlas-level-node atlas-level-node-strong" tabindex="0" data-flow-title="Same strategy" data-flow-tip="The product and the academic neighborhood describe substantially the same operational strategy, for example trend following or target-date allocation.">
+                  <rect x="160" y="44" width="290" height="54" rx="14"></rect>
+                  <circle cx="110" cy="71" r="12"></circle>
+                  <text x="182" y="77">Same strategy</text>
+                </g>
+                <g class="atlas-level-node" tabindex="0" data-flow-title="Mechanism or rationale" data-flow-tip="The product design appears to use a mechanism studied in papers, such as volatility risk, inflation hedging, downside protection, or lifecycle allocation.">
+                  <rect x="160" y="114" width="290" height="54" rx="14"></rect>
+                  <circle cx="110" cy="141" r="12"></circle>
+                  <text x="182" y="147">Mechanism / rationale</text>
+                </g>
+                <g class="atlas-level-node" tabindex="0" data-flow-title="Shared market or motif" data-flow-tip="The two sides discuss the same instrument, market, or design pattern, but not necessarily the same investable strategy.">
+                  <rect x="160" y="184" width="290" height="54" rx="14"></rect>
+                  <circle cx="110" cy="211" r="12"></circle>
+                  <text x="182" y="217">Shared market / motif</text>
+                </g>
+                <g class="atlas-level-node atlas-level-node-weak" tabindex="0" data-flow-title="Concept only" data-flow-tip="The same label appears on both sides, but the economics may be too broad, generic, or unstable to treat as a substantive bridge.">
+                  <rect x="160" y="254" width="290" height="54" rx="14"></rect>
+                  <circle cx="110" cy="281" r="12"></circle>
+                  <text x="182" y="287">Concept only</text>
+                </g>
+                <g class="atlas-level-node atlas-level-node-weak" tabindex="0" data-flow-title="No useful link" data-flow-tip="The candidate match does not survive review, often because product language and academic language use the same words differently.">
+                  <rect x="160" y="324" width="290" height="54" rx="14"></rect>
+                  <circle cx="110" cy="351" r="12"></circle>
+                  <text x="182" y="357">No useful link</text>
+                </g>
+              </svg>
+            </figure>
           </article>
 
-          <article class="methods-panel methods-panel-example">
-            <div class="methods-panel-head">
+          <article class="atlas-flow-card atlas-flow-card-wide atlas-flow-card-example">
+            <div class="atlas-flow-card-head">
               <span>04</span>
-              <h3>Worked example</h3>
+              <h3>Example reading</h3>
             </div>
-            <div class="mini-example-flow">
-              <button data-tip="A managed-futures product describes futures contracts and trend-following rules.">Product text</button>
-              <span>→</span>
-              <button data-tip="The product graph records futures as instruments and trend following as a rule.">Product graph</button>
-              <span>→</span>
-              <button data-tip="The academic neighborhood contains time-series momentum and trend-following research.">Academic match</button>
-              <span>→</span>
-              <button class="strong" data-tip="Current orientation example: same-strategy link, pending final source-text verification.">Same strategy</button>
-            </div>
+            <figure class="atlas-flow-figure atlas-flow-figure-low" aria-label="Managed futures bridge example">
+              <svg viewBox="0 0 1180 250" role="img" aria-labelledby="example-flow-title example-flow-desc">
+                <title id="example-flow-title">Managed futures bridge example</title>
+                <desc id="example-flow-desc">A managed futures product can connect to academic research through futures instruments and trend following strategies.</desc>
+                <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 198 124 C 278 124, 304 124, 376 124"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 514 124 C 594 124, 620 124, 692 124"></path>
+                <path class="atlas-flow-edge atlas-flow-edge-arrow" d="M 830 124 C 910 124, 936 124, 1008 124"></path>
+
+                <g class="atlas-example-node" tabindex="0" data-flow-title="Product text" data-flow-tip="The prospectus may describe futures contracts, trend-following models, commodity or financial futures, and managed-futures exposure.">
+                  <rect x="34" y="78" width="164" height="92" rx="20"></rect>
+                  <text x="116" y="116" text-anchor="middle">Product</text>
+                  <text x="116" y="143" text-anchor="middle">text</text>
+                </g>
+                <g class="atlas-example-node" tabindex="0" data-flow-title="Product graph" data-flow-tip="The product graph records futures as instruments, trend following as a rule, and diversified futures exposure as the product design.">
+                  <rect x="376" y="78" width="164" height="92" rx="20"></rect>
+                  <text x="458" y="116" text-anchor="middle">Product</text>
+                  <text x="458" y="143" text-anchor="middle">graph</text>
+                </g>
+                <g class="atlas-example-node" tabindex="0" data-flow-title="Academic neighborhood" data-flow-tip="The academic side may contain time-series momentum, trend-following strategies, and futures-market return predictability.">
+                  <rect x="692" y="78" width="164" height="92" rx="20"></rect>
+                  <text x="774" y="116" text-anchor="middle">Academic</text>
+                  <text x="774" y="143" text-anchor="middle">match</text>
+                </g>
+                <g class="atlas-example-node atlas-example-node-result" tabindex="0" data-flow-title="Same-strategy bridge" data-flow-tip="In this kind of case, the product and academic research may be close enough to treat as the same strategy family after source-text verification.">
+                  <rect x="1008" y="78" width="164" height="92" rx="20"></rect>
+                  <text x="1090" y="116" text-anchor="middle">Same-strategy</text>
+                  <text x="1090" y="143" text-anchor="middle">bridge</text>
+                </g>
+              </svg>
+            </figure>
           </article>
         </div>
 
