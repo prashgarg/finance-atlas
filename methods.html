@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Methods — Finance Atlas</title>
+    <meta name="description" content="Methods and data notes for Finance Atlas." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Finance Atlas home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Finance Atlas</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a href="bridge.html">Bridge Explorer</a>
+        <a href="academic-map.html">Academic Map</a>
+        <a class="active" href="methods.html">Methods</a>
+        <a href="paper.html">Paper</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="draft-kicker">Measurement notes</p>
+        <h1>Methods</h1>
+        <p>
+          The site compares two descriptions of related finance ideas: what fund documents say products
+          do, and what academic papers say about nearby concepts.
+        </p>
+      </section>
+
+      <section class="section" id="methods" aria-labelledby="methods-title">
+        <div class="section-heading">
+          <h2 id="methods-title">Method in brief</h2>
+          <p>Short definitions for the current measurement object.</p>
+        </div>
+        <div class="method-flow">
+          <article>
+            <span>01</span>
+            <h3>Product documents</h3>
+            <p>Prospectus text is reduced to product descriptions: objective, exposure, instrument, benchmark, rule, horizon, and risk.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Academic neighborhoods</h3>
+            <p>FrontierGraph provides finance concepts, relationships extracted from papers, and nearby papers around those concepts.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Link labels</h3>
+            <p>We classify whether a product group and nearby papers share a strategy, mechanism, broader pattern, surface concept, or no useful link.</p>
+          </article>
+          <article class="method-placeholder">
+            <span>Next</span>
+            <h3>Evidence to add</h3>
+            <p>More source excerpts, noisy-family review, and stronger academic-paper evidence checks.</p>
+          </article>
+        </div>
+        <div class="provenance-panel" id="provenance-panel"></div>
+      </section>
+
+      <section class="section" id="data" aria-labelledby="data-title">
+        <div class="section-heading">
+          <h2 id="data-title">Data for this site</h2>
+          <p>Compact exported summaries power the site. Large intermediate outputs stay in the research workspace.</p>
+        </div>
+        <div class="data-panel" id="data-panel"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Finance Atlas is a research interface. It is not investment advice.</p>
+    </footer>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

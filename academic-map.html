@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academic Map — Finance Atlas</title>
+    <meta name="description" content="Explore academic finance concepts, relationships, and time patterns." />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Finance Atlas home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Finance Atlas</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="index.html">Overview</a>
+        <a href="bridge.html">Bridge Explorer</a>
+        <a class="active" href="academic-map.html">Academic Map</a>
+        <a href="methods.html">Methods</a>
+        <a href="paper.html">Paper</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="draft-kicker">Academic finance graph</p>
+        <h1>Academic Map</h1>
+        <p>
+          Explore the finance-paper graph used as the academic side of the product comparison.
+        </p>
+      </section>
+
+      <section class="section" id="change" aria-labelledby="change-title">
+        <div class="section-heading">
+          <h2 id="change-title">Theme movement</h2>
+          <p>Diagnostics for movement, persistence, and concentration over time.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="change-view-select">Diagnostic</label>
+            <select id="change-view-select">
+              <option value="rising">Rising themes</option>
+              <option value="falling">Fading themes</option>
+              <option value="new_arrivals">New arrivals</option>
+              <option value="persistent">Persistent themes</option>
+              <option value="spiky">Spike-like attention</option>
+            </select>
+          </div>
+          <div id="change-copy" class="diagnostic-copy"></div>
+          <div id="change-list" class="diagnostic-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="network" aria-labelledby="network-title">
+        <div class="section-heading">
+          <h2 id="network-title">What connects the field?</h2>
+          <p>Central concepts, bridge concepts, and cross-field links.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="network-view-select">Network view</label>
+            <select id="network-view-select">
+              <option value="central">Central concepts</option>
+              <option value="centrality_change">Became central</option>
+              <option value="centrality_fall">Lost centrality</option>
+              <option value="trajectories">Centrality paths</option>
+              <option value="communities">Communities</option>
+              <option value="bridges">Bridge concepts</option>
+              <option value="field_bridges">Cross-field links</option>
+              <option value="decade">Central concepts by decade</option>
+              <option value="global_core">Central in economics too</option>
+              <option value="local_specialists">Finance-local specialists</option>
+              <option value="credibility_audit">Map credibility audit</option>
+            </select>
+            <select id="network-decade-select" class="compact-select" aria-label="Choose decade">
+              <option value="2020">2020s</option>
+              <option value="2010">2010s</option>
+              <option value="2000">2000s</option>
+              <option value="1990">1990s</option>
+              <option value="1980">1980s</option>
+              <option value="1970">1970s</option>
+            </select>
+          </div>
+          <div id="network-copy" class="diagnostic-copy"></div>
+          <div id="network-list" class="diagnostic-list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="time" aria-labelledby="time-title">
+        <div class="section-heading">
+          <h2 id="time-title">Trend check</h2>
+          <p>Paper volume, field coverage, and broad theme-slice shares.</p>
+        </div>
+        <div class="chart-card">
+          <div class="chart-toolbar">
+            <label for="time-view-select">Series</label>
+            <select id="time-view-select">
+              <option value="volume">Papers per year</option>
+              <option value="fields">Field coverage by decade</option>
+              <option value="slices">Theme-slice share by year</option>
+            </select>
+          </div>
+          <div id="time-chart" class="time-chart" role="img" aria-label="Time series chart"></div>
+          <div id="time-legend" class="time-legend"></div>
+        </div>
+      </section>
+
+      <section class="section explorer" id="concepts" aria-labelledby="concepts-title">
+        <div class="section-heading">
+          <h2 id="concepts-title">Concept explorer</h2>
+          <p>Search mapped ontology concepts and inspect their coverage by decade.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search-label" for="concept-search">Search concepts</label>
+          <input id="concept-search" type="search" placeholder="Try volatility, sentiment, liquidity..." />
+          <div class="chip-row" role="group" aria-label="Concept filters">
+            <button class="chip active" data-field="all">All</button>
+            <button class="chip" data-field="finance">Finance</button>
+            <button class="chip" data-field="macro">Macro</button>
+            <button class="chip" data-field="micro">Micro</button>
+            <button class="chip" data-field="methods">Methods</button>
+          </div>
+        </div>
+        <div class="split-view">
+          <div class="list-panel">
+            <div class="panel-title-row">
+              <h3>Mapped concepts</h3>
+              <span id="concept-count"></span>
+            </div>
+            <div class="concept-list" id="concept-list"></div>
+          </div>
+          <div class="detail-panel" id="concept-detail"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="rising-title">
+        <div class="section-heading">
+          <h2 id="rising-title">Rising themes</h2>
+          <p>Concepts whose paper share has increased most in the 2020s relative to the 2000s.</p>
+        </div>
+        <div class="bar-list" id="rising-list"></div>
+      </section>
+
+      <section class="section" id="relationships" aria-labelledby="relationships-title">
+        <div class="section-heading">
+          <h2 id="relationships-title">Recurring relationships</h2>
+          <p>Common concept-to-concept edge pairs in the materialized finance graph.</p>
+        </div>
+        <div class="chart-toolbar relationship-toolbar">
+          <label for="edge-role-select">Role</label>
+          <select id="edge-role-select">
+            <option value="all">All roles</option>
+          </select>
+        </div>
+        <div class="edge-table-wrap">
+          <table class="edge-table">
+            <thead>
+              <tr>
+                <th>Relationship</th>
+                <th>Papers</th>
+                <th>Role</th>
+                <th>Example claim</th>
+              </tr>
+            </thead>
+            <tbody id="edge-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="papers" aria-labelledby="papers-title">
+        <div class="section-heading">
+          <h2 id="papers-title">Sample papers</h2>
+          <p>A small rotating sample from the materialized workspace.</p>
+        </div>
+        <div class="paper-grid" id="paper-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Finance Atlas is a research interface. It is not investment advice.</p>
+    </footer>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

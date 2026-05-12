@@ -16643,7 +16643,7 @@
         "bridge_review_rows": 12,
         "substantive_bridge_share": 1.0,
         "current_use_status": "useful_as_motif_or_market_bridge",
-        "main_caveat": "Shared motif bridge: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
+        "main_caveat": "Broader-pattern link: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
         "examples": [],
         "source_audit": {}
       },
@@ -17202,7 +17202,7 @@
         "display_name": "Crypto futures exposure",
         "product_graph_signature_text": "Futures contracts; bitcoin exposure; roll or term-structure language",
         "nearest_academic_object": "bitcoin futures, futures price discovery, and crypto market structure",
-        "bridge_type": "Shared market / motif",
+        "bridge_type": "Shared market / broader pattern",
         "modal_first_pass_bridge": "shared_motif",
         "main_caveat": "Academic work may study the market or instrument, not the product strategy.",
         "source_audit": {

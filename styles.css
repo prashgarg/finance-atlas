@@ -89,6 +89,10 @@ body.modal-open {
   color: var(--ink);
 }
 
+.top-nav a.active {
+  color: var(--ink);
+}
+
 .term {
   border-bottom: 1px dotted rgba(23, 60, 49, 0.52);
   cursor: help;
@@ -138,6 +142,30 @@ main {
   gap: 34px;
   grid-template-columns: minmax(0, 1.04fr) minmax(360px, 0.72fr);
   padding: 58px 0 46px;
+}
+
+.compact-hero {
+  padding-bottom: 34px;
+}
+
+.page-hero {
+  border-bottom: 1px solid rgba(16, 35, 31, 0.12);
+  padding: 58px 0 34px;
+}
+
+.page-hero h1 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(38px, 5.2vw, 64px);
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.page-hero p:not(.draft-kicker) {
+  color: var(--muted);
+  font-size: clamp(17px, 1.8vw, 21px);
+  margin: 18px 0 0;
+  max-width: 760px;
 }
 
 .hero-copy h1 {
@@ -308,6 +336,55 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.route-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.route-card {
+  background: rgba(255, 250, 240, 0.74);
+  border: 1px solid rgba(16, 35, 31, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 14px 38px rgba(16, 35, 31, 0.06);
+  min-height: 190px;
+  padding: 22px;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.route-card:hover {
+  background: rgba(255, 250, 240, 0.92);
+  border-color: rgba(47, 111, 78, 0.28);
+  transform: translateY(-2px);
+}
+
+.route-card span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.route-card h3 {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 30px 0 10px;
+}
+
+.route-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.primary-route {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.primary-route p {
+  color: rgba(255, 250, 240, 0.76);
+}
+
 .status-strip {
   display: flex;
   flex-wrap: wrap;
@@ -372,6 +449,37 @@ main {
   display: grid;
   gap: 18px;
   padding: 18px;
+}
+
+.bridge-tab-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.bridge-tab-grid details {
+  background: rgba(255, 250, 240, 0.66);
+  border: 1px solid rgba(16, 35, 31, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bridge-tab-grid summary {
+  color: var(--green-dark);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  list-style: none;
+  padding: 14px 18px;
+  text-transform: uppercase;
+}
+
+.bridge-tab-grid summary::-webkit-details-marker {
+  display: none;
+}
+
+.bridge-tab-grid details > :not(summary) {
+  margin: 0 14px 14px;
 }
 
 .bridge-controls {
@@ -1875,6 +1983,7 @@ main {
 
 @media (max-width: 920px) {
   .hero,
+  .route-grid,
   .orientation-strip,
   .split-view,
   .toolbar,

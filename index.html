@@ -3,46 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Finance Atlas — Research Instrument</title>
+    <title>Finance Atlas</title>
     <meta
       name="description"
-      content="A research instrument for mapping investment product design to academic finance graphs."
+      content="A research instrument for comparing investment product design with academic finance."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Finance Atlas home">
+      <a class="brand" href="index.html" aria-label="Finance Atlas home">
         <span class="brand-mark" aria-hidden="true"></span>
         <span>Finance Atlas</span>
       </a>
       <nav class="top-nav" aria-label="Primary navigation">
-        <a href="#status">Status</a>
-        <a href="#bridge-explorer">Bridge</a>
-        <a href="#examples">Examples</a>
-        <a href="#readout">Readout</a>
-        <a href="#change">Change</a>
-        <a href="#network">Network</a>
-        <a href="#concepts">Concepts</a>
-        <a href="#methods">Methods</a>
-        <a href="#relationships">Relationships</a>
+        <a class="active" href="index.html">Overview</a>
+        <a href="bridge.html">Bridge Explorer</a>
+        <a href="academic-map.html">Academic Map</a>
+        <a href="methods.html">Methods</a>
+        <a href="paper.html">Paper</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero compact-hero">
         <div class="hero-copy">
           <p class="draft-kicker">Beta research instrument</p>
           <h1>Finance Atlas</h1>
           <p>
-            A map for asking whether an investment product is linked to academic finance because it
-            uses the same strategy, relies on the same economic mechanism, shares a broader design
-            pattern, or only happens to use similar words.
+            A map for asking whether an investment product is linked to academic finance through the
+            same strategy, the same economic mechanism, a broader design pattern, or only similar words.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#bridge-explorer">Open bridge explorer</a>
-            <a class="button secondary" href="#network">See academic map</a>
+            <a class="button primary" href="bridge.html">Open bridge explorer</a>
+            <a class="button secondary" href="academic-map.html">Open academic map</a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Corpus snapshot">
@@ -54,412 +49,47 @@
       <section class="orientation-strip" aria-label="How to read this site">
         <article>
           <strong><span class="term" tabindex="0" data-tip="A compact map of what a prospectus says the fund is trying to do, what it holds, and how it implements the strategy.">Product graph</span></strong>
-          <p>What the fund document says the product does: objective, exposure, instrument, rule, benchmark, horizon, and risk.</p>
+          <p>Objective, exposure, instrument, rule, benchmark, horizon, and risk.</p>
         </article>
         <article>
           <strong><span class="term" tabindex="0" data-tip="The nearby papers, concepts, and relationships in the academic finance graph around a product-related idea.">Academic neighborhood</span></strong>
-          <p>The nearby concepts and relationships in the finance research graph, built from paper-level extractions.</p>
+          <p>Nearby concepts and relationships from finance papers.</p>
         </article>
         <article>
-          <strong><span class="term" tabindex="0" data-tip="Our classification of how a product and the academic literature are connected. It is not a performance score.">Bridge label</span></strong>
-          <p>The type of link between product and research: same strategy, same mechanism, broader pattern, weak concept match, or no useful link.</p>
+          <strong><span class="term" tabindex="0" data-tip="Our classification of how a product and the academic literature are connected. It is not a performance score.">Link type</span></strong>
+          <p>Same strategy, mechanism, broader pattern, concept-only, or no useful link.</p>
         </article>
       </section>
 
-      <section class="section deck-section" id="status" aria-labelledby="overview-title">
+      <section class="section">
         <div class="section-heading">
-          <h2 id="overview-title">Build status</h2>
-          <p>
-            Current site components are marked by status. The goal is to keep the research object usable
-            while making unfinished pieces easy to spot.
-          </p>
+          <h2>Choose a surface</h2>
+          <p>Each page has one job. The long diagnostic material is no longer stacked on the homepage.</p>
         </div>
-        <div class="status-strip" aria-label="Draft status legend">
-          <span class="status-pill stable">Core object</span>
-          <span class="status-pill provisional">Current pass</span>
-          <span class="status-pill todo">To add</span>
-        </div>
-        <div class="overview-grid">
-          <article class="story-card">
-            <span class="card-number">01</span>
-            <h3>Academic finance graph.</h3>
-            <p>
-              Concepts, relationships, and time patterns from the finance papers currently available
-              in the local research graph.
-            </p>
-          </article>
-          <article class="story-card">
-            <span class="card-number">02</span>
-            <h3>Product bridge.</h3>
-            <p>
-              Fund descriptions are compared with nearby academic papers to separate strategy,
-              mechanism, broader-pattern, and weak keyword links.
-            </p>
-          </article>
-          <article class="story-card">
-            <span class="card-number">03</span>
-            <h3>Current-pass numbers.</h3>
-            <p>
-              Counts, family labels, and examples reflect the latest local extraction and review pass.
-            </p>
-          </article>
-          <article class="story-card">
-            <span class="card-number">04</span>
-            <h3>Next evidence layer.</h3>
-            <p>
-              More source excerpts, closer review of noisy families, and stronger academic-paper
-              evidence are the next additions.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="bridge-explorer" aria-labelledby="bridge-explorer-title">
-        <div class="section-heading">
-          <h2 id="bridge-explorer-title">Bridge explorer</h2>
-          <p>
-            Compare groups of similar products with nearby academic finance objects. The labels show
-            whether the current link is a close strategy match, a mechanism link, a broader pattern,
-            or a noisy keyword match.
-          </p>
-        </div>
-        <div class="bridge-shell">
-          <div class="bridge-controls">
-            <div>
-              <label for="bridge-family-select">Product family</label>
-              <select id="bridge-family-select"></select>
-            </div>
-            <div>
-              <label for="bridge-type-select">Link type</label>
-              <select id="bridge-type-select">
-                <option value="all">All families</option>
-                <option value="same_strategy">Same strategy</option>
-                <option value="same_mechanism">Same mechanism</option>
-                <option value="shared_motif">Broader pattern</option>
-                <option value="weak">Concept-only / no useful link</option>
-              </select>
-            </div>
-          </div>
-          <div class="bridge-overview" id="bridge-overview"></div>
-          <div class="bridge-label-guide" id="bridge-label-guide"></div>
-          <div class="bridge-detail" id="bridge-detail"></div>
-          <div class="bridge-table-wrap">
-            <table class="bridge-table">
-              <thead>
-                <tr>
-                  <th>Product family</th>
-                  <th><span class="term" tabindex="0" data-tip="The recurring product-side relations in the prospectus graph, such as uses instrument, tracks benchmark, or targets factor.">Product graph signature</span></th>
-                  <th><span class="term" tabindex="0" data-tip="The closest academic-side concept, paper group, or research relationship retrieved from the finance graph.">Nearest academic object</span></th>
-                  <th><span class="term" tabindex="0" data-tip="Current review label for how the product family connects to academic finance.">Current link type</span></th>
-                  <th>Main caveat</th>
-                </tr>
-              </thead>
-              <tbody id="bridge-family-table-body"></tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="examples" aria-labelledby="examples-title">
-        <div class="section-heading">
-          <h2 id="examples-title">Worked examples</h2>
-          <p>
-            A few bridge types are easier to see case by case. These examples show why the object is a
-            structured product-to-paper link, not a keyword match.
-          </p>
-        </div>
-        <div class="example-grid" id="featured-examples"></div>
-      </section>
-
-      <section class="section" id="readout" aria-labelledby="readout-title">
-        <div class="section-heading">
-          <h2 id="readout-title">Current readout</h2>
-          <p>
-            The useful result is the link-type split. Different product families connect to academic
-            finance in different ways.
-          </p>
-        </div>
-        <div class="readout-grid" id="bridge-readout"></div>
-      </section>
-
-      <section class="section" id="typology" aria-labelledby="typology-title">
-        <div class="section-heading">
-          <h2 id="typology-title">Matched how?</h2>
-          <p>
-            The paper-facing table: product family, product design summary, closest academic object,
-            bridge type, and caveat.
-          </p>
-        </div>
-        <div class="typology-table-wrap">
-          <table class="typology-table">
-            <thead>
-              <tr>
-                <th>Product family</th>
-                <th><span class="term" tabindex="0" data-tip="Short summary of what the product descriptions repeatedly say the funds do.">Product design summary</span></th>
-                <th><span class="term" tabindex="0" data-tip="Closest research object found in the academic finance graph.">Closest academic object</span></th>
-                <th><span class="term" tabindex="0" data-tip="How the product side and research side are connected.">Bridge type</span></th>
-                <th>Main caveat</th>
-              </tr>
-            </thead>
-            <tbody id="typology-table-body"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section" id="methods" aria-labelledby="methods-title">
-        <div class="section-heading">
-          <h2 id="methods-title">Method in brief</h2>
-          <p>
-            The site compares two descriptions of the same broad idea: what fund documents say the
-            product does, and what academic papers say about nearby finance concepts.
-          </p>
-        </div>
-        <div class="method-flow">
-          <article>
+        <div class="route-grid">
+          <a class="route-card primary-route" href="bridge.html">
             <span>01</span>
-            <h3>Product documents</h3>
-            <p>
-              Prospectus text is reduced to simple product descriptions: objective, exposure,
-              instrument, benchmark, rule, horizon, and risk.
-            </p>
-          </article>
-          <article>
+            <h3>Bridge Explorer</h3>
+            <p>Compare product families with nearby academic finance objects.</p>
+          </a>
+          <a class="route-card" href="academic-map.html">
             <span>02</span>
-            <h3>Academic neighborhoods</h3>
-            <p>
-              FrontierGraph provides the academic side: finance concepts, relationships extracted from
-              papers, and nearby papers around those concepts.
-            </p>
-          </article>
-          <article>
+            <h3>Academic Map</h3>
+            <p>Inspect concepts, relationships, time patterns, and centrality in the finance graph.</p>
+          </a>
+          <a class="route-card" href="methods.html">
             <span>03</span>
-            <h3>Bridge labels</h3>
-            <p>
-              We classify whether a product group and nearby papers share a strategy, mechanism,
-              broader pattern, surface concept, or no useful link.
-            </p>
-          </article>
-          <article class="method-placeholder">
-            <span>Next</span>
-            <h3>Evidence to add</h3>
-            <p>
-              Add source-text examples, verify noisy families, and rerun bridge checks with stronger
-              evidence from product excerpts and paper abstracts.
-            </p>
-          </article>
+            <h3>Methods</h3>
+            <p>See how product documents, academic neighborhoods, and link labels are constructed.</p>
+          </a>
+          <a class="route-card" href="paper.html">
+            <span>04</span>
+            <h3>Paper</h3>
+            <p>Open the current working note and see the paper-facing claim.</p>
+          </a>
         </div>
-        <div class="provenance-panel" id="provenance-panel"></div>
-      </section>
-
-      <section class="section" id="data" aria-labelledby="data-title">
-        <div class="section-heading">
-          <h2 id="data-title">Data for this site</h2>
-          <p>
-            The website uses compact exported summaries. Large product-graph outputs stay in the research
-            workspace while the measurement object matures.
-          </p>
-        </div>
-        <div class="data-panel" id="data-panel"></div>
-      </section>
-
-      <section class="section" id="paper" aria-labelledby="paper-title">
-        <div class="section-heading">
-          <h2 id="paper-title">Working paper object</h2>
-          <p>
-            The paper-facing object is a measurement note on whether product graphs and academic graphs
-            can separate real bridges from loose theme matches.
-          </p>
-        </div>
-        <div class="paper-note-grid">
-          <article>
-            <strong>Current paper claim</strong>
-            <p>
-              Product-academic links differ by type. Some are same-strategy, some are
-              mechanism-level, some are broader-pattern links, and some are false keyword matches.
-            </p>
-          </article>
-          <article>
-            <strong>Current evidence</strong>
-            <p>
-              The bridge table is a design result: it shows which families look clean, mechanism-level,
-              broader-pattern, or noisy in the current pass.
-            </p>
-          </article>
-          <article class="method-placeholder">
-            <strong>Working note</strong>
-            <p>
-              The current PDF is available as a static site asset and carries the placeholder structure
-              for the next writing pass.
-            </p>
-            <a class="text-link" href="assets/finance-atlas-working-note.pdf" target="_blank" rel="noreferrer">Open working note PDF</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="change" aria-labelledby="change-title">
-        <div class="section-heading">
-          <h2 id="change-title">What changed?</h2>
-          <p>
-            Academic-graph diagnostics for theme movement, persistence, and concentration over time.
-          </p>
-        </div>
-        <div class="chart-card">
-          <div class="chart-toolbar">
-            <label for="change-view-select">Diagnostic</label>
-            <select id="change-view-select">
-              <option value="rising">Rising themes</option>
-              <option value="falling">Fading themes</option>
-              <option value="new_arrivals">New arrivals</option>
-              <option value="persistent">Persistent themes</option>
-              <option value="spiky">Spike-like attention</option>
-            </select>
-          </div>
-          <div id="change-copy" class="diagnostic-copy"></div>
-          <div id="change-list" class="diagnostic-list"></div>
-        </div>
-      </section>
-
-      <section class="section" id="network" aria-labelledby="network-title">
-        <div class="section-heading">
-          <h2 id="network-title">What connects the field?</h2>
-          <p>Within-finance graph diagnostics: central concepts, bridge concepts, and cross-field links.</p>
-        </div>
-        <div class="chart-card">
-          <div class="chart-toolbar">
-            <label for="network-view-select">Network view</label>
-            <select id="network-view-select">
-              <option value="central">Central concepts</option>
-              <option value="centrality_change">Became central</option>
-              <option value="centrality_fall">Lost centrality</option>
-              <option value="trajectories">Centrality paths</option>
-              <option value="communities">Communities</option>
-              <option value="bridges">Bridge concepts</option>
-              <option value="field_bridges">Cross-field links</option>
-              <option value="decade">Central concepts by decade</option>
-              <option value="global_core">Central in economics too</option>
-              <option value="local_specialists">Finance-local specialists</option>
-              <option value="credibility_audit">Map credibility audit</option>
-            </select>
-            <select id="network-decade-select" class="compact-select" aria-label="Choose decade">
-              <option value="2020">2020s</option>
-              <option value="2010">2010s</option>
-              <option value="2000">2000s</option>
-              <option value="1990">1990s</option>
-              <option value="1980">1980s</option>
-              <option value="1970">1970s</option>
-            </select>
-          </div>
-          <div id="network-copy" class="diagnostic-copy"></div>
-          <div id="network-list" class="diagnostic-list"></div>
-        </div>
-      </section>
-
-      <section class="section" id="time" aria-labelledby="time-title">
-        <div class="section-heading">
-          <h2 id="time-title">Trend check</h2>
-          <p>A compact chart for paper volume, field coverage, and broad theme-slice shares.</p>
-        </div>
-        <div class="chart-card">
-          <div class="chart-toolbar">
-            <label for="time-view-select">Series</label>
-            <select id="time-view-select">
-              <option value="volume">Papers per year</option>
-              <option value="fields">Field coverage by decade</option>
-              <option value="slices">Theme-slice share by year</option>
-            </select>
-          </div>
-          <div id="time-chart" class="time-chart" role="img" aria-label="Time series chart"></div>
-          <div id="time-legend" class="time-legend"></div>
-        </div>
-      </section>
-
-      <section class="section explorer" id="concepts" aria-labelledby="concepts-title">
-        <div class="section-heading">
-          <h2 id="concepts-title">Concept explorer</h2>
-          <p>Search the mapped ontology concepts and inspect their coverage by decade.</p>
-        </div>
-
-        <div class="toolbar">
-          <label class="search-label" for="concept-search">Search concepts</label>
-          <input id="concept-search" type="search" placeholder="Try volatility, sentiment, liquidity..." />
-          <div class="chip-row" role="group" aria-label="Concept filters">
-            <button class="chip active" data-field="all">All</button>
-            <button class="chip" data-field="finance">Finance</button>
-            <button class="chip" data-field="macro">Macro</button>
-            <button class="chip" data-field="micro">Micro</button>
-            <button class="chip" data-field="methods">Methods</button>
-          </div>
-        </div>
-
-        <div class="split-view">
-          <div class="list-panel">
-            <div class="panel-title-row">
-              <h3>Mapped concepts</h3>
-              <span id="concept-count"></span>
-            </div>
-            <div class="concept-list" id="concept-list"></div>
-          </div>
-          <div class="detail-panel" id="concept-detail"></div>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="rising-title">
-        <div class="section-heading">
-          <h2 id="rising-title">Rising themes</h2>
-          <p>Concepts whose paper share has increased most in the 2020s relative to the 2000s.</p>
-        </div>
-        <div class="bar-list" id="rising-list"></div>
-      </section>
-
-      <section class="section" id="relationships" aria-labelledby="relationships-title">
-        <div class="section-heading">
-          <h2 id="relationships-title">Recurring relationships</h2>
-          <p>Common concept-to-concept edge pairs in the materialized finance graph.</p>
-        </div>
-        <div class="chart-toolbar relationship-toolbar">
-          <label for="edge-role-select">Role</label>
-          <select id="edge-role-select">
-            <option value="all">All roles</option>
-          </select>
-        </div>
-        <div class="edge-table-wrap">
-          <table class="edge-table">
-            <thead>
-              <tr>
-                <th>Relationship</th>
-                <th>Papers</th>
-                <th>Role</th>
-                <th>Example claim</th>
-              </tr>
-            </thead>
-            <tbody id="edge-table-body"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section" id="papers" aria-labelledby="papers-title">
-        <div class="section-heading">
-          <h2 id="papers-title">Sample papers</h2>
-          <p>A small rotating sample from the materialized workspace, useful for checking what the map is built from.</p>
-        </div>
-        <div class="paper-grid" id="paper-grid"></div>
       </section>
     </main>
-
-    <div class="family-modal" id="family-modal" hidden>
-      <div class="family-modal-backdrop" data-close-family-modal></div>
-      <section
-        class="family-modal-panel"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="family-modal-title"
-      >
-        <button class="modal-close" type="button" data-close-family-modal aria-label="Close family detail">
-          Close
-        </button>
-        <div id="family-modal-content"></div>
-      </section>
-    </div>
 
     <footer class="site-footer">
       <p>

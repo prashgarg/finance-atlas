@@ -36,7 +36,7 @@ NEAREST_ACADEMIC_OBJECT = {
 BRIDGE_CAVEATS = {
     "broad allocation inflation sensitive": "Mechanism bridge: the product protects against inflation, but the academic object may study the hedge channel rather than the product rule.",
     "crypto futures exposure": "Mostly market or instrument bridge: futures products and papers share the crypto-futures object, but product design can differ from the academic question.",
-    "crypto spot or reference exposure": "Shared motif bridge: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
+    "crypto spot or reference exposure": "Broader-pattern link: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
     "esg climate sustainable screen": "Same-strategy candidate: screens and exclusions are close, but ESG labels can combine preference, risk, and disclosure motives.",
     "managed futures trend following core": "Same-strategy candidate: trend-following products map naturally to time-series momentum, pending source-text checks.",
     "multifactor smart beta": "Same-strategy candidate: academic factor investing and product factor sleeves are close, but implementation details can differ.",
@@ -136,7 +136,7 @@ TYPOLOGY_TABLE_SPECS = [
     {
         "family": "crypto futures exposure",
         "product_graph_signature_text": "Futures contracts; bitcoin exposure; roll or term-structure language",
-        "bridge_type": "Shared market / motif",
+        "bridge_type": "Shared market / broader pattern",
         "main_caveat": "Academic work may study the market or instrument, not the product strategy.",
     },
     {

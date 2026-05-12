@@ -98,6 +98,7 @@ function renderMetrics() {
   const summary = state.data.summary;
   const bridge = state.data.product_bridge;
   const grid = document.querySelector("#metric-grid");
+  if (!grid) return;
   if (bridge?.available) {
     grid.innerHTML = [
       metricCard(formatNumber.format(bridge.summary.product_documents), "product documents"),
@@ -294,6 +295,7 @@ function renderBridgeExplorer() {
   const guide = document.querySelector("#bridge-label-guide");
   const detail = document.querySelector("#bridge-detail");
   const table = document.querySelector("#bridge-family-table-body");
+  if (!overview || !select || !typeSelect || !guide || !detail || !table) return;
 
   if (!bridge?.available) {
     overview.innerHTML = `<p class="empty-note">Bridge package is not available in this export.</p>`;
@@ -609,6 +611,7 @@ function renderConceptList() {
   const concepts = filteredConcepts().slice(0, 80);
   const count = document.querySelector("#concept-count");
   const list = document.querySelector("#concept-list");
+  if (!count || !list) return;
   count.textContent = `${formatNumber.format(concepts.length)} shown`;
 
   if (!state.selectedConceptId && concepts.length) {
@@ -638,6 +641,7 @@ function renderConceptList() {
 
 function renderConceptDetail() {
   const panel = document.querySelector("#concept-detail");
+  if (!panel) return;
   const concept =
     state.concepts.find((item) => item.id === state.selectedConceptId) || filteredConcepts()[0] || state.concepts[0];
 
@@ -674,6 +678,8 @@ function renderConceptDetail() {
 }
 
 function renderRisingThemes() {
+  const container = document.querySelector("#rising-list");
+  if (!container) return;
   const maxRise = Math.max(...state.data.rising_concepts.map((row) => row.rise_2020s_vs_2000s), 0.01);
   const rows = state.data.rising_concepts.slice(0, 18).map((row) => {
     const width = Math.max(2, (row.rise_2020s_vs_2000s / maxRise) * 100);
@@ -685,7 +691,7 @@ function renderRisingThemes() {
       </div>
     `;
   });
-  document.querySelector("#rising-list").innerHTML = rows.join("");
+  container.innerHTML = rows.join("");
 }
 
 function scalePoints(series, width, height, padding) {
@@ -757,6 +763,7 @@ function renderLineChart({ series, yFormatter = formatNumber.format, xTicks, yLa
 function renderTimeChart() {
   const chart = document.querySelector("#time-chart");
   const legend = document.querySelector("#time-legend");
+  if (!chart || !legend) return;
   let series = [];
   let yFormatter = formatNumber.format;
   let yLabel = "Papers";
@@ -828,6 +835,7 @@ function renderChangeDiagnostics() {
   const diagnostics = state.data.graph_diagnostics;
   const copy = document.querySelector("#change-copy");
   const list = document.querySelector("#change-list");
+  if (!copy || !list) return;
   if (!diagnostics?.available) {
     copy.textContent = "Graph diagnostics are not available in this export.";
     list.innerHTML = "";
@@ -898,6 +906,7 @@ function renderNetworkDiagnostics() {
   const copy = document.querySelector("#network-copy");
   const list = document.querySelector("#network-list");
   const decadeSelect = document.querySelector("#network-decade-select");
+  if (!copy || !list) return;
   if (!diagnostics?.available) {
     copy.textContent = "Graph diagnostics are not available in this export.";
     list.innerHTML = "";
@@ -1103,6 +1112,8 @@ function renderNetworkDiagnostics() {
 }
 
 function renderEdges() {
+  const tbody = document.querySelector("#edge-table-body");
+  if (!tbody) return;
   const edges = state.data.edge_pairs
     .filter((edge) => state.edgeRole === "all" || edge.role === state.edgeRole)
     .slice(0, 18);
@@ -1117,11 +1128,12 @@ function renderEdges() {
       </tr>
     `;
   });
-  document.querySelector("#edge-table-body").innerHTML = rows.join("");
+  tbody.innerHTML = rows.join("");
 }
 
 function populateEdgeRoles() {
   const select = document.querySelector("#edge-role-select");
+  if (!select) return;
   const roles = [...new Set(state.data.edge_pairs.map((edge) => edge.role).filter(Boolean))].sort();
   select.innerHTML = `<option value="all">All roles</option>${roles
     .map((role) => `<option value="${escapeHtml(role)}">${escapeHtml(niceLabel(role))}</option>`)
@@ -1129,6 +1141,8 @@ function populateEdgeRoles() {
 }
 
 function renderPapers() {
+  const grid = document.querySelector("#paper-grid");
+  if (!grid) return;
   const rows = state.data.sample_papers.slice(0, 9).map((paper) => {
     const tags = paper.tags.map((tag) => `<span class="paper-tag">${escapeHtml(tag)}</span>`).join("");
     return `
@@ -1139,12 +1153,12 @@ function renderPapers() {
       </article>
     `;
   });
-  document.querySelector("#paper-grid").innerHTML = rows.join("");
+  grid.innerHTML = rows.join("");
 }
 
 function wireControls() {
   const search = document.querySelector("#concept-search");
-  search.addEventListener("input", (event) => {
+  search?.addEventListener("input", (event) => {
     state.query = event.target.value;
     state.selectedConceptId = null;
     renderConceptList();
@@ -1162,37 +1176,37 @@ function wireControls() {
     });
   });
 
-  document.querySelector("#time-view-select").addEventListener("change", (event) => {
+  document.querySelector("#time-view-select")?.addEventListener("change", (event) => {
     state.activeTimeView = event.target.value;
     renderTimeChart();
   });
 
-  document.querySelector("#change-view-select").addEventListener("change", (event) => {
+  document.querySelector("#change-view-select")?.addEventListener("change", (event) => {
     state.activeChangeView = event.target.value;
     renderChangeDiagnostics();
   });
 
-  document.querySelector("#network-view-select").addEventListener("change", (event) => {
+  document.querySelector("#network-view-select")?.addEventListener("change", (event) => {
     state.activeNetworkView = event.target.value;
     renderNetworkDiagnostics();
   });
 
-  document.querySelector("#network-decade-select").addEventListener("change", (event) => {
+  document.querySelector("#network-decade-select")?.addEventListener("change", (event) => {
     state.activeNetworkDecade = event.target.value;
     renderNetworkDiagnostics();
   });
 
-  document.querySelector("#edge-role-select").addEventListener("change", (event) => {
+  document.querySelector("#edge-role-select")?.addEventListener("change", (event) => {
     state.edgeRole = event.target.value;
     renderEdges();
   });
 
-  document.querySelector("#bridge-family-select").addEventListener("change", (event) => {
+  document.querySelector("#bridge-family-select")?.addEventListener("change", (event) => {
     state.selectedBridgeFamily = event.target.value;
     renderBridgeExplorer();
   });
 
-  document.querySelector("#bridge-type-select").addEventListener("change", (event) => {
+  document.querySelector("#bridge-type-select")?.addEventListener("change", (event) => {
     state.bridgeTypeFilter = event.target.value;
     renderBridgeExplorer();
   });
