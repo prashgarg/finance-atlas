@@ -7,6 +7,9 @@ const state = {
   activeNetworkDecade: "2020",
   activeTimeView: "volume",
   edgeRole: "all",
+  selectedBridgeFamily: null,
+  bridgeTypeFilter: "all",
+  activeModalFamily: null,
   query: "",
   selectedConceptId: null,
 };
@@ -36,6 +39,27 @@ function niceLabel(value) {
     .replace(/\b\w/g, (match) => match.toUpperCase());
 }
 
+const bridgeLabelOrder = ["same_strategy", "same_mechanism", "shared_motif", "concept_only", "no_bridge"];
+const bridgeLabelText = {
+  same_strategy: "Same strategy",
+  same_mechanism: "Same mechanism",
+  shared_motif: "Shared motif",
+  concept_only: "Concept only",
+  no_bridge: "No bridge",
+};
+
+const bridgeLabelDefinition = {
+  same_strategy: "The paper studies substantially the same investment strategy or style.",
+  same_mechanism: "The paper studies a mechanism that can explain the product design.",
+  shared_motif: "The two sides share a market, instrument, exposure, or broad motif.",
+  concept_only: "The match is mostly a shared word or loose concept.",
+  no_bridge: "The academic match is unlikely to be useful for this product family.",
+};
+
+function bridgeLabel(value) {
+  return bridgeLabelText[value] || niceLabel(value || "unlabeled");
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -47,13 +71,419 @@ function escapeHtml(value) {
 
 function renderMetrics() {
   const summary = state.data.summary;
+  const bridge = state.data.product_bridge;
   const grid = document.querySelector("#metric-grid");
+  if (bridge?.available) {
+    grid.innerHTML = [
+      metricCard(formatNumber.format(bridge.summary.product_documents), "product documents"),
+      metricCard(formatNumber.format(bridge.summary.product_families), "product families"),
+      metricCard(formatNumber.format(bridge.summary.bridge_review_rows), "bridge rows"),
+      metricCard(formatNumber.format(summary.paper_count), "finance papers"),
+    ].join("");
+    return;
+  }
   grid.innerHTML = [
     metricCard(formatNumber.format(summary.paper_count), "papers"),
     metricCard(formatNumber.format(summary.unique_concepts), "concepts"),
     metricCard(formatNumber.format(summary.unique_canonical_edge_pairs), "edge pairs"),
     metricCard(formatNumber.format(summary.factor_investing_count), "factor papers"),
   ].join("");
+}
+
+function signatureList(items) {
+  if (!items?.length) return "<span class=\"empty-note\">No signature available.</span>";
+  return items.map((item) => `<span class="signature-pill">${escapeHtml(item)}</span>`).join("");
+}
+
+function renderBridgeBars(family) {
+  const total = Math.max(1, family.bridge_review_rows || 0);
+  return bridgeLabelOrder
+    .map((label) => {
+      const count = family.label_counts?.[label] || 0;
+      const width = Math.max(count ? 3 : 0, (count / total) * 100);
+      return `
+        <div class="bridge-bar-row">
+          <span>${escapeHtml(bridgeLabel(label))}</span>
+          <div class="bar-track"><div class="bar-fill bridge-fill-${label}" style="width: ${width}%"></div></div>
+          <b>${formatNumber.format(count)}</b>
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function findBridgeFamily(familyId) {
+  return (state.data.product_bridge?.families || []).find((family) => family.id === familyId);
+}
+
+function familyModalExamples(family) {
+  if (!family.examples?.length) {
+    return `<p class="empty-note">No academic match examples are available for this family in the current export.</p>`;
+  }
+  return family.examples
+    .map(
+      (example) => `
+        <article class="modal-match">
+          <b>${example.academic_year || ""} · ${escapeHtml(example.academic_title)}</b>
+          <p>${escapeHtml(example.academic_venue || "Venue not recorded")}</p>
+          <span>${escapeHtml(example.matched_terms || "matched terms not recorded")} · ${escapeHtml(bridgeLabel(example.bridge_label))}</span>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderFamilyModal(family) {
+  const content = document.querySelector("#family-modal-content");
+  content.innerHTML = `
+    <div class="modal-heading">
+      <div>
+        <span class="detail-kicker">${escapeHtml(bridgeLabel(family.modal_first_pass_bridge))}</span>
+        <h2 id="family-modal-title">${escapeHtml(family.display_name)}</h2>
+      </div>
+      <div class="modal-summary-pill">
+        <strong>${formatNumber.format(family.documents)}</strong>
+        <span>product documents</span>
+      </div>
+    </div>
+    <div class="modal-grid">
+      <section class="modal-block modal-wide">
+        <strong>Bridge interpretation</strong>
+        <p>${escapeHtml(family.main_caveat)}</p>
+        <p>${escapeHtml(family.interpretation || "No additional interpretation recorded for this family.")}</p>
+      </section>
+      <section class="modal-block">
+        <strong>Product graph signature</strong>
+        <div class="signature-list">${signatureList(family.product_graph_signature)}</div>
+      </section>
+      <section class="modal-block">
+        <strong>Product node signature</strong>
+        <div class="signature-list">${signatureList(family.product_node_signature)}</div>
+      </section>
+      <section class="modal-block modal-wide">
+        <strong>Nearest academic object</strong>
+        <p>${escapeHtml(family.nearest_academic_object)}</p>
+      </section>
+      <section class="modal-block">
+        <strong>Bridge-label mix</strong>
+        <div class="bridge-bars">${renderBridgeBars(family)}</div>
+      </section>
+      <section class="modal-block">
+        <strong>Graph size</strong>
+        <div class="modal-stats">
+          <div><b>${family.mean_nodes.toFixed(1)}</b><span>mean nodes</span></div>
+          <div><b>${family.mean_edges.toFixed(1)}</b><span>mean edges</span></div>
+          <div><b>${asPercent(family.substantive_bridge_share)}</b><span>substantive rows</span></div>
+        </div>
+      </section>
+      <section class="modal-block modal-full">
+        <strong>Academic match examples</strong>
+        <div class="modal-matches">${familyModalExamples(family)}</div>
+      </section>
+    </div>
+  `;
+}
+
+function openFamilyModal(familyId, updateHash = true) {
+  const family = findBridgeFamily(familyId);
+  const modal = document.querySelector("#family-modal");
+  if (!family || !modal) return;
+  state.activeModalFamily = familyId;
+  renderFamilyModal(family);
+  modal.hidden = false;
+  document.body.classList.add("modal-open");
+  if (updateHash && window.location.hash !== `#family-${familyId}`) {
+    history.replaceState(null, "", `#family-${familyId}`);
+  }
+  document.querySelector("[data-close-family-modal]")?.focus();
+}
+
+function closeFamilyModal() {
+  const modal = document.querySelector("#family-modal");
+  if (!modal) return;
+  modal.hidden = true;
+  state.activeModalFamily = null;
+  document.body.classList.remove("modal-open");
+  if (window.location.hash.startsWith("#family-")) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+}
+
+function renderBridgeExplorer() {
+  const bridge = state.data.product_bridge;
+  const overview = document.querySelector("#bridge-overview");
+  const select = document.querySelector("#bridge-family-select");
+  const typeSelect = document.querySelector("#bridge-type-select");
+  const guide = document.querySelector("#bridge-label-guide");
+  const detail = document.querySelector("#bridge-detail");
+  const table = document.querySelector("#bridge-family-table-body");
+
+  if (!bridge?.available) {
+    overview.innerHTML = `<p class="empty-note">Bridge package is not available in this export.</p>`;
+    detail.innerHTML = "";
+    table.innerHTML = "";
+    return;
+  }
+
+  if (!state.selectedBridgeFamily && bridge.families.length) {
+    state.selectedBridgeFamily = bridge.families[0].id;
+  }
+
+  const visibleFamilies = bridge.families.filter((family) => {
+    if (state.bridgeTypeFilter === "all") return true;
+    if (state.bridgeTypeFilter === "weak") {
+      return ["concept_only", "no_bridge"].includes(family.modal_first_pass_bridge);
+    }
+    return family.modal_first_pass_bridge === state.bridgeTypeFilter;
+  });
+
+  if (!visibleFamilies.some((family) => family.id === state.selectedBridgeFamily)) {
+    state.selectedBridgeFamily = visibleFamilies[0]?.id || bridge.families[0]?.id || null;
+  }
+
+  const selected = bridge.families.find((family) => family.id === state.selectedBridgeFamily) || visibleFamilies[0] || bridge.families[0];
+  state.selectedBridgeFamily = selected?.id || null;
+
+  select.innerHTML = visibleFamilies
+    .map(
+      (family) =>
+        `<option value="${escapeHtml(family.id)}"${family.id === state.selectedBridgeFamily ? " selected" : ""}>${escapeHtml(family.display_name)}</option>`,
+    )
+    .join("");
+  typeSelect.value = state.bridgeTypeFilter;
+
+  overview.innerHTML = [
+    metricCard(formatNumber.format(bridge.summary.substantive_bridge_rows), "substantive bridge rows"),
+    metricCard(formatNumber.format(bridge.summary.same_strategy_rows), "same-strategy rows"),
+    metricCard(formatNumber.format(bridge.summary.same_mechanism_rows), "same-mechanism rows"),
+    metricCard(formatNumber.format(bridge.summary.shared_motif_rows), "shared-motif rows"),
+  ].join("");
+
+  guide.innerHTML = bridgeLabelOrder
+    .map((label) => {
+      const summary = bridge.label_summary?.find((row) => row.label === label);
+      const rows = summary ? ` · ${formatNumber.format(summary.rows)} rows` : "";
+      return `
+        <article class="bridge-definition ${label}">
+          <strong>${escapeHtml(bridgeLabel(label))}${escapeHtml(rows)}</strong>
+          <p>${escapeHtml(bridgeLabelDefinition[label])}</p>
+        </article>
+      `;
+    })
+    .join("");
+
+  const examples = selected.examples?.length
+    ? `
+      <div class="bridge-examples">
+        <strong>Example academic matches</strong>
+        ${selected.examples
+          .map(
+            (example) => `
+              <p>${example.academic_year || ""} · ${escapeHtml(example.academic_title)} <span>${escapeHtml(bridgeLabel(example.bridge_label))}</span></p>
+            `,
+          )
+          .join("")}
+      </div>
+    `
+    : "";
+
+  detail.innerHTML = `
+    <div class="bridge-main">
+      <span class="detail-kicker">${escapeHtml(bridgeLabel(selected.modal_first_pass_bridge))}</span>
+      <h3>${escapeHtml(selected.display_name)}</h3>
+      <p>${escapeHtml(selected.main_caveat)}</p>
+      <div class="bridge-stat-row">
+        <div><strong>${formatNumber.format(selected.documents)}</strong><span>product documents</span></div>
+        <div><strong>${selected.mean_nodes.toFixed(1)}</strong><span>nodes per graph</span></div>
+        <div><strong>${selected.mean_edges.toFixed(1)}</strong><span>edges per graph</span></div>
+        <div><strong>${asPercent(selected.substantive_bridge_share)}</strong><span>substantive rows</span></div>
+      </div>
+    </div>
+    <div class="bridge-side">
+      <div>
+        <strong>Product graph signature</strong>
+        <div class="signature-list">${signatureList(selected.product_graph_signature)}</div>
+      </div>
+      <div>
+        <strong>Nearest academic object</strong>
+        <p>${escapeHtml(selected.nearest_academic_object)}</p>
+      </div>
+      <div>
+        <strong>Bridge-label mix</strong>
+        <div class="bridge-bars">${renderBridgeBars(selected)}</div>
+      </div>
+      ${examples}
+    </div>
+  `;
+
+  table.innerHTML = visibleFamilies
+    .map(
+      (family) => `
+        <tr data-open-family="${escapeHtml(family.id)}">
+          <td><button class="family-open-button" type="button" data-open-family="${escapeHtml(family.id)}"><strong>${escapeHtml(family.display_name)}</strong><span>${formatNumber.format(family.documents)} product documents</span></button></td>
+          <td>${escapeHtml((family.product_graph_signature || []).join("; "))}</td>
+          <td>${escapeHtml(family.nearest_academic_object)}</td>
+          <td><b class="bridge-badge ${escapeHtml(family.modal_first_pass_bridge)}">${escapeHtml(bridgeLabel(family.modal_first_pass_bridge))}</b></td>
+          <td>${escapeHtml(family.main_caveat)}</td>
+        </tr>
+      `,
+    )
+    .join("");
+}
+
+function renderFeaturedExamples() {
+  const container = document.querySelector("#featured-examples");
+  const examples = state.data.product_bridge?.featured_examples || [];
+  if (!container) return;
+  if (!examples.length) {
+    container.innerHTML = `<p class="empty-note">Featured examples are not available in this export.</p>`;
+    return;
+  }
+
+  container.innerHTML = examples
+    .map(
+      (example) => `
+        <button class="example-card ${escapeHtml(example.bridge_label)}" type="button" data-open-family="${escapeHtml(example.family_id)}">
+          <div class="example-topline">
+            <b class="bridge-badge ${escapeHtml(example.bridge_label)}">${escapeHtml(bridgeLabel(example.bridge_label))}</b>
+            <span>${escapeHtml(example.confidence || "first pass")}</span>
+          </div>
+          <h3>${escapeHtml(example.display_name)}</h3>
+          <p>${escapeHtml(example.lesson)}</p>
+          <div class="example-object">
+            <strong>Product graph</strong>
+            <div class="signature-list">${signatureList(example.product_graph_signature)}</div>
+          </div>
+          <div class="example-object">
+            <strong>Academic match</strong>
+            <p>${example.academic_year || ""} · ${escapeHtml(example.academic_title)}</p>
+            <span>${escapeHtml(example.matched_terms || example.nearest_academic_object)}</span>
+          </div>
+        </button>
+      `,
+    )
+    .join("");
+}
+
+function renderProvenance() {
+  const panel = document.querySelector("#provenance-panel");
+  const provenance = state.data.product_bridge?.provenance;
+  if (!panel || !provenance) return;
+  panel.innerHTML = `
+    <div>
+      <strong>Current product-graph pass</strong>
+      <p>${formatNumber.format(provenance.parsed_ok)} parsed documents · ${formatNumber.format(provenance.parse_errors)} parse errors · estimated LLM cost $${provenance.estimated_cost_usd.toFixed(2)}</p>
+    </div>
+    <div>
+      <strong>Source packages</strong>
+      <p>${escapeHtml(provenance.product_graph_package)}</p>
+      <p>${escapeHtml(provenance.bridge_package)}</p>
+    </div>
+    <div>
+      <strong>Model</strong>
+      <p>${escapeHtml(provenance.model || "not recorded")} · ${escapeHtml(provenance.provider || "provider not recorded")}</p>
+    </div>
+  `;
+}
+
+function familyNamesByBridge(labels) {
+  const labelSet = new Set(labels);
+  return (state.data.product_bridge?.families || [])
+    .filter((family) => labelSet.has(family.modal_first_pass_bridge))
+    .map((family) => family.display_name);
+}
+
+function renderReadout() {
+  const container = document.querySelector("#bridge-readout");
+  if (!container) return;
+  const bridge = state.data.product_bridge;
+  if (!bridge?.available) {
+    container.innerHTML = `<p class="empty-note">Bridge readout is not available in this export.</p>`;
+    return;
+  }
+
+  const cards = [
+    {
+      title: "Same-strategy bridges",
+      label: "same_strategy",
+      claim: "Some product families map to an academic object that is close to the product strategy itself.",
+      implication: "These are the best candidates for paper-facing examples and later timing analysis.",
+      families: familyNamesByBridge(["same_strategy"]),
+    },
+    {
+      title: "Mechanism bridges",
+      label: "same_mechanism",
+      claim: "Some products connect to academic mechanisms that explain the product design.",
+      implication: "These support rationale or channel claims rather than identical-strategy claims.",
+      families: familyNamesByBridge(["same_mechanism"]),
+    },
+    {
+      title: "Shared motifs",
+      label: "shared_motif",
+      claim: "Some links are mainly through a market, instrument, or exposure.",
+      implication: "These guide retrieval and become research claims after source-text evidence checks.",
+      families: familyNamesByBridge(["shared_motif"]),
+    },
+    {
+      title: "Boundary cases",
+      label: "concept_only",
+      claim: "Some product screens find adjacent concepts rather than genuine product-academic bridges.",
+      implication: "These cases show why graph extraction is needed beyond keyword matching.",
+      families: familyNamesByBridge(["concept_only", "no_bridge"]),
+    },
+  ];
+
+  container.innerHTML = cards
+    .map(
+      (card) => `
+        <article class="readout-card ${escapeHtml(card.label)}">
+          <b class="bridge-badge ${escapeHtml(card.label)}">${escapeHtml(card.title)}</b>
+          <p>${escapeHtml(card.claim)}</p>
+          <strong>${escapeHtml(card.implication)}</strong>
+          <div class="readout-family-list">
+            ${card.families.map((family) => `<span>${escapeHtml(family)}</span>`).join("")}
+          </div>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderDataPanel() {
+  const panel = document.querySelector("#data-panel");
+  const provenance = state.data.product_bridge?.provenance;
+  if (!panel) return;
+  panel.innerHTML = `
+    <article>
+      <strong>Compact website export</strong>
+      <p>The interactive panels use the current compact JSON export.</p>
+      <a href="data/site-data.json" download>Download site-data.json</a>
+    </article>
+    <article>
+      <strong>Research package</strong>
+      <p>${escapeHtml(provenance?.bridge_package || "Bridge package path not recorded.")}</p>
+      <p>${escapeHtml(provenance?.product_graph_package || "Product graph package path not recorded.")}</p>
+    </article>
+    <article>
+      <strong>Working note</strong>
+      <p>Current site copy: assets/finance-atlas-working-note.pdf</p>
+      <a href="assets/finance-atlas-working-note.pdf" target="_blank" rel="noreferrer">Open working note PDF</a>
+    </article>
+  `;
+}
+
+function correctHashScroll() {
+  const hash = window.location.hash;
+  if (!hash) return;
+  if (hash.startsWith("#family-")) {
+    openFamilyModal(hash.replace("#family-", ""), false);
+    return;
+  }
+  const target = document.querySelector(hash);
+  if (!target) return;
+  requestAnimationFrame(() => {
+    target.scrollIntoView({ block: "start" });
+  });
 }
 
 function filteredConcepts() {
@@ -650,6 +1080,34 @@ function wireControls() {
     renderEdges();
   });
 
+  document.querySelector("#bridge-family-select").addEventListener("change", (event) => {
+    state.selectedBridgeFamily = event.target.value;
+    renderBridgeExplorer();
+  });
+
+  document.querySelector("#bridge-type-select").addEventListener("change", (event) => {
+    state.bridgeTypeFilter = event.target.value;
+    renderBridgeExplorer();
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const openTarget = event.target.closest("[data-open-family]");
+    if (openTarget) {
+      openFamilyModal(openTarget.dataset.openFamily);
+      return;
+    }
+    if (event.target.closest("[data-close-family-modal]")) {
+      closeFamilyModal();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && state.activeModalFamily) {
+      closeFamilyModal();
+    }
+  });
+
 }
 
 async function init() {
@@ -661,6 +1119,11 @@ async function init() {
   state.concepts = state.data.concepts;
 
   renderMetrics();
+  renderBridgeExplorer();
+  renderFeaturedExamples();
+  renderProvenance();
+  renderReadout();
+  renderDataPanel();
   renderChangeDiagnostics();
   renderNetworkDiagnostics();
   renderTimeChart();
@@ -671,6 +1134,7 @@ async function init() {
   renderEdges();
   renderPapers();
   wireControls();
+  correctHashScroll();
 }
 
 init().catch((error) => {

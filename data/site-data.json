@@ -15912,5 +15912,814 @@
         }
       ]
     }
+  },
+  "product_bridge": {
+    "available": true,
+    "summary": {
+      "product_documents": 911,
+      "product_families": 12,
+      "bridge_review_rows": 135,
+      "substantive_bridge_rows": 108,
+      "weak_or_rejected_rows": 27,
+      "same_strategy_rows": 45,
+      "same_mechanism_rows": 32,
+      "shared_motif_rows": 31
+    },
+    "provenance": {
+      "product_graph_package": "product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0",
+      "bridge_package": "product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0/systematic_bridge_package_v0",
+      "model": "openai/gpt-oss-120b:ovhcloud",
+      "provider": "huggingface_router",
+      "estimated_cost_usd": 1.6399,
+      "parsed_ok": 911,
+      "parse_errors": 0,
+      "created_at": "2026-05-12 00:53:13.482271"
+    },
+    "label_summary": [
+      {
+        "label": "same_strategy",
+        "rows": 45,
+        "share": 0.333
+      },
+      {
+        "label": "same_mechanism",
+        "rows": 32,
+        "share": 0.237
+      },
+      {
+        "label": "shared_motif",
+        "rows": 31,
+        "share": 0.23
+      },
+      {
+        "label": "concept_only",
+        "rows": 15,
+        "share": 0.111
+      },
+      {
+        "label": "no_bridge",
+        "rows": 12,
+        "share": 0.089
+      }
+    ],
+    "families": [
+      {
+        "id": "managed-futures-trend-following-core",
+        "product_family": "managed futures trend following core",
+        "display_name": "Managed futures / trend following",
+        "documents": 90,
+        "mean_nodes": 12.5,
+        "mean_edges": 12.2,
+        "product_graph_signature": [
+          "product invests in",
+          "product uses instrument",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "asset class",
+          "instrument",
+          "strategy",
+          "rule or horizon"
+        ],
+        "nearest_academic_object": "time-series momentum and trend-following strategies",
+        "plausible_state_documents": 18,
+        "plausible_state_share": 0.2,
+        "interpretation": "Strongest current evidence of explicit state-contingent product language.",
+        "label_counts": {
+          "same_strategy": 12,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_strategy",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Same-strategy candidate: trend-following products map naturally to time-series momentum, pending source-text checks.",
+        "examples": [
+          {
+            "academic_year": 2015,
+            "academic_title": "Profitability of time series momentum",
+            "academic_venue": "Journal of Banking & Finance",
+            "matched_terms": "time series momentum; trend following",
+            "bridge_label": "same_strategy",
+            "confidence": "medium_high"
+          },
+          {
+            "academic_year": 2022,
+            "academic_title": "Time series momentum in the US stock market: Empirical evidence and theoretical analysis",
+            "academic_venue": "International Review of Financial Analysis",
+            "matched_terms": "time series momentum; trend following",
+            "bridge_label": "same_strategy",
+            "confidence": "medium_high"
+          },
+          {
+            "academic_year": 2016,
+            "academic_title": "The trend is our friend: Risk parity, momentum and trend following in global asset allocation",
+            "academic_venue": "Journal of Behavioral and Experimental Finance",
+            "matched_terms": "trend following",
+            "bridge_label": "same_strategy",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "multifactor-smart-beta",
+        "product_family": "multifactor smart beta",
+        "display_name": "Multifactor smart beta",
+        "documents": 65,
+        "mean_nodes": 11.7,
+        "mean_edges": 10.9,
+        "product_graph_signature": [
+          "strategy targets factor or style",
+          "product invests in",
+          "product uses instrument",
+          "product has rule or horizon"
+        ],
+        "product_node_signature": [
+          "factor or style",
+          "asset class",
+          "rule or horizon",
+          "instrument"
+        ],
+        "nearest_academic_object": "factor investing, smart beta, and multifactor portfolio design",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 12,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_strategy",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Same-strategy candidate: academic factor investing and product factor sleeves are close, but implementation details can differ.",
+        "examples": [
+          {
+            "academic_year": 2024,
+            "academic_title": "Smart betas, return models and the tangency portfolio weights",
+            "academic_venue": "PLoS ONE",
+            "matched_terms": "smart beta",
+            "bridge_label": "same_strategy",
+            "confidence": "medium"
+          },
+          {
+            "academic_year": 2023,
+            "academic_title": "Performance of ESG-integrated smart beta strategies in Asia-Pacific stock markets",
+            "academic_venue": "Research in International Business and Finance",
+            "matched_terms": "smart beta",
+            "bridge_label": "same_strategy",
+            "confidence": "medium"
+          },
+          {
+            "academic_year": 2024,
+            "academic_title": "Can Competition Increase Profits in Factor Investing?",
+            "academic_venue": "Management Science",
+            "matched_terms": "factor investing",
+            "bridge_label": "same_strategy",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "esg-climate-sustainable-screen",
+        "product_family": "esg climate sustainable screen",
+        "display_name": "ESG / sustainable screens",
+        "documents": 75,
+        "mean_nodes": 10.8,
+        "mean_edges": 10.3,
+        "product_graph_signature": [
+          "product invests in",
+          "strategy targets factor or style",
+          "product has rule or horizon",
+          "product uses instrument"
+        ],
+        "product_node_signature": [
+          "asset class",
+          "factor or style",
+          "rule or horizon",
+          "instrument"
+        ],
+        "nearest_academic_object": "ESG investing, sustainable screens, and climate-risk pricing",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 12,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_strategy",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Same-strategy candidate: screens and exclusions are close, but ESG labels can combine preference, risk, and disclosure motives.",
+        "examples": []
+      },
+      {
+        "id": "volatility-exposure-or-control-unsplit",
+        "product_family": "volatility exposure or control unsplit",
+        "display_name": "Volatility exposure / control",
+        "documents": 60,
+        "mean_nodes": 9.9,
+        "mean_edges": 9.2,
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "rule or horizon",
+          "asset class",
+          "instrument",
+          "factor or style"
+        ],
+        "nearest_academic_object": "volatility risk premium, variance risk, and volatility-managed exposure",
+        "plausible_state_documents": 1,
+        "plausible_state_share": 0.017,
+        "interpretation": "Some state-contingent language, but not the dominant product-description mode.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 12,
+          "shared_motif": 0,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_mechanism",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Mechanism bridge: volatility is central, but exposure products, risk-control products, and volatility-risk-premium papers are not one object.",
+        "examples": [
+          {
+            "academic_year": 2020,
+            "academic_title": "Predicting the VIX and the volatility risk premium: The role of short-run funding spreads Volat...",
+            "academic_venue": "Journal of Econometrics",
+            "matched_terms": "variance risk premium; VIX; volatility risk premium",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium_high"
+          },
+          {
+            "academic_year": 2019,
+            "academic_title": "Variance risk premium in a small open economy with volatile capital flows: The case of Korea",
+            "academic_venue": "International Review of Economics & Finance",
+            "matched_terms": "variance risk premium",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium"
+          },
+          {
+            "academic_year": 2025,
+            "academic_title": "The predictive power of the oil variance risk premium",
+            "academic_venue": "Resources Policy",
+            "matched_terms": "variance risk premium",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "broad-allocation-inflation-sensitive",
+        "product_family": "broad allocation inflation sensitive",
+        "display_name": "Inflation-sensitive allocation",
+        "documents": 40,
+        "mean_nodes": 9.7,
+        "mean_edges": 9.3,
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "asset class",
+          "rule or horizon",
+          "factor or style",
+          "strategy"
+        ],
+        "nearest_academic_object": "inflation hedging and asset allocation under inflation",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 11,
+          "shared_motif": 1,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_mechanism",
+        "modal_first_pass_bridge_share": 0.917,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Mechanism bridge: the product protects against inflation, but the academic object may study the hedge channel rather than the product rule.",
+        "examples": [
+          {
+            "academic_year": 2023,
+            "academic_title": "Inflation hedging effectiveness of farmland and timberland assets in the United States",
+            "academic_venue": "Forest Policy and Economics",
+            "matched_terms": "inflation hedge; inflation hedging",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium_high"
+          },
+          {
+            "academic_year": 2013,
+            "academic_title": "Bond futures, inflation-indexed bonds, and inflation risk premium",
+            "academic_venue": "Journal of International Financial Markets Institutions and Money",
+            "matched_terms": "inflation hedge; inflation risk",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium_high"
+          },
+          {
+            "academic_year": 2019,
+            "academic_title": "Assessing the inflation hedging potential of coal and iron ore in Australia",
+            "academic_venue": "Resources Policy",
+            "matched_terms": "inflation hedge; inflation hedging",
+            "bridge_label": "same_mechanism",
+            "confidence": "medium_high"
+          }
+        ]
+      },
+      {
+        "id": "real-asset-inflation-hedge",
+        "product_family": "real asset inflation hedge",
+        "display_name": "Real-asset inflation hedge",
+        "documents": 37,
+        "mean_nodes": 10.4,
+        "mean_edges": 10.4,
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "asset class",
+          "rule or horizon",
+          "instrument",
+          "factor or style"
+        ],
+        "nearest_academic_object": "real assets, commodities, REITs, and inflation hedging",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 9,
+          "shared_motif": 3,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "same_mechanism",
+        "modal_first_pass_bridge_share": 0.75,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "ready_for_worked_example_shortlist",
+        "main_caveat": "Mechanism bridge: products hold real assets; papers often study the inflation-hedging channel rather than the fund design.",
+        "examples": []
+      },
+      {
+        "id": "tips-or-real-return-inflation-protection",
+        "product_family": "tips or real return inflation protection",
+        "display_name": "TIPS / real-return protection",
+        "documents": 61,
+        "mean_nodes": 11.3,
+        "mean_edges": 10.8,
+        "product_graph_signature": [
+          "product invests in",
+          "product uses strategy",
+          "product uses instrument",
+          "strategy targets factor or style"
+        ],
+        "product_node_signature": [
+          "asset class",
+          "instrument",
+          "rule or horizon",
+          "strategy"
+        ],
+        "nearest_academic_object": "inflation-indexed bonds and real-return protection",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 0,
+          "shared_motif": 3,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "shared_motif",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 3,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 3,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "needs_more_review_before_paper_claim",
+        "main_caveat": "Shared market bridge: TIPS products and inflation-indexed bond papers are close, but the product wrapper adds maturity and allocation choices.",
+        "examples": []
+      },
+      {
+        "id": "crypto-futures-exposure",
+        "product_family": "crypto futures exposure",
+        "display_name": "Crypto futures exposure",
+        "documents": 104,
+        "mean_nodes": 11.3,
+        "mean_edges": 11.3,
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "product seeks objective",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "instrument",
+          "rule or horizon",
+          "asset class",
+          "strategy"
+        ],
+        "nearest_academic_object": "bitcoin futures, futures price discovery, and crypto market structure",
+        "plausible_state_documents": 7,
+        "plausible_state_share": 0.067,
+        "interpretation": "Some state-contingent language, but not the dominant product-description mode.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 0,
+          "shared_motif": 12,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "shared_motif",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "useful_as_motif_or_market_bridge",
+        "main_caveat": "Mostly market or instrument bridge: futures products and papers share the crypto-futures object, but product design can differ from the academic question.",
+        "examples": [
+          {
+            "academic_year": 2021,
+            "academic_title": "Price volatilities of bitcoin futures",
+            "academic_venue": "Finance research letters",
+            "matched_terms": "bitcoin futures",
+            "bridge_label": "shared_motif",
+            "confidence": "medium"
+          },
+          {
+            "academic_year": 2023,
+            "academic_title": "The asymmetric relationships between the Bitcoin futures’ return, volatility, and trading volume",
+            "academic_venue": "International Review of Economics & Finance",
+            "matched_terms": "bitcoin futures",
+            "bridge_label": "shared_motif",
+            "confidence": "medium"
+          },
+          {
+            "academic_year": 2022,
+            "academic_title": "Informativeness of CME Micro Bitcoin Futures in Pricing of Bitcoin: Intraday Evidence",
+            "academic_venue": "Finance research letters",
+            "matched_terms": "bitcoin futures",
+            "bridge_label": "shared_motif",
+            "confidence": "medium"
+          }
+        ]
+      },
+      {
+        "id": "crypto-spot-or-reference-exposure",
+        "product_family": "crypto spot or reference exposure",
+        "display_name": "Crypto spot / reference exposure",
+        "documents": 56,
+        "mean_nodes": 9.8,
+        "mean_edges": 9.5,
+        "product_graph_signature": [
+          "strategy targets factor or style",
+          "product has rule or horizon",
+          "product invests in",
+          "product uses strategy"
+        ],
+        "product_node_signature": [
+          "rule or horizon",
+          "factor or style",
+          "product",
+          "strategy"
+        ],
+        "nearest_academic_object": "crypto assets, bitcoin exposure, and cross-market spillovers",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 0,
+          "same_mechanism": 0,
+          "shared_motif": 12,
+          "concept_only": 0,
+          "no_bridge": 0
+        },
+        "modal_first_pass_bridge": "shared_motif",
+        "modal_first_pass_bridge_share": 1.0,
+        "substantive_bridge_rows": 12,
+        "weak_or_rejected_rows": 0,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 1.0,
+        "current_use_status": "useful_as_motif_or_market_bridge",
+        "main_caveat": "Shared motif bridge: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
+        "examples": []
+      },
+      {
+        "id": "quality-growth-stock-selection",
+        "product_family": "quality growth stock selection",
+        "display_name": "Quality / growth stock selection",
+        "documents": 54,
+        "mean_nodes": 10.4,
+        "mean_edges": 10.3,
+        "product_graph_signature": [
+          "product has rule or horizon",
+          "product invests in",
+          "product uses strategy",
+          "product uses instrument"
+        ],
+        "product_node_signature": [
+          "rule or horizon",
+          "instrument",
+          "asset class",
+          "strategy"
+        ],
+        "nearest_academic_object": "quality factor, earnings quality, and growth-stock selection",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 4,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 4,
+          "no_bridge": 4
+        },
+        "modal_first_pass_bridge": "concept_only",
+        "modal_first_pass_bridge_share": 0.333,
+        "substantive_bridge_rows": 4,
+        "weak_or_rejected_rows": 8,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 0.333,
+        "current_use_status": "useful_as_noise_or_boundary_case",
+        "main_caveat": "Boundary case: quality, growth, credit quality, and generic quality language are easy to confuse.",
+        "examples": [
+          {
+            "academic_year": 2024,
+            "academic_title": "Relationship banking and firms’ earnings quality – Does it matter whether banks are creditors o...",
+            "academic_venue": "Journal of Banking & Finance",
+            "matched_terms": "earnings quality",
+            "bridge_label": "no_bridge",
+            "confidence": "high"
+          },
+          {
+            "academic_year": 2018,
+            "academic_title": "Banks' funding structure and earnings quality",
+            "academic_venue": "International Review of Financial Analysis",
+            "matched_terms": "earnings quality",
+            "bridge_label": "no_bridge",
+            "confidence": "high"
+          },
+          {
+            "academic_year": 2017,
+            "academic_title": "Financial Reporting Quality and Uncertainty about Credit Risk among Ratings Agencies",
+            "academic_venue": "The Accounting Review",
+            "matched_terms": "earnings quality",
+            "bridge_label": "no_bridge",
+            "confidence": "high"
+          }
+        ]
+      },
+      {
+        "id": "managed-volatility-overlay",
+        "product_family": "managed volatility overlay",
+        "display_name": "Managed-volatility overlay",
+        "documents": 149,
+        "mean_nodes": 10.0,
+        "mean_edges": 9.7,
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "product uses strategy",
+          "product uses instrument"
+        ],
+        "product_node_signature": [
+          "instrument",
+          "rule or horizon",
+          "asset class",
+          "strategy"
+        ],
+        "nearest_academic_object": "target-volatility rules, risk control, and volatility management",
+        "plausible_state_documents": 3,
+        "plausible_state_share": 0.02,
+        "interpretation": "Some state-contingent language, but not the dominant product-description mode.",
+        "label_counts": {
+          "same_strategy": 3,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 6,
+          "no_bridge": 3
+        },
+        "modal_first_pass_bridge": "concept_only",
+        "modal_first_pass_bridge_share": 0.5,
+        "substantive_bridge_rows": 3,
+        "weak_or_rejected_rows": 9,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 0.25,
+        "current_use_status": "useful_as_noise_or_boundary_case",
+        "main_caveat": "Boundary case: volatility control can be a strategy rule, a risk disclosure, or incidental language.",
+        "examples": []
+      },
+      {
+        "id": "low-volatility-or-multifactor-lowvol",
+        "product_family": "low volatility or multifactor lowvol",
+        "display_name": "Low-volatility / low-beta",
+        "documents": 120,
+        "mean_nodes": 12.2,
+        "mean_edges": 11.7,
+        "product_graph_signature": [
+          "strategy targets factor or style",
+          "product invests in",
+          "product tracks benchmark",
+          "product has rule or horizon"
+        ],
+        "product_node_signature": [
+          "factor or style",
+          "asset class",
+          "rule or horizon",
+          "instrument"
+        ],
+        "nearest_academic_object": "low-beta, low-volatility, and minimum-variance strategies",
+        "plausible_state_documents": 0,
+        "plausible_state_share": 0.0,
+        "interpretation": "Mostly design/exposure language rather than explicit state-contingent language.",
+        "label_counts": {
+          "same_strategy": 2,
+          "same_mechanism": 0,
+          "shared_motif": 0,
+          "concept_only": 5,
+          "no_bridge": 5
+        },
+        "modal_first_pass_bridge": "concept_only",
+        "modal_first_pass_bridge_share": 0.417,
+        "substantive_bridge_rows": 2,
+        "weak_or_rejected_rows": 10,
+        "bridge_review_rows": 12,
+        "substantive_bridge_share": 0.167,
+        "current_use_status": "useful_as_noise_or_boundary_case",
+        "main_caveat": "Boundary case: low-volatility products can mix low-beta, minimum-variance, multifactor, and defensive-equity ideas.",
+        "examples": [
+          {
+            "academic_year": 2009,
+            "academic_title": "Fund Flow Volatility and Performance",
+            "academic_venue": "Journal of Financial and Quantitative Analysis",
+            "matched_terms": "low volatility",
+            "bridge_label": "no_bridge",
+            "confidence": "high"
+          },
+          {
+            "academic_year": 2022,
+            "academic_title": "Time-varying minimum variance portfolio",
+            "academic_venue": "Journal of Econometrics",
+            "matched_terms": "minimum variance",
+            "bridge_label": "no_bridge",
+            "confidence": "high"
+          },
+          {
+            "academic_year": 2022,
+            "academic_title": "Capital‐flow volatility in emerging markets: A panel GARCH approach",
+            "academic_venue": "International Finance",
+            "matched_terms": "low volatility",
+            "bridge_label": "concept_only",
+            "confidence": "low_medium"
+          }
+        ]
+      }
+    ],
+    "featured_examples": [
+      {
+        "family_id": "managed-futures-trend-following-core",
+        "product_family": "managed futures trend following core",
+        "display_name": "Managed futures / trend following",
+        "bridge_label": "same_strategy",
+        "lesson": "Clean same-strategy bridge: product trend following maps naturally to academic time-series momentum.",
+        "product_graph_signature": [
+          "product invests in",
+          "product uses instrument",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "nearest_academic_object": "time-series momentum and trend-following strategies",
+        "academic_year": 2015,
+        "academic_title": "Profitability of time series momentum",
+        "academic_venue": "Journal of Banking & Finance",
+        "matched_terms": "time series momentum; trend following",
+        "confidence": "medium_high",
+        "main_caveat": "Same-strategy candidate: trend-following products map naturally to time-series momentum, pending source-text checks."
+      },
+      {
+        "family_id": "multifactor-smart-beta",
+        "product_family": "multifactor smart beta",
+        "display_name": "Multifactor smart beta",
+        "bridge_label": "same_strategy",
+        "lesson": "Another same-strategy bridge: product factor sleeves and academic factor-investing papers are close objects.",
+        "product_graph_signature": [
+          "strategy targets factor or style",
+          "product invests in",
+          "product uses instrument",
+          "product has rule or horizon"
+        ],
+        "nearest_academic_object": "factor investing, smart beta, and multifactor portfolio design",
+        "academic_year": 2024,
+        "academic_title": "Smart betas, return models and the tangency portfolio weights",
+        "academic_venue": "PLoS ONE",
+        "matched_terms": "smart beta",
+        "confidence": "medium",
+        "main_caveat": "Same-strategy candidate: academic factor investing and product factor sleeves are close, but implementation details can differ."
+      },
+      {
+        "family_id": "volatility-exposure-or-control-unsplit",
+        "product_family": "volatility exposure or control unsplit",
+        "display_name": "Volatility exposure / control",
+        "bridge_label": "same_mechanism",
+        "lesson": "Mechanism bridge: products use volatility exposure or control, while papers often study VIX or variance-risk-premium mechanisms.",
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "nearest_academic_object": "volatility risk premium, variance risk, and volatility-managed exposure",
+        "academic_year": 2020,
+        "academic_title": "Predicting the VIX and the volatility risk premium: The role of short-run funding spreads Volatility Factors",
+        "academic_venue": "Journal of Econometrics",
+        "matched_terms": "variance risk premium; VIX; volatility risk premium",
+        "confidence": "medium_high",
+        "main_caveat": "Mechanism bridge: volatility is central, but exposure products, risk-control products, and volatility-risk-premium papers are not one object."
+      },
+      {
+        "family_id": "broad-allocation-inflation-sensitive",
+        "product_family": "broad allocation inflation sensitive",
+        "display_name": "Inflation-sensitive allocation",
+        "bridge_label": "same_mechanism",
+        "lesson": "Mechanism bridge: products seek inflation protection, while papers study inflation-hedging channels across assets.",
+        "product_graph_signature": [
+          "product invests in",
+          "product has rule or horizon",
+          "strategy targets factor or style",
+          "product uses strategy"
+        ],
+        "nearest_academic_object": "inflation hedging and asset allocation under inflation",
+        "academic_year": 2023,
+        "academic_title": "Inflation hedging effectiveness of farmland and timberland assets in the United States",
+        "academic_venue": "Forest Policy and Economics",
+        "matched_terms": "inflation hedge; inflation hedging",
+        "confidence": "medium_high",
+        "main_caveat": "Mechanism bridge: the product protects against inflation, but the academic object may study the hedge channel rather than the product rule."
+      },
+      {
+        "family_id": "quality-growth-stock-selection",
+        "product_family": "quality growth stock selection",
+        "display_name": "Quality / growth stock selection",
+        "bridge_label": "no_bridge",
+        "lesson": "Boundary case: quality in product language can collide with earnings quality or generic quality in academic language.",
+        "product_graph_signature": [
+          "product has rule or horizon",
+          "product invests in",
+          "product uses strategy",
+          "product uses instrument"
+        ],
+        "nearest_academic_object": "quality factor, earnings quality, and growth-stock selection",
+        "academic_year": 2024,
+        "academic_title": "Relationship banking and firms’ earnings quality – Does it matter whether banks are creditors or owners?",
+        "academic_venue": "Journal of Banking & Finance",
+        "matched_terms": "earnings quality",
+        "confidence": "high",
+        "main_caveat": "Boundary case: quality, growth, credit quality, and generic quality language are easy to confuse."
+      }
+    ]
   }
 }

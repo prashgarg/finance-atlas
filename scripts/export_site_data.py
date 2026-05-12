@@ -11,6 +11,101 @@ OUT = ROOT / "data/site-data.json"
 GRAPH_DIAGNOSTICS = ROOT / "data/analysis/graph_diagnostics_v0"
 GLOBAL_CONTEXT = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_global_context_v0"
 CREDIBILITY_AUDIT = ROOT.parent / "asset_pricing_theme_map/data/derived/theme_map_credibility_audit_v0"
+BRIDGE_PACKAGE = (
+    ROOT.parent
+    / "product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0/systematic_bridge_package_v0"
+)
+PRODUCT_GRAPH_PACKAGE = BRIDGE_PACKAGE.parent
+
+NEAREST_ACADEMIC_OBJECT = {
+    "broad allocation inflation sensitive": "inflation hedging and asset allocation under inflation",
+    "crypto futures exposure": "bitcoin futures, futures price discovery, and crypto market structure",
+    "crypto spot or reference exposure": "crypto assets, bitcoin exposure, and cross-market spillovers",
+    "esg climate sustainable screen": "ESG investing, sustainable screens, and climate-risk pricing",
+    "managed futures trend following core": "time-series momentum and trend-following strategies",
+    "multifactor smart beta": "factor investing, smart beta, and multifactor portfolio design",
+    "real asset inflation hedge": "real assets, commodities, REITs, and inflation hedging",
+    "volatility exposure or control unsplit": "volatility risk premium, variance risk, and volatility-managed exposure",
+    "tips or real return inflation protection": "inflation-indexed bonds and real-return protection",
+    "quality growth stock selection": "quality factor, earnings quality, and growth-stock selection",
+    "managed volatility overlay": "target-volatility rules, risk control, and volatility management",
+    "low volatility or multifactor lowvol": "low-beta, low-volatility, and minimum-variance strategies",
+}
+
+BRIDGE_CAVEATS = {
+    "broad allocation inflation sensitive": "Mechanism bridge: the product protects against inflation, but the academic object may study the hedge channel rather than the product rule.",
+    "crypto futures exposure": "Mostly market or instrument bridge: futures products and papers share the crypto-futures object, but product design can differ from the academic question.",
+    "crypto spot or reference exposure": "Shared motif bridge: crypto exposure is common to both sides, but the academic object may study prices or spillovers rather than an investable wrapper.",
+    "esg climate sustainable screen": "Same-strategy candidate: screens and exclusions are close, but ESG labels can combine preference, risk, and disclosure motives.",
+    "managed futures trend following core": "Same-strategy candidate: trend-following products map naturally to time-series momentum, pending source-text checks.",
+    "multifactor smart beta": "Same-strategy candidate: academic factor investing and product factor sleeves are close, but implementation details can differ.",
+    "real asset inflation hedge": "Mechanism bridge: products hold real assets; papers often study the inflation-hedging channel rather than the fund design.",
+    "volatility exposure or control unsplit": "Mechanism bridge: volatility is central, but exposure products, risk-control products, and volatility-risk-premium papers are not one object.",
+    "tips or real return inflation protection": "Shared market bridge: TIPS products and inflation-indexed bond papers are close, but the product wrapper adds maturity and allocation choices.",
+    "quality growth stock selection": "Boundary case: quality, growth, credit quality, and generic quality language are easy to confuse.",
+    "managed volatility overlay": "Boundary case: volatility control can be a strategy rule, a risk disclosure, or incidental language.",
+    "low volatility or multifactor lowvol": "Boundary case: low-volatility products can mix low-beta, minimum-variance, multifactor, and defensive-equity ideas.",
+}
+
+BRIDGE_LABEL_ORDER = ["same_strategy", "same_mechanism", "shared_motif", "concept_only", "no_bridge"]
+
+FAMILY_DISPLAY_NAME = {
+    "managed futures trend following core": "Managed futures / trend following",
+    "multifactor smart beta": "Multifactor smart beta",
+    "esg climate sustainable screen": "ESG / sustainable screens",
+    "volatility exposure or control unsplit": "Volatility exposure / control",
+    "broad allocation inflation sensitive": "Inflation-sensitive allocation",
+    "real asset inflation hedge": "Real-asset inflation hedge",
+    "tips or real return inflation protection": "TIPS / real-return protection",
+    "crypto futures exposure": "Crypto futures exposure",
+    "crypto spot or reference exposure": "Crypto spot / reference exposure",
+    "quality growth stock selection": "Quality / growth stock selection",
+    "managed volatility overlay": "Managed-volatility overlay",
+    "low volatility or multifactor lowvol": "Low-volatility / low-beta",
+}
+
+FAMILY_DISPLAY_ORDER = {
+    "managed futures trend following core": 1,
+    "multifactor smart beta": 2,
+    "esg climate sustainable screen": 3,
+    "volatility exposure or control unsplit": 4,
+    "broad allocation inflation sensitive": 5,
+    "real asset inflation hedge": 6,
+    "tips or real return inflation protection": 7,
+    "crypto futures exposure": 8,
+    "crypto spot or reference exposure": 9,
+    "quality growth stock selection": 10,
+    "managed volatility overlay": 11,
+    "low volatility or multifactor lowvol": 12,
+}
+
+FEATURED_EXAMPLE_SPECS = [
+    {
+        "family": "managed futures trend following core",
+        "preferred_label": "same_strategy",
+        "lesson": "Clean same-strategy bridge: product trend following maps naturally to academic time-series momentum.",
+    },
+    {
+        "family": "multifactor smart beta",
+        "preferred_label": "same_strategy",
+        "lesson": "Another same-strategy bridge: product factor sleeves and academic factor-investing papers are close objects.",
+    },
+    {
+        "family": "volatility exposure or control unsplit",
+        "preferred_label": "same_mechanism",
+        "lesson": "Mechanism bridge: products use volatility exposure or control, while papers often study VIX or variance-risk-premium mechanisms.",
+    },
+    {
+        "family": "broad allocation inflation sensitive",
+        "preferred_label": "same_mechanism",
+        "lesson": "Mechanism bridge: products seek inflation protection, while papers study inflation-hedging channels across assets.",
+    },
+    {
+        "family": "quality growth stock selection",
+        "preferred_label": "no_bridge",
+        "lesson": "Boundary case: quality in product language can collide with earnings quality or generic quality in academic language.",
+    },
+]
 
 
 def read_csv(name: str) -> list[dict[str, str]]:
@@ -42,6 +137,25 @@ def compact_title(value: str, limit: int = 116) -> str:
     if len(text) <= limit:
         return text
     return text[: limit - 1].rstrip() + "..."
+
+
+def slugify(value: str) -> str:
+    return (
+        str(value or "")
+        .strip()
+        .lower()
+        .replace("&", "and")
+        .replace("/", " ")
+        .replace("-", " ")
+        .replace(",", " ")
+        .replace("  ", " ")
+        .replace(" ", "-")
+    )
+
+
+def split_signature(value: str, limit: int = 4) -> list[str]:
+    parts = [part.strip() for part in str(value or "").split(";") if part.strip()]
+    return parts[:limit]
 
 
 def build_summary(summary_raw: dict[str, Any]) -> dict[str, Any]:
@@ -330,6 +444,135 @@ def build_credibility_audit() -> dict[str, Any]:
     }
 
 
+def build_product_bridge() -> dict[str, Any]:
+    family_rows = read_optional_csv(BRIDGE_PACKAGE / "family_bridge_cross_section.csv")
+    label_rows = read_optional_csv(BRIDGE_PACKAGE / "bridge_label_overall_summary.csv")
+    example_rows = read_optional_csv(BRIDGE_PACKAGE / "worked_example_candidate_rows.csv")
+    package_summary = read_optional_json(PRODUCT_GRAPH_PACKAGE / "package_summary.json")
+
+    if not family_rows:
+        return {"available": False}
+
+    examples_by_family: dict[str, list[dict[str, Any]]] = {}
+    for row in example_rows:
+        family = row.get("product_family", "")
+        if not family:
+            continue
+        examples_by_family.setdefault(family, [])
+        if len(examples_by_family[family]) >= 3:
+            continue
+        examples_by_family[family].append(
+            {
+                "academic_year": as_int(row.get("academic_year", "")),
+                "academic_title": compact_title(row.get("academic_title", ""), 96),
+                "academic_venue": row.get("academic_venue", ""),
+                "matched_terms": row.get("matched_terms", ""),
+                "bridge_label": row.get("adjudicated_bridge_label", ""),
+                "confidence": row.get("adjudication_confidence", ""),
+            }
+        )
+
+    families = []
+    for row in family_rows:
+        family = row["product_family"]
+        label_counts = {label: as_int(row.get(label, "0")) for label in BRIDGE_LABEL_ORDER}
+        bridge_review_rows = as_int(row.get("bridge_review_rows", "0"))
+        modal_label = row.get("modal_first_pass_bridge", "")
+        families.append(
+            {
+                "id": slugify(family),
+                "product_family": family,
+                "display_name": FAMILY_DISPLAY_NAME.get(family, family.replace(" or ", " / ").title()),
+                "documents": as_int(row.get("documents", "0")),
+                "mean_nodes": as_float(row.get("mean_nodes", "0")),
+                "mean_edges": as_float(row.get("mean_edges", "0")),
+                "product_graph_signature": split_signature(row.get("top_edge_signature", "")),
+                "product_node_signature": split_signature(row.get("top_node_signature", "")),
+                "nearest_academic_object": NEAREST_ACADEMIC_OBJECT.get(family, "academic finance neighborhood"),
+                "plausible_state_documents": as_int(row.get("plausible_state_documents", "0")),
+                "plausible_state_share": as_float(row.get("plausible_state_share", "0")),
+                "interpretation": row.get("interpretation", ""),
+                "label_counts": label_counts,
+                "modal_first_pass_bridge": modal_label,
+                "modal_first_pass_bridge_share": as_float(row.get("modal_first_pass_bridge_share", "0")),
+                "substantive_bridge_rows": as_int(row.get("substantive_bridge_rows", "0")),
+                "weak_or_rejected_rows": as_int(row.get("weak_or_rejected_rows", "0")),
+                "bridge_review_rows": bridge_review_rows,
+                "substantive_bridge_share": as_float(row.get("substantive_bridge_share", "0")),
+                "current_use_status": row.get("current_use_status", ""),
+                "main_caveat": BRIDGE_CAVEATS.get(family, "Needs source-text review before stronger claims."),
+                "examples": examples_by_family.get(family, []),
+            }
+        )
+
+    families.sort(key=lambda item: FAMILY_DISPLAY_ORDER.get(item["product_family"], 999))
+    family_by_name = {item["product_family"]: item for item in families}
+
+    featured_examples = []
+    for spec in FEATURED_EXAMPLE_SPECS:
+        family = spec["family"]
+        preferred_label = spec["preferred_label"]
+        candidates = [row for row in example_rows if row.get("product_family") == family]
+        chosen = next((row for row in candidates if row.get("adjudicated_bridge_label") == preferred_label), None)
+        chosen = chosen or (candidates[0] if candidates else None)
+        family_item = family_by_name.get(family, {})
+        if not chosen:
+            continue
+        featured_examples.append(
+            {
+                "family_id": slugify(family),
+                "product_family": family,
+                "display_name": FAMILY_DISPLAY_NAME.get(family, family.replace(" or ", " / ").title()),
+                "bridge_label": chosen.get("adjudicated_bridge_label", preferred_label),
+                "lesson": spec["lesson"],
+                "product_graph_signature": family_item.get("product_graph_signature", []),
+                "nearest_academic_object": family_item.get("nearest_academic_object", ""),
+                "academic_year": as_int(chosen.get("academic_year", "")),
+                "academic_title": compact_title(chosen.get("academic_title", ""), 118),
+                "academic_venue": chosen.get("academic_venue", ""),
+                "matched_terms": chosen.get("matched_terms", ""),
+                "confidence": chosen.get("adjudication_confidence", ""),
+                "main_caveat": family_item.get("main_caveat", ""),
+            }
+        )
+
+    label_summary = [
+        {
+            "label": row.get("adjudicated_bridge_label", ""),
+            "rows": as_int(row.get("rows", "0")),
+            "share": as_float(row.get("share", "0")),
+        }
+        for row in label_rows
+    ]
+
+    return {
+        "available": True,
+        "summary": {
+            "product_documents": int(package_summary.get("product_document_count", 0) or package_summary.get("documents", 0)),
+            "product_families": len(families),
+            "bridge_review_rows": sum(item["bridge_review_rows"] for item in families),
+            "substantive_bridge_rows": sum(item["substantive_bridge_rows"] for item in families),
+            "weak_or_rejected_rows": sum(item["weak_or_rejected_rows"] for item in families),
+            "same_strategy_rows": sum(item["label_counts"]["same_strategy"] for item in families),
+            "same_mechanism_rows": sum(item["label_counts"]["same_mechanism"] for item in families),
+            "shared_motif_rows": sum(item["label_counts"]["shared_motif"] for item in families),
+        },
+        "provenance": {
+            "product_graph_package": str(PRODUCT_GRAPH_PACKAGE.relative_to(ROOT.parent)),
+            "bridge_package": str(BRIDGE_PACKAGE.relative_to(ROOT.parent)),
+            "model": package_summary.get("model", ""),
+            "provider": package_summary.get("provider", ""),
+            "estimated_cost_usd": as_float(package_summary.get("estimated_cost_usd", 0)),
+            "parsed_ok": as_int(package_summary.get("parsed_ok", 0)),
+            "parse_errors": as_int(package_summary.get("parse_errors", 0)),
+            "created_at": package_summary.get("created_at", ""),
+        },
+        "label_summary": label_summary,
+        "families": families,
+        "featured_examples": featured_examples,
+    }
+
+
 def build_graph_diagnostics() -> dict[str, Any]:
     summary_path = GRAPH_DIAGNOSTICS / "package_summary.json"
     if not summary_path.exists():
@@ -530,6 +773,7 @@ def main() -> None:
         "field_decades": build_field_decades(),
         "sample_papers": build_sample_papers(),
         "graph_diagnostics": build_graph_diagnostics(),
+        "product_bridge": build_product_bridge(),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
