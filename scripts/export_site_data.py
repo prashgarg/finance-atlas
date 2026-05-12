@@ -107,6 +107,51 @@ FEATURED_EXAMPLE_SPECS = [
     },
 ]
 
+TYPOLOGY_TABLE_SPECS = [
+    {
+        "family": "managed futures trend following core",
+        "product_graph_signature_text": "Futures-based rules; trend-following strategy; asset-class rotation",
+        "bridge_type": "Same strategy",
+        "main_caveat": "Need source-text check that the product rule is genuinely trend-following, not broad managed-futures branding.",
+    },
+    {
+        "family": "multifactor smart beta",
+        "product_graph_signature_text": "Factor/style targeting; index-like rules; portfolio construction",
+        "bridge_type": "Same strategy",
+        "main_caveat": "Academic work may study factor construction more generally than investable index implementation.",
+    },
+    {
+        "family": "volatility exposure or control unsplit",
+        "product_graph_signature_text": "Volatility-linked instruments; exposure rules; VIX or variance-risk terms",
+        "bridge_type": "Mechanism / rationale",
+        "main_caveat": "Academic mechanisms may explain volatility-risk pricing rather than the product wrapper.",
+    },
+    {
+        "family": "broad allocation inflation sensitive",
+        "product_graph_signature_text": "Real assets; allocation rules; inflation-risk exposure",
+        "bridge_type": "Mechanism / rationale",
+        "main_caveat": "The bridge may be through inflation-hedging rationale, not a single named strategy.",
+    },
+    {
+        "family": "crypto futures exposure",
+        "product_graph_signature_text": "Futures contracts; bitcoin exposure; roll or term-structure language",
+        "bridge_type": "Shared market / motif",
+        "main_caveat": "Academic work may study the market or instrument, not the product strategy.",
+    },
+    {
+        "family": "quality growth stock selection",
+        "product_graph_signature_text": "Stock-selection rules; quality or growth language; fundamentals",
+        "bridge_type": "Boundary / noisy",
+        "main_caveat": "Retrieval often confuses investment quality with accounting earnings quality or generic quality language.",
+    },
+    {
+        "family": "low volatility or multifactor lowvol",
+        "product_graph_signature_text": "Factor/style targeting; defensive equity; index rules",
+        "bridge_type": "Boundary / noisy",
+        "main_caveat": "Retrieval can drift to volatility of flows or mathematical minimum-variance problems.",
+    },
+]
+
 
 def read_csv(name: str) -> list[dict[str, str]]:
     path = SOURCE / name
@@ -536,6 +581,23 @@ def build_product_bridge() -> dict[str, Any]:
             }
         )
 
+    typology_rows = []
+    for spec in TYPOLOGY_TABLE_SPECS:
+        family = spec["family"]
+        family_item = family_by_name.get(family, {})
+        typology_rows.append(
+            {
+                "family_id": slugify(family),
+                "product_family": family,
+                "display_name": FAMILY_DISPLAY_NAME.get(family, family.replace(" or ", " / ").title()),
+                "product_graph_signature_text": spec["product_graph_signature_text"],
+                "nearest_academic_object": family_item.get("nearest_academic_object", NEAREST_ACADEMIC_OBJECT.get(family, "")),
+                "bridge_type": spec["bridge_type"],
+                "modal_first_pass_bridge": family_item.get("modal_first_pass_bridge", ""),
+                "main_caveat": spec["main_caveat"],
+            }
+        )
+
     label_summary = [
         {
             "label": row.get("adjudicated_bridge_label", ""),
@@ -570,6 +632,7 @@ def build_product_bridge() -> dict[str, Any]:
         "label_summary": label_summary,
         "families": families,
         "featured_examples": featured_examples,
+        "typology_rows": typology_rows,
     }
 
 

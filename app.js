@@ -449,6 +449,29 @@ function renderReadout() {
     .join("");
 }
 
+function renderTypologyTable() {
+  const body = document.querySelector("#typology-table-body");
+  const rows = state.data.product_bridge?.typology_rows || [];
+  if (!body) return;
+  if (!rows.length) {
+    body.innerHTML = `<tr><td colspan="5">Typology rows are not available in this export.</td></tr>`;
+    return;
+  }
+  body.innerHTML = rows
+    .map(
+      (row) => `
+        <tr data-open-family="${escapeHtml(row.family_id)}">
+          <td><button class="family-open-button" type="button" data-open-family="${escapeHtml(row.family_id)}"><strong>${escapeHtml(row.display_name)}</strong></button></td>
+          <td>${escapeHtml(row.product_graph_signature_text)}</td>
+          <td>${escapeHtml(row.nearest_academic_object)}</td>
+          <td><b class="bridge-badge ${escapeHtml(row.modal_first_pass_bridge)}">${escapeHtml(row.bridge_type)}</b></td>
+          <td>${escapeHtml(row.main_caveat)}</td>
+        </tr>
+      `,
+    )
+    .join("");
+}
+
 function renderDataPanel() {
   const panel = document.querySelector("#data-panel");
   const provenance = state.data.product_bridge?.provenance;
@@ -1123,6 +1146,7 @@ async function init() {
   renderFeaturedExamples();
   renderProvenance();
   renderReadout();
+  renderTypologyTable();
   renderDataPanel();
   renderChangeDiagnostics();
   renderNetworkDiagnostics();

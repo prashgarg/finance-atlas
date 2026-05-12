@@ -898,6 +898,54 @@ main {
   padding: 5px 8px;
 }
 
+.typology-table-wrap {
+  background: rgba(255, 250, 240, 0.72);
+  border: 1px solid rgba(16, 35, 31, 0.12);
+  border-radius: 28px;
+  box-shadow: 0 16px 45px rgba(16, 35, 31, 0.06);
+  overflow: auto;
+  padding: 10px;
+}
+
+.typology-table {
+  border-collapse: collapse;
+  min-width: 1120px;
+  width: 100%;
+}
+
+.typology-table th,
+.typology-table td {
+  border-bottom: 1px solid rgba(16, 35, 31, 0.1);
+  padding: 14px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.typology-table th {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.typology-table td {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.typology-table td:first-child {
+  color: var(--ink);
+  min-width: 190px;
+}
+
+.typology-table tr[data-open-family] {
+  cursor: pointer;
+}
+
+.typology-table tr[data-open-family]:hover {
+  background: rgba(47, 111, 78, 0.06);
+}
+
 .data-panel {
   background: rgba(255, 250, 240, 0.72);
   border: 1px solid rgba(16, 35, 31, 0.12);
