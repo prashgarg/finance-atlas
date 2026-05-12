@@ -16566,7 +16566,45 @@
             "confidence": "medium"
           }
         ],
-        "source_audit": {}
+        "source_audit": {
+          "survives": "yes",
+          "reason": "Both sides clearly refer to bitcoin or crypto futures, but the academic object is usually the market/instrument rather than the full product strategy.",
+          "caveat_after_audit": "This should remain a shared-market bridge unless source review finds papers studying the product-like strategy itself.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_has_rule_or_horizon",
+              "quote": "Bitcoin and ether futures contracts are replaced or rolled each month to the next months contract prior to expiration"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_has_rule_or_horizon",
+              "quote": "The Funds equal weight exposure is reestablished each month in connection with the rolling of bitcoin and ether futures"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Price volatilities of bitcoin futures",
+              "year": 2021,
+              "venue": "Finance research letters",
+              "matched_terms": "bitcoin futures",
+              "frontiergraph_edge": "Stochastic investment model prediction Bitcoin futures"
+            },
+            {
+              "slot": 2,
+              "title": "Informativeness of CME Micro Bitcoin Futures in Pricing of Bitcoin: Intraday Evidence",
+              "year": 2022,
+              "venue": "Finance research letters",
+              "matched_terms": "bitcoin futures",
+              "frontiergraph_edge": "Bitcoin association Bitcoin futures"
+            }
+          ]
+        }
       },
       {
         "id": "crypto-spot-or-reference-exposure",
@@ -16673,7 +16711,45 @@
             "confidence": "high"
           }
         ],
-        "source_audit": {}
+        "source_audit": {
+          "survives": "yes-as-boundary",
+          "reason": "Product quotes describe quality/growth stock selection, but top academic retrievals often mean accounting earnings quality rather than quality-factor investing.",
+          "caveat_after_audit": "Use this as a boundary case, not as evidence of a clean quality-factor bridge.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "The Adviser utilizes its proprietary, free cash flow quality model ... to select securities ... based on free cash flow, profitability, quality of earnings, and other cash-flow based metrics."
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "The FCFQM evaluates securities ... based on proprietary free cash flow metrics, including profitability, quality of earnings, and other cash-flow-based measures."
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Relationship banking and firms’ earnings quality – Does it matter whether banks are creditors or owners?",
+              "year": 2024,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "earnings quality",
+              "frontiergraph_edge": "Earnings quality effect Insider Trading"
+            },
+            {
+              "slot": 2,
+              "title": "Banks' funding structure and earnings quality",
+              "year": 2018,
+              "venue": "International Review of Financial Analysis",
+              "matched_terms": "earnings quality",
+              "frontiergraph_edge": "retail banking effect Earnings quality"
+            }
+          ]
+        }
       },
       {
         "id": "managed-volatility-overlay",
@@ -17129,7 +17205,45 @@
         "bridge_type": "Shared market / motif",
         "modal_first_pass_bridge": "shared_motif",
         "main_caveat": "Academic work may study the market or instrument, not the product strategy.",
-        "source_audit": {}
+        "source_audit": {
+          "survives": "yes",
+          "reason": "Both sides clearly refer to bitcoin or crypto futures, but the academic object is usually the market/instrument rather than the full product strategy.",
+          "caveat_after_audit": "This should remain a shared-market bridge unless source review finds papers studying the product-like strategy itself.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_has_rule_or_horizon",
+              "quote": "Bitcoin and ether futures contracts are replaced or rolled each month to the next months contract prior to expiration"
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "product_has_rule_or_horizon",
+              "quote": "The Funds equal weight exposure is reestablished each month in connection with the rolling of bitcoin and ether futures"
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Price volatilities of bitcoin futures",
+              "year": 2021,
+              "venue": "Finance research letters",
+              "matched_terms": "bitcoin futures",
+              "frontiergraph_edge": "Stochastic investment model prediction Bitcoin futures"
+            },
+            {
+              "slot": 2,
+              "title": "Informativeness of CME Micro Bitcoin Futures in Pricing of Bitcoin: Intraday Evidence",
+              "year": 2022,
+              "venue": "Finance research letters",
+              "matched_terms": "bitcoin futures",
+              "frontiergraph_edge": "Bitcoin association Bitcoin futures"
+            }
+          ]
+        }
       },
       {
         "family_id": "quality-growth-stock-selection",
@@ -17140,7 +17254,45 @@
         "bridge_type": "Boundary / noisy",
         "modal_first_pass_bridge": "concept_only",
         "main_caveat": "Retrieval often confuses investment quality with accounting earnings quality or generic quality language.",
-        "source_audit": {}
+        "source_audit": {
+          "survives": "yes-as-boundary",
+          "reason": "Product quotes describe quality/growth stock selection, but top academic retrievals often mean accounting earnings quality rather than quality-factor investing.",
+          "caveat_after_audit": "Use this as a boundary case, not as evidence of a clean quality-factor bridge.",
+          "product_evidence_count": 2,
+          "academic_evidence_count": 2,
+          "product_excerpts": [
+            {
+              "slot": 1,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "The Adviser utilizes its proprietary, free cash flow quality model ... to select securities ... based on free cash flow, profitability, quality of earnings, and other cash-flow based metrics."
+            },
+            {
+              "slot": 2,
+              "field_group": "strategy",
+              "edge_or_node_type": "strategy_targets_factor_or_style",
+              "quote": "The FCFQM evaluates securities ... based on proprietary free cash flow metrics, including profitability, quality of earnings, and other cash-flow-based measures."
+            }
+          ],
+          "academic_evidence": [
+            {
+              "slot": 1,
+              "title": "Relationship banking and firms’ earnings quality – Does it matter whether banks are creditors or owners?",
+              "year": 2024,
+              "venue": "Journal of Banking & Finance",
+              "matched_terms": "earnings quality",
+              "frontiergraph_edge": "Earnings quality effect Insider Trading"
+            },
+            {
+              "slot": 2,
+              "title": "Banks' funding structure and earnings quality",
+              "year": 2018,
+              "venue": "International Review of Financial Analysis",
+              "matched_terms": "earnings quality",
+              "frontiergraph_edge": "retail banking effect Earnings quality"
+            }
+          ]
+        }
       },
       {
         "family_id": "low-volatility-or-multifactor-lowvol",

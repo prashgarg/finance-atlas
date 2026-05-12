@@ -551,12 +551,13 @@ def build_product_bridge() -> dict[str, Any]:
             }
         )
 
-    audit_by_display: dict[str, dict[str, Any]] = {}
+    audit_by_family: dict[str, dict[str, Any]] = {}
     for row in source_audit_rows:
         family = row.get("product_family", "")
-        if not family:
+        family_id = row.get("primary_subfamily", "")
+        if not family_id:
             continue
-        audit_by_display[family] = {
+        audit_by_family[family_id] = {
             "survives": row.get("bridge_label_survives_source_evidence", ""),
             "reason": row.get("audit_reason", ""),
             "caveat_after_audit": row.get("main_caveat_after_audit", ""),
@@ -597,7 +598,7 @@ def build_product_bridge() -> dict[str, Any]:
                 "current_use_status": row.get("current_use_status", ""),
                 "main_caveat": BRIDGE_CAVEATS.get(family, "Needs source-text review before stronger claims."),
                 "examples": examples_by_family.get(family, []),
-                "source_audit": audit_by_display.get(display_name, {}),
+                "source_audit": audit_by_family.get(family.replace(" ", "_"), {}),
             }
         )
 
