@@ -914,6 +914,169 @@ main {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.methods-schematic {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 18px;
+}
+
+.methods-panel {
+  background:
+    linear-gradient(145deg, rgba(255, 250, 240, 0.86), rgba(231, 220, 195, 0.5)),
+    repeating-linear-gradient(90deg, transparent 0 24px, rgba(16, 35, 31, 0.025) 25px 26px);
+  border: 1px solid rgba(16, 35, 31, 0.13);
+  border-radius: 28px;
+  box-shadow: 0 16px 45px rgba(16, 35, 31, 0.07);
+  min-height: 210px;
+  padding: 20px;
+}
+
+.methods-panel-wide {
+  grid-column: 1 / -1;
+  min-height: 150px;
+}
+
+.methods-panel-head {
+  align-items: baseline;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.methods-panel-head span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.methods-panel-head h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0;
+}
+
+.flow-ribbon,
+.mini-example-flow {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.flow-ribbon-wide {
+  flex-wrap: wrap;
+}
+
+.flow-node,
+.anatomy-cloud button,
+.link-fan button,
+.mini-example-flow button {
+  background: rgba(255, 250, 240, 0.78);
+  border: 1px solid rgba(16, 35, 31, 0.16);
+  border-radius: 999px;
+  color: var(--green-dark);
+  cursor: help;
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.12;
+  min-height: 46px;
+  padding: 10px 14px;
+  position: relative;
+}
+
+.flow-node.strong,
+.mini-example-flow button.strong {
+  background: rgba(231, 220, 195, 0.82);
+  border-color: rgba(16, 35, 31, 0.22);
+  color: var(--ink);
+}
+
+.flow-arrow {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flow-join {
+  background: rgba(16, 35, 31, 0.18);
+  border-radius: 999px;
+  display: inline-block;
+  height: 1px;
+  min-width: 24px;
+}
+
+.anatomy-cloud,
+.link-fan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.link-fan button {
+  width: calc(50% - 5px);
+}
+
+.link-fan button:first-child,
+.link-fan button:last-child {
+  width: 100%;
+}
+
+.mini-example-flow {
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.mini-example-flow span {
+  align-self: center;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.flow-node::after,
+.anatomy-cloud button::after,
+.link-fan button::after,
+.mini-example-flow button::after {
+  background: #10231f;
+  border: 1px solid rgba(255, 250, 240, 0.18);
+  border-radius: 12px;
+  box-shadow: 0 14px 35px rgba(16, 35, 31, 0.22);
+  color: var(--cream);
+  content: attr(data-tip);
+  font-size: 12px;
+  font-weight: 650;
+  left: 0;
+  line-height: 1.35;
+  opacity: 0;
+  padding: 10px 12px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  top: calc(100% + 8px);
+  transform: translateY(-3px);
+  transition: opacity 140ms ease, transform 140ms ease;
+  width: min(300px, 76vw);
+  z-index: 30;
+}
+
+.flow-node:hover::after,
+.flow-node:focus::after,
+.anatomy-cloud button:hover::after,
+.anatomy-cloud button:focus::after,
+.link-fan button:hover::after,
+.link-fan button:focus::after,
+.mini-example-flow button:hover::after,
+.mini-example-flow button:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paper-note-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1993,6 +2156,7 @@ main {
   .bridge-label-guide,
   .bridge-detail,
   .example-grid,
+  .methods-schematic,
   .method-flow,
   .paper-note-grid,
   .provenance-panel,
@@ -2001,6 +2165,33 @@ main {
   .audit-columns,
   .paper-grid {
     grid-template-columns: 1fr;
+  }
+
+  .methods-panel-wide {
+    grid-column: auto;
+  }
+
+  .flow-ribbon,
+  .mini-example-flow {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .flow-arrow,
+  .flow-join,
+  .mini-example-flow span {
+    display: none;
+  }
+
+  .flow-node,
+  .mini-example-flow button {
+    width: 100%;
+  }
+
+  .link-fan button,
+  .link-fan button:first-child,
+  .link-fan button:last-child {
+    width: 100%;
   }
 
   .section-heading {

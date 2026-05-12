@@ -36,30 +36,73 @@
       <section class="section" id="methods" aria-labelledby="methods-title">
         <div class="section-heading">
           <h2 id="methods-title">Method in brief</h2>
-          <p>Short definitions for the current measurement object.</p>
+          <p>How product documents and academic research graphs become comparable objects.</p>
         </div>
-        <div class="method-flow">
-          <article>
-            <span>01</span>
-            <h3>Product documents</h3>
-            <p>Prospectus text is reduced to product descriptions: objective, exposure, instrument, benchmark, rule, horizon, and risk.</p>
+        <div class="methods-schematic" aria-label="Finance Atlas methods flow">
+          <article class="methods-panel methods-panel-wide">
+            <div class="methods-panel-head">
+              <span>01</span>
+              <h3>Project pipeline</h3>
+            </div>
+            <div class="flow-ribbon flow-ribbon-wide">
+              <button class="flow-node" data-tip="Fund and ETF filings that describe objectives, strategies, instruments, benchmarks, rules, and risks.">Product documents</button>
+              <span class="flow-arrow">parse</span>
+              <button class="flow-node" data-tip="The product-side decomposition: objective, exposure, instrument, rule or horizon, benchmark, and risk.">Product anatomy</button>
+              <span class="flow-arrow">extract</span>
+              <button class="flow-node strong" data-tip="A compact graph of what the product says it does, not a rating of whether the product is good.">Product graph</button>
+              <span class="flow-join" aria-hidden="true"></span>
+              <button class="flow-node strong" data-tip="Nearby papers, concepts, and relationships from FrontierGraph around the same broad finance idea.">Academic neighborhood</button>
+              <span class="flow-arrow">compare</span>
+              <button class="flow-node" data-tip="A classified connection between part of the product design and a nearby academic research object.">Product--research link</button>
+            </div>
           </article>
-          <article>
-            <span>02</span>
-            <h3>Academic neighborhoods</h3>
-            <p>FrontierGraph provides finance concepts, relationships extracted from papers, and nearby papers around those concepts.</p>
+
+          <article class="methods-panel">
+            <div class="methods-panel-head">
+              <span>02</span>
+              <h3>Product anatomy</h3>
+            </div>
+            <div class="anatomy-cloud">
+              <button data-tip="What outcome does the product say it seeks?">Objective</button>
+              <button data-tip="Which asset class, market, factor, sector, or reference asset does it give access to?">Exposure</button>
+              <button data-tip="What financial instruments create the exposure or payoff?">Instrument</button>
+              <button data-tip="Does the product state a rebalancing rule, outcome period, glide path, or maturity?">Rule / horizon</button>
+              <button data-tip="Does the product track, reference, or compare itself to an index?">Benchmark</button>
+              <button data-tip="What risks does the product disclose to investors?">Risk</button>
+            </div>
           </article>
-          <article>
-            <span>03</span>
-            <h3>Link labels</h3>
-            <p>We classify whether a product group and nearby papers share a strategy, mechanism, broader pattern, surface concept, or no useful link.</p>
+
+          <article class="methods-panel">
+            <div class="methods-panel-head">
+              <span>03</span>
+              <h3>Link levels</h3>
+            </div>
+            <div class="link-fan">
+              <button data-tip="The product and academic literature describe substantially the same operational strategy.">Same strategy</button>
+              <button data-tip="The product uses a mechanism or rationale studied in academic work, but the wrapper differs.">Mechanism / rationale</button>
+              <button data-tip="The product and academic work share a traded object, market, instrument, or reference asset.">Market / instrument</button>
+              <button data-tip="The same word appears, but the economics is too broad or unstable to use as evidence.">Concept only</button>
+              <button data-tip="The candidate match does not survive review.">No useful link</button>
+            </div>
           </article>
-          <article class="method-placeholder">
-            <span>Next</span>
-            <h3>Evidence to add</h3>
-            <p>More source excerpts, noisy-family review, and stronger academic-paper evidence checks.</p>
+
+          <article class="methods-panel methods-panel-example">
+            <div class="methods-panel-head">
+              <span>04</span>
+              <h3>Worked example</h3>
+            </div>
+            <div class="mini-example-flow">
+              <button data-tip="A managed-futures product describes futures contracts and trend-following rules.">Product text</button>
+              <span>→</span>
+              <button data-tip="The product graph records futures as instruments and trend following as a rule.">Product graph</button>
+              <span>→</span>
+              <button data-tip="The academic neighborhood contains time-series momentum and trend-following research.">Academic match</button>
+              <span>→</span>
+              <button class="strong" data-tip="Current orientation example: same-strategy link, pending final source-text verification.">Same strategy</button>
+            </div>
           </article>
         </div>
+
         <div class="provenance-panel" id="provenance-panel"></div>
       </section>
 
