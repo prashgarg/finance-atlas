@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T20:15:45.447758+00:00",
+  "generated_at": "2026-05-19T20:41:52.718188+00:00",
   "snapshot": {
     "title": "Finance Atlas",
     "subtitle": "Graph-first map of factor-investing research, current denominators, and downstream outcome modules.",
@@ -27,7 +27,7 @@
     },
     {
       "value": "30",
-      "label": "full-text pilot scores"
+      "label": "scored PDFs"
     }
   ],
   "denominators": [
@@ -290,64 +290,6 @@
   ],
   "methodology_explorer": [
     {
-      "feature_name": "has_statistical_significance_visible",
-      "feature": "Statistical significance visible",
-      "layer": "graph-native",
-      "de_prado_link": "statistical evidence",
-      "papers": 998,
-      "share": 0.9861660079051383,
-      "examples": [
-        {
-          "title": "Hedging pressure momentum and the predictability of oil futures returns",
-          "year": 2023,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 10
-        },
-        {
-          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
-          "year": 2022,
-          "source": "Management Science",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 10
-        },
-        {
-          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
-          "year": 2024,
-          "source": "PLoS ONE",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
-          "year": 2023,
-          "source": "Journal of Behavioral and Experimental Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 9
-        },
-        {
-          "title": "Option Return Predictability with Machine Learning and Big Data",
-          "year": 2023,
-          "source": "Review of Financial Studies",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
-          "year": 2023,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
       "feature_name": "has_causal_presentation",
       "feature": "Causal framing visible",
       "layer": "graph-native",
@@ -464,6 +406,64 @@
       ]
     },
     {
+      "feature_name": "has_mechanism_edge",
+      "feature": "Mechanism edge visible",
+      "layer": "graph-native",
+      "de_prado_link": "causal discovery / explanation",
+      "papers": 476,
+      "share": 0.47035573122529645,
+      "examples": [
+        {
+          "title": "Hedging pressure momentum and the predictability of oil futures returns",
+          "year": 2023,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 10
+        },
+        {
+          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
+          "year": 2022,
+          "source": "Management Science",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 10
+        },
+        {
+          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
+          "year": 2024,
+          "source": "PLoS ONE",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
+          "year": 2023,
+          "source": "Journal of Behavioral and Experimental Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 9
+        },
+        {
+          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
+          "year": 2023,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 9
+        },
+        {
+          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
+          "year": 2023,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
       "feature_name": "has_empirical_design_visible",
       "feature": "Empirical design visible",
       "layer": "graph-native",
@@ -522,12 +522,534 @@
       ]
     },
     {
-      "feature_name": "has_mechanism_edge",
-      "feature": "Mechanism edge visible",
+      "feature_name": "has_identification_design_visible",
+      "feature": "Identification design visible",
       "layer": "graph-native",
-      "de_prado_link": "causal discovery / explanation",
-      "papers": 476,
-      "share": 0.47035573122529645,
+      "de_prado_link": "causal adjustment / identification",
+      "papers": 39,
+      "share": 0.038537549407114624,
+      "examples": [
+        {
+          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
+          "year": 2022,
+          "source": "Management Science",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 10
+        },
+        {
+          "title": "Reducing Capital Market Anomaly: The Role of Information Technology Using an Information Uncertainty Lens",
+          "year": 2019,
+          "source": "Management Science",
+          "role": "anchor_strict_core",
+          "family": "anomalies",
+          "signal_count": 9
+        },
+        {
+          "title": "Countercyclical currency risk premia",
+          "year": 2013,
+          "source": "Journal of Financial Economics",
+          "role": "anchor_strict_core",
+          "family": "premia",
+          "signal_count": 9
+        },
+        {
+          "title": "Idiosyncratic skewness and cross-section of stock returns: Evidence from Taiwan",
+          "year": 2021,
+          "source": "International Review of Financial Analysis",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 8
+        },
+        {
+          "title": "The R&amp;D anomaly: Risk or mispricing?",
+          "year": 2020,
+          "source": "Journal of Banking & Finance",
+          "role": "anchor_strict_core",
+          "family": "anomalies",
+          "signal_count": 8
+        },
+        {
+          "title": "The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies",
+          "year": 2020,
+          "source": "The Journal of Finance",
+          "role": "anchor_strict_core",
+          "family": "anomalies",
+          "signal_count": 8
+        }
+      ]
+    },
+    {
+      "feature_name": "has_robustness_edge",
+      "feature": "Robustness edge visible",
+      "layer": "graph-native",
+      "de_prado_link": "validation / robustness",
+      "papers": 232,
+      "share": 0.22924901185770752,
+      "examples": [
+        {
+          "title": "Hedging pressure momentum and the predictability of oil futures returns",
+          "year": 2023,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 10
+        },
+        {
+          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
+          "year": 2022,
+          "source": "Management Science",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 10
+        },
+        {
+          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
+          "year": 2023,
+          "source": "Journal of Behavioral and Experimental Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 9
+        },
+        {
+          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
+          "year": 2023,
+          "source": "Applied Energy",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
+          "year": 2022,
+          "source": "Journal of Financial and Quantitative Analysis",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Financing anomaly, mispricing and cross-sectional return predictability",
+          "year": 2022,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
+      "feature_name": "has_forecasting_edge",
+      "feature": "Forecasting/time-series method visible",
+      "layer": "graph-native",
+      "de_prado_link": "predictive validation",
+      "papers": 106,
+      "share": 0.10474308300395258,
+      "examples": [
+        {
+          "title": "Hedging pressure momentum and the predictability of oil futures returns",
+          "year": 2023,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 10
+        },
+        {
+          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
+          "year": 2024,
+          "source": "PLoS ONE",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Option Return Predictability with Machine Learning and Big Data",
+          "year": 2023,
+          "source": "Review of Financial Studies",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
+          "year": 2023,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 9
+        },
+        {
+          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
+          "year": 2023,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
+          "year": 2023,
+          "source": "Applied Energy",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_portfolio_implementation",
+      "feature": "Portfolio implementation terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 115,
+      "share": 0.11363636363636363,
+      "examples": [
+        {
+          "title": "Option Return Predictability with Machine Learning and Big Data",
+          "year": 2023,
+          "source": "Review of Financial Studies",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
+          "year": 2023,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 9
+        },
+        {
+          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
+          "year": 2022,
+          "source": "Journal of Financial and Quantitative Analysis",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Intraday momentum and stock return predictability: Evidence from China",
+          "year": 2018,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Hedge fund return predictability; To combine forecasts or combine information?",
+          "year": 2015,
+          "source": "Journal of Banking & Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Momentum and mean reversion across national equity markets",
+          "year": 2005,
+          "source": "Journal of Empirical Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_backtesting",
+      "feature": "Backtesting terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 8,
+      "share": 0.007905138339920948,
+      "examples": [
+        {
+          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
+          "year": 2024,
+          "source": "PLoS ONE",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Intraday momentum and return predictability: Evidence from the crude oil market",
+          "year": 2020,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 8
+        },
+        {
+          "title": "Parametric portfolio policy with momentum-based sentiment trading strategy",
+          "year": 2025,
+          "source": "PLoS ONE",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 7
+        },
+        {
+          "title": "Machine Learning and Algorithmic Pairs Trading in Futures Markets",
+          "year": 2020,
+          "source": "Sustainability",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 7
+        },
+        {
+          "title": "Momentum and reversal strategies in Chinese commodity futures markets",
+          "year": 2018,
+          "source": "International Review of Financial Analysis",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 7
+        },
+        {
+          "title": "On Bond Returns in a Time of Climate Change",
+          "year": 2021,
+          "source": "The Energy Journal",
+          "role": "anchor_recall_promoted_orthodox",
+          "family": "anchor recall promoted orthodox",
+          "signal_count": 6
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_multiple_testing",
+      "feature": "Multiple-testing terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 9,
+      "share": 0.008893280632411068,
+      "examples": [
+        {
+          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
+          "year": 2023,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Risk optimizations on basis portfolios: The role of sorting",
+          "year": 2021,
+          "source": "Journal of Empirical Finance",
+          "role": "anchor_recall_promoted_orthodox",
+          "family": "anchor recall promoted orthodox",
+          "signal_count": 8
+        },
+        {
+          "title": "Investment timing and trading strategies in the sale and purchase market for ships",
+          "year": 2006,
+          "source": "Transportation Research Part B Methodological",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 8
+        },
+        {
+          "title": "The world of anomalies: Smaller than we think?",
+          "year": 2022,
+          "source": "Journal of International Money and Finance",
+          "role": "anchor_strict_core",
+          "family": "anomalies",
+          "signal_count": 7
+        },
+        {
+          "title": "Intraday momentum in Chinese commodity futures markets",
+          "year": 2020,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 6
+        },
+        {
+          "title": "Global industry portfolios and short-term predictability of returns: Is it there?",
+          "year": 2012,
+          "source": "Journal of Financial Markets",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 6
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_variable_selection",
+      "feature": "Variable-selection terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 39,
+      "share": 0.038537549407114624,
+      "examples": [
+        {
+          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
+          "year": 2024,
+          "source": "PLoS ONE",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Option Return Predictability with Machine Learning and Big Data",
+          "year": 2023,
+          "source": "Review of Financial Studies",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
+          "year": 2023,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
+          "year": 2023,
+          "source": "Applied Energy",
+          "role": "anchor_strict_core",
+          "family": "strategy",
+          "signal_count": 9
+        },
+        {
+          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
+          "year": 2022,
+          "source": "Journal of Financial and Quantitative Analysis",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Financing anomaly, mispricing and cross-sectional return predictability",
+          "year": 2022,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_controls_adjustment",
+      "feature": "Controls/adjustment terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 39,
+      "share": 0.038537549407114624,
+      "examples": [
+        {
+          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
+          "year": 2023,
+          "source": "Journal of Behavioral and Experimental Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 9
+        },
+        {
+          "title": "The conditional equity premium, cross-sectional returns and stochastic volatility",
+          "year": 2014,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 9
+        },
+        {
+          "title": "High-Frequency Tail Risk Premium and Stock Return Predictability",
+          "year": 2023,
+          "source": "Journal of Financial and Quantitative Analysis",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 8
+        },
+        {
+          "title": "Examining the sources of excess return predictability: Stochastic volatility or market inefficiency?",
+          "year": 2022,
+          "source": "Journal of Economic Behavior & Organization",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 8
+        },
+        {
+          "title": "Risk optimizations on basis portfolios: The role of sorting",
+          "year": 2021,
+          "source": "Journal of Empirical Finance",
+          "role": "anchor_recall_promoted_orthodox",
+          "family": "anchor recall promoted orthodox",
+          "signal_count": 8
+        },
+        {
+          "title": "Idiosyncratic skewness and cross-section of stock returns: Evidence from Taiwan",
+          "year": 2021,
+          "source": "International Review of Financial Analysis",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 8
+        }
+      ]
+    },
+    {
+      "feature_name": "textsupp_validation",
+      "feature": "Validation terms visible",
+      "layer": "text supplement",
+      "de_prado_link": "text supplement",
+      "papers": 182,
+      "share": 0.17984189723320157,
+      "examples": [
+        {
+          "title": "Hedging pressure momentum and the predictability of oil futures returns",
+          "year": 2023,
+          "source": "Economic Modelling",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 10
+        },
+        {
+          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
+          "year": 2022,
+          "source": "Management Science",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 10
+        },
+        {
+          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
+          "year": 2023,
+          "source": "Journal of Behavioral and Experimental Finance",
+          "role": "anchor_strict_core",
+          "family": "named factor",
+          "signal_count": 9
+        },
+        {
+          "title": "Option Return Predictability with Machine Learning and Big Data",
+          "year": 2023,
+          "source": "Review of Financial Studies",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
+          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
+          "year": 2023,
+          "source": "International Review of Economics & Finance",
+          "role": "anchor_strict_core",
+          "family": "cross section returns",
+          "signal_count": 9
+        },
+        {
+          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
+          "year": 2023,
+          "source": "Research in International Business and Finance",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        }
+      ]
+    },
+    {
+      "feature_name": "has_statistical_significance_visible",
+      "feature": "Statistical significance visible",
+      "layer": "graph-native",
+      "de_prado_link": "statistical evidence",
+      "papers": 998,
+      "share": 0.9861660079051383,
       "examples": [
         {
           "title": "Hedging pressure momentum and the predictability of oil futures returns",
@@ -562,19 +1084,19 @@
           "signal_count": 9
         },
         {
+          "title": "Option Return Predictability with Machine Learning and Big Data",
+          "year": 2023,
+          "source": "Review of Financial Studies",
+          "role": "anchor_strict_core",
+          "family": "return predictability",
+          "signal_count": 9
+        },
+        {
           "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
           "family": "cross section returns",
-          "signal_count": 9
-        },
-        {
-          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
-          "year": 2023,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
           "signal_count": 9
         }
       ]
@@ -696,412 +1218,6 @@
       ]
     },
     {
-      "feature_name": "has_robustness_edge",
-      "feature": "Robustness edge visible",
-      "layer": "graph-native",
-      "de_prado_link": "validation / robustness",
-      "papers": 232,
-      "share": 0.22924901185770752,
-      "examples": [
-        {
-          "title": "Hedging pressure momentum and the predictability of oil futures returns",
-          "year": 2023,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 10
-        },
-        {
-          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
-          "year": 2022,
-          "source": "Management Science",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 10
-        },
-        {
-          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
-          "year": 2023,
-          "source": "Journal of Behavioral and Experimental Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 9
-        },
-        {
-          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
-          "year": 2023,
-          "source": "Applied Energy",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
-          "year": 2022,
-          "source": "Journal of Financial and Quantitative Analysis",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Financing anomaly, mispricing and cross-sectional return predictability",
-          "year": 2022,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_validation",
-      "feature": "Validation terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 182,
-      "share": 0.17984189723320157,
-      "examples": [
-        {
-          "title": "Hedging pressure momentum and the predictability of oil futures returns",
-          "year": 2023,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 10
-        },
-        {
-          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
-          "year": 2022,
-          "source": "Management Science",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 10
-        },
-        {
-          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
-          "year": 2023,
-          "source": "Journal of Behavioral and Experimental Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 9
-        },
-        {
-          "title": "Option Return Predictability with Machine Learning and Big Data",
-          "year": 2023,
-          "source": "Review of Financial Studies",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
-          "year": 2023,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 9
-        },
-        {
-          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
-          "year": 2023,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_portfolio_implementation",
-      "feature": "Portfolio implementation terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 115,
-      "share": 0.11363636363636363,
-      "examples": [
-        {
-          "title": "Option Return Predictability with Machine Learning and Big Data",
-          "year": 2023,
-          "source": "Review of Financial Studies",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
-          "year": 2023,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 9
-        },
-        {
-          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
-          "year": 2022,
-          "source": "Journal of Financial and Quantitative Analysis",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Intraday momentum and stock return predictability: Evidence from China",
-          "year": 2018,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Hedge fund return predictability; To combine forecasts or combine information?",
-          "year": 2015,
-          "source": "Journal of Banking & Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Momentum and mean reversion across national equity markets",
-          "year": 2005,
-          "source": "Journal of Empirical Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
-      "feature_name": "has_forecasting_edge",
-      "feature": "Forecasting/time-series method visible",
-      "layer": "graph-native",
-      "de_prado_link": "predictive validation",
-      "papers": 106,
-      "share": 0.10474308300395258,
-      "examples": [
-        {
-          "title": "Hedging pressure momentum and the predictability of oil futures returns",
-          "year": 2023,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 10
-        },
-        {
-          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
-          "year": 2024,
-          "source": "PLoS ONE",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Option Return Predictability with Machine Learning and Big Data",
-          "year": 2023,
-          "source": "Review of Financial Studies",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Nonlinearity in the cross-section of stock returns: Evidence from China",
-          "year": 2023,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 9
-        },
-        {
-          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
-          "year": 2023,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
-          "year": 2023,
-          "source": "Applied Energy",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
-      "feature_name": "has_identification_design_visible",
-      "feature": "Identification design visible",
-      "layer": "graph-native",
-      "de_prado_link": "causal adjustment / identification",
-      "papers": 39,
-      "share": 0.038537549407114624,
-      "examples": [
-        {
-          "title": "Gone with the Vol: A Decline in Asset Return Predictability During the Great Moderation",
-          "year": 2022,
-          "source": "Management Science",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 10
-        },
-        {
-          "title": "Reducing Capital Market Anomaly: The Role of Information Technology Using an Information Uncertainty Lens",
-          "year": 2019,
-          "source": "Management Science",
-          "role": "anchor_strict_core",
-          "family": "anomalies",
-          "signal_count": 9
-        },
-        {
-          "title": "Countercyclical currency risk premia",
-          "year": 2013,
-          "source": "Journal of Financial Economics",
-          "role": "anchor_strict_core",
-          "family": "premia",
-          "signal_count": 9
-        },
-        {
-          "title": "Idiosyncratic skewness and cross-section of stock returns: Evidence from Taiwan",
-          "year": 2021,
-          "source": "International Review of Financial Analysis",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 8
-        },
-        {
-          "title": "The R&amp;D anomaly: Risk or mispricing?",
-          "year": 2020,
-          "source": "Journal of Banking & Finance",
-          "role": "anchor_strict_core",
-          "family": "anomalies",
-          "signal_count": 8
-        },
-        {
-          "title": "The Causal Effect of Limits to Arbitrage on Asset Pricing Anomalies",
-          "year": 2020,
-          "source": "The Journal of Finance",
-          "role": "anchor_strict_core",
-          "family": "anomalies",
-          "signal_count": 8
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_variable_selection",
-      "feature": "Variable-selection terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 39,
-      "share": 0.038537549407114624,
-      "examples": [
-        {
-          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
-          "year": 2024,
-          "source": "PLoS ONE",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Option Return Predictability with Machine Learning and Big Data",
-          "year": 2023,
-          "source": "Review of Financial Studies",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
-          "year": 2023,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Fortify the investment performance of crude oil market by integrating sentiment analysis and an interval-based trading strategy",
-          "year": 2023,
-          "source": "Applied Energy",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Uncovering Sparsity and Heterogeneity in Firm-Level Return Predictability Using Machine Learning",
-          "year": 2022,
-          "source": "Journal of Financial and Quantitative Analysis",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Financing anomaly, mispricing and cross-sectional return predictability",
-          "year": 2022,
-          "source": "International Review of Economics & Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_controls_adjustment",
-      "feature": "Controls/adjustment terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 39,
-      "share": 0.038537549407114624,
-      "examples": [
-        {
-          "title": "Stop-loss rules and momentum payoffs in cryptocurrencies",
-          "year": 2023,
-          "source": "Journal of Behavioral and Experimental Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 9
-        },
-        {
-          "title": "The conditional equity premium, cross-sectional returns and stochastic volatility",
-          "year": 2014,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 9
-        },
-        {
-          "title": "High-Frequency Tail Risk Premium and Stock Return Predictability",
-          "year": 2023,
-          "source": "Journal of Financial and Quantitative Analysis",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 8
-        },
-        {
-          "title": "Examining the sources of excess return predictability: Stochastic volatility or market inefficiency?",
-          "year": 2022,
-          "source": "Journal of Economic Behavior & Organization",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 8
-        },
-        {
-          "title": "Risk optimizations on basis portfolios: The role of sorting",
-          "year": 2021,
-          "source": "Journal of Empirical Finance",
-          "role": "anchor_recall_promoted_orthodox",
-          "family": "anchor recall promoted orthodox",
-          "signal_count": 8
-        },
-        {
-          "title": "Idiosyncratic skewness and cross-section of stock returns: Evidence from Taiwan",
-          "year": 2021,
-          "source": "International Review of Financial Analysis",
-          "role": "anchor_strict_core",
-          "family": "cross section returns",
-          "signal_count": 8
-        }
-      ]
-    },
-    {
       "feature_name": "textsupp_transparency_reproducibility",
       "feature": "Transparency/reproducibility terms visible",
       "layer": "text supplement",
@@ -1156,122 +1272,6 @@
           "role": "anchor_strict_core",
           "family": "named factor",
           "signal_count": 7
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_multiple_testing",
-      "feature": "Multiple-testing terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 9,
-      "share": 0.008893280632411068,
-      "examples": [
-        {
-          "title": "Machine learning for US cross-industry return predictability under information uncertainty",
-          "year": 2023,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 9
-        },
-        {
-          "title": "Risk optimizations on basis portfolios: The role of sorting",
-          "year": 2021,
-          "source": "Journal of Empirical Finance",
-          "role": "anchor_recall_promoted_orthodox",
-          "family": "anchor recall promoted orthodox",
-          "signal_count": 8
-        },
-        {
-          "title": "Investment timing and trading strategies in the sale and purchase market for ships",
-          "year": 2006,
-          "source": "Transportation Research Part B Methodological",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 8
-        },
-        {
-          "title": "The world of anomalies: Smaller than we think?",
-          "year": 2022,
-          "source": "Journal of International Money and Finance",
-          "role": "anchor_strict_core",
-          "family": "anomalies",
-          "signal_count": 7
-        },
-        {
-          "title": "Intraday momentum in Chinese commodity futures markets",
-          "year": 2020,
-          "source": "Research in International Business and Finance",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 6
-        },
-        {
-          "title": "Global industry portfolios and short-term predictability of returns: Is it there?",
-          "year": 2012,
-          "source": "Journal of Financial Markets",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 6
-        }
-      ]
-    },
-    {
-      "feature_name": "textsupp_backtesting",
-      "feature": "Backtesting terms visible",
-      "layer": "text supplement",
-      "de_prado_link": "text supplement",
-      "papers": 8,
-      "share": 0.007905138339920948,
-      "examples": [
-        {
-          "title": "VIX constant maturity futures trading strategy: A walk-forward machine learning study",
-          "year": 2024,
-          "source": "PLoS ONE",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 9
-        },
-        {
-          "title": "Intraday momentum and return predictability: Evidence from the crude oil market",
-          "year": 2020,
-          "source": "Economic Modelling",
-          "role": "anchor_strict_core",
-          "family": "return predictability",
-          "signal_count": 8
-        },
-        {
-          "title": "Parametric portfolio policy with momentum-based sentiment trading strategy",
-          "year": 2025,
-          "source": "PLoS ONE",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 7
-        },
-        {
-          "title": "Machine Learning and Algorithmic Pairs Trading in Futures Markets",
-          "year": 2020,
-          "source": "Sustainability",
-          "role": "anchor_strict_core",
-          "family": "strategy",
-          "signal_count": 7
-        },
-        {
-          "title": "Momentum and reversal strategies in Chinese commodity futures markets",
-          "year": 2018,
-          "source": "International Review of Financial Analysis",
-          "role": "anchor_strict_core",
-          "family": "named factor",
-          "signal_count": 7
-        },
-        {
-          "title": "On Bond Returns in a Time of Climate Change",
-          "year": 2021,
-          "source": "The Energy Journal",
-          "role": "anchor_recall_promoted_orthodox",
-          "family": "anchor recall promoted orthodox",
-          "signal_count": 6
         }
       ]
     },
@@ -1601,15 +1601,6 @@
   ],
   "pc_neighborhoods": [
     {
-      "case_id": "factors_returns",
-      "label": "Factors and returns",
-      "family_pair": "asset pricing factors -- returns performance premia",
-      "frontiergraph_edges": 28,
-      "causalclaims_edges": 2,
-      "frontiergraph_audit": {},
-      "causalclaims_audit": {}
-    },
-    {
       "case_id": "liquidity_risk",
       "label": "Liquidity and risk",
       "family_pair": "liquidity trading frictions -- risk volatility crisis",
@@ -1663,6 +1654,15 @@
           "needs_source_read"
         ]
       }
+    },
+    {
+      "case_id": "factors_returns",
+      "label": "Factors and returns",
+      "family_pair": "asset pricing factors -- returns performance premia",
+      "frontiergraph_edges": 28,
+      "causalclaims_edges": 2,
+      "frontiergraph_audit": {},
+      "causalclaims_audit": {}
     },
     {
       "case_id": "methods_methods",

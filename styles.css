@@ -469,6 +469,12 @@ td {
   padding: 16px 18px;
 }
 
+.compact-note {
+  color: var(--muted);
+  font-size: 16px;
+  max-width: 760px;
+}
+
 .method-flow {
   display: grid;
   gap: 12px;

@@ -7,29 +7,25 @@ The current design rule is to make uncertainty visible. If something is unresolv
 ## Principles
 
 - Keep text minimal, but make controls self-explanatory.
-- Keep unresolved work visible through red placeholders.
-- Mark current, sample-dependent results in purple/provisional language.
-- Put the product-academic bridge near the top, because it is the current research object.
-- Keep the public relationship view focused on economically interpretable source-target pairs.
-- Keep audit artifacts available through toggles instead of deleting them.
+- Keep unresolved work visible without making caveats dominate the page.
+- Mark current, sample-dependent results in restrained language.
+- Lead with the academic denominator, methodology layer, and full-text boundary.
+- Keep product adoption and factor performance downstream until matching is stable.
+- Remove audit artifacts from main pages unless they answer a reader-facing question.
 - Prefer compact controls over long explanatory copy.
-- Let users move between bridge examples, concepts, time, and relationships.
+- Let users move between denominators, methodology signals, and selected neighborhoods.
 - Keep the site static until the research object is stable.
 - Lead with diagnostics that answer a human question, not with generic chart controls.
-- Distinguish within-finance graph centrality from future global FrontierGraph centrality.
-- Be explicit that the current map is an FWCI-selected extracted graph workspace, not the complete strategy-source universe.
+- Be explicit that the current anchor set is a working academic denominator, not the complete strategy-source universe.
 - Do not force a final product title or contribution before the research question is stable.
 
 ## Current Interface Choices
 
-- Recurring relationships should show interpretable source-target pairs.
-- The main time content is now diagnostic: rising themes, fading themes, new arrivals, persistent themes, and spike-like attention.
-- The network section uses within-finance PageRank, approximate betweenness, bridge scores, and cross-field edge pairs.
-- A smaller trend-check chart remains for raw yearly/decade context.
-- The concept explorer remains the main drill-down object.
-- Large headline typography has been reduced so the page feels more like a tool.
-- Practitioner strategy sources are mentioned only as a coverage boundary, not as extracted graph content.
-- The product-bridge section is now the main first-pass tool. It should read as a structured measurement prototype, not as a final claim about the product universe.
+- The homepage is an orientation page, not a dashboard.
+- The academic graph page carries the live denominator, methodology explorer, and PC-neighborhood explorer.
+- The methods page explains the measurement stack and the de Prado visibility boundary.
+- The outcomes page shows citation as the current measured outcome and keeps product adoption/factor performance outside the current evidence.
+- Large headline typography has been reduced so the page feels more like a research instrument.
 
 ## Future Graph Upgrade
 

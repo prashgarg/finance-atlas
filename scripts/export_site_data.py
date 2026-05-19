@@ -386,6 +386,25 @@ def build_site_data() -> dict[str, Any]:
         }
         for row in strict_methodology
     ]
+    methodology_order = {
+        "has_causal_presentation": 0,
+        "has_conditioning_scope_signal": 1,
+        "has_mechanism_edge": 2,
+        "has_empirical_design_visible": 3,
+        "has_identification_design_visible": 4,
+        "has_robustness_edge": 5,
+        "has_forecasting_edge": 6,
+        "textsupp_portfolio_implementation": 7,
+        "textsupp_backtesting": 8,
+        "textsupp_multiple_testing": 9,
+        "textsupp_variable_selection": 10,
+        "textsupp_controls_adjustment": 11,
+        "textsupp_validation": 12,
+        "has_statistical_significance_visible": 13,
+    }
+    methodology_explorer.sort(
+        key=lambda row: (methodology_order.get(row.get("feature_name", ""), 99), -row.get("share", 0))
+    )
 
     source_comparison = [
         {
@@ -464,6 +483,13 @@ def build_site_data() -> dict[str, Any]:
                 "causalclaims_audit": pc_audit_by_case.get(case_id, {}).get("CausalClaims", {}),
             }
         )
+    pc_case_order = {
+        "liquidity_risk": 0,
+        "macro_returns": 1,
+        "factors_returns": 2,
+        "methods_methods": 3,
+    }
+    pc_neighborhoods.sort(key=lambda row: pc_case_order.get(row.get("case_id", ""), 99))
 
     full_text = {
         "sample_n": as_int(find_metric(full_text_summary, "sample_n", "50")),
@@ -553,7 +579,7 @@ def build_site_data() -> dict[str, Any]:
         {"value": f"{anchors:,}", "label": "anchor papers"},
         {"value": f"{active_graph:,}", "label": "active graph papers"},
         {"value": f"{citation['matched']:,}", "label": "OpenAlex citation matches"},
-        {"value": f"{full_text['scored']:,}", "label": "full-text pilot scores"},
+        {"value": f"{full_text['scored']:,}", "label": "scored PDFs"},
     ]
 
     return {

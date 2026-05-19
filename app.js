@@ -59,18 +59,6 @@ function table(headers, rows) {
   `;
 }
 
-function denominatorBoundary(row) {
-  const name = row.name || "";
-  if (name.includes("Strict")) return "Complete target coverage.";
-  if (name.includes("High-priority")) return "Automatic inclusion rule.";
-  if (name.includes("Medium-recall")) return "All medium-priority candidates.";
-  if (name.includes("Conservative")) return "Final universe of all relevant papers.";
-  if (name.includes("Sensitivity")) return "Main-denominator status.";
-  if (name.includes("Context")) return "Target-paper status.";
-  if (name.includes("Active")) return "Target-paper denominator.";
-  return "Recall completeness.";
-}
-
 function renderMetrics() {
   const el = document.querySelector("[data-home-metrics]");
   if (!el) return;
@@ -86,7 +74,7 @@ function renderHome() {
       ["Discovery frame", "FrontierGraph supplies a broad title-and-abstract research graph."],
       ["Main denominator", `The current target set is ${fmt(d.snapshot.anchors)} conservative post-recall anchor papers.`],
       ["Methodology layer", "Graph fields measure causal framing, mechanisms, scope conditions, and related signals."],
-      ["Full-text boundary", "A PDF pilot tests which de Prado-style details abstracts miss."],
+      ["Full-text boundary", "A PDF sample tests which de Prado-style details abstracts miss."],
     ]
       .map(
         ([title, body], idx) => `
@@ -140,85 +128,33 @@ function renderHome() {
       .join("");
   }
 
-  const outcomes = document.querySelector("[data-outcome-modules]");
-  if (outcomes) renderOutcomeModules(outcomes);
 }
 
 function renderAcademic() {
-  const denom = document.querySelector("[data-denominators]");
-  if (denom) {
-    denom.innerHTML = table(
-      ["Object", "Papers", "What it is for", "What not to infer"],
-      state.data.denominators.map(
+  const denomSummary = document.querySelector("[data-denominator-summary]");
+  if (denomSummary) {
+    const keep = new Set(["Conservative post-recall anchors", "Context papers", "Active graph"]);
+    denomSummary.innerHTML = table(
+      ["Object", "Papers", "Use"],
+      state.data.denominators
+        .filter((row) => keep.has(row.name))
+        .map(
         (row) => `
           <tr>
             <td><strong>${esc(row.name)}</strong><p>${esc(row.description)}</p></td>
             <td>${fmt(row.count)}</td>
             <td>${esc(row.use)}</td>
-            <td>${esc(denominatorBoundary(row))}</td>
           </tr>
         `,
       ),
     );
-  }
-
-  const graph = document.querySelector("[data-graph-layers]");
-  if (graph) {
-    const max = Math.max(...state.data.graph_layers.map((row) => row.nodes));
-    graph.innerHTML = state.data.graph_layers
-      .map((row) => barRow(row.role, row.nodes, max, `${fmt(row.nodes)} nodes · ${fmt(row.edges)} edges`, row.description))
-      .join("");
-  }
-
-  const meth = document.querySelector("[data-methodology-bars]");
-  if (meth) {
-    meth.innerHTML = state.data.methodology
-      .slice(0, 10)
-      .map((row) => barRow(row.feature, row.share, 1, pct(row.share), row.de_prado_link))
-      .join("");
   }
 
   const explorer = document.querySelector("[data-methodology-explorer]");
   if (explorer) renderMethodologyExplorer(explorer);
 
-  const pc = document.querySelector("[data-pc-runs]");
-  if (pc) {
-    pc.innerHTML = table(
-      ["Corpus", "Text basis", "PC input", "Edges", "Current use"],
-      state.data.pc_runs.map(
-        (row) => `
-          <tr>
-            <td>${esc(row.corpus)}</td>
-            <td>${esc(row.threshold)}</td>
-            <td>${esc(row.features)}<p>${fmt(row.selected_variables)} variables, ${fmt(row.observations)} observations</p></td>
-            <td>${fmt(row.edges)}</td>
-            <td>${esc(row.use)}</td>
-          </tr>
-        `,
-      ),
-    );
-  }
-
   const pcExplorer = document.querySelector("[data-pc-explorer]");
   if (pcExplorer) renderPcExplorer(pcExplorer);
-
-  const semantic = document.querySelector("[data-semantic-overlap]");
-  if (semantic) {
-    const s = state.data.semantic_overlap.summary;
-    semantic.innerHTML = `
-      <div class="split-panel">
-        <div>
-          ${metric(fmt(s.semantic_overlap_pairs_both_corpora), "semantic pairs in both corpora")}
-          ${metric(fmt(s.family_overlap_pairs_both_corpora), "family-level overlaps")}
-        </div>
-        <ul class="quiet-list">
-          ${state.data.semantic_overlap.examples
-            .map((row) => `<li><strong>${esc(row.pair)}</strong><span>${fmt(row.frontiergraph_edges)} FG edges, ${fmt(row.causalclaims_edges)} CausalClaims edges</span></li>`)
-            .join("")}
-        </ul>
-      </div>
-    `;
-  }
 }
 
 function auditLine(audit) {
@@ -351,22 +287,6 @@ function renderMethods() {
     );
   }
 
-  const objects = document.querySelector("[data-objects-table]");
-  if (objects) {
-    objects.innerHTML = table(
-      ["Object", "Denominator", "Role"],
-      state.data.denominators.map(
-        (row) => `
-          <tr>
-            <td><strong>${esc(row.name)}</strong><p>${esc(row.description)}</p></td>
-            <td>${fmt(row.count)}</td>
-            <td>${esc(row.use)}</td>
-          </tr>
-        `,
-      ),
-    );
-  }
-
   const visibility = document.querySelector("[data-visibility-table]");
   if (visibility) {
     visibility.innerHTML = table(
@@ -397,7 +317,7 @@ function renderMethods() {
           ${metric(fmt(ft.refines), "refine abstract signals")}
         </div>
         <div class="note-block">
-          The pilot asks whether full text changes practitioner-methodology measurement.
+          The PDF sample asks whether full text changes practitioner-methodology measurement.
           The answer is yes often enough that backtesting, multiple testing, implementation,
           and variable-selection fields should not be inferred from abstracts alone.
         </div>
@@ -406,27 +326,7 @@ function renderMethods() {
   }
 }
 
-function renderOutcomeModules(target) {
-  const modules = state.data.outcome_modules;
-  target.innerHTML = modules
-    .map(
-      (row) => `
-        <article class="module-row">
-          <div>
-            <strong>${esc(row.name)}</strong>
-            <p>${esc(row.description)}</p>
-          </div>
-          <span>${esc(row.status)}</span>
-        </article>
-      `,
-    )
-    .join("");
-}
-
 function renderOutcomes() {
-  const modules = document.querySelector("[data-outcome-modules]");
-  if (modules) renderOutcomeModules(modules);
-
   const citation = document.querySelector("[data-citation]");
   if (citation) {
     const c = state.data.citation;
@@ -458,56 +358,6 @@ function renderOutcomes() {
       )
       .join("");
   }
-
-  const products = document.querySelector("[data-product-bridge]");
-  if (products) {
-    const rows = state.data.product_bridge.families
-      .slice()
-      .filter((row) => row.status_raw !== "exclude_for_now")
-      .sort((a, b) => {
-        const statusOrder = { use_now: 0, review_case: 1, later: 2 };
-        const status = (statusOrder[a.status_raw] ?? 9) - (statusOrder[b.status_raw] ?? 9);
-        return status || String(a.family).localeCompare(String(b.family));
-      })
-      .map(
-        (row) => `
-          <tr>
-            <td><strong>${esc(row.family)}</strong><p>${esc(row.status)}</p></td>
-            <td>${esc(row.product_evidence)}</td>
-            <td>${esc(row.nearest_academic_object)}</td>
-            <td>${esc(row.bridge_type)}<p>${esc(row.confidence)} confidence</p></td>
-            <td>${esc(row.caveat)}</td>
-          </tr>
-        `,
-      );
-    products.innerHTML = table(
-      ["Product family", "Product graph signature", "Nearest academic object", "Bridge type", "Main caveat"],
-      rows,
-    );
-  }
-
-  const factor = document.querySelector("[data-factor-contract]");
-  if (factor) {
-    const items = [
-      "stable factor-investing denominator",
-      "audited paper-to-factor links",
-      "condition-type classification",
-      "state proxy library",
-      "harmonized return panel",
-      "signal-month design",
-    ];
-    factor.innerHTML = `<ul class="compact-checklist">${items.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>`;
-  }
-}
-
-function renderPaper() {
-  const paper = document.querySelector("[data-paper-status]");
-  if (!paper) return;
-  paper.innerHTML = `
-    <div class="note-block">
-      The paper draft is being reorganized around three empirical questions: corpus discovery, graph-visible methodology, and full-text added value. The public site will link the PDF once those pieces are stable enough to read without internal caveats.
-    </div>
-  `;
 }
 
 async function init() {
@@ -518,7 +368,6 @@ async function init() {
   if (page === "academic") renderAcademic();
   if (page === "methods") renderMethods();
   if (page === "outcomes") renderOutcomes();
-  if (page === "paper") renderPaper();
 }
 
 init().catch((error) => {
