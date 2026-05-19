@@ -567,6 +567,10 @@ td {
   margin-top: 18px;
 }
 
+.paper-card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .paper-card {
   background: rgba(255, 250, 240, 0.62);
   border: 1px solid rgba(22, 35, 31, 0.1);

@@ -59,6 +59,18 @@ function table(headers, rows) {
   `;
 }
 
+function denominatorBoundary(row) {
+  const name = row.name || "";
+  if (name.includes("Strict")) return "Complete target coverage.";
+  if (name.includes("High-priority")) return "Automatic inclusion rule.";
+  if (name.includes("Medium-recall")) return "All medium-priority candidates.";
+  if (name.includes("Conservative")) return "Final universe of all relevant papers.";
+  if (name.includes("Sensitivity")) return "Main-denominator status.";
+  if (name.includes("Context")) return "Target-paper status.";
+  if (name.includes("Active")) return "Target-paper denominator.";
+  return "Recall completeness.";
+}
+
 function renderMetrics() {
   const el = document.querySelector("[data-home-metrics]");
   if (!el) return;
@@ -143,7 +155,7 @@ function renderAcademic() {
             <td><strong>${esc(row.name)}</strong><p>${esc(row.description)}</p></td>
             <td>${fmt(row.count)}</td>
             <td>${esc(row.use)}</td>
-            <td>${row.name.includes("Context") ? "Target-paper status." : row.name.includes("Active") ? "A final corpus denominator." : row.name.includes("Sensitivity") ? "Main-denominator status." : "Recall completeness."}</td>
+            <td>${esc(denominatorBoundary(row))}</td>
           </tr>
         `,
       ),
@@ -187,6 +199,9 @@ function renderAcademic() {
     );
   }
 
+  const pcExplorer = document.querySelector("[data-pc-explorer]");
+  if (pcExplorer) renderPcExplorer(pcExplorer);
+
   const semantic = document.querySelector("[data-semantic-overlap]");
   if (semantic) {
     const s = state.data.semantic_overlap.summary;
@@ -204,6 +219,66 @@ function renderAcademic() {
       </div>
     `;
   }
+}
+
+function auditLine(audit) {
+  if (!audit || !Object.keys(audit).length) return "No manual audit row.";
+  const bits = [];
+  if (audit.strong_examples) bits.push(`${fmt(audit.strong_examples)} strong`);
+  if (audit.candidates) bits.push(`${fmt(audit.candidates)} candidate`);
+  if (audit.not_yet) bits.push(`${fmt(audit.not_yet)} needs source`);
+  if (audit.background_only) bits.push(`${fmt(audit.background_only)} background`);
+  return bits.join(" · ") || "No retained examples.";
+}
+
+function renderPcExplorer(target) {
+  const cases = state.data.pc_neighborhoods || [];
+  if (!cases.length) return;
+
+  function draw(caseId) {
+    const selected = cases.find((row) => row.case_id === caseId) || cases[0];
+    target.querySelector("[data-pc-detail]").innerHTML = `
+      <div class="explorer-summary">
+        <div>
+          <p class="eyebrow">${esc(selected.family_pair)}</p>
+          <h3>${esc(selected.label)}</h3>
+          <p>PC-retained neighborhoods are used as discovery maps. The comparison asks whether similar economic neighborhoods appear in the title/abstract graph and the full-text CausalClaims graph.</p>
+        </div>
+        <div class="metric-stack">
+          ${metric(fmt(selected.frontiergraph_edges), "FrontierGraph edges")}
+          ${metric(fmt(selected.causalclaims_edges), "CausalClaims edges")}
+        </div>
+      </div>
+      <div class="paper-card-grid two">
+        <article class="paper-card">
+          <strong>FrontierGraph audit</strong>
+          <p>${esc(auditLine(selected.frontiergraph_audit))}</p>
+          <span>${esc((selected.frontiergraph_audit?.judgments || []).join(", "))}</span>
+        </article>
+        <article class="paper-card">
+          <strong>CausalClaims audit</strong>
+          <p>${esc(auditLine(selected.causalclaims_audit))}</p>
+          <span>${esc((selected.causalclaims_audit?.judgments || []).join(", "))}</span>
+        </article>
+      </div>
+    `;
+  }
+
+  target.innerHTML = `
+    <div class="explorer-panel">
+      <label class="field-control">
+        <span>Neighborhood</span>
+        <select data-pc-select>
+          ${cases.map((row) => `<option value="${esc(row.case_id)}">${esc(row.label)}</option>`).join("")}
+        </select>
+      </label>
+      <div data-pc-detail></div>
+    </div>
+  `;
+
+  const select = target.querySelector("[data-pc-select]");
+  select.addEventListener("change", () => draw(select.value));
+  draw(select.value);
 }
 
 function renderMethodologyExplorer(target) {
@@ -367,12 +442,31 @@ function renderOutcomes() {
     `;
   }
 
+  const citationFeatures = document.querySelector("[data-citation-features]");
+  if (citationFeatures) {
+    const rows = state.data.citation.feature_associations || [];
+    const max = Math.max(...rows.map((row) => Math.abs(row.adjusted_percent)), 1);
+    citationFeatures.innerHTML = rows
+      .map((row) =>
+        barRow(
+          row.feature,
+          Math.abs(row.adjusted_percent),
+          max,
+          `${row.adjusted_percent >= 0 ? "+" : ""}${row.adjusted_percent.toFixed(1)}%`,
+          `${fmt(row.papers)} papers · p=${row.p_value.toFixed(2)}`,
+        ),
+      )
+      .join("");
+  }
+
   const products = document.querySelector("[data-product-bridge]");
   if (products) {
     const rows = state.data.product_bridge.families
       .slice()
+      .filter((row) => row.status_raw !== "exclude_for_now")
       .sort((a, b) => {
-        const status = String(a.status).localeCompare(String(b.status));
+        const statusOrder = { use_now: 0, review_case: 1, later: 2 };
+        const status = (statusOrder[a.status_raw] ?? 9) - (statusOrder[b.status_raw] ?? 9);
         return status || String(a.family).localeCompare(String(b.family));
       })
       .map(

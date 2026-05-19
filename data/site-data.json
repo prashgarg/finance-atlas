@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T19:34:49.393889+00:00",
+  "generated_at": "2026-05-19T20:15:45.447758+00:00",
   "snapshot": {
     "title": "Finance Atlas",
     "subtitle": "Graph-first map of factor-investing research, current denominators, and downstream outcome modules.",
@@ -302,7 +302,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -310,7 +310,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -326,7 +326,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -334,7 +334,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -342,7 +342,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         }
       ]
@@ -360,7 +360,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -368,7 +368,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -384,7 +384,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -392,7 +392,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -400,7 +400,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         }
       ]
@@ -418,7 +418,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -426,7 +426,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -442,7 +442,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -450,7 +450,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -458,7 +458,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         }
       ]
@@ -476,7 +476,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -484,7 +484,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -500,7 +500,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -508,7 +508,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -516,7 +516,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         }
       ]
@@ -534,7 +534,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -542,7 +542,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -558,7 +558,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -566,7 +566,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -574,7 +574,7 @@
           "year": 2023,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         }
       ]
@@ -592,7 +592,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -600,7 +600,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -616,7 +616,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -624,7 +624,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -650,7 +650,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -658,7 +658,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -666,7 +666,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -674,7 +674,7 @@
           "year": 2022,
           "source": "International Review of Financial Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -682,7 +682,7 @@
           "year": 2020,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -708,7 +708,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -716,7 +716,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -724,7 +724,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -740,7 +740,7 @@
           "year": 2022,
           "source": "Journal of Financial and Quantitative Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -748,7 +748,7 @@
           "year": 2022,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         }
       ]
@@ -766,7 +766,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -774,7 +774,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -782,7 +782,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -790,7 +790,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -798,7 +798,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -806,7 +806,7 @@
           "year": 2023,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         }
       ]
@@ -824,7 +824,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -832,7 +832,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -840,7 +840,7 @@
           "year": 2022,
           "source": "Journal of Financial and Quantitative Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -848,7 +848,7 @@
           "year": 2018,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -856,7 +856,7 @@
           "year": 2015,
           "source": "Journal of Banking & Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -864,7 +864,7 @@
           "year": 2005,
           "source": "Journal of Empirical Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         }
       ]
@@ -882,7 +882,7 @@
           "year": 2023,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 10
         },
         {
@@ -898,7 +898,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -906,7 +906,7 @@
           "year": 2023,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -914,7 +914,7 @@
           "year": 2023,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -940,7 +940,7 @@
           "year": 2022,
           "source": "Management Science",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 10
         },
         {
@@ -964,7 +964,7 @@
           "year": 2021,
           "source": "International Review of Financial Analysis",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 8
         },
         {
@@ -1006,7 +1006,7 @@
           "year": 2023,
           "source": "Review of Financial Studies",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -1014,7 +1014,7 @@
           "year": 2023,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -1030,7 +1030,7 @@
           "year": 2022,
           "source": "Journal of Financial and Quantitative Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -1038,7 +1038,7 @@
           "year": 2022,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         }
       ]
@@ -1056,7 +1056,7 @@
           "year": 2023,
           "source": "Journal of Behavioral and Experimental Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 9
         },
         {
@@ -1064,7 +1064,7 @@
           "year": 2014,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 9
         },
         {
@@ -1072,7 +1072,7 @@
           "year": 2023,
           "source": "Journal of Financial and Quantitative Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 8
         },
         {
@@ -1080,7 +1080,7 @@
           "year": 2022,
           "source": "Journal of Economic Behavior & Organization",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 8
         },
         {
@@ -1088,7 +1088,7 @@
           "year": 2021,
           "source": "Journal of Empirical Finance",
           "role": "anchor_recall_promoted_orthodox",
-          "family": "NA",
+          "family": "anchor recall promoted orthodox",
           "signal_count": 8
         },
         {
@@ -1096,7 +1096,7 @@
           "year": 2021,
           "source": "International Review of Financial Analysis",
           "role": "anchor_strict_core",
-          "family": "cross_section_returns",
+          "family": "cross section returns",
           "signal_count": 8
         }
       ]
@@ -1114,7 +1114,7 @@
           "year": 2018,
           "source": "International Review of Economics & Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -1130,7 +1130,7 @@
           "year": 2018,
           "source": "Review of Finance",
           "role": "anchor_recall_promoted_clean",
-          "family": "NA",
+          "family": "anchor recall promoted clean",
           "signal_count": 8
         },
         {
@@ -1154,7 +1154,7 @@
           "year": 2021,
           "source": "Journal of Financial Economics",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 7
         }
       ]
@@ -1172,7 +1172,7 @@
           "year": 2023,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 9
         },
         {
@@ -1180,7 +1180,7 @@
           "year": 2021,
           "source": "Journal of Empirical Finance",
           "role": "anchor_recall_promoted_orthodox",
-          "family": "NA",
+          "family": "anchor recall promoted orthodox",
           "signal_count": 8
         },
         {
@@ -1204,7 +1204,7 @@
           "year": 2020,
           "source": "Research in International Business and Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 6
         },
         {
@@ -1212,7 +1212,7 @@
           "year": 2012,
           "source": "Journal of Financial Markets",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 6
         }
       ]
@@ -1238,7 +1238,7 @@
           "year": 2020,
           "source": "Economic Modelling",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 8
         },
         {
@@ -1246,7 +1246,7 @@
           "year": 2025,
           "source": "PLoS ONE",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 7
         },
         {
@@ -1262,7 +1262,7 @@
           "year": 2018,
           "source": "International Review of Financial Analysis",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 7
         },
         {
@@ -1270,7 +1270,7 @@
           "year": 2021,
           "source": "The Energy Journal",
           "role": "anchor_recall_promoted_orthodox",
-          "family": "NA",
+          "family": "anchor recall promoted orthodox",
           "signal_count": 6
         }
       ]
@@ -1304,7 +1304,7 @@
           "year": 2004,
           "source": "Journal of Empirical Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 8
         },
         {
@@ -1312,7 +1312,7 @@
           "year": 2023,
           "source": "Journal of Financial and Quantitative Analysis",
           "role": "anchor_strict_core",
-          "family": "return_predictability",
+          "family": "return predictability",
           "signal_count": 7
         },
         {
@@ -1328,7 +1328,7 @@
           "year": 2020,
           "source": "Journal of International Money and Finance",
           "role": "anchor_strict_core",
-          "family": "named_factor",
+          "family": "named factor",
           "signal_count": 5
         }
       ]
@@ -1599,6 +1599,81 @@
       "background_only": "0"
     }
   ],
+  "pc_neighborhoods": [
+    {
+      "case_id": "factors_returns",
+      "label": "Factors and returns",
+      "family_pair": "asset pricing factors -- returns performance premia",
+      "frontiergraph_edges": 28,
+      "causalclaims_edges": 2,
+      "frontiergraph_audit": {},
+      "causalclaims_audit": {}
+    },
+    {
+      "case_id": "liquidity_risk",
+      "label": "Liquidity and risk",
+      "family_pair": "liquidity trading frictions -- risk volatility crisis",
+      "frontiergraph_edges": 12,
+      "causalclaims_edges": 4,
+      "frontiergraph_audit": {
+        "strong_examples": 2,
+        "candidates": 3,
+        "not_yet": 0,
+        "background_only": 1,
+        "judgments": [
+          "good_neighborhood",
+          "good_neighborhood_with_caveat",
+          "too_broad"
+        ]
+      },
+      "causalclaims_audit": {
+        "strong_examples": 1,
+        "candidates": 1,
+        "not_yet": 0,
+        "background_only": 0,
+        "judgments": [
+          "good_neighborhood"
+        ]
+      }
+    },
+    {
+      "case_id": "macro_returns",
+      "label": "Macro and returns",
+      "family_pair": "macro monetary real activity -- returns performance premia",
+      "frontiergraph_edges": 10,
+      "causalclaims_edges": 12,
+      "frontiergraph_audit": {
+        "strong_examples": 2,
+        "candidates": 2,
+        "not_yet": 1,
+        "background_only": 0,
+        "judgments": [
+          "good_neighborhood",
+          "needs_source_read"
+        ]
+      },
+      "causalclaims_audit": {
+        "strong_examples": 3,
+        "candidates": 2,
+        "not_yet": 1,
+        "background_only": 0,
+        "judgments": [
+          "good_neighborhood",
+          "good_neighborhood_with_caveat",
+          "needs_source_read"
+        ]
+      }
+    },
+    {
+      "case_id": "methods_methods",
+      "label": "Methods neighborhood",
+      "family_pair": "methods identification -- methods identification",
+      "frontiergraph_edges": 7,
+      "causalclaims_edges": 32,
+      "frontiergraph_audit": {},
+      "causalclaims_audit": {}
+    }
+  ],
   "semantic_overlap": {
     "summary": {
       "package_name": "pc_semantic_ontology_overlap_v0",
@@ -1704,7 +1779,81 @@
     "median_per_year": 1.7272727272727273,
     "baseline_r2": 0.18265222585322782,
     "methodology_r2": 0.18222904281707697,
-    "domain_r2": 0.18975345936684984
+    "domain_r2": 0.18975345936684984,
+    "feature_associations": [
+      {
+        "feature": "Multiple-testing terms",
+        "papers": 9,
+        "median_with": 1.5714285714285714,
+        "median_without": 1.7386363636363638,
+        "adjusted_percent": 44.796155949688824,
+        "p_value": 0.21818345419050644
+      },
+      {
+        "feature": "Validation terms",
+        "papers": 181,
+        "median_with": 1.6666666666666667,
+        "median_without": 1.75,
+        "adjusted_percent": 4.894563557349141,
+        "p_value": 0.5229044060636352
+      },
+      {
+        "feature": "Mechanism edge",
+        "papers": 474,
+        "median_with": 1.5393939393939395,
+        "median_without": 1.875,
+        "adjusted_percent": 3.4774224747638804,
+        "p_value": 0.5583053935720549
+      },
+      {
+        "feature": "Portfolio implementation terms",
+        "papers": 115,
+        "median_with": 2.0,
+        "median_without": 1.6978260869565216,
+        "adjusted_percent": -4.787654946764186,
+        "p_value": 0.581781252359576
+      },
+      {
+        "feature": "Robustness edge",
+        "papers": 232,
+        "median_with": 1.4142156862745099,
+        "median_without": 1.875,
+        "adjusted_percent": -6.31291961132624,
+        "p_value": 0.3367522010746561
+      },
+      {
+        "feature": "Theory/model edge",
+        "papers": 252,
+        "median_with": 1.7638888888888888,
+        "median_without": 1.7142857142857142,
+        "adjusted_percent": -6.662444085473263,
+        "p_value": 0.3057285787151143
+      },
+      {
+        "feature": "Condition/scope signal",
+        "papers": 868,
+        "median_with": 1.656862745098039,
+        "median_without": 2.380952380952381,
+        "adjusted_percent": -7.942987788747413,
+        "p_value": 0.32558629483498736
+      },
+      {
+        "feature": "Identification design",
+        "papers": 39,
+        "median_with": 1.2857142857142858,
+        "median_without": 1.7712418300653594,
+        "adjusted_percent": -11.279616256508529,
+        "p_value": 0.4138198271730029
+      },
+      {
+        "feature": "Forecasting/time-series",
+        "papers": 106,
+        "median_with": 1.577777777777778,
+        "median_without": 1.75,
+        "adjusted_percent": -11.462967164975534,
+        "p_value": 0.18724149354097583
+      }
+    ]
   },
   "product_bridge": {
     "summary": [
@@ -1732,7 +1881,8 @@
     "families": [
       {
         "family": "Buffer defined outcome",
-        "status": "paper_ready",
+        "status": "paper ready",
+        "status_raw": "paper_ready",
         "rows": 25,
         "coherent_rows": 25,
         "coherent_share": 1.0,
@@ -1746,7 +1896,8 @@
       },
       {
         "family": "Covered call income",
-        "status": "paper_ready",
+        "status": "paper ready",
+        "status_raw": "paper_ready",
         "rows": 25,
         "coherent_rows": 25,
         "coherent_share": 1.0,
@@ -1760,7 +1911,8 @@
       },
       {
         "family": "Target date lifecycle",
-        "status": "paper_ready",
+        "status": "paper ready",
+        "status_raw": "paper_ready",
         "rows": 25,
         "coherent_rows": 25,
         "coherent_share": 1.0,
@@ -1774,7 +1926,8 @@
       },
       {
         "family": "Crypto futures",
-        "status": "needs_review",
+        "status": "needs review",
+        "status_raw": "needs_review",
         "rows": 5,
         "coherent_rows": 4,
         "coherent_share": 0.8,
@@ -1788,7 +1941,8 @@
       },
       {
         "family": "Crypto spot/reference",
-        "status": "needs_review",
+        "status": "needs review",
+        "status_raw": "needs_review",
         "rows": 5,
         "coherent_rows": 5,
         "coherent_share": 1.0,
@@ -1802,7 +1956,8 @@
       },
       {
         "family": "Quality / growth selection",
-        "status": "needs_review",
+        "status": "needs review",
+        "status_raw": "needs_review",
         "rows": 5,
         "coherent_rows": 4,
         "coherent_share": 0.8,
@@ -1816,7 +1971,8 @@
       },
       {
         "family": "Volatility exposure/control",
-        "status": "needs_review",
+        "status": "needs review",
+        "status_raw": "needs_review",
         "rows": 5,
         "coherent_rows": 3,
         "coherent_share": 0.6,
@@ -1830,13 +1986,14 @@
       },
       {
         "family": "Broad inflation allocation",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 1,
         "coherent_share": 0.2,
         "product_evidence": "Medium-family audit: 1 coherent, 3 partial, 1 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1844,13 +2001,14 @@
       },
       {
         "family": "Low-vol / multifactor low-vol",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 0,
         "coherent_share": 0.0,
         "product_evidence": "Medium-family audit: 0 coherent, 4 partial, 1 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1858,13 +2016,14 @@
       },
       {
         "family": "Managed futures",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 2,
         "coherent_share": 0.4,
         "product_evidence": "Medium-family audit: 2 coherent, 3 partial, 0 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1872,13 +2031,14 @@
       },
       {
         "family": "Managed volatility overlay",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 2,
         "coherent_share": 0.4,
         "product_evidence": "Medium-family audit: 2 coherent, 2 partial, 1 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1886,13 +2046,14 @@
       },
       {
         "family": "Multifactor smart beta",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 2,
         "coherent_share": 0.4,
         "product_evidence": "Medium-family audit: 2 coherent, 1 partial, 2 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1900,13 +2061,14 @@
       },
       {
         "family": "Real-asset inflation hedge",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 1,
         "coherent_share": 0.2,
         "product_evidence": "Medium-family audit: 1 coherent, 3 partial, 1 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",
@@ -1914,13 +2076,14 @@
       },
       {
         "family": "Tactical trend allocation",
-        "status": "exclude_for_now",
+        "status": "exclude for now",
+        "status_raw": "exclude_for_now",
         "rows": 5,
         "coherent_rows": 0,
         "coherent_share": 0.0,
         "product_evidence": "Medium-family audit: 0 coherent, 2 partial, 3 weak/wrong rows out of 5.",
         "academic_evidence": "NA",
-        "nearest_academic_object": "NA",
+        "nearest_academic_object": "",
         "bridge_type": "not assigned",
         "reason": "Current product-family screen does not yet produce a bridge-ready family.",
         "caveat": "Screen redesign needed before academic bridge interpretation.",

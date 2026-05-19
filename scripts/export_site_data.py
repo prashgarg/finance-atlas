@@ -86,6 +86,22 @@ def bridge_label(value: str) -> str:
     return labels.get(value, value.replace("_", " "))
 
 
+def clean_label(value: str) -> str:
+    if not value or value == "NA":
+        return ""
+    return value.replace("_", " ")
+
+
+def pc_case_label(case_id: str) -> str:
+    labels = {
+        "factors_returns": "Factors and returns",
+        "liquidity_risk": "Liquidity and risk",
+        "macro_returns": "Macro and returns",
+        "methods_methods": "Methods neighborhood",
+    }
+    return labels.get(case_id, clean_label(case_id).title())
+
+
 def build_site_data() -> dict[str, Any]:
     post_summary_rows = read_csv(PROJECT / "data/academic_analysis_graph_post_recall_anchor_v1/package_summary_v1.csv")
     post_summary = metric_map(post_summary_rows)
@@ -110,11 +126,17 @@ def build_site_data() -> dict[str, Any]:
     semantic_examples = read_csv(
         PROJECT / "data/pc_semantic_ontology_overlap_v0/pc_cross_corpus_semantic_ontology_overlap_v0.csv"
     )
+    pc_case_crosswalk = read_csv(
+        PROJECT / "data/pc_family_neighborhoods_v0/pc_family_case_study_crosswalk_v0.csv"
+    )
     pc_audit = read_csv(PROJECT / "data/pc_family_neighborhoods_v0/pc_case_study_manual_audit_summary_v0.csv")
     full_text_summary = read_csv(PROJECT / "data/full_text_feasibility_v0/package_summary_v0.csv")
     full_text_rows = read_csv(PROJECT / "data/full_text_feasibility_v0/full_text_hf_gptoss_summary_v0.csv")
     citation_summary = read_csv(PROJECT / "data/citation_benchmark_post_recall_v1/citation_benchmark_post_recall_summary_v1.csv")
     citation_regression = read_csv(PROJECT / "data/citation_benchmark_post_recall_v1/citation_regression_summary_post_recall_v1.csv")
+    citation_features = read_csv(
+        PROJECT / "data/citation_benchmark_post_recall_v1/citation_selected_feature_associations_post_recall_v1.csv"
+    )
     bridge_families = read_csv(PROJECT / "data/cross_sectional_bridge_dataset_v0/bridge_family_dataset.csv")
     bridge_summary = read_csv(PROJECT / "data/cross_sectional_bridge_dataset_v0/bridge_type_summary.csv")
 
@@ -343,7 +365,10 @@ def build_site_data() -> dict[str, Any]:
                 "year": as_int(row.get("publication_year")),
                 "source": row.get("source_display_name"),
                 "role": row.get("final_analysis_role") or row.get("analysis_role"),
-                "family": row.get("anchor_family") if row.get("anchor_family") != "NA" else row.get("strict_family"),
+                "family": clean_label(row.get("anchor_family"))
+                or clean_label(row.get("strict_family"))
+                or clean_label(row.get("final_analysis_role"))
+                or clean_label(row.get("analysis_role")),
                 "signal_count": as_int(row.get("methodology_signal_count")),
             }
             for row in matched[:limit]
@@ -408,6 +433,38 @@ def build_site_data() -> dict[str, Any]:
         if row.get("overlap_status") == "both_corpora"
     ][:6]
 
+    pc_audit_by_case: dict[str, dict[str, Any]] = {}
+    for row in pc_audit:
+        case_id = row.get("case_id", "")
+        corpus = row.get("corpus", "")
+        if not case_id or not corpus:
+            continue
+        slot = pc_audit_by_case.setdefault(case_id, {})
+        corpus_slot = slot.setdefault(
+            corpus,
+            {"strong_examples": 0, "candidates": 0, "not_yet": 0, "background_only": 0, "judgments": []},
+        )
+        corpus_slot["strong_examples"] += as_int(row.get("strong_examples"))
+        corpus_slot["candidates"] += as_int(row.get("candidates"))
+        corpus_slot["not_yet"] += as_int(row.get("not_yet"))
+        corpus_slot["background_only"] += as_int(row.get("background_only"))
+        corpus_slot["judgments"].append(row.get("audit_judgment"))
+
+    pc_neighborhoods = []
+    for row in pc_case_crosswalk:
+        case_id = row.get("case_id", "")
+        pc_neighborhoods.append(
+            {
+                "case_id": case_id,
+                "label": pc_case_label(case_id),
+                "family_pair": row.get("family_pair", "").replace("_", " "),
+                "frontiergraph_edges": as_int(row.get("FrontierGraph")),
+                "causalclaims_edges": as_int(row.get("CausalClaims")),
+                "frontiergraph_audit": pc_audit_by_case.get(case_id, {}).get("FrontierGraph", {}),
+                "causalclaims_audit": pc_audit_by_case.get(case_id, {}).get("CausalClaims", {}),
+            }
+        )
+
     full_text = {
         "sample_n": as_int(find_metric(full_text_summary, "sample_n", "50")),
         "downloaded": as_int(find_metric(full_text_summary, "pdf_status_downloaded_n", "30")),
@@ -447,23 +504,36 @@ def build_site_data() -> dict[str, Any]:
         "methodology_r2": as_float(regression.get("Add methodology-signal count", {}).get("adj_r_squared", 0)),
         "domain_r2": as_float(regression.get("Add methodology-domain indicators", {}).get("adj_r_squared", 0)),
     }
+    citation["feature_associations"] = [
+        {
+            "feature": row.get("feature_label"),
+            "papers": as_int(row.get("papers_with_feature")),
+            "median_with": as_float(row.get("median_cpy_with")),
+            "median_without": as_float(row.get("median_cpy_without")),
+            "adjusted_percent": as_float(row.get("approx_percent_difference")),
+            "p_value": as_float(row.get("adjusted_p_value")),
+        }
+        for row in citation_features
+        if row.get("denominator") == "conservative_post_recall_1012"
+    ]
 
     family_rows = []
     for row in bridge_families:
         family_rows.append(
             {
                 "family": row.get("product_family_label"),
-                "status": row.get("current_status"),
+                "status": clean_label(row.get("current_status")),
+                "status_raw": row.get("current_status"),
                 "rows": as_int(row.get("product_rows")),
                 "coherent_rows": as_int(row.get("coherent_rows")),
                 "coherent_share": as_float(row.get("coherent_share")),
                 "product_evidence": row.get("product_side_evidence"),
                 "academic_evidence": row.get("academic_side_evidence"),
-                "nearest_academic_object": row.get("nearest_academic_object"),
+                "nearest_academic_object": "" if row.get("nearest_academic_object") == "NA" else row.get("nearest_academic_object"),
                 "bridge_type": bridge_label(row.get("bridge_type", "")),
                 "reason": row.get("bridge_reason"),
                 "caveat": row.get("main_caveat"),
-                "confidence": row.get("confidence_from_source"),
+                "confidence": clean_label(row.get("confidence_from_source")),
             }
         )
 
@@ -509,6 +579,7 @@ def build_site_data() -> dict[str, Any]:
         "source_comparison": source_comparison,
         "pc_runs": pc_runs,
         "pc_audit": pc_audit,
+        "pc_neighborhoods": pc_neighborhoods,
         "semantic_overlap": {
             "summary": semantic_summary,
             "examples": both_semantic,
