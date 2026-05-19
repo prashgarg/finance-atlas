@@ -3,138 +3,74 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bridge Explorer — Finance Atlas</title>
-    <meta name="description" content="Explore product-to-academic finance links by family and link type." />
+    <title>Outcomes · Finance Atlas</title>
+    <meta name="description" content="Outcome modules for citation impact, product adoption, and factor performance." />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="outcomes">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Finance Atlas home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Finance Atlas</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Finance Atlas</span></a>
       <nav class="top-nav" aria-label="Primary navigation">
         <a href="index.html">Overview</a>
-        <a class="active" href="bridge.html">Bridge Explorer</a>
-        <a href="academic-map.html">Academic Map</a>
+        <a href="academic-map.html">Academic Graph</a>
         <a href="methods.html">Methods</a>
+        <a class="active" href="bridge.html">Outcomes</a>
         <a href="paper.html">Paper</a>
       </nav>
     </header>
 
     <main>
       <section class="page-hero">
-        <p class="draft-kicker">Product to research links</p>
-        <h1>Bridge Explorer</h1>
+        <p class="eyebrow">Outcomes</p>
+        <h1>What the graph may help explain</h1>
         <p>
-          Compare groups of similar products with nearby academic finance objects. Use the controls to
-          switch between product families and link types.
+          The outcome layer is modular. Citation impact is the current low-friction benchmark,
+          product adoption remains a design pilot, and factor performance remains a later
+          high-precision extension.
         </p>
       </section>
 
-      <section class="section tight-section" id="bridge-explorer" aria-labelledby="bridge-explorer-title">
-        <div class="section-heading">
-          <h2 id="bridge-explorer-title">Explore links</h2>
-          <p>Close strategy match, mechanism link, broader pattern, or noisy keyword match.</p>
-        </div>
-        <div class="bridge-shell">
-          <div class="bridge-controls">
-            <div>
-              <label for="bridge-family-select">Product family</label>
-              <select id="bridge-family-select"></select>
-            </div>
-            <div>
-              <label for="bridge-type-select">Link type</label>
-              <select id="bridge-type-select">
-                <option value="all">All families</option>
-                <option value="same_strategy">Same strategy</option>
-                <option value="same_mechanism">Same mechanism</option>
-                <option value="shared_motif">Broader pattern</option>
-                <option value="weak">Concept-only / no useful link</option>
-              </select>
-            </div>
-          </div>
-          <div class="bridge-overview" id="bridge-overview"></div>
-          <div class="bridge-tab-grid">
-            <details open>
-              <summary>Selected family</summary>
-              <div id="bridge-detail"></div>
-            </details>
-            <details>
-              <summary>Link definitions</summary>
-              <div class="bridge-label-guide" id="bridge-label-guide"></div>
-            </details>
-            <details>
-              <summary>All families</summary>
-              <div class="bridge-table-wrap">
-                <table class="bridge-table">
-                  <thead>
-                    <tr>
-                      <th>Product family</th>
-                      <th><span class="term" tabindex="0" data-tip="The recurring product-side relations in the prospectus graph, such as uses instrument, tracks benchmark, or targets factor.">Product graph signature</span></th>
-                      <th><span class="term" tabindex="0" data-tip="The closest academic-side concept, paper group, or research relationship retrieved from the finance graph.">Nearest academic object</span></th>
-                      <th><span class="term" tabindex="0" data-tip="Current review label for how the product family connects to academic finance.">Current link type</span></th>
-                      <th>Main caveat</th>
-                    </tr>
-                  </thead>
-                  <tbody id="bridge-family-table-body"></tbody>
-                </table>
-              </div>
-            </details>
-          </div>
-        </div>
+      <section class="two-column">
+        <article>
+          <p class="eyebrow">Modules</p>
+          <h2>Status</h2>
+          <div class="module-list" data-outcome-modules></div>
+        </article>
+        <article>
+          <p class="eyebrow">Citation benchmark</p>
+          <h2>Low-friction external outcome</h2>
+          <div data-citation></div>
+        </article>
       </section>
 
-      <section class="section" id="examples" aria-labelledby="examples-title">
-        <div class="section-heading">
-          <h2 id="examples-title">Worked examples</h2>
-          <p>Representative cases for strategy, mechanism, broader-pattern, and boundary links.</p>
+      <section class="panel-section">
+        <div class="section-copy">
+          <p class="eyebrow">Product adoption</p>
+          <h2>Bridge families from the pilot</h2>
+          <p>
+            This table is retained as design evidence from the earlier product-graph pilot.
+            It is the route into the product-adoption outcome module once the academic graph
+            denominator is stable.
+          </p>
         </div>
-        <div class="example-grid" id="featured-examples"></div>
+        <div data-product-bridge></div>
       </section>
 
-      <section class="section" id="readout" aria-labelledby="readout-title">
-        <div class="section-heading">
-          <h2 id="readout-title">Current readout</h2>
-          <p>Product families connect to academic finance in different ways.</p>
+      <section class="panel-section">
+        <div class="section-copy">
+          <p class="eyebrow">Factor performance</p>
+          <h2>Data contract before analysis</h2>
+          <p>
+            The factor-performance module is deliberately parked until these objects are reliable enough
+            to avoid a fragile paper-to-factor exercise.
+          </p>
         </div>
-        <div class="readout-grid" id="bridge-readout"></div>
-      </section>
-
-      <section class="section" id="typology" aria-labelledby="typology-title">
-        <div class="section-heading">
-          <h2 id="typology-title">Matched how?</h2>
-          <p>The paper-facing table: product family, product design summary, closest academic object, link type, and caveat.</p>
-        </div>
-        <div class="typology-table-wrap">
-          <table class="typology-table">
-            <thead>
-              <tr>
-                <th>Product family</th>
-                <th><span class="term" tabindex="0" data-tip="Short summary of what the product descriptions repeatedly say the funds do.">Product design summary</span></th>
-                <th><span class="term" tabindex="0" data-tip="Closest research object found in the academic finance graph.">Closest academic object</span></th>
-                <th><span class="term" tabindex="0" data-tip="How the product side and research side are connected.">Link type</span></th>
-                <th>Main caveat</th>
-              </tr>
-            </thead>
-            <tbody id="typology-table-body"></tbody>
-          </table>
-        </div>
+        <div data-factor-contract></div>
       </section>
     </main>
 
-    <div class="family-modal" id="family-modal" hidden>
-      <div class="family-modal-backdrop" data-close-family-modal></div>
-      <section class="family-modal-panel" role="dialog" aria-modal="true" aria-labelledby="family-modal-title">
-        <button class="modal-close" type="button" data-close-family-modal aria-label="Close family detail">Close</button>
-        <div id="family-modal-content"></div>
-      </section>
-    </div>
-
-    <footer class="site-footer">
-      <p>Finance Atlas is a research interface. It is not investment advice.</p>
-    </footer>
+    <footer class="site-footer"><p>Outcome modules are intentionally separated so the research design can mature without forcing one result too early.</p></footer>
     <script src="app.js" type="module"></script>
   </body>
 </html>

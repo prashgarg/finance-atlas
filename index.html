@@ -6,12 +6,12 @@
     <title>Finance Atlas</title>
     <meta
       name="description"
-      content="A research instrument for comparing investment product design with academic finance."
+      content="A graph-first research map for factor-investing papers, methodology signals, and downstream finance outcomes."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Finance Atlas home">
         <span class="brand-mark" aria-hidden="true"></span>
@@ -19,49 +19,72 @@
       </a>
       <nav class="top-nav" aria-label="Primary navigation">
         <a class="active" href="index.html">Overview</a>
-        <a href="bridge.html">Bridge Explorer</a>
-        <a href="academic-map.html">Academic Map</a>
+        <a href="academic-map.html">Academic Graph</a>
         <a href="methods.html">Methods</a>
+        <a href="bridge.html">Outcomes</a>
         <a href="paper.html">Paper</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero compact-hero">
+      <section class="hero">
         <div class="hero-copy">
-          <p class="draft-kicker">Beta research instrument</p>
+          <p class="eyebrow">Research workbench</p>
           <h1>Finance Atlas</h1>
           <p>
-            A research map for comparing investment product design with nearby academic finance.
+            A graph-first map of factor-investing research: which papers belong in the
+            target corpus, what can be measured from the graph, and where full text is needed.
           </p>
         </div>
-        <div class="hero-panel" aria-label="Corpus snapshot">
-          <div class="signal-line"></div>
-          <div class="metric-grid" id="metric-grid"></div>
-        </div>
+        <aside class="hero-aside" aria-label="Current snapshot">
+          <div class="constellation" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="metric-stack" data-home-metrics></div>
+        </aside>
       </section>
 
-      <section class="orientation-strip" aria-label="How to read this site">
+      <section class="section-grid">
+        <div class="section-copy">
+          <p class="eyebrow">Current object</p>
+          <h2>From discovery graph to measured literature</h2>
+          <p>
+            The site follows the paper’s current spine. We start from a broad academic
+            discovery graph, define one main anchor denominator, keep context papers separate,
+            and test which methodology signals require full text.
+          </p>
+        </div>
+        <ol class="workflow-list" data-home-workflow></ol>
+      </section>
+
+      <section class="section-grid compact">
+        <div class="section-copy">
+          <p class="eyebrow">Current stance</p>
+          <h2>Outcomes come after the measurement spine</h2>
+          <p>
+            Product adoption, citations, and factor performance remain important. They are
+            now treated as modules built on the same academic graph.
+          </p>
+        </div>
+        <div class="findings" data-home-findings></div>
+      </section>
+
+      <section class="two-column">
         <article>
-          <strong><span class="term" tabindex="0" data-tip="A compact map of what a prospectus says the fund is trying to do, what it holds, and how it implements the strategy.">Product graph</span></strong>
-          <p>Objective, exposure, instrument, rule, benchmark, horizon, and risk.</p>
+          <p class="eyebrow">Graph-visible methodology</p>
+          <h2>Signals visible before reading full PDFs</h2>
+          <div data-methodology-mini></div>
         </article>
         <article>
-          <strong><span class="term" tabindex="0" data-tip="The nearby papers, concepts, and relationships in the academic finance graph around a product-related idea.">Academic neighborhood</span></strong>
-          <p>Nearby concepts and relationships from finance papers.</p>
-        </article>
-        <article>
-          <strong><span class="term" tabindex="0" data-tip="Our classification of how a product and the academic literature are connected. It is not a performance score.">Link type</span></strong>
-          <p>Same strategy, mechanism, broader pattern, concept-only, or no useful link.</p>
+          <p class="eyebrow">Outcome modules</p>
+          <h2>Where this can go next</h2>
+          <div class="module-list" data-outcome-modules></div>
         </article>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>
-        Finance Atlas is a research interface for graph-based finance literature and product-design data.
-        It is not investment advice.
-      </p>
+      <p>Finance Atlas is a working research interface. Counts and classifications are current project snapshots, not final population estimates.</p>
     </footer>
 
     <script src="app.js" type="module"></script>

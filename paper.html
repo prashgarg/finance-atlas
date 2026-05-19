@@ -3,61 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paper — Finance Atlas</title>
-    <meta name="description" content="Finance Atlas paper page." />
+    <title>Paper · Finance Atlas</title>
+    <meta name="description" content="Working paper status for the Finance Atlas project." />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="paper">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Finance Atlas home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Finance Atlas</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Finance Atlas</span></a>
       <nav class="top-nav" aria-label="Primary navigation">
         <a href="index.html">Overview</a>
-        <a href="bridge.html">Bridge Explorer</a>
-        <a href="academic-map.html">Academic Map</a>
+        <a href="academic-map.html">Academic Graph</a>
         <a href="methods.html">Methods</a>
+        <a href="bridge.html">Outcomes</a>
         <a class="active" href="paper.html">Paper</a>
       </nav>
     </header>
 
     <main>
-      <section class="page-hero">
-        <p class="draft-kicker">Coming soon</p>
-        <h1>Paper</h1>
+      <section class="page-hero narrow">
+        <p class="eyebrow">Paper</p>
+        <h1>Coming soon</h1>
         <p>
-          The paper is still being written. The public page will appear once the measurement design,
-          source checks, and paper-facing claims are ready.
+          The draft is being reorganized around the current research design. The website shows
+          the live measurement objects while the paper text catches up.
         </p>
       </section>
-
-      <section class="section" id="paper" aria-labelledby="paper-title">
-        <div class="section-heading">
-          <h2 id="paper-title">In progress</h2>
-          <p>Current work is focused on source verification and clearer empirical framing.</p>
-        </div>
-        <div class="paper-note-grid">
-          <article>
-            <strong>Measurement</strong>
-            <p>Define product graphs, academic neighborhoods, and link types cleanly.</p>
-          </article>
-          <article>
-            <strong>Evidence</strong>
-            <p>Verify product excerpts and academic source texts before public claims.</p>
-          </article>
-          <article class="method-placeholder">
-            <strong>Draft</strong>
-            <p>Release once the paper reads as a research note rather than a live workspace.</p>
-          </article>
-        </div>
+      <section class="panel-section">
+        <div data-paper-status></div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>Finance Atlas is a research interface. It is not investment advice.</p>
-    </footer>
+    <footer class="site-footer"><p>Finance Atlas, current research build.</p></footer>
     <script src="app.js" type="module"></script>
   </body>
 </html>

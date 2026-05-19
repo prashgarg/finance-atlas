@@ -1,146 +1,87 @@
 # Finance Atlas Website Content Plan
 
-## Current Purpose
+This site is a working research interface for the current Finance Atlas project. It should not read like a public product launch. Its job is to keep the research objects legible while the paper and data work continue.
 
-Finance Atlas is a working interface for a research project, not a finished public database. The site should help a reader see the core measurement problem quickly:
+## Current Framing
 
-- investment products describe strategies in product language;
-- academic finance describes related ideas in paper language;
-- a useful bridge must say whether the two objects are the same strategy, the same mechanism, a looser shared motif, or only a keyword match.
+Finance Atlas is now centered on the academic graph and measurement design:
 
-The site should make this bridge problem concrete before it shows broad graph diagnostics.
+- define the factor-investing target literature;
+- show the current anchor, context, and active-graph denominators;
+- measure graph-visible methodology signals;
+- compare FrontierGraph and CausalClaims neighborhoods;
+- test what full text adds beyond title and abstract graphs;
+- keep downstream outcomes modular.
 
-## Visual Thesis
+Product adoption is kept as one outcome module. It no longer sets the frame for the whole website.
 
-Calm research instrument: warm paper background, compact controls, visible uncertainty, and enough structure that the reader can inspect without feeling sold to.
+## Pages
 
-## Interaction Thesis
+### Overview
 
-- The homepage should orient the reader in one screen: product graphs, academic graph, bridge labels.
-- The bridge explorer should be the first serious tool: choose a product family and inspect the product signature, nearest academic object, bridge label mix, and caveat.
-- Older finance-graph diagnostics should remain available lower on the page, but they should not dominate the first impression.
-
-## Page Structure
-
-### Home
-
-Job: explain the research object in plain language.
+Purpose: orient the reader to the current object.
 
 Content:
 
-- title: Finance Atlas
-- subtitle: mapping the research content of investment strategies
-- short description of the bridge problem
-- headline counts from the current local pass:
-  - product documents
-  - product families
-  - adjudicated bridge rows
-  - finance papers / academic graph size
-- primary action: open bridge explorer
+- current snapshot: anchors, active graph, citation matches, full-text pilot scores;
+- pipeline from discovery corpus to active graph and full-text test;
+- short status findings;
+- compact preview of methodology signals and outcome modules.
 
-Tone:
+### Academic Graph
 
-- no marketing slogan;
-- no claim that the result is final;
-- purple language for current numbers and provisional findings;
-- red placeholders only for genuinely missing pieces.
-
-### Bridge Explorer
-
-Job: show the core product-academic bridge object.
-
-Data source:
-
-- `../product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0/systematic_bridge_package_v0/family_bridge_cross_section.csv`
-- `../product_prospectus_graph/data/product_graph_systematic_all_gptoss_ovhcloud_v0/systematic_bridge_package_v0/bridge_label_overall_summary.csv`
-- optional examples from `worked_example_candidate_rows.csv`
-
-Controls:
-
-- product family selector
-- optional bridge-type filter later
-
-Fields to show:
-
-- product family
-- product document count
-- product graph signature
-- nearest academic object
-- first-pass bridge label
-- bridge-label distribution
-- current use status
-- main caveat
-
-Bridge labels:
-
-- `same_strategy`: the academic object studies substantially the same investment strategy or style.
-- `same_mechanism`: the academic object studies a mechanism that plausibly explains the product design.
-- `shared_motif`: product and paper share an instrument, market, exposure, or broad motif, but not necessarily the same strategy.
-- `concept_only`: shared words or concepts are present, but the bridge is too weak for a substantive claim.
-- `no_bridge`: the matched academic object is likely not useful for this product family.
-
-### Product Families
-
-Job: give a compact cross-section of families.
+Purpose: expose the working denominator and neighborhood objects.
 
 Content:
 
-- family table or cards;
-- each row: family, product signature, nearest academic object, modal bridge, caveat.
-
-This should avoid overexplaining row-level QA. It is a map, not an audit log.
-
-### Academic Map
-
-Job: preserve the existing FrontierGraph finance diagnostics.
-
-Content:
-
-- central concepts;
-- centrality change;
-- communities;
-- recurring relationships;
-- sample papers.
-
-This is useful context, but it is downstream of the homepage bridge question.
-
-### Paper
-
-Job: link the working note and show the current paper-facing exhibits.
-
-Future content:
-
-- embedded PDF or download link;
-- compact exhibit list;
-- red placeholders for missing paper figures or checks.
+- strict anchors, high-priority promoted anchors, medium-recall additions, conservative post-recall anchors, sensitivity additions, context papers, active graph;
+- node and edge counts by role;
+- graph-visible methodology bars;
+- PC-style runs;
+- semantic overlap between FrontierGraph and CausalClaims.
 
 ### Methods
 
-Job: explain the measurement stack only as much as needed.
+Purpose: explain the measurement stack without turning the site into the paper.
 
 Content:
 
-- product documents become product-local graphs;
-- academic finance comes from FrontierGraph;
-- bridges are classified by the relation between product graph and academic neighborhood;
-- current numbers are provisional because family screens and bridge adjudication are still being checked.
+- six-step method flow;
+- object and denominator table;
+- de Prado visibility crosswalk: graph-visible, partly visible, full-text needed, not measured yet.
 
-## Homepage Implementation Scope
+### Outcomes
 
-Use the existing static structure for now:
+Purpose: keep downstream research paths explicit.
 
-- keep `index.html`, `styles.css`, `app.js`, and `data/site-data.json`;
-- add bridge data to `scripts/export_site_data.py`;
-- replace the old “product bridge sketch” section with an interactive bridge explorer;
-- keep older diagnostics below the bridge section;
-- do not migrate to Astro or a larger framework yet.
+Content:
 
-## Content Rules
+- citation benchmark as the available low-friction outcome;
+- product adoption as a design pilot;
+- factor performance as a parked high-precision extension;
+- product bridge family table as design evidence, not a population result.
 
-- Prefer concrete labels and controls over explanatory prose.
-- Avoid “from X to Y” phrasing.
-- Avoid pretending the site is ready for public release.
-- Do not foreground tiny audit counts in the homepage copy unless they define the current data object.
-- Use “current pass” or “first-pass” for temporary empirical outputs.
-- Keep caveats attached to the relevant family rather than collected in a wall of limitations.
+### Paper
 
+Purpose: placeholder until the PDF is stable enough to share.
+
+Content:
+
+- coming soon note;
+- short explanation of what is being reorganized.
+
+## Design Principles
+
+- Use restrained typography and few large numbers.
+- Keep uncertainty visible, but do not apologize repeatedly.
+- Avoid duplicate navigation cards.
+- Prefer tables, bars, and concise status lines over long prose.
+- Use tooltips sparingly for terms that need definition without interrupting the page.
+- Keep the product-adoption material clearly downstream.
+
+## Next Website Improvements
+
+- Add one small interactive filter on the Academic Graph page for methodology feature groups.
+- Add a compact PC neighborhood example view for macro/returns and liquidity/risk.
+- Add a citation benchmark figure once the paper decides the exact specification.
+- Replace the Paper placeholder when the draft is stable enough for Robert-facing reading.
