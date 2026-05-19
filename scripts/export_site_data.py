@@ -323,6 +323,45 @@ def build_site_data() -> dict[str, Any]:
         ),
     ]
 
+    def methodology_examples(feature_name: str, limit: int = 6) -> list[dict[str, Any]]:
+        matched = [
+            row
+            for row in conservative_methodology_rows
+            if truthy(row, feature_name)
+        ]
+        matched.sort(
+            key=lambda row: (
+                as_int(row.get("methodology_signal_count")),
+                as_int(row.get("publication_year")),
+                row.get("title", ""),
+            ),
+            reverse=True,
+        )
+        return [
+            {
+                "title": row.get("title"),
+                "year": as_int(row.get("publication_year")),
+                "source": row.get("source_display_name"),
+                "role": row.get("final_analysis_role") or row.get("analysis_role"),
+                "family": row.get("anchor_family") if row.get("anchor_family") != "NA" else row.get("strict_family"),
+                "signal_count": as_int(row.get("methodology_signal_count")),
+            }
+            for row in matched[:limit]
+        ]
+
+    methodology_explorer = [
+        {
+            "feature_name": row["feature_name"],
+            "feature": row["feature"],
+            "layer": row["layer"],
+            "de_prado_link": row["de_prado_link"],
+            "papers": row["count"],
+            "share": row["share"],
+            "examples": methodology_examples(row["feature_name"]),
+        }
+        for row in strict_methodology
+    ]
+
     source_comparison = [
         {
             "source": "FrontierGraph",
@@ -465,6 +504,7 @@ def build_site_data() -> dict[str, Any]:
         "denominators": denominators,
         "graph_layers": graph_layers,
         "methodology": strict_methodology,
+        "methodology_explorer": methodology_explorer,
         "deprado_crosswalk": deprado_crosswalk,
         "source_comparison": source_comparison,
         "pc_runs": pc_runs,

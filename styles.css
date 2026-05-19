@@ -496,6 +496,98 @@ td {
   margin: 8px 0 0;
 }
 
+.explorer-panel {
+  background: rgba(255, 250, 240, 0.5);
+  border: 1px solid rgba(22, 35, 31, 0.11);
+  border-radius: 24px;
+  margin-top: 22px;
+  padding: 20px;
+}
+
+.field-control {
+  display: grid;
+  gap: 8px;
+  max-width: 420px;
+}
+
+.field-control span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.field-control select {
+  appearance: none;
+  background:
+    linear-gradient(45deg, transparent 50%, var(--accent) 50%),
+    linear-gradient(135deg, var(--accent) 50%, transparent 50%),
+    var(--panel);
+  background-position:
+    calc(100% - 19px) 50%,
+    calc(100% - 13px) 50%,
+    100% 0;
+  background-size: 6px 6px, 6px 6px, 2.8rem 100%;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(22, 35, 31, 0.18);
+  border-radius: 14px;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  padding: 11px 46px 11px 13px;
+}
+
+.explorer-summary {
+  border-top: 1px solid rgba(22, 35, 31, 0.11);
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.36fr);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.explorer-summary h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.explorer-summary p:not(.eyebrow) {
+  color: var(--muted);
+  margin: 8px 0 0;
+}
+
+.paper-card-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.paper-card {
+  background: rgba(255, 250, 240, 0.62);
+  border: 1px solid rgba(22, 35, 31, 0.1);
+  border-radius: 16px;
+  padding: 13px;
+}
+
+.paper-card strong {
+  display: block;
+  font-size: 13px;
+  line-height: 1.28;
+}
+
+.paper-card p,
+.paper-card span {
+  color: var(--muted);
+  display: block;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
 .term {
   border-bottom: 1px dotted rgba(22, 35, 31, 0.48);
   cursor: help;
@@ -543,7 +635,9 @@ td {
   .two-column,
   .two-column.wide-left,
   .split-panel,
-  .method-flow {
+  .method-flow,
+  .explorer-summary,
+  .paper-card-grid {
     grid-template-columns: 1fr;
   }
 

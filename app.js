@@ -166,6 +166,9 @@ function renderAcademic() {
       .join("");
   }
 
+  const explorer = document.querySelector("[data-methodology-explorer]");
+  if (explorer) renderMethodologyExplorer(explorer);
+
   const pc = document.querySelector("[data-pc-runs]");
   if (pc) {
     pc.innerHTML = table(
@@ -201,6 +204,59 @@ function renderAcademic() {
       </div>
     `;
   }
+}
+
+function renderMethodologyExplorer(target) {
+  const features = state.data.methodology_explorer || [];
+  if (!features.length) return;
+
+  function draw(featureName) {
+    const selected = features.find((row) => row.feature_name === featureName) || features[0];
+    target.querySelector("[data-methodology-detail]").innerHTML = `
+      <div class="explorer-summary">
+        <div>
+          <p class="eyebrow">${esc(selected.layer)}</p>
+          <h3>${esc(selected.feature)}</h3>
+          <p>${esc(selected.de_prado_link)}</p>
+        </div>
+        <div class="metric-stack">
+          ${metric(fmt(selected.papers), "papers")}
+          ${metric(pct(selected.share), "of anchor set")}
+        </div>
+      </div>
+      <div class="paper-card-grid">
+        ${selected.examples
+          .map(
+            (row) => `
+              <article class="paper-card">
+                <strong>${esc(row.title)}</strong>
+                <p>${esc(row.source)}${row.year ? `, ${esc(row.year)}` : ""}</p>
+                <span>${esc(row.family || row.role || "anchor paper")} · ${fmt(row.signal_count)} signals</span>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
+  target.innerHTML = `
+    <div class="explorer-panel">
+      <label class="field-control">
+        <span>Methodology signal</span>
+        <select data-methodology-select>
+          ${features
+            .map((row) => `<option value="${esc(row.feature_name)}">${esc(row.feature)}</option>`)
+            .join("")}
+        </select>
+      </label>
+      <div data-methodology-detail></div>
+    </div>
+  `;
+
+  const select = target.querySelector("[data-methodology-select]");
+  select.addEventListener("change", () => draw(select.value));
+  draw(select.value);
 }
 
 function renderMethods() {
