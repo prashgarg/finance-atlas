@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T14:25:54.901477+00:00",
+  "generated_at": "2026-05-19T15:29:42.935463+00:00",
   "snapshot": {
     "title": "Finance Atlas",
     "subtitle": "Graph-first map of factor-investing research, current denominators, and downstream outcome modules.",
@@ -286,6 +286,89 @@
       "papers": 1012,
       "count": 7,
       "share": 0.00691699604743083
+    }
+  ],
+  "deprado_crosswalk": [
+    {
+      "item": "Causal framing / mechanisms",
+      "status": "Graph-visible",
+      "proxy": "Causal-presentation and mechanism edge attributes",
+      "papers": 941,
+      "share": 0.9298418972332015,
+      "boundary": "Useful for claim mapping; not proof of formal causal discovery."
+    },
+    {
+      "item": "Identification / adjustment",
+      "status": "Partly visible",
+      "proxy": "Identification-design, exogenous-variation, and adjustment text",
+      "papers": 73,
+      "share": 0.07213438735177866,
+      "boundary": "Exact adjustment sets usually need full text."
+    },
+    {
+      "item": "Predictive validation",
+      "status": "Partly visible",
+      "proxy": "Forecasting, robustness, and validation-text signals",
+      "papers": 379,
+      "share": 0.37450592885375494,
+      "boundary": "Broad validation is visible; design details need full text."
+    },
+    {
+      "item": "Variable selection",
+      "status": "Full-text target",
+      "proxy": "Variable and feature-selection text",
+      "papers": 39,
+      "share": 0.038537549407114624,
+      "boundary": "Usually a methods-section, table, or appendix detail."
+    },
+    {
+      "item": "Portfolio construction",
+      "status": "Mostly full text",
+      "proxy": "Portfolio-implementation text",
+      "papers": 115,
+      "share": 0.11363636363636363,
+      "boundary": "Abstract-level evidence is thin."
+    },
+    {
+      "item": "Backtesting methodology",
+      "status": "Full-text target",
+      "proxy": "Backtest, historical-simulation, and stress-test text",
+      "papers": 8,
+      "share": 0.007905138339920948,
+      "boundary": "Abstract graph strongly undercounts this central due-diligence object."
+    },
+    {
+      "item": "Multiple-testing adjustment",
+      "status": "Full-text target",
+      "proxy": "Multiple-testing, data-snooping, FDR, and false-discovery text",
+      "papers": 9,
+      "share": 0.008893280632411068,
+      "boundary": "Abstract graph strongly undercounts this central factor-testing object."
+    },
+    {
+      "item": "Transparency / reproducibility",
+      "status": "Not measured yet",
+      "proxy": "No stable current field",
+      "papers": null,
+      "share": null,
+      "boundary": "Needs code, data, appendix, or replication-material evidence."
+    }
+  ],
+  "source_comparison": [
+    {
+      "source": "FrontierGraph",
+      "gives": "Broad paper discovery and title/abstract research graphs.",
+      "boundary": "Too thin for many methods-section and appendix details."
+    },
+    {
+      "source": "Causal Claims in Economics",
+      "gives": "Smaller full-text graph source for comparison and replication.",
+      "boundary": "CEPR/NBER working-paper universe, not the published-paper target corpus."
+    },
+    {
+      "source": "New target-paper PDFs",
+      "gives": "Future high-resolution measurement of methodology and implementation details.",
+      "boundary": "Best source, but costly to acquire and process at scale."
     }
   ],
   "pc_runs": [

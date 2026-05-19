@@ -204,6 +204,22 @@ function renderAcademic() {
 }
 
 function renderMethods() {
+  const sources = document.querySelector("[data-source-comparison]");
+  if (sources) {
+    sources.innerHTML = table(
+      ["Source", "What it gives us", "Boundary"],
+      state.data.source_comparison.map(
+        (row) => `
+          <tr>
+            <td><strong>${esc(row.source)}</strong></td>
+            <td>${esc(row.gives)}</td>
+            <td>${esc(row.boundary)}</td>
+          </tr>
+        `,
+      ),
+    );
+  }
+
   const objects = document.querySelector("[data-objects-table]");
   if (objects) {
     objects.innerHTML = table(
@@ -222,16 +238,40 @@ function renderMethods() {
 
   const visibility = document.querySelector("[data-visibility-table]");
   if (visibility) {
-    const rows = [
-      ["Graph-visible", "Causal framing, mechanism edges, condition/scope text, statistical-significance text.", "Measured now from FrontierGraph edge fields."],
-      ["Partly visible", "Empirical design, forecasting methods, robustness, effect size.", "Often visible in abstracts, but exact scoring needs source text."],
-      ["Full-text needed", "Backtest design, multiple-testing adjustment, trading frictions, variable selection.", "Measured in the PDF feasibility stage."],
-      ["Not measured yet", "Final investment usefulness, factor performance, product adoption timing.", "Defined as downstream modules."],
-    ];
     visibility.innerHTML = table(
-      ["Visibility layer", "Examples", "Current treatment"],
-      rows.map((row) => `<tr>${row.map((cell) => `<td>${esc(cell)}</td>`).join("")}</tr>`),
+      ["Methodology object", "Status", "Current proxy", "Papers", "Boundary"],
+      state.data.deprado_crosswalk.map(
+        (row) => `
+          <tr>
+            <td><strong>${esc(row.item)}</strong></td>
+            <td>${esc(row.status)}</td>
+            <td>${esc(row.proxy)}</td>
+            <td>${row.papers === null ? "—" : `${fmt(row.papers)}<p>${pct(row.share)}</p>`}</td>
+            <td>${esc(row.boundary)}</td>
+          </tr>
+        `,
+      ),
     );
+  }
+
+  const fullText = document.querySelector("[data-full-text-boundary]");
+  if (fullText) {
+    const ft = state.data.full_text;
+    fullText.innerHTML = `
+      <div class="split-panel">
+        <div class="metric-stack">
+          ${metric(fmt(ft.sample_n), "sample papers")}
+          ${metric(fmt(ft.scored), "scored PDFs")}
+          ${metric(fmt(ft.reveals_missed), "reveal missed signals")}
+          ${metric(fmt(ft.refines), "refine abstract signals")}
+        </div>
+        <div class="note-block">
+          The pilot asks whether full text changes practitioner-methodology measurement.
+          The answer is yes often enough that backtesting, multiple testing, implementation,
+          and variable-selection fields should not be inferred from abstracts alone.
+        </div>
+      </div>
+    `;
   }
 }
 

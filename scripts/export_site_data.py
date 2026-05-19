@@ -101,6 +101,10 @@ def build_site_data() -> dict[str, Any]:
         PROJECT
         / "data/analysis_graph_methodology_layer_post_recall_anchor_v1/post_recall_methodology_feature_summary_by_role_v1.csv"
     )
+    methodology_panel = read_csv(
+        PROJECT
+        / "data/analysis_graph_methodology_layer_post_recall_anchor_v1/post_recall_methodology_panel_v1.csv"
+    )
     pc_specs = read_csv(PROJECT / "data/targeted_pc_specs_v0/targeted_pc_specs_summary_v0.csv")
     semantic_summary = read_json(PROJECT / "data/pc_semantic_ontology_overlap_v0/package_summary.json")
     semantic_examples = read_csv(
@@ -228,6 +232,115 @@ def build_site_data() -> dict[str, Any]:
     ]
     strict_methodology.sort(key=lambda row: row["share"], reverse=True)
 
+    def truthy(row: dict[str, str], key: str) -> bool:
+        return str(row.get(key, "")).lower() in {"true", "1", "yes"}
+
+    conservative_methodology_rows = [
+        row for row in methodology_panel if truthy(row, "anchor_in_conservative_post_recall")
+    ]
+
+    def count_any(keys: list[str]) -> int:
+        return sum(any(truthy(row, key) for key in keys) for row in conservative_methodology_rows)
+
+    def crosswalk_row(
+        item: str,
+        status: str,
+        proxy: str,
+        keys: list[str] | None,
+        boundary: str,
+    ) -> dict[str, Any]:
+        count = count_any(keys) if keys else None
+        denominator = len(conservative_methodology_rows)
+        return {
+            "item": item,
+            "status": status,
+            "proxy": proxy,
+            "papers": count,
+            "share": None if count is None or denominator == 0 else count / denominator,
+            "boundary": boundary,
+        }
+
+    deprado_crosswalk = [
+        crosswalk_row(
+            "Causal framing / mechanisms",
+            "Graph-visible",
+            "Causal-presentation and mechanism edge attributes",
+            ["has_causal_presentation", "has_mechanism_edge"],
+            "Useful for claim mapping; not proof of formal causal discovery.",
+        ),
+        crosswalk_row(
+            "Identification / adjustment",
+            "Partly visible",
+            "Identification-design, exogenous-variation, and adjustment text",
+            [
+                "has_identification_design_visible",
+                "has_exogenous_variation_visible",
+                "textsupp_controls_adjustment",
+            ],
+            "Exact adjustment sets usually need full text.",
+        ),
+        crosswalk_row(
+            "Predictive validation",
+            "Partly visible",
+            "Forecasting, robustness, and validation-text signals",
+            ["has_forecasting_edge", "has_robustness_edge", "textsupp_validation"],
+            "Broad validation is visible; design details need full text.",
+        ),
+        crosswalk_row(
+            "Variable selection",
+            "Full-text target",
+            "Variable and feature-selection text",
+            ["textsupp_variable_selection"],
+            "Usually a methods-section, table, or appendix detail.",
+        ),
+        crosswalk_row(
+            "Portfolio construction",
+            "Mostly full text",
+            "Portfolio-implementation text",
+            ["textsupp_portfolio_implementation"],
+            "Abstract-level evidence is thin.",
+        ),
+        crosswalk_row(
+            "Backtesting methodology",
+            "Full-text target",
+            "Backtest, historical-simulation, and stress-test text",
+            ["textsupp_backtesting"],
+            "Abstract graph strongly undercounts this central due-diligence object.",
+        ),
+        crosswalk_row(
+            "Multiple-testing adjustment",
+            "Full-text target",
+            "Multiple-testing, data-snooping, FDR, and false-discovery text",
+            ["textsupp_multiple_testing"],
+            "Abstract graph strongly undercounts this central factor-testing object.",
+        ),
+        crosswalk_row(
+            "Transparency / reproducibility",
+            "Not measured yet",
+            "No stable current field",
+            None,
+            "Needs code, data, appendix, or replication-material evidence.",
+        ),
+    ]
+
+    source_comparison = [
+        {
+            "source": "FrontierGraph",
+            "gives": "Broad paper discovery and title/abstract research graphs.",
+            "boundary": "Too thin for many methods-section and appendix details.",
+        },
+        {
+            "source": "Causal Claims in Economics",
+            "gives": "Smaller full-text graph source for comparison and replication.",
+            "boundary": "CEPR/NBER working-paper universe, not the published-paper target corpus.",
+        },
+        {
+            "source": "New target-paper PDFs",
+            "gives": "Future high-resolution measurement of methodology and implementation details.",
+            "boundary": "Best source, but costly to acquire and process at scale.",
+        },
+    ]
+
     pc_runs = []
     for row in pc_specs:
         corpus, features, threshold = label_from_spec(row.get("spec_name", ""))
@@ -352,6 +465,8 @@ def build_site_data() -> dict[str, Any]:
         "denominators": denominators,
         "graph_layers": graph_layers,
         "methodology": strict_methodology,
+        "deprado_crosswalk": deprado_crosswalk,
+        "source_comparison": source_comparison,
         "pc_runs": pc_runs,
         "pc_audit": pc_audit,
         "semantic_overlap": {
